@@ -1,0 +1,7 @@
+Impossible staircase.svg — Penrose stairs optical illusion
+Author: Sakurambo / Philip Ronan; simplified SVG code: Andreasl01 (2021).
+Source: https://commons.wikimedia.org/wiki/File:Impossible_staircase.svg
+Original: https://upload.wikimedia.org/wikipedia/commons/3/34/Impossible_staircase.svg
+License: released into the public domain by copyright holder (PD-self).
+Micro Atlas adaptation: same vector geometry with recolored outlines; code-generated lap marker and separate mathematical explanation. Not an Escher reproduction or realizable three-dimensional staircase.
+Original SVG preserved as penrose-staircase-original.svg in this source tree.

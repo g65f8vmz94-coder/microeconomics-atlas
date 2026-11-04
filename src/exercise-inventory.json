@@ -1,0 +1,1203 @@
+{
+  "bookVersion": "2020.12.21 (h)",
+  "bookSha256": "bb095ba979d71b594eaf091fa8c35200602d54180a487aa8ce29e77c64782fd4",
+  "actualNumberedProblems": 149,
+  "nominalMissingNumber": [
+    "Problem 3.6"
+  ],
+  "scope": "Original chapter-end problem numbers located sequentially in all20 PDF chapter ranges; short heading hashes retain an auditable locator without publishing the textbook. Subpart completeness is checked separately.",
+  "problems": [
+    {
+      "id": "Problem 1.1",
+      "chapter": 1,
+      "number": 1,
+      "pdfPage": 32,
+      "printedPage": 13,
+      "headingLineSha256": "bda1b80f5e74bf6e6f40dd3dcbad0c536e6227492c7d3fc0e8bc0b830350e265"
+    },
+    {
+      "id": "Problem 1.2",
+      "chapter": 1,
+      "number": 2,
+      "pdfPage": 33,
+      "printedPage": 14,
+      "headingLineSha256": "63a274d5d8dca618355bec5513a31a1056eb5dab613ec79e9a9676fc840f4e04"
+    },
+    {
+      "id": "Problem 1.3",
+      "chapter": 1,
+      "number": 3,
+      "pdfPage": 33,
+      "printedPage": 14,
+      "headingLineSha256": "658b659c91a91e48c9fd01dda7a759a796b293cb6ebb193f6d72e03163376e31"
+    },
+    {
+      "id": "Problem 1.4",
+      "chapter": 1,
+      "number": 4,
+      "pdfPage": 33,
+      "printedPage": 14,
+      "headingLineSha256": "a982aa84c8d6a44662ad5af4120152be594f81444d6412e16f56b6815365610b"
+    },
+    {
+      "id": "Problem 1.5",
+      "chapter": 1,
+      "number": 5,
+      "pdfPage": 33,
+      "printedPage": 14,
+      "headingLineSha256": "ef4e2e83ba549f634f6518a176e7b9dc4261c722c784aa13adaf6fd81627525f"
+    },
+    {
+      "id": "Problem 1.6",
+      "chapter": 1,
+      "number": 6,
+      "pdfPage": 33,
+      "printedPage": 14,
+      "headingLineSha256": "0c210973bbaa950111d6bab76c9acf586096284ed1f78bf5a7153329dcc60eb4"
+    },
+    {
+      "id": "Problem 1.7",
+      "chapter": 1,
+      "number": 7,
+      "pdfPage": 33,
+      "printedPage": 14,
+      "headingLineSha256": "681b888a635fc33f650b4c7756b354e5bbe366af50c8aa83b6c557d960baae7e"
+    },
+    {
+      "id": "Problem 1.8",
+      "chapter": 1,
+      "number": 8,
+      "pdfPage": 34,
+      "printedPage": 15,
+      "headingLineSha256": "120704c79438d029057cdbe40223dea13973736db351c09d5554060549278b77"
+    },
+    {
+      "id": "Problem 1.9",
+      "chapter": 1,
+      "number": 9,
+      "pdfPage": 34,
+      "printedPage": 15,
+      "headingLineSha256": "4b5e8721bb66492bde8ff18f54e73e7c24af882da7e93108f95a0e8b762bb227"
+    },
+    {
+      "id": "Problem 2.1",
+      "chapter": 2,
+      "number": 1,
+      "pdfPage": 46,
+      "printedPage": 27,
+      "headingLineSha256": "c1f1f73a059a3484bbc83d8f955c3c8f9dea2297d852411fb7bb04031ada6e6f"
+    },
+    {
+      "id": "Problem 2.2",
+      "chapter": 2,
+      "number": 2,
+      "pdfPage": 47,
+      "printedPage": 28,
+      "headingLineSha256": "5dad81961fbb9bf0140ddf2fc2b69a41ec055d75e74899774fdfe73996c438ab"
+    },
+    {
+      "id": "Problem 2.3",
+      "chapter": 2,
+      "number": 3,
+      "pdfPage": 47,
+      "printedPage": 28,
+      "headingLineSha256": "664544ca2aa47643ccb5ea4a89600a73d3fe86233850f1e00a5e4c0303bda2e8"
+    },
+    {
+      "id": "Problem 2.4",
+      "chapter": 2,
+      "number": 4,
+      "pdfPage": 47,
+      "printedPage": 28,
+      "headingLineSha256": "0670bbdab341f751ffe60f0c1bde02df96e4ac87a0fc78645b7b5ea33440c35e"
+    },
+    {
+      "id": "Problem 2.5",
+      "chapter": 2,
+      "number": 5,
+      "pdfPage": 47,
+      "printedPage": 28,
+      "headingLineSha256": "d666a6d841404ad1ab8494285eade4563ba03362def1d64ad99d3ad2faf7b91e"
+    },
+    {
+      "id": "Problem 2.6",
+      "chapter": 2,
+      "number": 6,
+      "pdfPage": 48,
+      "printedPage": 29,
+      "headingLineSha256": "f381a5240af976562f1d420d83bc51c2c5b83109b37aa5bb65a5bddf301b7722"
+    },
+    {
+      "id": "Problem 2.7",
+      "chapter": 2,
+      "number": 7,
+      "pdfPage": 48,
+      "printedPage": 29,
+      "headingLineSha256": "636ceda7152310a99b38b58e893c637d31120d7953828f20a104c06827c054d7"
+    },
+    {
+      "id": "Problem 2.8",
+      "chapter": 2,
+      "number": 8,
+      "pdfPage": 48,
+      "printedPage": 29,
+      "headingLineSha256": "dac05df3644d564758203004a47d9bac8c5372841b5f970aa93c62472346499b"
+    },
+    {
+      "id": "Problem 3.1",
+      "chapter": 3,
+      "number": 1,
+      "pdfPage": 60,
+      "printedPage": 41,
+      "headingLineSha256": "db7572a4789fa192a09854bec19f49515c4cf150c73868d3e4a0414d22f64c84"
+    },
+    {
+      "id": "Problem 3.2",
+      "chapter": 3,
+      "number": 2,
+      "pdfPage": 60,
+      "printedPage": 41,
+      "headingLineSha256": "bd17b214c7902fbfd55003783ab1fba4fb3a32892a0f49109ec11cd839d6cfef"
+    },
+    {
+      "id": "Problem 3.3",
+      "chapter": 3,
+      "number": 3,
+      "pdfPage": 60,
+      "printedPage": 41,
+      "headingLineSha256": "36fc6bed4f679a3cec5aeda318469c7a2bab971862acd37dff87297252eb7837"
+    },
+    {
+      "id": "Problem 3.4",
+      "chapter": 3,
+      "number": 4,
+      "pdfPage": 61,
+      "printedPage": 42,
+      "headingLineSha256": "b2d93271478fe78216f555f170bb279a24caf67d86877d13e34efbe83b43fb21"
+    },
+    {
+      "id": "Problem 3.5",
+      "chapter": 3,
+      "number": 5,
+      "pdfPage": 61,
+      "printedPage": 42,
+      "headingLineSha256": "9a5559156c94297d4a96d1306f66911c358332e270aa6aa22fd7e118dfc83b92"
+    },
+    {
+      "id": "Problem 3.7",
+      "chapter": 3,
+      "number": 7,
+      "pdfPage": 61,
+      "printedPage": 42,
+      "headingLineSha256": "09c98cf85f11d7381fa584b45ff70ef9ad83ed757084e0b346e5de518068b9d1"
+    },
+    {
+      "id": "Problem 3.8",
+      "chapter": 3,
+      "number": 8,
+      "pdfPage": 61,
+      "printedPage": 42,
+      "headingLineSha256": "db7b0857451347445c9d54f976d51e795f8f091fa986e19e6d2d07c5a21a9bda"
+    },
+    {
+      "id": "Problem 3.9",
+      "chapter": 3,
+      "number": 9,
+      "pdfPage": 62,
+      "printedPage": 43,
+      "headingLineSha256": "86435da9589a5dcf927622698518bd0ed2fdea3c2833ec8ecf15ec5acc0e6cfe"
+    },
+    {
+      "id": "Problem 4.1",
+      "chapter": 4,
+      "number": 1,
+      "pdfPage": 73,
+      "printedPage": 54,
+      "headingLineSha256": "f5c92b14d067a52b75206af0041a26378744c75d38bc953f9beee060012a1d7c"
+    },
+    {
+      "id": "Problem 4.2",
+      "chapter": 4,
+      "number": 2,
+      "pdfPage": 74,
+      "printedPage": 55,
+      "headingLineSha256": "dd6cd641f163eb0d88861b2c7447ca4d29ffd4e82f7f844fbf407eee1e879ff9"
+    },
+    {
+      "id": "Problem 4.3",
+      "chapter": 4,
+      "number": 3,
+      "pdfPage": 74,
+      "printedPage": 55,
+      "headingLineSha256": "209bf3b4bfce0ca959ed3ff78267358a5f713ca0a66b7fdc7a6ce43c6b441b27"
+    },
+    {
+      "id": "Problem 4.4",
+      "chapter": 4,
+      "number": 4,
+      "pdfPage": 74,
+      "printedPage": 55,
+      "headingLineSha256": "eb5e238f2812379722154bf33ba24ae2a6200b0d662fd3a2c1131c13fd5097fd"
+    },
+    {
+      "id": "Problem 4.5",
+      "chapter": 4,
+      "number": 5,
+      "pdfPage": 74,
+      "printedPage": 55,
+      "headingLineSha256": "168121bec0ae6f2a45027582ce3eff98ee343a9060be08e9a628681a31640ade"
+    },
+    {
+      "id": "Problem 4.6",
+      "chapter": 4,
+      "number": 6,
+      "pdfPage": 74,
+      "printedPage": 55,
+      "headingLineSha256": "25481a748b7fd2337424be4e921108bf40d5548d2db2a79932f93be433e97972"
+    },
+    {
+      "id": "Problem 4.7",
+      "chapter": 4,
+      "number": 7,
+      "pdfPage": 75,
+      "printedPage": 56,
+      "headingLineSha256": "c05756466d25db47e02f5d9a0ae09bd667cd3b75cb9bdc289ac8aa745f36871d"
+    },
+    {
+      "id": "Problem 5.1",
+      "chapter": 5,
+      "number": 1,
+      "pdfPage": 90,
+      "printedPage": 71,
+      "headingLineSha256": "68174a8dfe1de979ede26dc854217646f88b59a1fb303c796f59836a9c533f1a"
+    },
+    {
+      "id": "Problem 5.2",
+      "chapter": 5,
+      "number": 2,
+      "pdfPage": 90,
+      "printedPage": 71,
+      "headingLineSha256": "b54d1a380cbb07db71cbcfac10e73fc1141be30c658277aacc629e457c0afb7b"
+    },
+    {
+      "id": "Problem 5.3",
+      "chapter": 5,
+      "number": 3,
+      "pdfPage": 90,
+      "printedPage": 71,
+      "headingLineSha256": "ce4659418175d69f56cf6aef0a640c028973c32407d5b0fbf767e3b630afef73"
+    },
+    {
+      "id": "Problem 5.4",
+      "chapter": 5,
+      "number": 4,
+      "pdfPage": 91,
+      "printedPage": 72,
+      "headingLineSha256": "173eac287e34a108cf8e7dc33c13d32f521acae9256f76a2bad11c05b36d9a4e"
+    },
+    {
+      "id": "Problem 5.5",
+      "chapter": 5,
+      "number": 5,
+      "pdfPage": 91,
+      "printedPage": 72,
+      "headingLineSha256": "19e4b7038056cde76230391a9c57e6bd1a569cfdc1b54eae54ad3152c6c58cb1"
+    },
+    {
+      "id": "Problem 5.6",
+      "chapter": 5,
+      "number": 6,
+      "pdfPage": 91,
+      "printedPage": 72,
+      "headingLineSha256": "dac4c34c1401fc90b47a07cff0f7f222b7ddf87919ff4e0ffbf7c555f6302676"
+    },
+    {
+      "id": "Problem 5.7",
+      "chapter": 5,
+      "number": 7,
+      "pdfPage": 91,
+      "printedPage": 72,
+      "headingLineSha256": "5a32eed32bbee56cc5758df0328c1fe804ef130bfcb2121bf46236e0ebc306d6"
+    },
+    {
+      "id": "Problem 5.8",
+      "chapter": 5,
+      "number": 8,
+      "pdfPage": 92,
+      "printedPage": 73,
+      "headingLineSha256": "b26f6102d1e33809bb3ae4fff9c533b3e94782379bb250574f4552de2e97360c"
+    },
+    {
+      "id": "Problem 5.9",
+      "chapter": 5,
+      "number": 9,
+      "pdfPage": 92,
+      "printedPage": 73,
+      "headingLineSha256": "1962d775873ed36c645dd3b8f12d2469b3aff3b1814d795c77bef79f94007d67"
+    },
+    {
+      "id": "Problem 6.1",
+      "chapter": 6,
+      "number": 1,
+      "pdfPage": 104,
+      "printedPage": 85,
+      "headingLineSha256": "b5e492c67e73da06d532131f6f45c7026d480061fcb509df69efaa92cdc65696"
+    },
+    {
+      "id": "Problem 6.2",
+      "chapter": 6,
+      "number": 2,
+      "pdfPage": 104,
+      "printedPage": 85,
+      "headingLineSha256": "76783b6d369f3ec210cb15c362d9eff2c52d6913c418b86ce97b7b2eb938faa9"
+    },
+    {
+      "id": "Problem 6.3",
+      "chapter": 6,
+      "number": 3,
+      "pdfPage": 104,
+      "printedPage": 85,
+      "headingLineSha256": "c3184783be98db9689105215cc99459325c839df766b72a868b6ad021e9deec9"
+    },
+    {
+      "id": "Problem 6.4",
+      "chapter": 6,
+      "number": 4,
+      "pdfPage": 105,
+      "printedPage": 86,
+      "headingLineSha256": "8c860ba4474487c23d7e2bebd34ee61e7a4760ad48a487353fc9b7a1b8ce79f4"
+    },
+    {
+      "id": "Problem 7.1",
+      "chapter": 7,
+      "number": 1,
+      "pdfPage": 118,
+      "printedPage": 99,
+      "headingLineSha256": "15d2ca671931141695752d90aadc663ddb1bb0126a1ec4f362269fd50593b237"
+    },
+    {
+      "id": "Problem 7.2",
+      "chapter": 7,
+      "number": 2,
+      "pdfPage": 119,
+      "printedPage": 100,
+      "headingLineSha256": "e5e40d2a8495da16af3126fc035d0939b8447c69cc6b4de00d4e33495a318e77"
+    },
+    {
+      "id": "Problem 7.3",
+      "chapter": 7,
+      "number": 3,
+      "pdfPage": 119,
+      "printedPage": 100,
+      "headingLineSha256": "a1692397fbdfec819c370031c88514eceb2a2e7284ad5d4c2ff56c293db41f28"
+    },
+    {
+      "id": "Problem 7.4",
+      "chapter": 7,
+      "number": 4,
+      "pdfPage": 119,
+      "printedPage": 100,
+      "headingLineSha256": "ce592beae0087a55e76ed428e7dc1e7e03f37feb9888c995e12dcd51651272b4"
+    },
+    {
+      "id": "Problem 7.5",
+      "chapter": 7,
+      "number": 5,
+      "pdfPage": 120,
+      "printedPage": 101,
+      "headingLineSha256": "8e345b5f96180710948930526c82ef7d0f87315e64a32f1cd930e86aa3faf464"
+    },
+    {
+      "id": "Problem 7.6",
+      "chapter": 7,
+      "number": 6,
+      "pdfPage": 120,
+      "printedPage": 101,
+      "headingLineSha256": "c45f2f67a901fc734414287c67b4a682271df5cd28f1ba5b7cb8a6c045d755e2"
+    },
+    {
+      "id": "Problem 7.7",
+      "chapter": 7,
+      "number": 7,
+      "pdfPage": 120,
+      "printedPage": 101,
+      "headingLineSha256": "d43a9fd43033cee8bcfb367dd21cc9b41c3b72b0711d97cd71dfb68f5e3a3bc7"
+    },
+    {
+      "id": "Problem 8.1",
+      "chapter": 8,
+      "number": 1,
+      "pdfPage": 137,
+      "printedPage": 118,
+      "headingLineSha256": "e26929ab233516556600e439795512859790d9068fb16d4fd86f05cea7dd4486"
+    },
+    {
+      "id": "Problem 8.2",
+      "chapter": 8,
+      "number": 2,
+      "pdfPage": 137,
+      "printedPage": 118,
+      "headingLineSha256": "1016e5cd48e43fe5d5931d9adde4943e38b552b9d3d47f6b4c624e23cc6ca500"
+    },
+    {
+      "id": "Problem 8.3",
+      "chapter": 8,
+      "number": 3,
+      "pdfPage": 137,
+      "printedPage": 118,
+      "headingLineSha256": "fdb345c31c99aa1b11f448fd00434713631ebc1d430066a6c91818bee4caf83a"
+    },
+    {
+      "id": "Problem 8.4",
+      "chapter": 8,
+      "number": 4,
+      "pdfPage": 138,
+      "printedPage": 119,
+      "headingLineSha256": "ed4923abd7f4361d76aae5b59b3f1b5726f7a635545de7f34b72a0494fbadf5a"
+    },
+    {
+      "id": "Problem 8.5",
+      "chapter": 8,
+      "number": 5,
+      "pdfPage": 138,
+      "printedPage": 119,
+      "headingLineSha256": "497f62d0c3f72143745cb60cc806f8d4284c31ea64bcc5e4d4fa752c8f5df5cf"
+    },
+    {
+      "id": "Problem 8.6",
+      "chapter": 8,
+      "number": 6,
+      "pdfPage": 138,
+      "printedPage": 119,
+      "headingLineSha256": "bac9e3a8793e3d29762ee52599faac86077635422b9071d0dd4af2943349ae06"
+    },
+    {
+      "id": "Problem 8.7",
+      "chapter": 8,
+      "number": 7,
+      "pdfPage": 139,
+      "printedPage": 120,
+      "headingLineSha256": "d0590dbd2833ba8efdb63212706d72f5a0a216367ff12775fc76eaec43d40242"
+    },
+    {
+      "id": "Problem 8.8",
+      "chapter": 8,
+      "number": 8,
+      "pdfPage": 139,
+      "printedPage": 120,
+      "headingLineSha256": "293707d369c55213abf71d4db0ae985c6df34f0efd85c3d80ee5df6f8b93273d"
+    },
+    {
+      "id": "Problem 8.9",
+      "chapter": 8,
+      "number": 9,
+      "pdfPage": 139,
+      "printedPage": 120,
+      "headingLineSha256": "ac6714563145084c30e73a67f597c84853360efd5c11b909754198ef338d9bc2"
+    },
+    {
+      "id": "Problem 8.10",
+      "chapter": 8,
+      "number": 10,
+      "pdfPage": 139,
+      "printedPage": 120,
+      "headingLineSha256": "fd27c0c90b7cd0668d612907aefbeeb1228d8d2dd8ff5735a177535e2fe10303"
+    },
+    {
+      "id": "Problem 9.1",
+      "chapter": 9,
+      "number": 1,
+      "pdfPage": 153,
+      "printedPage": 134,
+      "headingLineSha256": "0e34ba1f36808e1248a9ecb25905c3f5856279d8a08061bf8bec4ea516afa246"
+    },
+    {
+      "id": "Problem 9.2",
+      "chapter": 9,
+      "number": 2,
+      "pdfPage": 153,
+      "printedPage": 134,
+      "headingLineSha256": "88c3aaad5b84899400df9edaad0cd8dc356775c7fb9852bf6402eae0d75104e5"
+    },
+    {
+      "id": "Problem 9.3",
+      "chapter": 9,
+      "number": 3,
+      "pdfPage": 153,
+      "printedPage": 134,
+      "headingLineSha256": "f6edc20a82d5d90863b050737c92503f53121d0ceb9d96394ca7422bb85cec7f"
+    },
+    {
+      "id": "Problem 9.4",
+      "chapter": 9,
+      "number": 4,
+      "pdfPage": 153,
+      "printedPage": 134,
+      "headingLineSha256": "96c14f08837116a26cb9b185091638e1ee27e1fab7678fd49d0ee7d7f8068313"
+    },
+    {
+      "id": "Problem 9.5",
+      "chapter": 9,
+      "number": 5,
+      "pdfPage": 154,
+      "printedPage": 135,
+      "headingLineSha256": "83c103bbdf2fb935bcbd3afb172c9c84829d1314ba945d7b75e03fff77bffd29"
+    },
+    {
+      "id": "Problem 9.6",
+      "chapter": 9,
+      "number": 6,
+      "pdfPage": 154,
+      "printedPage": 135,
+      "headingLineSha256": "33a54fd7732b869576d090c34a80bda43fe31800d7bae2ed048809f3b849ab19"
+    },
+    {
+      "id": "Problem 9.7",
+      "chapter": 9,
+      "number": 7,
+      "pdfPage": 154,
+      "printedPage": 135,
+      "headingLineSha256": "81ad806ec6723d0071f611ae9987d72f66ab75e1ac17163ced6fb4b729c1c582"
+    },
+    {
+      "id": "Problem 10.1",
+      "chapter": 10,
+      "number": 1,
+      "pdfPage": 171,
+      "printedPage": 152,
+      "headingLineSha256": "1d19f1c34c0522d238ef816987c920598d6366ee5bbc050a6706708bb6cef76c"
+    },
+    {
+      "id": "Problem 10.2",
+      "chapter": 10,
+      "number": 2,
+      "pdfPage": 172,
+      "printedPage": 153,
+      "headingLineSha256": "05ae4804d6b9b4ce0fc771eec321c146e2832952cbbfb6d75f1cc31666bb21bc"
+    },
+    {
+      "id": "Problem 10.3",
+      "chapter": 10,
+      "number": 3,
+      "pdfPage": 172,
+      "printedPage": 153,
+      "headingLineSha256": "6efd52fa96495339ba8a0855572e94f15f3cf91e446796fcb669f70675abdbb5"
+    },
+    {
+      "id": "Problem 10.4",
+      "chapter": 10,
+      "number": 4,
+      "pdfPage": 173,
+      "printedPage": 154,
+      "headingLineSha256": "3e81e6dc38341061bbfe8b201a77d83f8a7e5ef536f52d68e22a12efac9d88e4"
+    },
+    {
+      "id": "Problem 10.5",
+      "chapter": 10,
+      "number": 5,
+      "pdfPage": 173,
+      "printedPage": 154,
+      "headingLineSha256": "7c2fd079fd73233f950a9d4977652b76a1f297e78239b182130f87f80da220eb"
+    },
+    {
+      "id": "Problem 10.6",
+      "chapter": 10,
+      "number": 6,
+      "pdfPage": 173,
+      "printedPage": 154,
+      "headingLineSha256": "e4db2de48b66df567b144b5f70a13379de51e0c719e4f89e7b2da6da90d886fb"
+    },
+    {
+      "id": "Problem 10.7",
+      "chapter": 10,
+      "number": 7,
+      "pdfPage": 174,
+      "printedPage": 155,
+      "headingLineSha256": "8422ddf8d0fb25cc42d52af11ddc4c893b507f9b522b4be23f046b1a602fe95f"
+    },
+    {
+      "id": "Problem 10.8",
+      "chapter": 10,
+      "number": 8,
+      "pdfPage": 174,
+      "printedPage": 155,
+      "headingLineSha256": "bcca39d849986f824583d5f1b924487a7439587bfa285c9aeca3cb706df6c539"
+    },
+    {
+      "id": "Problem 10.9",
+      "chapter": 10,
+      "number": 9,
+      "pdfPage": 174,
+      "printedPage": 155,
+      "headingLineSha256": "9c0e3ff8ec932a3f2e6c6d4ed91cfb4c837b3e4280af84d241a36ae11650958e"
+    },
+    {
+      "id": "Problem 11.1",
+      "chapter": 11,
+      "number": 1,
+      "pdfPage": 190,
+      "printedPage": 171,
+      "headingLineSha256": "b64a79ed57ee7fc33846054f5f7dc7979cfafc233ef86fa3c41c8f4852aff0d1"
+    },
+    {
+      "id": "Problem 11.2",
+      "chapter": 11,
+      "number": 2,
+      "pdfPage": 190,
+      "printedPage": 171,
+      "headingLineSha256": "31b1cf1fb38b83567c7df91dfb3b710abf320d700e2f23ef04419f39ff099f29"
+    },
+    {
+      "id": "Problem 11.3",
+      "chapter": 11,
+      "number": 3,
+      "pdfPage": 190,
+      "printedPage": 171,
+      "headingLineSha256": "de91d29fd661587d756c7c40858992a1b3cfca118543479a07f7580a8d9a5384"
+    },
+    {
+      "id": "Problem 11.4",
+      "chapter": 11,
+      "number": 4,
+      "pdfPage": 190,
+      "printedPage": 171,
+      "headingLineSha256": "2d1a5bea5d5d17a567f8ac035bd994787505615bb7645293dee8ea386fc3216d"
+    },
+    {
+      "id": "Problem 11.5",
+      "chapter": 11,
+      "number": 5,
+      "pdfPage": 191,
+      "printedPage": 172,
+      "headingLineSha256": "8d057829a25629493ca5120c1c3f57d802094971a40959da4c415e2f9eb89700"
+    },
+    {
+      "id": "Problem 11.6",
+      "chapter": 11,
+      "number": 6,
+      "pdfPage": 191,
+      "printedPage": 172,
+      "headingLineSha256": "ed555bfcc78f4d90780ae8b02bd553b487fbccb564498ec8452a45d93ca9d2c8"
+    },
+    {
+      "id": "Problem 11.7",
+      "chapter": 11,
+      "number": 7,
+      "pdfPage": 191,
+      "printedPage": 172,
+      "headingLineSha256": "8d0552207bc5d1c260bd871b7af668340eb5ead8312dfbcc259f771186cc7046"
+    },
+    {
+      "id": "Problem 11.8",
+      "chapter": 11,
+      "number": 8,
+      "pdfPage": 191,
+      "printedPage": 172,
+      "headingLineSha256": "f7e5926e2715297bb850f39773395af513f60d7fd9ccad3db6f75dcedf9686cd"
+    },
+    {
+      "id": "Problem 11.9",
+      "chapter": 11,
+      "number": 9,
+      "pdfPage": 192,
+      "printedPage": 173,
+      "headingLineSha256": "fbe32c73d9a1c7571baad460da7fb7585815fea651356a79ef83374d37c9def8"
+    },
+    {
+      "id": "Problem 11.10",
+      "chapter": 11,
+      "number": 10,
+      "pdfPage": 192,
+      "printedPage": 173,
+      "headingLineSha256": "429ce6bbc01a2601bae3f62af77faccd45b15115bab2a6a60bb95ddc4cd7cf76"
+    },
+    {
+      "id": "Problem 12.1",
+      "chapter": 12,
+      "number": 1,
+      "pdfPage": 202,
+      "printedPage": 183,
+      "headingLineSha256": "cc3751b1bc56ca1534ed35f0aaee11e24d1f84b763a3e6bf390aab4cd8611302"
+    },
+    {
+      "id": "Problem 12.2",
+      "chapter": 12,
+      "number": 2,
+      "pdfPage": 203,
+      "printedPage": 184,
+      "headingLineSha256": "1db9bd0a5fcf0fc8b2dd48bb961e10c83e0096b2a75f8b6549e68b6735d509b0"
+    },
+    {
+      "id": "Problem 12.3",
+      "chapter": 12,
+      "number": 3,
+      "pdfPage": 203,
+      "printedPage": 184,
+      "headingLineSha256": "07685e02351e230d2bd3bf09389f949b5c677cae32f0be59e92839deaaf9826e"
+    },
+    {
+      "id": "Problem 12.4",
+      "chapter": 12,
+      "number": 4,
+      "pdfPage": 203,
+      "printedPage": 184,
+      "headingLineSha256": "59288b32d2fc64a5c64923852857c0e87eef03cfb308d089a90a7c5df76b53f5"
+    },
+    {
+      "id": "Problem 12.5",
+      "chapter": 12,
+      "number": 5,
+      "pdfPage": 204,
+      "printedPage": 185,
+      "headingLineSha256": "c12ac2e78fb335264d234640f42debda064ee291add0ea1e3f42dfae14a37957"
+    },
+    {
+      "id": "Problem 13.1",
+      "chapter": 13,
+      "number": 1,
+      "pdfPage": 218,
+      "printedPage": 199,
+      "headingLineSha256": "6ed139c49b277eb1fcd4dcfa7550b7cbf1485402f128616e9aa7cf8693a7b2f1"
+    },
+    {
+      "id": "Problem 13.2",
+      "chapter": 13,
+      "number": 2,
+      "pdfPage": 219,
+      "printedPage": 200,
+      "headingLineSha256": "6df573ac540142c0ceb242e8ac76ffa4b2729e7159f8d9ab23620e907e8fe1ab"
+    },
+    {
+      "id": "Problem 13.3",
+      "chapter": 13,
+      "number": 3,
+      "pdfPage": 219,
+      "printedPage": 200,
+      "headingLineSha256": "830874baa50567294740dc93a02475207c5a6cca4e600bfc64d9831c5600f48d"
+    },
+    {
+      "id": "Problem 13.4",
+      "chapter": 13,
+      "number": 4,
+      "pdfPage": 219,
+      "printedPage": 200,
+      "headingLineSha256": "85e5e97b014c44324f0fdf03eb9872c794e947c0c97ff92a731189539bde395f"
+    },
+    {
+      "id": "Problem 13.5",
+      "chapter": 13,
+      "number": 5,
+      "pdfPage": 220,
+      "printedPage": 201,
+      "headingLineSha256": "3760a5f9c328943b34ad903b6335c525cd8511711c8489427ba8721276c34e86"
+    },
+    {
+      "id": "Problem 14.1",
+      "chapter": 14,
+      "number": 1,
+      "pdfPage": 230,
+      "printedPage": 211,
+      "headingLineSha256": "76b9f93863f8202d5ba021f82a4118727169ddbe74f425f42a7e0dcd42cbc2e1"
+    },
+    {
+      "id": "Problem 14.2",
+      "chapter": 14,
+      "number": 2,
+      "pdfPage": 231,
+      "printedPage": 212,
+      "headingLineSha256": "3065cf810c6240d28b38c0ccf1677be87acfaf3809cdbfa766c425d044250590"
+    },
+    {
+      "id": "Problem 15.1",
+      "chapter": 15,
+      "number": 1,
+      "pdfPage": 260,
+      "printedPage": 241,
+      "headingLineSha256": "b206655ea1c50bb7094495d88448ea496fb2cca1000ec2975a1db78934d84b94"
+    },
+    {
+      "id": "Problem 15.2",
+      "chapter": 15,
+      "number": 2,
+      "pdfPage": 261,
+      "printedPage": 242,
+      "headingLineSha256": "09cf7a2be8347177a0d4d060ba9b950d9a8ae4d6e741e35d7a4cf267f6c7613b"
+    },
+    {
+      "id": "Problem 15.3",
+      "chapter": 15,
+      "number": 3,
+      "pdfPage": 261,
+      "printedPage": 242,
+      "headingLineSha256": "19656d828f45c0651e9078fd0af41d57cb213b6b730dd7d24151ade203a5b44a"
+    },
+    {
+      "id": "Problem 15.4",
+      "chapter": 15,
+      "number": 4,
+      "pdfPage": 262,
+      "printedPage": 243,
+      "headingLineSha256": "2947ee77358a1f6e4ac99b1947c918b77ac9d8a59a6ec1f87d7339659589aa31"
+    },
+    {
+      "id": "Problem 15.5",
+      "chapter": 15,
+      "number": 5,
+      "pdfPage": 262,
+      "printedPage": 243,
+      "headingLineSha256": "8126ee82730b0ee1585d1531572124f544d8dd919b0d25614a63f4ded799473d"
+    },
+    {
+      "id": "Problem 15.6",
+      "chapter": 15,
+      "number": 6,
+      "pdfPage": 262,
+      "printedPage": 243,
+      "headingLineSha256": "cae6e5c698e3ce2c1ed4f53ccb7b971cf6832309e180104855bfad62627612ce"
+    },
+    {
+      "id": "Problem 15.7",
+      "chapter": 15,
+      "number": 7,
+      "pdfPage": 262,
+      "printedPage": 243,
+      "headingLineSha256": "fccd45004094088c06d7289bcec2d38f1055e2e8c44880ae33174d3d4d98b0d1"
+    },
+    {
+      "id": "Problem 15.8",
+      "chapter": 15,
+      "number": 8,
+      "pdfPage": 262,
+      "printedPage": 243,
+      "headingLineSha256": "c7ad6fe008c367dc90c9d04900d7ab32b7566c126632aafeff5c84a71ef04366"
+    },
+    {
+      "id": "Problem 15.9",
+      "chapter": 15,
+      "number": 9,
+      "pdfPage": 263,
+      "printedPage": 244,
+      "headingLineSha256": "3c04bd208f912fb8f92ec7b666faa3682c02151cb9e08ee939232020402d2fce"
+    },
+    {
+      "id": "Problem 15.10",
+      "chapter": 15,
+      "number": 10,
+      "pdfPage": 263,
+      "printedPage": 244,
+      "headingLineSha256": "db7623d83b2753ecbba48a255ea30b10e3d80714d42c9524c4cf11789fe03f5e"
+    },
+    {
+      "id": "Problem 15.11",
+      "chapter": 15,
+      "number": 11,
+      "pdfPage": 263,
+      "printedPage": 244,
+      "headingLineSha256": "71e95a3b9b6303a1ed033606a7b1b92f24e21406ee1eaf6be98e157f8f30193c"
+    },
+    {
+      "id": "Problem 15.12",
+      "chapter": 15,
+      "number": 12,
+      "pdfPage": 263,
+      "printedPage": 244,
+      "headingLineSha256": "4a44ff351d3473d1cb64c21af3fd713fc26c104e1f6b604dc85cc3eff3975eec"
+    },
+    {
+      "id": "Problem 15.13",
+      "chapter": 15,
+      "number": 13,
+      "pdfPage": 264,
+      "printedPage": 245,
+      "headingLineSha256": "3c6afbbb9899c59089bcbb2279942919bf9f73ed4c56a27d8a2e80a7aadd8de4"
+    },
+    {
+      "id": "Problem 15.14",
+      "chapter": 15,
+      "number": 14,
+      "pdfPage": 264,
+      "printedPage": 245,
+      "headingLineSha256": "aae0e915dc51864befc27a5808f51fa8fa04af6787fa2fc464f51de494de18b3"
+    },
+    {
+      "id": "Problem 15.15",
+      "chapter": 15,
+      "number": 15,
+      "pdfPage": 264,
+      "printedPage": 245,
+      "headingLineSha256": "bbc39d9914c638ce72f562bbf7422691423db1bde0ca635293aee269efe6a0c4"
+    },
+    {
+      "id": "Problem 15.16",
+      "chapter": 15,
+      "number": 16,
+      "pdfPage": 264,
+      "printedPage": 245,
+      "headingLineSha256": "7b2322dee09379675081f2a1ae6b8d7b837b37b188652d7cc462f20be4615e7a"
+    },
+    {
+      "id": "Problem 15.17",
+      "chapter": 15,
+      "number": 17,
+      "pdfPage": 265,
+      "printedPage": 246,
+      "headingLineSha256": "1747120c0b5eb7753350dc57e65820902b405ef90c41934f9b785efd39e02f71"
+    },
+    {
+      "id": "Problem 15.18",
+      "chapter": 15,
+      "number": 18,
+      "pdfPage": 265,
+      "printedPage": 246,
+      "headingLineSha256": "2aae1e616037d869bbd333f595394acd8f4fadf22983f51ece40d148eaf8e172"
+    },
+    {
+      "id": "Problem 16.1",
+      "chapter": 16,
+      "number": 1,
+      "pdfPage": 294,
+      "printedPage": 275,
+      "headingLineSha256": "ee3767d9f31be018e20b6115b037c9a5bca7d83504025253387cc8f0fc93c1e9"
+    },
+    {
+      "id": "Problem 16.2",
+      "chapter": 16,
+      "number": 2,
+      "pdfPage": 294,
+      "printedPage": 275,
+      "headingLineSha256": "df2cc81ec4d62bb6ebfc59ff5077dc67eb4c542b48950f62df227ef27ca4fdd6"
+    },
+    {
+      "id": "Problem 16.3",
+      "chapter": 16,
+      "number": 3,
+      "pdfPage": 294,
+      "printedPage": 275,
+      "headingLineSha256": "1c30d53188332698f175b0f9a552822920bfb5dce83abc6422713c7ad304a2ae"
+    },
+    {
+      "id": "Problem 16.4",
+      "chapter": 16,
+      "number": 4,
+      "pdfPage": 294,
+      "printedPage": 275,
+      "headingLineSha256": "f0f86fcee8c58e3f3692dd9edd6a90bdaf85bd2296d9a712bac4c9e09ba75217"
+    },
+    {
+      "id": "Problem 16.5",
+      "chapter": 16,
+      "number": 5,
+      "pdfPage": 294,
+      "printedPage": 275,
+      "headingLineSha256": "986aa8639016ee3c216a3425b09a227f26660cc95854174e488fba22e5564a4d"
+    },
+    {
+      "id": "Problem 16.6",
+      "chapter": 16,
+      "number": 6,
+      "pdfPage": 295,
+      "printedPage": 276,
+      "headingLineSha256": "fc0a38a8b919218790130f784c187393687f77811adde9818f3ad050f0ab2e75"
+    },
+    {
+      "id": "Problem 16.7",
+      "chapter": 16,
+      "number": 7,
+      "pdfPage": 295,
+      "printedPage": 276,
+      "headingLineSha256": "5df8b42d3ce69fe903c08aa961287d28f70f5b3f061207bb3e65b00ba5a1947e"
+    },
+    {
+      "id": "Problem 16.8",
+      "chapter": 16,
+      "number": 8,
+      "pdfPage": 296,
+      "printedPage": 277,
+      "headingLineSha256": "3983bb3c1bd8ba91131c6908d054f1a95d831d3d5ac1f5ef4eddf2fb994734cd"
+    },
+    {
+      "id": "Problem 16.9",
+      "chapter": 16,
+      "number": 9,
+      "pdfPage": 296,
+      "printedPage": 277,
+      "headingLineSha256": "9c4b5c9e13789b570eedb34039af5b7fc400fe434ede79d316fc88c16afe22cd"
+    },
+    {
+      "id": "Problem 16.10",
+      "chapter": 16,
+      "number": 10,
+      "pdfPage": 296,
+      "printedPage": 277,
+      "headingLineSha256": "22cac7ccc07677e564fb1335d30eaabee4de96143123c615597664d60a52bdc1"
+    },
+    {
+      "id": "Problem 16.11",
+      "chapter": 16,
+      "number": 11,
+      "pdfPage": 297,
+      "printedPage": 278,
+      "headingLineSha256": "65cfec1846aa84b2e0b1fc53b896de7220fbae84012e8547600e4ae56c1dbb3a"
+    },
+    {
+      "id": "Problem 16.12",
+      "chapter": 16,
+      "number": 12,
+      "pdfPage": 297,
+      "printedPage": 278,
+      "headingLineSha256": "97e67e219dc7281aac925ada9bdb97a007455b4023247a698b01523351d0d284"
+    },
+    {
+      "id": "Problem 17.1",
+      "chapter": 17,
+      "number": 1,
+      "pdfPage": 306,
+      "printedPage": 287,
+      "headingLineSha256": "2aaeedc692307bcbf966c496a386a9724731cc55b977852db2f0426b71306914"
+    },
+    {
+      "id": "Problem 17.2",
+      "chapter": 17,
+      "number": 2,
+      "pdfPage": 307,
+      "printedPage": 288,
+      "headingLineSha256": "0cf674fcdc941c25e11b6d32070c87124177cf0ca86345a230fe0bed8419a61a"
+    },
+    {
+      "id": "Problem 17.3",
+      "chapter": 17,
+      "number": 3,
+      "pdfPage": 307,
+      "printedPage": 288,
+      "headingLineSha256": "15159fd3583f885b20123d99b1ec457878569290dc8477b583216a2d07ed67c7"
+    },
+    {
+      "id": "Problem 18.1",
+      "chapter": 18,
+      "number": 1,
+      "pdfPage": 317,
+      "printedPage": 298,
+      "headingLineSha256": "c07eed966a758a7d4d67062e923f5f6b7fde497b7c2bfb39bdd32ca892167789"
+    },
+    {
+      "id": "Problem 18.2",
+      "chapter": 18,
+      "number": 2,
+      "pdfPage": 317,
+      "printedPage": 298,
+      "headingLineSha256": "7b6c58e325e4d0ba2f7ffea7debffdae489d64d098bc811e7ea1380bbe47b014"
+    },
+    {
+      "id": "Problem 18.3",
+      "chapter": 18,
+      "number": 3,
+      "pdfPage": 317,
+      "printedPage": 298,
+      "headingLineSha256": "2fb683a4b99af349e26a36ae480a0951da319a5907c4e9c8bda44c44b18e9fa0"
+    },
+    {
+      "id": "Problem 18.4",
+      "chapter": 18,
+      "number": 4,
+      "pdfPage": 317,
+      "printedPage": 298,
+      "headingLineSha256": "596d86e9964c06c94e28e15f19a74d6a98c4cf31361f88e28ecdea346c93d200"
+    },
+    {
+      "id": "Problem 18.5",
+      "chapter": 18,
+      "number": 5,
+      "pdfPage": 317,
+      "printedPage": 298,
+      "headingLineSha256": "41de12ccf57779462976ade64079c228e2adf7f89f23d52e3969113bbe6d313f"
+    },
+    {
+      "id": "Problem 18.6",
+      "chapter": 18,
+      "number": 6,
+      "pdfPage": 318,
+      "printedPage": 299,
+      "headingLineSha256": "013d57d27111058805932b9b6b92a5609ae378593c905c9593e444ed1686609a"
+    },
+    {
+      "id": "Problem 18.7",
+      "chapter": 18,
+      "number": 7,
+      "pdfPage": 318,
+      "printedPage": 299,
+      "headingLineSha256": "57170b05c045c94281069be9252424522daa534aa18884e640e065c9e49476f3"
+    },
+    {
+      "id": "Problem 19.1",
+      "chapter": 19,
+      "number": 1,
+      "pdfPage": 329,
+      "printedPage": 310,
+      "headingLineSha256": "5c566b1696b83c09dcaec992d7ea9d96acdb40ab1eeb7116f88e7ee2d379e8cd"
+    },
+    {
+      "id": "Problem 19.2",
+      "chapter": 19,
+      "number": 2,
+      "pdfPage": 329,
+      "printedPage": 310,
+      "headingLineSha256": "804467c1e103bf8b162f4294b7534582522705693eda2cbd84361943ff601e9b"
+    },
+    {
+      "id": "Problem 19.3",
+      "chapter": 19,
+      "number": 3,
+      "pdfPage": 329,
+      "printedPage": 310,
+      "headingLineSha256": "69109e86234cf42b49eba66affdf91a8de4d605c9402b1efd3ae4950661be036"
+    },
+    {
+      "id": "Problem 20.1",
+      "chapter": 20,
+      "number": 1,
+      "pdfPage": 345,
+      "printedPage": 326,
+      "headingLineSha256": "a82d01858b5b773bba8e302778d4a38471911313af43ef642d5c658ffbb51f9e"
+    },
+    {
+      "id": "Problem 20.2",
+      "chapter": 20,
+      "number": 2,
+      "pdfPage": 346,
+      "printedPage": 327,
+      "headingLineSha256": "2072f3cc8d23b8e9a041575437235be4213af3b41b9b7c26338fd5a1b698291f"
+    },
+    {
+      "id": "Problem 20.3",
+      "chapter": 20,
+      "number": 3,
+      "pdfPage": 346,
+      "printedPage": 327,
+      "headingLineSha256": "b3d43baa461aae2af95d1ec4d96b1c27a1da60e587f1eccf1da89aaaa2b66d27"
+    },
+    {
+      "id": "Problem 20.4",
+      "chapter": 20,
+      "number": 4,
+      "pdfPage": 346,
+      "printedPage": 327,
+      "headingLineSha256": "6033575ba5ba390f3945e4fb3e6597c796a38e450c9eb72193647b1aacf06103"
+    },
+    {
+      "id": "Problem 20.5",
+      "chapter": 20,
+      "number": 5,
+      "pdfPage": 347,
+      "printedPage": 328,
+      "headingLineSha256": "a4ee8fe1b734beea44706375918fe60502b90f8cac1ddfaaa09c17d7f509064d"
+    },
+    {
+      "id": "Problem 20.6",
+      "chapter": 20,
+      "number": 6,
+      "pdfPage": 347,
+      "printedPage": 328,
+      "headingLineSha256": "ab53dfcec9d4e898f4282643e3ae3747799f89b59e764b1a64b7ee592eb25843"
+    }
+  ]
+}

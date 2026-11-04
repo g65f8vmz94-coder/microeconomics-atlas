@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';
+import {bundlingTeachingM,bundlingM} from './src/monopoly.mjs';
+const near=(x,y)=>assert.ok(Math.abs(x-y)<1e-8,`${x} != ${y}`);
+for(const [i,price,sep,bundle,n] of [[0,9,20,18,2],[1,11,20,22,2],[2,11,30,22,2],[3,20,30,20,1],[4,11,30,22,2]]){const f=bundlingTeachingM(i);near(f.bundlePrice,price);near(f.separateRevenue,sep);near(f.bundleRevenue,bundle);assert.equal(f.bundleBuy.filter(Boolean).length,n)}
+for(let i=0;i<=400;i++){const f=bundlingTeachingM(i/100);near(f.separateRevenue,f.A.revenue+f.B.revenue);near(f.bundleRevenue,f.bundlePrice*f.bundleBuy.filter(Boolean).length);for(let j=0;j<2;j++){assert.equal(f.separate[j].A,f.values[j][0]>=f.A.p);assert.equal(f.separate[j].B,f.values[j][1]>=f.B.p);assert.equal(f.bundleBuy[j],f.values[j][0]+f.values[j][1]>=f.bundlePrice)}for(let j=0;j<=40;j++){const p=j/2;assert.ok(f.A.revenue+1e-8>=p*f.values.filter(v=>v[0]>=p).length);assert.ok(f.B.revenue+1e-8>=p*f.values.filter(v=>v[1]>=p).length);assert.ok(f.bundle.revenue+1e-8>=p*f.values.filter(v=>v[0]+v[1]>=p).length)}}
+for(const [i,mode] of [[1,'bundle'],[2,'separate']]){const f=bundlingTeachingM(i),old=bundlingM(mode);near(f.A.revenue,old.A.revenue);near(f.B.revenue,old.B.revenue);near(f.bundle.revenue,old.bundle.revenue)}
+const first=bundlingTeachingM(1),second=bundlingTeachingM(2);assert.equal(first.values[0][0]+first.values[0][1],first.bundlePrice);assert.ok(first.bundleBuy[0]);assert.equal(second.values[1][0],second.A.p);assert.ok(second.separate[1].A);
+console.log(JSON.stringify({passed:true,continuousStates:401,priceChecks:401*41*3,tieAtWillingnessBuys:true,endpointMatchesExisting:true}));

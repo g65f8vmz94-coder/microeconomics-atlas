@@ -1,0 +1,8 @@
+dist/
+qa/*
+!qa/.gitkeep
+node_modules/
+.env*
+.DS_Store
+.openai/
+*.zip

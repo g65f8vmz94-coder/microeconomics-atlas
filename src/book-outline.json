@@ -1,0 +1,3162 @@
+{
+  "title": "Models in Microeconomic Theory",
+  "authors": [
+    "Martin J. Osborne",
+    "Ariel Rubinstein"
+  ],
+  "version": "2020.12.21 (h)",
+  "pdfPages": 364,
+  "sha256": "bb095ba979d71b594eaf091fa8c35200602d54180a487aa8ce29e77c64782fd4",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Preferences and utility",
+      "pdfPage": 22,
+      "sections": [
+        {
+          "id": "1.1",
+          "title": "Preferences",
+          "pdfPage": 22,
+          "printedPage": 3,
+          "endPdfPage": 26,
+          "items": [
+            "Definition 1.1",
+            "Definition 1.2",
+            "Definition 1.3",
+            "Definition 1.4",
+            "Definition 1.5"
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "Preference formation",
+          "pdfPage": 26,
+          "printedPage": 7,
+          "endPdfPage": 27,
+          "items": []
+        },
+        {
+          "id": "1.3",
+          "title": "An experiment",
+          "pdfPage": 27,
+          "printedPage": 8,
+          "endPdfPage": 28,
+          "items": [
+            "Definition 1.6",
+            "Example 1.1",
+            "Definition 1.7"
+          ]
+        },
+        {
+          "id": "1.4",
+          "title": "Utility functions",
+          "pdfPage": 28,
+          "printedPage": 9,
+          "endPdfPage": 32,
+          "items": [
+            "Definition 1.6",
+            "Example 1.1",
+            "Definition 1.7",
+            "Lemma 1.1",
+            "Proposition 1.1",
+            "Example 1.2",
+            "Proposition 1.2",
+            "Proposition 1.3"
+          ]
+        }
+      ],
+      "problemsPdfPage": 32,
+      "endPdfPage": 35,
+      "items": [
+        {
+          "id": "Definition 1.1",
+          "label": ": Complete binary relation",
+          "pdfPage": 24,
+          "printedPage": 5
+        },
+        {
+          "id": "Definition 1.2",
+          "label": ": Transitive binary relation",
+          "pdfPage": 24,
+          "printedPage": 5
+        },
+        {
+          "id": "Definition 1.3",
+          "label": ": Preference relation",
+          "pdfPage": 25,
+          "printedPage": 6
+        },
+        {
+          "id": "Definition 1.4",
+          "label": ": Symmetric and antisymmetric binary relations",
+          "pdfPage": 25,
+          "printedPage": 6
+        },
+        {
+          "id": "Definition 1.5",
+          "label": ": Equivalence relation",
+          "pdfPage": 25,
+          "printedPage": 6
+        },
+        {
+          "id": "Definition 1.6",
+          "label": ": Utility function",
+          "pdfPage": 28,
+          "printedPage": 9
+        },
+        {
+          "id": "Example 1.1",
+          "label": "",
+          "pdfPage": 28,
+          "printedPage": 9
+        },
+        {
+          "id": "Definition 1.7",
+          "label": ": Minimal and maximal alternatives",
+          "pdfPage": 28,
+          "printedPage": 9
+        },
+        {
+          "id": "Lemma 1.1",
+          "label": ": Existence of minimal and maximal alternatives",
+          "pdfPage": 29,
+          "printedPage": 10
+        },
+        {
+          "id": "Proposition 1.1",
+          "label": ": Representing preference relation by utility function",
+          "pdfPage": 29,
+          "printedPage": 10
+        },
+        {
+          "id": "Example 1.2",
+          "label": ": Cinema seats",
+          "pdfPage": 30,
+          "printedPage": 11
+        },
+        {
+          "id": "Proposition 1.2",
+          "label": ": Preference relation not represented by utility function",
+          "pdfPage": 31,
+          "printedPage": 12
+        },
+        {
+          "id": "Proposition 1.3",
+          "label": ": Increasing function of utility function is utility function",
+          "pdfPage": 32,
+          "printedPage": 13
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "Choice",
+      "pdfPage": 36,
+      "sections": [
+        {
+          "id": "2.1",
+          "title": "Choice and rational choice",
+          "pdfPage": 36,
+          "printedPage": 17,
+          "endPdfPage": 37,
+          "items": [
+            "Definition 2.1",
+            "Definition 2.2"
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Rationalizing choice",
+          "pdfPage": 37,
+          "printedPage": 18,
+          "endPdfPage": 40,
+          "items": [
+            "Definition 2.2",
+            "Example 2.1",
+            "Example 2.2",
+            "Example 2.3",
+            "Example 2.4",
+            "Definition 2.3",
+            "Proposition 2.1"
+          ]
+        },
+        {
+          "id": "2.3",
+          "title": "Property alpha",
+          "pdfPage": 40,
+          "printedPage": 21,
+          "endPdfPage": 41,
+          "items": [
+            "Example 2.4",
+            "Definition 2.3",
+            "Proposition 2.1",
+            "Proposition 2.2",
+            "Definition 2.4"
+          ]
+        },
+        {
+          "id": "2.4",
+          "title": "Satisficing",
+          "pdfPage": 41,
+          "printedPage": 22,
+          "endPdfPage": 42,
+          "items": [
+            "Proposition 2.2",
+            "Definition 2.4",
+            "Proposition 2.3"
+          ]
+        },
+        {
+          "id": "2.5",
+          "title": "The money pump argument",
+          "pdfPage": 42,
+          "printedPage": 23,
+          "endPdfPage": 43,
+          "items": [
+            "Proposition 2.3"
+          ]
+        },
+        {
+          "id": "2.6",
+          "title": "Evidence of choices inconsistent with rationality",
+          "pdfPage": 43,
+          "printedPage": 24,
+          "endPdfPage": 46,
+          "items": []
+        }
+      ],
+      "problemsPdfPage": 46,
+      "endPdfPage": 49,
+      "items": [
+        {
+          "id": "Definition 2.1",
+          "label": ": Choice problem and choice function",
+          "pdfPage": 36,
+          "printedPage": 17
+        },
+        {
+          "id": "Definition 2.2",
+          "label": ": Rationalizable choice function",
+          "pdfPage": 37,
+          "printedPage": 18
+        },
+        {
+          "id": "Example 2.1",
+          "label": "",
+          "pdfPage": 38,
+          "printedPage": 19
+        },
+        {
+          "id": "Example 2.2",
+          "label": ": The median",
+          "pdfPage": 38,
+          "printedPage": 19
+        },
+        {
+          "id": "Example 2.3",
+          "label": ": Steak and salmon",
+          "pdfPage": 39,
+          "printedPage": 20
+        },
+        {
+          "id": "Example 2.4",
+          "label": ": Partygoer",
+          "pdfPage": 40,
+          "printedPage": 21
+        },
+        {
+          "id": "Definition 2.3",
+          "label": ": Property α",
+          "pdfPage": 40,
+          "printedPage": 21
+        },
+        {
+          "id": "Proposition 2.1",
+          "label": ": Rationalizable choice function satisfies property α",
+          "pdfPage": 40,
+          "printedPage": 21
+        },
+        {
+          "id": "Proposition 2.2",
+          "label": ": Choice function satisfying property α is rationalizable",
+          "pdfPage": 41,
+          "printedPage": 22
+        },
+        {
+          "id": "Definition 2.4",
+          "label": ": Satisficing choice function",
+          "pdfPage": 41,
+          "printedPage": 22
+        },
+        {
+          "id": "Proposition 2.3",
+          "label": ": Satisficing choice function is rationalizable",
+          "pdfPage": 42,
+          "printedPage": 23
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Preferences under uncertainty",
+      "pdfPage": 50,
+      "sections": [
+        {
+          "id": "3.1",
+          "title": "Lotteries",
+          "pdfPage": 50,
+          "printedPage": 31,
+          "endPdfPage": 50,
+          "items": [
+            "Definition 3.1"
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Preferences over lotteries",
+          "pdfPage": 50,
+          "printedPage": 31,
+          "endPdfPage": 54,
+          "items": [
+            "Definition 3.1",
+            "Example 3.1",
+            "Example 3.2",
+            "Example 3.3",
+            "Definition 3.2",
+            "Definition 3.3",
+            "Definition 3.4",
+            "Lemma 3.1"
+          ]
+        },
+        {
+          "id": "3.3",
+          "title": "Expected utility",
+          "pdfPage": 54,
+          "printedPage": 35,
+          "endPdfPage": 57,
+          "items": [
+            "Lemma 3.1",
+            "Definition 3.5",
+            "Proposition 3.1",
+            "Proposition 3.2"
+          ]
+        },
+        {
+          "id": "3.4",
+          "title": "Theory and experiments",
+          "pdfPage": 57,
+          "printedPage": 38,
+          "endPdfPage": 58,
+          "items": []
+        },
+        {
+          "id": "3.5",
+          "title": "Risk aversion",
+          "pdfPage": 58,
+          "printedPage": 39,
+          "endPdfPage": 60,
+          "items": [
+            "Definition 3.6",
+            "Proposition 3.3"
+          ]
+        }
+      ],
+      "problemsPdfPage": 60,
+      "endPdfPage": 63,
+      "items": [
+        {
+          "id": "Definition 3.1",
+          "label": ": Lotteries",
+          "pdfPage": 50,
+          "printedPage": 31
+        },
+        {
+          "id": "Example 3.1",
+          "label": ": A pessimist",
+          "pdfPage": 51,
+          "printedPage": 32
+        },
+        {
+          "id": "Example 3.2",
+          "label": ": Good and bad",
+          "pdfPage": 51,
+          "printedPage": 32
+        },
+        {
+          "id": "Example 3.3",
+          "label": ": Minimizing options",
+          "pdfPage": 52,
+          "printedPage": 33
+        },
+        {
+          "id": "Definition 3.2",
+          "label": ": Continuity",
+          "pdfPage": 52,
+          "printedPage": 33
+        },
+        {
+          "id": "Definition 3.3",
+          "label": ": Compound lottery",
+          "pdfPage": 53,
+          "printedPage": 34
+        },
+        {
+          "id": "Definition 3.4",
+          "label": ": Independence",
+          "pdfPage": 53,
+          "printedPage": 34
+        },
+        {
+          "id": "Lemma 3.1",
+          "label": ": Independence implies monotonicity",
+          "pdfPage": 54,
+          "printedPage": 35
+        },
+        {
+          "id": "Definition 3.5",
+          "label": ": Expected utility",
+          "pdfPage": 55,
+          "printedPage": 36
+        },
+        {
+          "id": "Proposition 3.1",
+          "label": ": Expected utility is continuous and independent",
+          "pdfPage": 55,
+          "printedPage": 36
+        },
+        {
+          "id": "Proposition 3.2",
+          "label": ": Continuity and independence implies expected utility",
+          "pdfPage": 56,
+          "printedPage": 37
+        },
+        {
+          "id": "Definition 3.6",
+          "label": ": Risk aversion and risk neutrality",
+          "pdfPage": 59,
+          "printedPage": 40
+        },
+        {
+          "id": "Proposition 3.3",
+          "label": ": Risk aversion and concavity of Bernoulli function",
+          "pdfPage": 60,
+          "printedPage": 41
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Consumer preferences",
+      "pdfPage": 64,
+      "sections": [
+        {
+          "id": "4.1",
+          "title": "Bundles of goods",
+          "pdfPage": 64,
+          "printedPage": 45,
+          "endPdfPage": 65,
+          "items": [
+            "Definition 4.1",
+            "Example 4.1",
+            "Example 4.2"
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Preferences over bundles",
+          "pdfPage": 65,
+          "printedPage": 46,
+          "endPdfPage": 67,
+          "items": [
+            "Example 4.1",
+            "Example 4.2",
+            "Example 4.3",
+            "Example 4.4",
+            "Example 4.5",
+            "Example 4.6",
+            "Definition 4.2"
+          ]
+        },
+        {
+          "id": "4.3",
+          "title": "Monotonicity",
+          "pdfPage": 67,
+          "printedPage": 48,
+          "endPdfPage": 68,
+          "items": [
+            "Example 4.6",
+            "Definition 4.2",
+            "Definition 4.3",
+            "Definition 4.4"
+          ]
+        },
+        {
+          "id": "4.4",
+          "title": "Continuity",
+          "pdfPage": 68,
+          "printedPage": 49,
+          "endPdfPage": 69,
+          "items": [
+            "Definition 4.3",
+            "Definition 4.4",
+            "Proposition 4.1"
+          ]
+        },
+        {
+          "id": "4.5",
+          "title": "Convexity",
+          "pdfPage": 69,
+          "printedPage": 50,
+          "endPdfPage": 72,
+          "items": [
+            "Proposition 4.1",
+            "Definition 4.5",
+            "Example 4.7",
+            "Proposition 4.2",
+            "Proposition 4.3",
+            "Definition 4.6"
+          ]
+        },
+        {
+          "id": "4.6",
+          "title": "Differentiability",
+          "pdfPage": 72,
+          "printedPage": 53,
+          "endPdfPage": 73,
+          "items": [
+            "Definition 4.6",
+            "Proposition 4.4"
+          ]
+        }
+      ],
+      "problemsPdfPage": 73,
+      "endPdfPage": 75,
+      "items": [
+        {
+          "id": "Definition 4.1",
+          "label": ": Set of alternatives (bundles)",
+          "pdfPage": 64,
+          "printedPage": 45
+        },
+        {
+          "id": "Example 4.1",
+          "label": ": Constant tradeoff",
+          "pdfPage": 65,
+          "printedPage": 46
+        },
+        {
+          "id": "Example 4.2",
+          "label": ": Only good 2 is valued",
+          "pdfPage": 65,
+          "printedPage": 46
+        },
+        {
+          "id": "Example 4.3",
+          "label": ": Minimal amount of good 1 and then good 2",
+          "pdfPage": 66,
+          "printedPage": 47
+        },
+        {
+          "id": "Example 4.4",
+          "label": ": Complementary goods",
+          "pdfPage": 66,
+          "printedPage": 47
+        },
+        {
+          "id": "Example 4.5",
+          "label": ": Ideal bundle",
+          "pdfPage": 66,
+          "printedPage": 47
+        },
+        {
+          "id": "Example 4.6",
+          "label": ": Lexicographic preferences",
+          "pdfPage": 67,
+          "printedPage": 48
+        },
+        {
+          "id": "Definition 4.2",
+          "label": ": Monotone preference relation",
+          "pdfPage": 67,
+          "printedPage": 48
+        },
+        {
+          "id": "Definition 4.3",
+          "label": ": Strongly monotone preference relation",
+          "pdfPage": 68,
+          "printedPage": 49
+        },
+        {
+          "id": "Definition 4.4",
+          "label": ": Continuous preference relation",
+          "pdfPage": 68,
+          "printedPage": 49
+        },
+        {
+          "id": "Proposition 4.1",
+          "label": ": Continuous preference relation and continuous utility",
+          "pdfPage": 69,
+          "printedPage": 50
+        },
+        {
+          "id": "Definition 4.5",
+          "label": ": Convex preference relation",
+          "pdfPage": 70,
+          "printedPage": 51
+        },
+        {
+          "id": "Example 4.7",
+          "label": ": Convexity of lexicographic preferences",
+          "pdfPage": 71,
+          "printedPage": 52
+        },
+        {
+          "id": "Proposition 4.2",
+          "label": ": Characterization of convex preference relation",
+          "pdfPage": 71,
+          "printedPage": 52
+        },
+        {
+          "id": "Proposition 4.3",
+          "label": ": Preferences with concave representation are convex",
+          "pdfPage": 71,
+          "printedPage": 52
+        },
+        {
+          "id": "Definition 4.6",
+          "label": ": Differentiable preference relation",
+          "pdfPage": 72,
+          "printedPage": 53
+        },
+        {
+          "id": "Proposition 4.4",
+          "label": ": Local valuations and partial derivatives",
+          "pdfPage": 73,
+          "printedPage": 54
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "Consumer behavior",
+      "pdfPage": 76,
+      "sections": [
+        {
+          "id": "5.1",
+          "title": "Budget sets",
+          "pdfPage": 76,
+          "printedPage": 57,
+          "endPdfPage": 77,
+          "items": [
+            "Definition 5.1",
+            "Definition 5.2"
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Demand functions",
+          "pdfPage": 77,
+          "printedPage": 58,
+          "endPdfPage": 78,
+          "items": [
+            "Definition 5.2",
+            "Example 5.1",
+            "Example 5.2",
+            "Example 5.3",
+            "Example 5.4"
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Rational consumer",
+          "pdfPage": 78,
+          "printedPage": 59,
+          "endPdfPage": 80,
+          "items": [
+            "Example 5.1",
+            "Example 5.2",
+            "Example 5.3",
+            "Example 5.4",
+            "Definition 5.3",
+            "Proposition 5.1",
+            "Example 5.5",
+            "Example 5.6"
+          ]
+        },
+        {
+          "id": "5.4",
+          "title": "Differentiable preferences",
+          "pdfPage": 80,
+          "printedPage": 61,
+          "endPdfPage": 83,
+          "items": [
+            "Example 5.5",
+            "Example 5.6",
+            "Definition 5.4",
+            "Proposition 5.2",
+            "Example 5.7",
+            "Example 5.8",
+            "Definition 5.5"
+          ]
+        },
+        {
+          "id": "5.5",
+          "title": "Rationalizing a demand function",
+          "pdfPage": 83,
+          "printedPage": 64,
+          "endPdfPage": 87,
+          "items": [
+            "Definition 5.5",
+            "Example 5.9",
+            "Example 5.10",
+            "Example 5.11",
+            "Definition 5.6",
+            "Definition 5.7",
+            "Proposition 5.3",
+            "Definition 5.8"
+          ]
+        },
+        {
+          "id": "5.6",
+          "title": "Properties of demand functions",
+          "pdfPage": 87,
+          "printedPage": 68,
+          "endPdfPage": 90,
+          "items": [
+            "Definition 5.8",
+            "Definition 5.9",
+            "Proposition 5.4",
+            "Proposition 5.5"
+          ]
+        }
+      ],
+      "problemsPdfPage": 90,
+      "endPdfPage": 93,
+      "items": [
+        {
+          "id": "Definition 5.1",
+          "label": ": Budget set",
+          "pdfPage": 76,
+          "printedPage": 57
+        },
+        {
+          "id": "Definition 5.2",
+          "label": ": Demand function",
+          "pdfPage": 77,
+          "printedPage": 58
+        },
+        {
+          "id": "Example 5.1",
+          "label": ": All wealth spent on the cheaper good",
+          "pdfPage": 78,
+          "printedPage": 59
+        },
+        {
+          "id": "Example 5.2",
+          "label": ": Equal amounts of the goods",
+          "pdfPage": 78,
+          "printedPage": 59
+        },
+        {
+          "id": "Example 5.3",
+          "label": ": Half of wealth spent on each good",
+          "pdfPage": 78,
+          "printedPage": 59
+        },
+        {
+          "id": "Example 5.4",
+          "label": ": Purchase one good up to a limit",
+          "pdfPage": 78,
+          "printedPage": 59
+        },
+        {
+          "id": "Definition 5.3",
+          "label": ": Consumer’s problem",
+          "pdfPage": 79,
+          "printedPage": 60
+        },
+        {
+          "id": "Proposition 5.1",
+          "label": ": Solution of consumer’s problem",
+          "pdfPage": 79,
+          "printedPage": 60
+        },
+        {
+          "id": "Example 5.5",
+          "label": ": Complementary goods",
+          "pdfPage": 80,
+          "printedPage": 61
+        },
+        {
+          "id": "Example 5.6",
+          "label": ": Substitutable goods",
+          "pdfPage": 80,
+          "printedPage": 61
+        },
+        {
+          "id": "Definition 5.4",
+          "label": ": Marginal rate of substitution",
+          "pdfPage": 81,
+          "printedPage": 62
+        },
+        {
+          "id": "Proposition 5.2",
+          "label": ": Marginal rate of substitution and price ratio",
+          "pdfPage": 81,
+          "printedPage": 62
+        },
+        {
+          "id": "Example 5.7",
+          "label": "",
+          "pdfPage": 82,
+          "printedPage": 63
+        },
+        {
+          "id": "Example 5.8",
+          "label": "",
+          "pdfPage": 82,
+          "printedPage": 63
+        },
+        {
+          "id": "Definition 5.5",
+          "label": ": Rationalizable demand function",
+          "pdfPage": 83,
+          "printedPage": 64
+        },
+        {
+          "id": "Example 5.9",
+          "label": ": All wealth spent on the cheaper good",
+          "pdfPage": 84,
+          "printedPage": 65
+        },
+        {
+          "id": "Example 5.10",
+          "label": ": Half of wealth spent on each good",
+          "pdfPage": 84,
+          "printedPage": 65
+        },
+        {
+          "id": "Example 5.11",
+          "label": ": All wealth spent on the more expensive good",
+          "pdfPage": 84,
+          "printedPage": 65
+        },
+        {
+          "id": "Definition 5.6",
+          "label": ": Revealed preference",
+          "pdfPage": 85,
+          "printedPage": 66
+        },
+        {
+          "id": "Definition 5.7",
+          "label": ": Weak axiom of revealed preference (WARP)",
+          "pdfPage": 86,
+          "printedPage": 67
+        },
+        {
+          "id": "Proposition 5.3",
+          "label": ": Demand function of rational consumer satisfies WARP",
+          "pdfPage": 86,
+          "printedPage": 67
+        },
+        {
+          "id": "Definition 5.8",
+          "label": ": Regular, cross-demand, and Engel functions",
+          "pdfPage": 87,
+          "printedPage": 68
+        },
+        {
+          "id": "Definition 5.9",
+          "label": ": Normal, regular, and Giffen goods",
+          "pdfPage": 88,
+          "printedPage": 69
+        },
+        {
+          "id": "Proposition 5.4",
+          "label": ": MRS and normal good",
+          "pdfPage": 89,
+          "printedPage": 70
+        },
+        {
+          "id": "Proposition 5.5",
+          "label": ": Slutsky property",
+          "pdfPage": 89,
+          "printedPage": 70
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Producer behavior",
+      "pdfPage": 94,
+      "sections": [
+        {
+          "id": "6.1",
+          "title": "The producer",
+          "pdfPage": 94,
+          "printedPage": 75,
+          "endPdfPage": 96,
+          "items": [
+            "Definition 6.1",
+            "Definition 6.2"
+          ]
+        },
+        {
+          "id": "6.2",
+          "title": "Output maximization",
+          "pdfPage": 96,
+          "printedPage": 77,
+          "endPdfPage": 98,
+          "items": [
+            "Definition 6.2",
+            "Proposition 6.1",
+            "Proposition 6.2",
+            "Definition 6.3",
+            "Proposition 6.3"
+          ]
+        },
+        {
+          "id": "6.3",
+          "title": "Profit maximization",
+          "pdfPage": 98,
+          "printedPage": 79,
+          "endPdfPage": 100,
+          "items": [
+            "Definition 6.3",
+            "Proposition 6.3",
+            "Proposition 6.4",
+            "Definition 6.4"
+          ]
+        },
+        {
+          "id": "6.4",
+          "title": "Cost function",
+          "pdfPage": 100,
+          "printedPage": 81,
+          "endPdfPage": 103,
+          "items": [
+            "Definition 6.4",
+            "Proposition 6.5",
+            "Proposition 6.6",
+            "Proposition 6.7"
+          ]
+        },
+        {
+          "id": "6.5",
+          "title": "Producers' preferences",
+          "pdfPage": 103,
+          "printedPage": 84,
+          "endPdfPage": 104,
+          "items": [
+            "Proposition 6.7"
+          ]
+        }
+      ],
+      "problemsPdfPage": 104,
+      "endPdfPage": 107,
+      "items": [
+        {
+          "id": "Definition 6.1",
+          "label": ": Production function",
+          "pdfPage": 95,
+          "printedPage": 76
+        },
+        {
+          "id": "Definition 6.2",
+          "label": ": Output-maximizing producer",
+          "pdfPage": 96,
+          "printedPage": 77
+        },
+        {
+          "id": "Proposition 6.1",
+          "label": ": Optimal input for output-maximizing producer",
+          "pdfPage": 97,
+          "printedPage": 78
+        },
+        {
+          "id": "Proposition 6.2",
+          "label": ": Comparative statics for output-maximizing producer",
+          "pdfPage": 97,
+          "printedPage": 78
+        },
+        {
+          "id": "Definition 6.3",
+          "label": ": Profit-maxmizing producer",
+          "pdfPage": 98,
+          "printedPage": 79
+        },
+        {
+          "id": "Proposition 6.3",
+          "label": ": Optimal input for profit-maximizing producer",
+          "pdfPage": 98,
+          "printedPage": 79
+        },
+        {
+          "id": "Proposition 6.4",
+          "label": ": Comparative statics for profit-maximizing producer",
+          "pdfPage": 99,
+          "printedPage": 80
+        },
+        {
+          "id": "Definition 6.4",
+          "label": ": Cost function",
+          "pdfPage": 100,
+          "printedPage": 81
+        },
+        {
+          "id": "Proposition 6.5",
+          "label": ": Properties of the average and marginal cost functions",
+          "pdfPage": 101,
+          "printedPage": 82
+        },
+        {
+          "id": "Proposition 6.6",
+          "label": ": Output chosen by output-maximizing producer",
+          "pdfPage": 102,
+          "printedPage": 83
+        },
+        {
+          "id": "Proposition 6.7",
+          "label": ": Output chosen by profit-maximizing producer",
+          "pdfPage": 103,
+          "printedPage": 84
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "title": "Monopoly",
+      "pdfPage": 108,
+      "sections": [
+        {
+          "id": "7.1",
+          "title": "Basic model",
+          "pdfPage": 108,
+          "printedPage": 89,
+          "endPdfPage": 109,
+          "items": [
+            "Definition 7.1",
+            "Definition 7.2",
+            "Definition 7.3"
+          ]
+        },
+        {
+          "id": "7.2",
+          "title": "Uniform-price monopolistic market",
+          "pdfPage": 109,
+          "printedPage": 90,
+          "endPdfPage": 113,
+          "items": [
+            "Definition 7.2",
+            "Definition 7.3",
+            "Example 7.1",
+            "Proposition 7.1",
+            "Definition 7.4"
+          ]
+        },
+        {
+          "id": "7.3",
+          "title": "Discriminatory monopoly",
+          "pdfPage": 113,
+          "printedPage": 94,
+          "endPdfPage": 115,
+          "items": [
+            "Definition 7.4",
+            "Proposition 7.2"
+          ]
+        },
+        {
+          "id": "7.4",
+          "title": "Implicit discrimination",
+          "pdfPage": 115,
+          "printedPage": 96,
+          "endPdfPage": 118,
+          "items": [
+            "Definition 7.5",
+            "Proposition 7.3"
+          ]
+        }
+      ],
+      "problemsPdfPage": 118,
+      "endPdfPage": 123,
+      "items": [
+        {
+          "id": "Definition 7.1",
+          "label": ": Monopolistic market",
+          "pdfPage": 108,
+          "printedPage": 89
+        },
+        {
+          "id": "Definition 7.2",
+          "label": ": Uniform-price monopolistic market",
+          "pdfPage": 109,
+          "printedPage": 90
+        },
+        {
+          "id": "Definition 7.3",
+          "label": ": Marginal revenue",
+          "pdfPage": 109,
+          "printedPage": 90
+        },
+        {
+          "id": "Example 7.1",
+          "label": ": Monopoly with marginal revenue that is not decreasing",
+          "pdfPage": 110,
+          "printedPage": 91
+        },
+        {
+          "id": "Proposition 7.1",
+          "label": ": Uniform-price profit-maximizing monopolist",
+          "pdfPage": 110,
+          "printedPage": 91
+        },
+        {
+          "id": "Definition 7.4",
+          "label": ": Discriminatory monopolistic market",
+          "pdfPage": 113,
+          "printedPage": 94
+        },
+        {
+          "id": "Proposition 7.2",
+          "label": ": Discriminatory profit-maximizing monopolist",
+          "pdfPage": 114,
+          "printedPage": 95
+        },
+        {
+          "id": "Definition 7.5",
+          "label": ": Monopolistic market with a menu",
+          "pdfPage": 116,
+          "printedPage": 97
+        },
+        {
+          "id": "Proposition 7.3",
+          "label": ": Monopolistic market with a menu",
+          "pdfPage": 117,
+          "printedPage": 98
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "title": "A jungle",
+      "pdfPage": 124,
+      "sections": [
+        {
+          "id": "8.1",
+          "title": "Model",
+          "pdfPage": 124,
+          "printedPage": 105,
+          "endPdfPage": 127,
+          "items": [
+            "Definition 8.1",
+            "Definition 8.2",
+            "Example 8.1",
+            "Definition 8.3",
+            "Definition 8.4",
+            "Example 8.2"
+          ]
+        },
+        {
+          "id": "8.2",
+          "title": "Equilibrium",
+          "pdfPage": 127,
+          "printedPage": 108,
+          "endPdfPage": 129,
+          "items": [
+            "Definition 8.4",
+            "Example 8.2",
+            "Proposition 8.1",
+            "Proposition 8.2"
+          ]
+        },
+        {
+          "id": "8.3",
+          "title": "Pareto stability",
+          "pdfPage": 129,
+          "printedPage": 110,
+          "endPdfPage": 131,
+          "items": [
+            "Proposition 8.2",
+            "Definition 8.5",
+            "Proposition 8.3"
+          ]
+        },
+        {
+          "id": "8.4",
+          "title": "Equilibrium and Pareto stability in a jungle",
+          "pdfPage": 131,
+          "printedPage": 112,
+          "endPdfPage": 132,
+          "items": [
+            "Proposition 8.3",
+            "Proposition 8.4",
+            "Lemma 8.1"
+          ]
+        },
+        {
+          "id": "8.5",
+          "title": "Which allocations can be obtained by a social planner who controls the power relation?",
+          "pdfPage": 132,
+          "printedPage": 113,
+          "endPdfPage": 135,
+          "items": [
+            "Proposition 8.4",
+            "Lemma 8.1",
+            "Proposition 8.5",
+            "Definition 8.6",
+            "Definition 8.7"
+          ]
+        },
+        {
+          "id": "8.6",
+          "title": "Externalities",
+          "pdfPage": 135,
+          "printedPage": 116,
+          "endPdfPage": 137,
+          "items": [
+            "Definition 8.6",
+            "Definition 8.7",
+            "Definition 8.8",
+            "Example 8.3",
+            "Example 8.4"
+          ]
+        }
+      ],
+      "problemsPdfPage": 137,
+      "endPdfPage": 139,
+      "items": [
+        {
+          "id": "Definition 8.1",
+          "label": ": Society",
+          "pdfPage": 124,
+          "printedPage": 105
+        },
+        {
+          "id": "Definition 8.2",
+          "label": ": Assignment and allocation",
+          "pdfPage": 125,
+          "printedPage": 106
+        },
+        {
+          "id": "Example 8.1",
+          "label": "",
+          "pdfPage": 125,
+          "printedPage": 106
+        },
+        {
+          "id": "Definition 8.3",
+          "label": ": Jungle",
+          "pdfPage": 126,
+          "printedPage": 107
+        },
+        {
+          "id": "Definition 8.4",
+          "label": ": Equilibrium",
+          "pdfPage": 127,
+          "printedPage": 108
+        },
+        {
+          "id": "Example 8.2",
+          "label": "",
+          "pdfPage": 127,
+          "printedPage": 108
+        },
+        {
+          "id": "Proposition 8.1",
+          "label": ": Every jungle has an equilibrium",
+          "pdfPage": 128,
+          "printedPage": 109
+        },
+        {
+          "id": "Proposition 8.2",
+          "label": ": Every jungle has a unique equilibrium",
+          "pdfPage": 129,
+          "printedPage": 110
+        },
+        {
+          "id": "Definition 8.5",
+          "label": ": Pareto stability",
+          "pdfPage": 130,
+          "printedPage": 111
+        },
+        {
+          "id": "Proposition 8.3",
+          "label": ": Serial dictatorship allocation is Pareto stable",
+          "pdfPage": 131,
+          "printedPage": 112
+        },
+        {
+          "id": "Proposition 8.4",
+          "label": ": Equilibrium of every jungle is Pareto stable",
+          "pdfPage": 132,
+          "printedPage": 113
+        },
+        {
+          "id": "Lemma 8.1",
+          "label": ": Pareto stable allocation and favorite houses",
+          "pdfPage": 132,
+          "printedPage": 113
+        },
+        {
+          "id": "Proposition 8.5",
+          "label": ": Pareto stable allocation is equilibrium for some power",
+          "pdfPage": 133,
+          "printedPage": 114
+        },
+        {
+          "id": "Definition 8.6",
+          "label": ": Society with externalities",
+          "pdfPage": 135,
+          "printedPage": 116
+        },
+        {
+          "id": "Definition 8.7",
+          "label": ": Jungle with externalities",
+          "pdfPage": 135,
+          "printedPage": 116
+        },
+        {
+          "id": "Definition 8.8",
+          "label": ": Equilibrium of jungle with externalities",
+          "pdfPage": 136,
+          "printedPage": 117
+        },
+        {
+          "id": "Example 8.3",
+          "label": ": Nonexistence of equilibrium in jungle with externalities",
+          "pdfPage": 136,
+          "printedPage": 117
+        },
+        {
+          "id": "Example 8.4",
+          "label": ": Equilibria not Pareto stable in jungle with externalities",
+          "pdfPage": 136,
+          "printedPage": 117
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "A market",
+      "pdfPage": 140,
+      "sections": [
+        {
+          "id": "9.1",
+          "title": "Model",
+          "pdfPage": 140,
+          "printedPage": 121,
+          "endPdfPage": 146,
+          "items": [
+            "Definition 9.1",
+            "Example 9.1",
+            "Example 9.2",
+            "Definition 9.2",
+            "Example 9.3",
+            "Example 9.4",
+            "Example 9.5",
+            "Definition 9.3",
+            "Lemma 9.1",
+            "Proposition 9.1",
+            "Definition 9.4"
+          ]
+        },
+        {
+          "id": "9.2",
+          "title": "Existence and construction of a market equilibrium",
+          "pdfPage": 146,
+          "printedPage": 127,
+          "endPdfPage": 150,
+          "items": [
+            "Definition 9.4",
+            "Proposition 9.2",
+            "Example 9.6",
+            "Example 9.7",
+            "Proposition 9.3"
+          ]
+        },
+        {
+          "id": "9.3",
+          "title": "Equilibrium and Pareto stability",
+          "pdfPage": 150,
+          "printedPage": 131,
+          "endPdfPage": 151,
+          "items": [
+            "Proposition 9.3",
+            "Proposition 9.4"
+          ]
+        },
+        {
+          "id": "9.4",
+          "title": "Uniqueness of market equilibrium",
+          "pdfPage": 151,
+          "printedPage": 132,
+          "endPdfPage": 153,
+          "items": [
+            "Proposition 9.4",
+            "Proposition 9.5"
+          ]
+        }
+      ],
+      "problemsPdfPage": 153,
+      "endPdfPage": 155,
+      "items": [
+        {
+          "id": "Definition 9.1",
+          "label": ": Market",
+          "pdfPage": 140,
+          "printedPage": 121
+        },
+        {
+          "id": "Example 9.1",
+          "label": "",
+          "pdfPage": 140,
+          "printedPage": 121
+        },
+        {
+          "id": "Example 9.2",
+          "label": "",
+          "pdfPage": 141,
+          "printedPage": 122
+        },
+        {
+          "id": "Definition 9.2",
+          "label": ": Equilibrium of market",
+          "pdfPage": 142,
+          "printedPage": 123
+        },
+        {
+          "id": "Example 9.3",
+          "label": "",
+          "pdfPage": 143,
+          "printedPage": 124
+        },
+        {
+          "id": "Example 9.4",
+          "label": ": Market with common preferences",
+          "pdfPage": 143,
+          "printedPage": 124
+        },
+        {
+          "id": "Example 9.5",
+          "label": ": Market in which individuals have different favorite houses",
+          "pdfPage": 143,
+          "printedPage": 124
+        },
+        {
+          "id": "Definition 9.3",
+          "label": ": Trading cycle and trading partition",
+          "pdfPage": 144,
+          "printedPage": 125
+        },
+        {
+          "id": "Lemma 9.1",
+          "label": ": Uniqueness of transforming trading partition",
+          "pdfPage": 145,
+          "printedPage": 126
+        },
+        {
+          "id": "Proposition 9.1",
+          "label": ": Transforming initial allocation to equilibrium by trade",
+          "pdfPage": 145,
+          "printedPage": 126
+        },
+        {
+          "id": "Definition 9.4",
+          "label": ": Top trading cycle",
+          "pdfPage": 146,
+          "printedPage": 127
+        },
+        {
+          "id": "Proposition 9.2",
+          "label": ": Existence of a market equilibrium",
+          "pdfPage": 148,
+          "printedPage": 129
+        },
+        {
+          "id": "Example 9.6",
+          "label": "",
+          "pdfPage": 148,
+          "printedPage": 129
+        },
+        {
+          "id": "Example 9.7",
+          "label": "",
+          "pdfPage": 149,
+          "printedPage": 130
+        },
+        {
+          "id": "Proposition 9.3",
+          "label": ": Pareto stability of equilibrium allocation",
+          "pdfPage": 150,
+          "printedPage": 131
+        },
+        {
+          "id": "Proposition 9.4",
+          "label": ": No trade from a Pareto stable allocation",
+          "pdfPage": 151,
+          "printedPage": 132
+        },
+        {
+          "id": "Proposition 9.5",
+          "label": ": Uniqueness of equilibrium",
+          "pdfPage": 152,
+          "printedPage": 133
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "An exchange economy",
+      "pdfPage": 156,
+      "sections": [
+        {
+          "id": "10.1",
+          "title": "Model",
+          "pdfPage": 156,
+          "printedPage": 137,
+          "endPdfPage": 158,
+          "items": [
+            "Definition 10.1",
+            "Definition 10.2",
+            "Definition 10.3"
+          ]
+        },
+        {
+          "id": "10.2",
+          "title": "Competitive equilibrium",
+          "pdfPage": 158,
+          "printedPage": 139,
+          "endPdfPage": 163,
+          "items": [
+            "Definition 10.3",
+            "Definition 10.4",
+            "Example 10.1",
+            "Example 10.2",
+            "Proposition 10.1",
+            "Example 10.3",
+            "Proposition 10.2"
+          ]
+        },
+        {
+          "id": "10.3",
+          "title": "Existence of a competitive equilibrium",
+          "pdfPage": 163,
+          "printedPage": 144,
+          "endPdfPage": 164,
+          "items": [
+            "Example 10.3",
+            "Proposition 10.2"
+          ]
+        },
+        {
+          "id": "10.4",
+          "title": "Reopening trade",
+          "pdfPage": 164,
+          "printedPage": 145,
+          "endPdfPage": 165,
+          "items": [
+            "Proposition 10.3",
+            "Proposition 10.4"
+          ]
+        },
+        {
+          "id": "10.5",
+          "title": "Equilibrium and Pareto stability",
+          "pdfPage": 165,
+          "printedPage": 146,
+          "endPdfPage": 167,
+          "items": [
+            "Proposition 10.3",
+            "Proposition 10.4",
+            "Definition 10.5",
+            "Example 10.4"
+          ]
+        },
+        {
+          "id": "10.6",
+          "title": "The core",
+          "pdfPage": 167,
+          "printedPage": 148,
+          "endPdfPage": 168,
+          "items": [
+            "Definition 10.5",
+            "Example 10.4",
+            "Proposition 10.5",
+            "Example 10.5"
+          ]
+        },
+        {
+          "id": "10.7",
+          "title": "Competitive equilibrium based on demand functions",
+          "pdfPage": 168,
+          "printedPage": 149,
+          "endPdfPage": 169,
+          "items": [
+            "Proposition 10.5",
+            "Example 10.5",
+            "Example 10.6"
+          ]
+        },
+        {
+          "id": "10.8",
+          "title": "Manipulability",
+          "pdfPage": 169,
+          "printedPage": 150,
+          "endPdfPage": 169,
+          "items": [
+            "Example 10.6"
+          ]
+        },
+        {
+          "id": "10.9",
+          "title": "Edgeworth box",
+          "pdfPage": 169,
+          "printedPage": 150,
+          "endPdfPage": 171,
+          "items": [
+            "Example 10.6"
+          ]
+        }
+      ],
+      "problemsPdfPage": 171,
+      "endPdfPage": 175,
+      "items": [
+        {
+          "id": "Definition 10.1",
+          "label": ": Exchange economy",
+          "pdfPage": 156,
+          "printedPage": 137
+        },
+        {
+          "id": "Definition 10.2",
+          "label": ": Price system and budget set",
+          "pdfPage": 157,
+          "printedPage": 138
+        },
+        {
+          "id": "Definition 10.3",
+          "label": ": Assignment and allocation",
+          "pdfPage": 158,
+          "printedPage": 139
+        },
+        {
+          "id": "Definition 10.4",
+          "label": ": Competitive equilibrium of exchange economy",
+          "pdfPage": 159,
+          "printedPage": 140
+        },
+        {
+          "id": "Example 10.1",
+          "label": ": Competitive equilibrium with substitutable goods",
+          "pdfPage": 160,
+          "printedPage": 141
+        },
+        {
+          "id": "Example 10.2",
+          "label": ": Competitive equilibrium with complementary goods",
+          "pdfPage": 161,
+          "printedPage": 142
+        },
+        {
+          "id": "Proposition 10.1",
+          "label": ": Property of assignment of bundles on budget lines",
+          "pdfPage": 162,
+          "printedPage": 143
+        },
+        {
+          "id": "Example 10.3",
+          "label": "",
+          "pdfPage": 163,
+          "printedPage": 144
+        },
+        {
+          "id": "Proposition 10.2",
+          "label": ": Existence of competitive equilibrium",
+          "pdfPage": 163,
+          "printedPage": 144
+        },
+        {
+          "id": "Proposition 10.3",
+          "label": ": No trade from competitive equilibrium",
+          "pdfPage": 165,
+          "printedPage": 146
+        },
+        {
+          "id": "Proposition 10.4",
+          "label": ": Pareto stability of competitive equilibrium allocation",
+          "pdfPage": 165,
+          "printedPage": 146
+        },
+        {
+          "id": "Definition 10.5",
+          "label": ": Core",
+          "pdfPage": 167,
+          "printedPage": 148
+        },
+        {
+          "id": "Example 10.4",
+          "label": ": Pareto stable allocation not in core",
+          "pdfPage": 167,
+          "printedPage": 148
+        },
+        {
+          "id": "Proposition 10.5",
+          "label": ": Competitive equilibrium is in core",
+          "pdfPage": 168,
+          "printedPage": 149
+        },
+        {
+          "id": "Example 10.5",
+          "label": ": Competitive equilibrium based on demand functions",
+          "pdfPage": 168,
+          "printedPage": 149
+        },
+        {
+          "id": "Example 10.6",
+          "label": ": Manipulability of competitive equilibrium",
+          "pdfPage": 169,
+          "printedPage": 150
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "title": "Variants of an exchange economy",
+      "pdfPage": 176,
+      "sections": [
+        {
+          "id": "11.1",
+          "title": "Market with indivisible good and money",
+          "pdfPage": 176,
+          "printedPage": 157,
+          "endPdfPage": 183,
+          "items": [
+            "Definition 11.1",
+            "Definition 11.2",
+            "Example 11.1",
+            "Proposition 11.1",
+            "Proposition 11.2",
+            "Proposition 11.3"
+          ]
+        },
+        {
+          "id": "11.2",
+          "title": "Exchange economy with uncertainty",
+          "pdfPage": 183,
+          "printedPage": 164,
+          "endPdfPage": 190,
+          "items": [
+            "Definition 11.3",
+            "Definition 11.4",
+            "Proposition 11.4",
+            "Proposition 11.5",
+            "Proposition 11.6",
+            "Example 11.2"
+          ]
+        }
+      ],
+      "problemsPdfPage": 190,
+      "endPdfPage": 193,
+      "items": [
+        {
+          "id": "Definition 11.1",
+          "label": ": Exchange economy with indivisible good and money",
+          "pdfPage": 177,
+          "printedPage": 158
+        },
+        {
+          "id": "Definition 11.2",
+          "label": ": Competitive equilibrium of exchange economy with",
+          "pdfPage": 178,
+          "printedPage": 159
+        },
+        {
+          "id": "Example 11.1",
+          "label": "",
+          "pdfPage": 179,
+          "printedPage": 160
+        },
+        {
+          "id": "Proposition 11.1",
+          "label": ": Characterization of competitive equilibrium",
+          "pdfPage": 179,
+          "printedPage": 160
+        },
+        {
+          "id": "Proposition 11.2",
+          "label": ": Pareto stable allocations",
+          "pdfPage": 181,
+          "printedPage": 162
+        },
+        {
+          "id": "Proposition 11.3",
+          "label": ": Core and competitive equilibrium",
+          "pdfPage": 182,
+          "printedPage": 163
+        },
+        {
+          "id": "Definition 11.3",
+          "label": ": Exchange economy with uncertainty",
+          "pdfPage": 184,
+          "printedPage": 165
+        },
+        {
+          "id": "Definition 11.4",
+          "label": ": Competitive equilibrium of economy with uncertainty",
+          "pdfPage": 185,
+          "printedPage": 166
+        },
+        {
+          "id": "Proposition 11.4",
+          "label": ": Competitive equilibrium of economy with uncertainty",
+          "pdfPage": 185,
+          "printedPage": 166
+        },
+        {
+          "id": "Proposition 11.5",
+          "label": ": Competitive equilibrium of economy with uncertainty",
+          "pdfPage": 186,
+          "printedPage": 167
+        },
+        {
+          "id": "Proposition 11.6",
+          "label": ": Competitive equilibrium in market with insurer",
+          "pdfPage": 187,
+          "printedPage": 168
+        },
+        {
+          "id": "Example 11.2",
+          "label": ": Exchange economy with uncertainty and heterogeneous",
+          "pdfPage": 189,
+          "printedPage": 170
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "title": "A market with consumers and producers",
+      "pdfPage": 194,
+      "sections": [
+        {
+          "id": "12.1",
+          "title": "Production economy",
+          "pdfPage": 194,
+          "printedPage": 175,
+          "endPdfPage": 199,
+          "items": [
+            "Definition 12.1",
+            "Definition 12.2",
+            "Definition 12.3",
+            "Definition 12.4",
+            "Definition 12.5",
+            "Proposition 12.1",
+            "Definition 12.6"
+          ]
+        },
+        {
+          "id": "12.2",
+          "title": "An economy with capital and labor",
+          "pdfPage": 199,
+          "printedPage": 180,
+          "endPdfPage": 202,
+          "items": [
+            "Definition 12.6",
+            "Definition 12.7",
+            "Definition 12.8",
+            "Definition 12.9",
+            "Proposition 12.2"
+          ]
+        }
+      ],
+      "problemsPdfPage": 202,
+      "endPdfPage": 205,
+      "items": [
+        {
+          "id": "Definition 12.1",
+          "label": ": Technology",
+          "pdfPage": 195,
+          "printedPage": 176
+        },
+        {
+          "id": "Definition 12.2",
+          "label": ": Production economy",
+          "pdfPage": 196,
+          "printedPage": 177
+        },
+        {
+          "id": "Definition 12.3",
+          "label": ": Consumption-production plan",
+          "pdfPage": 196,
+          "printedPage": 177
+        },
+        {
+          "id": "Definition 12.4",
+          "label": ": Competitive equilibrium of production economy",
+          "pdfPage": 197,
+          "printedPage": 178
+        },
+        {
+          "id": "Definition 12.5",
+          "label": ": Pareto stable consumption-production plan",
+          "pdfPage": 197,
+          "printedPage": 178
+        },
+        {
+          "id": "Proposition 12.1",
+          "label": ": Pareto stability of competitive equilibrium",
+          "pdfPage": 198,
+          "printedPage": 179
+        },
+        {
+          "id": "Definition 12.6",
+          "label": ": Capitalist-worker economy",
+          "pdfPage": 199,
+          "printedPage": 180
+        },
+        {
+          "id": "Definition 12.7",
+          "label": ": Consumption-production plan",
+          "pdfPage": 200,
+          "printedPage": 181
+        },
+        {
+          "id": "Definition 12.8",
+          "label": ": Pareto stability",
+          "pdfPage": 201,
+          "printedPage": 182
+        },
+        {
+          "id": "Definition 12.9",
+          "label": ": Competitive equilibrium of capitalist-worker economy",
+          "pdfPage": 201,
+          "printedPage": 182
+        },
+        {
+          "id": "Proposition 12.2",
+          "label": ": Pareto stability of competitive equilibrium",
+          "pdfPage": 201,
+          "printedPage": 182
+        }
+      ]
+    },
+    {
+      "chapter": 13,
+      "title": "Equilibrium with prices and expectations",
+      "pdfPage": 206,
+      "sections": [
+        {
+          "id": "13.1",
+          "title": "Distributing customers among bank branches",
+          "pdfPage": 206,
+          "printedPage": 187,
+          "endPdfPage": 211,
+          "items": [
+            "Definition 13.1",
+            "Definition 13.2",
+            "Lemma 13.1",
+            "Lemma 13.2",
+            "Proposition 13.1",
+            "Definition 13.3",
+            "Proposition 13.2"
+          ]
+        },
+        {
+          "id": "13.2",
+          "title": "Asymmetric information and adverse selection",
+          "pdfPage": 211,
+          "printedPage": 192,
+          "endPdfPage": 215,
+          "items": [
+            "Definition 13.3",
+            "Proposition 13.2",
+            "Definition 13.4",
+            "Definition 13.5",
+            "Proposition 13.3",
+            "Definition 13.6"
+          ]
+        },
+        {
+          "id": "13.3",
+          "title": "A fishing economy",
+          "pdfPage": 215,
+          "printedPage": 196,
+          "endPdfPage": 218,
+          "items": [
+            "Definition 13.6",
+            "Definition 13.7",
+            "Proposition 13.4"
+          ]
+        }
+      ],
+      "problemsPdfPage": 218,
+      "endPdfPage": 221,
+      "items": [
+        {
+          "id": "Definition 13.1",
+          "label": ": Service economy",
+          "pdfPage": 207,
+          "printedPage": 188
+        },
+        {
+          "id": "Definition 13.2",
+          "label": ": Equilibrium of service economy",
+          "pdfPage": 208,
+          "printedPage": 189
+        },
+        {
+          "id": "Lemma 13.1",
+          "label": "",
+          "pdfPage": 209,
+          "printedPage": 190
+        },
+        {
+          "id": "Lemma 13.2",
+          "label": "",
+          "pdfPage": 209,
+          "printedPage": 190
+        },
+        {
+          "id": "Proposition 13.1",
+          "label": ": Equilibrium of service economy",
+          "pdfPage": 210,
+          "printedPage": 191
+        },
+        {
+          "id": "Definition 13.3",
+          "label": ": Pareto stability",
+          "pdfPage": 211,
+          "printedPage": 192
+        },
+        {
+          "id": "Proposition 13.2",
+          "label": ": Pareto stability of equilibrium of service economy",
+          "pdfPage": 211,
+          "printedPage": 192
+        },
+        {
+          "id": "Definition 13.4",
+          "label": ": Second-hand car market",
+          "pdfPage": 212,
+          "printedPage": 193
+        },
+        {
+          "id": "Definition 13.5",
+          "label": ": Equilibrium of second-hand car market",
+          "pdfPage": 213,
+          "printedPage": 194
+        },
+        {
+          "id": "Proposition 13.3",
+          "label": ": Equilibrium of second-hand car market",
+          "pdfPage": 214,
+          "printedPage": 195
+        },
+        {
+          "id": "Definition 13.6",
+          "label": ": Fishing economy",
+          "pdfPage": 215,
+          "printedPage": 196
+        },
+        {
+          "id": "Definition 13.7",
+          "label": ": Competitive equilibrium of fishing economy",
+          "pdfPage": 216,
+          "printedPage": 197
+        },
+        {
+          "id": "Proposition 13.4",
+          "label": ": Competitive equilibrium of fishing economy",
+          "pdfPage": 217,
+          "printedPage": 198
+        }
+      ]
+    },
+    {
+      "chapter": 14,
+      "title": "A market with asymmetric information",
+      "pdfPage": 222,
+      "sections": [
+        {
+          "id": "14.1",
+          "title": "Introductory model",
+          "pdfPage": 222,
+          "printedPage": 203,
+          "endPdfPage": 223,
+          "items": []
+        },
+        {
+          "id": "14.2",
+          "title": "Labor market with education",
+          "pdfPage": 223,
+          "printedPage": 204,
+          "endPdfPage": 231,
+          "items": [
+            "Definition 14.1",
+            "Definition 14.2",
+            "Definition 14.3",
+            "Definition 14.4",
+            "Proposition 14.1"
+          ]
+        }
+      ],
+      "problemsPdfPage": 230,
+      "endPdfPage": 235,
+      "items": [
+        {
+          "id": "Definition 14.1",
+          "label": ": Labor market with asymmetric information",
+          "pdfPage": 224,
+          "printedPage": 205
+        },
+        {
+          "id": "Definition 14.2",
+          "label": ": Worker’s preferences",
+          "pdfPage": 224,
+          "printedPage": 205
+        },
+        {
+          "id": "Definition 14.3",
+          "label": ": Employer’s payoff",
+          "pdfPage": 226,
+          "printedPage": 207
+        },
+        {
+          "id": "Definition 14.4",
+          "label": ": Equilibrium of labor market",
+          "pdfPage": 226,
+          "printedPage": 207
+        },
+        {
+          "id": "Proposition 14.1",
+          "label": ": Characterization of equilibrium of labor market",
+          "pdfPage": 227,
+          "printedPage": 208
+        }
+      ]
+    },
+    {
+      "chapter": 15,
+      "title": "Strategic games",
+      "pdfPage": 236,
+      "sections": [
+        {
+          "id": "15.1",
+          "title": "Strategic games and Nash equilibrium",
+          "pdfPage": 236,
+          "printedPage": 217,
+          "endPdfPage": 237,
+          "items": [
+            "Definition 15.1",
+            "Definition 15.2",
+            "Definition 15.3"
+          ]
+        },
+        {
+          "id": "15.2",
+          "title": "Basic examples",
+          "pdfPage": 237,
+          "printedPage": 218,
+          "endPdfPage": 242,
+          "items": [
+            "Example 15.1",
+            "Example 15.2",
+            "Definition 15.4",
+            "Example 15.3",
+            "Example 15.4",
+            "Example 15.5"
+          ]
+        },
+        {
+          "id": "15.3",
+          "title": "Economic examples",
+          "pdfPage": 242,
+          "printedPage": 223,
+          "endPdfPage": 248,
+          "items": [
+            "Example 15.6",
+            "Example 15.7",
+            "Example 15.8",
+            "Example 15.9",
+            "Example 15.10",
+            "Example 15.11"
+          ]
+        },
+        {
+          "id": "15.4",
+          "title": "Existence of Nash equilibrium",
+          "pdfPage": 248,
+          "printedPage": 229,
+          "endPdfPage": 251,
+          "items": [
+            "Proposition 15.1",
+            "Example 15.12",
+            "Proposition 15.2"
+          ]
+        },
+        {
+          "id": "15.5",
+          "title": "Strictly competitive games",
+          "pdfPage": 251,
+          "printedPage": 232,
+          "endPdfPage": 253,
+          "items": [
+            "Definition 15.5",
+            "Proposition 15.3"
+          ]
+        },
+        {
+          "id": "15.6",
+          "title": "Kantian equilibrium",
+          "pdfPage": 253,
+          "printedPage": 234,
+          "endPdfPage": 254,
+          "items": []
+        },
+        {
+          "id": "15.7",
+          "title": "Mixed strategies",
+          "pdfPage": 254,
+          "printedPage": 235,
+          "endPdfPage": 260,
+          "items": [
+            "Definition 15.6",
+            "Definition 15.7",
+            "Example 15.13",
+            "Example 15.14",
+            "Example 15.15"
+          ]
+        },
+        {
+          "id": "15.8",
+          "title": "Interpreting Nash equilibrium",
+          "pdfPage": 260,
+          "printedPage": 241,
+          "endPdfPage": 260,
+          "items": []
+        }
+      ],
+      "problemsPdfPage": 260,
+      "endPdfPage": 267,
+      "items": [
+        {
+          "id": "Definition 15.1",
+          "label": ": Strategic game",
+          "pdfPage": 236,
+          "printedPage": 217
+        },
+        {
+          "id": "Definition 15.2",
+          "label": ": Nash equilibrium of strategic game",
+          "pdfPage": 237,
+          "printedPage": 218
+        },
+        {
+          "id": "Definition 15.3",
+          "label": ": Best response",
+          "pdfPage": 237,
+          "printedPage": 218
+        },
+        {
+          "id": "Example 15.1",
+          "label": ": Traveler’s dilemma",
+          "pdfPage": 237,
+          "printedPage": 218
+        },
+        {
+          "id": "Example 15.2",
+          "label": ": Prisoner’s dilemma",
+          "pdfPage": 239,
+          "printedPage": 220
+        },
+        {
+          "id": "Definition 15.4",
+          "label": ": Symmetric two-player game",
+          "pdfPage": 240,
+          "printedPage": 221
+        },
+        {
+          "id": "Example 15.3",
+          "label": ": Where to meet? (Bach or Stravinsky)",
+          "pdfPage": 240,
+          "printedPage": 221
+        },
+        {
+          "id": "Example 15.4",
+          "label": ": Odds or evens (matching pennies)",
+          "pdfPage": 241,
+          "printedPage": 222
+        },
+        {
+          "id": "Example 15.5",
+          "label": ": Coordination game",
+          "pdfPage": 242,
+          "printedPage": 223
+        },
+        {
+          "id": "Example 15.6",
+          "label": ": First-price auction",
+          "pdfPage": 243,
+          "printedPage": 224
+        },
+        {
+          "id": "Example 15.7",
+          "label": ": Second-price auction",
+          "pdfPage": 243,
+          "printedPage": 224
+        },
+        {
+          "id": "Example 15.8",
+          "label": ": Location game",
+          "pdfPage": 244,
+          "printedPage": 225
+        },
+        {
+          "id": "Example 15.9",
+          "label": ": Effort game",
+          "pdfPage": 245,
+          "printedPage": 226
+        },
+        {
+          "id": "Example 15.10",
+          "label": ": Quantity-setting oligopoly (Cournot)",
+          "pdfPage": 246,
+          "printedPage": 227
+        },
+        {
+          "id": "Example 15.11",
+          "label": ": Price-setting duopoly (Bertrand)",
+          "pdfPage": 247,
+          "printedPage": 228
+        },
+        {
+          "id": "Proposition 15.1",
+          "label": ": Existence of Nash equilibrium in symmetric game",
+          "pdfPage": 249,
+          "printedPage": 230
+        },
+        {
+          "id": "Example 15.12",
+          "label": "",
+          "pdfPage": 249,
+          "printedPage": 230
+        },
+        {
+          "id": "Proposition 15.2",
+          "label": ": Existence of equilibrium in finite supermodular two-",
+          "pdfPage": 250,
+          "printedPage": 231
+        },
+        {
+          "id": "Definition 15.5",
+          "label": ": Strictly competitive game",
+          "pdfPage": 251,
+          "printedPage": 232
+        },
+        {
+          "id": "Proposition 15.3",
+          "label": ": Maxminimization and Nash equilibrium",
+          "pdfPage": 253,
+          "printedPage": 234
+        },
+        {
+          "id": "Definition 15.6",
+          "label": ": Mixed strategy",
+          "pdfPage": 256,
+          "printedPage": 237
+        },
+        {
+          "id": "Definition 15.7",
+          "label": ": Mixed strategy equilibrium of strategic game",
+          "pdfPage": 256,
+          "printedPage": 237
+        },
+        {
+          "id": "Example 15.13",
+          "label": ": Mixed strategy equilibrium in matching pennies",
+          "pdfPage": 257,
+          "printedPage": 238
+        },
+        {
+          "id": "Example 15.14",
+          "label": ": Mixed strategy equilibria of Bach or Stravinsky",
+          "pdfPage": 257,
+          "printedPage": 238
+        },
+        {
+          "id": "Example 15.15",
+          "label": ": War of attrition",
+          "pdfPage": 258,
+          "printedPage": 239
+        }
+      ]
+    },
+    {
+      "chapter": 16,
+      "title": "Extensive games",
+      "pdfPage": 268,
+      "sections": [
+        {
+          "id": "16.1",
+          "title": "Extensive games and subgame perfect equilibrium",
+          "pdfPage": 269,
+          "printedPage": 250,
+          "endPdfPage": 275,
+          "items": [
+            "Definition 16.1",
+            "Definition 16.2",
+            "Definition 16.3",
+            "Definition 16.4",
+            "Definition 16.5",
+            "Definition 16.6",
+            "Example 16.1",
+            "Example 16.2"
+          ]
+        },
+        {
+          "id": "16.2",
+          "title": "What is a strategy?",
+          "pdfPage": 275,
+          "printedPage": 256,
+          "endPdfPage": 276,
+          "items": []
+        },
+        {
+          "id": "16.3",
+          "title": "Backward induction",
+          "pdfPage": 276,
+          "printedPage": 257,
+          "endPdfPage": 282,
+          "items": [
+            "Definition 16.7",
+            "Definition 16.8",
+            "Proposition 16.1",
+            "Proposition 16.2",
+            "Proposition 16.3"
+          ]
+        },
+        {
+          "id": "16.4",
+          "title": "Bargaining",
+          "pdfPage": 282,
+          "printedPage": 263,
+          "endPdfPage": 294,
+          "items": [
+            "Definition 16.9",
+            "Proposition 16.4",
+            "Definition 16.10",
+            "Proposition 16.5",
+            "Definition 16.11",
+            "Proposition 16.6",
+            "Definition 16.12",
+            "Proposition 16.7",
+            "Definition 16.13",
+            "Proposition 16.8"
+          ]
+        }
+      ],
+      "problemsPdfPage": 294,
+      "endPdfPage": 299,
+      "items": [
+        {
+          "id": "Definition 16.1",
+          "label": ": Finite horizon extensive game",
+          "pdfPage": 269,
+          "printedPage": 250
+        },
+        {
+          "id": "Definition 16.2",
+          "label": ": Strategy in extensive game",
+          "pdfPage": 270,
+          "printedPage": 251
+        },
+        {
+          "id": "Definition 16.3",
+          "label": ": Terminal history generated by strategy profile",
+          "pdfPage": 271,
+          "printedPage": 252
+        },
+        {
+          "id": "Definition 16.4",
+          "label": ": Nash equilibrium of extensive game",
+          "pdfPage": 271,
+          "printedPage": 252
+        },
+        {
+          "id": "Definition 16.5",
+          "label": ": Terminal history extending history",
+          "pdfPage": 272,
+          "printedPage": 253
+        },
+        {
+          "id": "Definition 16.6",
+          "label": ": Subgame perfect equilibrium of extensive game",
+          "pdfPage": 272,
+          "printedPage": 253
+        },
+        {
+          "id": "Example 16.1",
+          "label": ": Ultimatum game",
+          "pdfPage": 273,
+          "printedPage": 254
+        },
+        {
+          "id": "Example 16.2",
+          "label": ": Centipede game",
+          "pdfPage": 274,
+          "printedPage": 255
+        },
+        {
+          "id": "Definition 16.7",
+          "label": ": Diameter of history",
+          "pdfPage": 276,
+          "printedPage": 257
+        },
+        {
+          "id": "Definition 16.8",
+          "label": ": One-deviation property of strategy profile",
+          "pdfPage": 279,
+          "printedPage": 260
+        },
+        {
+          "id": "Proposition 16.1",
+          "label": ": One-deviation property and SPE",
+          "pdfPage": 280,
+          "printedPage": 261
+        },
+        {
+          "id": "Proposition 16.2",
+          "label": ": Backward induction and SPE",
+          "pdfPage": 281,
+          "printedPage": 262
+        },
+        {
+          "id": "Proposition 16.3",
+          "label": ": Existence of SPE in finite game",
+          "pdfPage": 281,
+          "printedPage": 262
+        },
+        {
+          "id": "Definition 16.9",
+          "label": ": Ultimatum game",
+          "pdfPage": 283,
+          "printedPage": 264
+        },
+        {
+          "id": "Proposition 16.4",
+          "label": ": SPE of ultimatum game",
+          "pdfPage": 284,
+          "printedPage": 265
+        },
+        {
+          "id": "Definition 16.10",
+          "label": ": Finite-horizon bargaining game with alternating offers",
+          "pdfPage": 285,
+          "printedPage": 266
+        },
+        {
+          "id": "Proposition 16.5",
+          "label": ": SPE of finite-horizon game with alternating offers",
+          "pdfPage": 286,
+          "printedPage": 267
+        },
+        {
+          "id": "Definition 16.11",
+          "label": ": Infinite-horizon bargaining game with one-sided offers",
+          "pdfPage": 287,
+          "printedPage": 268
+        },
+        {
+          "id": "Proposition 16.6",
+          "label": ": SPE of infinite-horizon game with one-sided offers",
+          "pdfPage": 288,
+          "printedPage": 269
+        },
+        {
+          "id": "Definition 16.12",
+          "label": ": Infinite-horizon bargaining game with one-sided offers",
+          "pdfPage": 289,
+          "printedPage": 270
+        },
+        {
+          "id": "Proposition 16.7",
+          "label": ": SPE of infinite-horizon game with one-sided offers",
+          "pdfPage": 290,
+          "printedPage": 271
+        },
+        {
+          "id": "Definition 16.13",
+          "label": ": Infinite-horizon bargaining game with alternating",
+          "pdfPage": 290,
+          "printedPage": 271
+        },
+        {
+          "id": "Proposition 16.8",
+          "label": ": SPE of infinite-horizon game with alternating offers",
+          "pdfPage": 291,
+          "printedPage": 272
+        }
+      ]
+    },
+    {
+      "chapter": 17,
+      "title": "Mechanism design",
+      "pdfPage": 300,
+      "sections": [
+        {
+          "id": "17.1",
+          "title": "Deciding on a public project",
+          "pdfPage": 300,
+          "printedPage": 281,
+          "endPdfPage": 301,
+          "items": [
+            "Definition 17.1",
+            "Definition 17.2"
+          ]
+        },
+        {
+          "id": "17.2",
+          "title": "Strategy-proof mechanisms",
+          "pdfPage": 301,
+          "printedPage": 282,
+          "endPdfPage": 303,
+          "items": [
+            "Definition 17.3",
+            "Definition 17.4",
+            "Example 17.1",
+            "Example 17.2"
+          ]
+        },
+        {
+          "id": "17.3",
+          "title": "The Vickrey-Clarke-Groves mechanism",
+          "pdfPage": 303,
+          "printedPage": 284,
+          "endPdfPage": 306,
+          "items": [
+            "Definition 17.5",
+            "Example 17.3",
+            "Proposition 17.1"
+          ]
+        }
+      ],
+      "problemsPdfPage": 306,
+      "endPdfPage": 307,
+      "items": [
+        {
+          "id": "Definition 17.1",
+          "label": ": Public project problem",
+          "pdfPage": 300,
+          "printedPage": 281
+        },
+        {
+          "id": "Definition 17.2",
+          "label": ": Valuation profile",
+          "pdfPage": 301,
+          "printedPage": 282
+        },
+        {
+          "id": "Definition 17.3",
+          "label": ": Direct mechanism with transfers",
+          "pdfPage": 301,
+          "printedPage": 282
+        },
+        {
+          "id": "Definition 17.4",
+          "label": ": Strategy-proof mechanism",
+          "pdfPage": 302,
+          "printedPage": 283
+        },
+        {
+          "id": "Example 17.1",
+          "label": ": Majority rule",
+          "pdfPage": 302,
+          "printedPage": 283
+        },
+        {
+          "id": "Example 17.2",
+          "label": ": Summing reports",
+          "pdfPage": 303,
+          "printedPage": 284
+        },
+        {
+          "id": "Definition 17.5",
+          "label": ": VCG mechanism",
+          "pdfPage": 304,
+          "printedPage": 285
+        },
+        {
+          "id": "Example 17.3",
+          "label": ": VCG mechanism",
+          "pdfPage": 304,
+          "printedPage": 285
+        },
+        {
+          "id": "Proposition 17.1",
+          "label": ": VCG mechanism is strategy-proof",
+          "pdfPage": 304,
+          "printedPage": 285
+        }
+      ]
+    },
+    {
+      "chapter": 18,
+      "title": "Matching",
+      "pdfPage": 308,
+      "sections": [
+        {
+          "id": "18.1",
+          "title": "The matching problem",
+          "pdfPage": 308,
+          "printedPage": 289,
+          "endPdfPage": 309,
+          "items": [
+            "Definition 18.1",
+            "Definition 18.2",
+            "Definition 18.3",
+            "Example 18.1",
+            "Example 18.2",
+            "Example 18.3"
+          ]
+        },
+        {
+          "id": "18.2",
+          "title": "The Gale-Shapley algorithm",
+          "pdfPage": 309,
+          "printedPage": 290,
+          "endPdfPage": 314,
+          "items": [
+            "Example 18.4",
+            "Proposition 18.1"
+          ]
+        },
+        {
+          "id": "18.3",
+          "title": "The Gale-Shapley algorithm and stability",
+          "pdfPage": 314,
+          "printedPage": 295,
+          "endPdfPage": 317,
+          "items": [
+            "Definition 18.4",
+            "Example 18.5",
+            "Proposition 18.2",
+            "Proposition 18.3",
+            "Proposition 18.4"
+          ]
+        }
+      ],
+      "problemsPdfPage": 317,
+      "endPdfPage": 319,
+      "items": [
+        {
+          "id": "Definition 18.1",
+          "label": ": Society and preference profile",
+          "pdfPage": 308,
+          "printedPage": 289
+        },
+        {
+          "id": "Definition 18.2",
+          "label": ": Matching",
+          "pdfPage": 308,
+          "printedPage": 289
+        },
+        {
+          "id": "Definition 18.3",
+          "label": ": Matching method",
+          "pdfPage": 309,
+          "printedPage": 290
+        },
+        {
+          "id": "Example 18.1",
+          "label": ": Serial dictatorship",
+          "pdfPage": 309,
+          "printedPage": 290
+        },
+        {
+          "id": "Example 18.2",
+          "label": ": Minimizing aggregate rank",
+          "pdfPage": 309,
+          "printedPage": 290
+        },
+        {
+          "id": "Example 18.3",
+          "label": ": Iterative selection of the best match",
+          "pdfPage": 309,
+          "printedPage": 290
+        },
+        {
+          "id": "Example 18.4",
+          "label": "",
+          "pdfPage": 312,
+          "printedPage": 293
+        },
+        {
+          "id": "Proposition 18.1",
+          "label": ": Gale-Shapley algorithm yields a matching",
+          "pdfPage": 313,
+          "printedPage": 294
+        },
+        {
+          "id": "Definition 18.4",
+          "label": ": Stable matching",
+          "pdfPage": 314,
+          "printedPage": 295
+        },
+        {
+          "id": "Example 18.5",
+          "label": "",
+          "pdfPage": 315,
+          "printedPage": 296
+        },
+        {
+          "id": "Proposition 18.2",
+          "label": ": Gale-Shapley algorithm yields a stable matching",
+          "pdfPage": 315,
+          "printedPage": 296
+        },
+        {
+          "id": "Proposition 18.3",
+          "label": ": GS",
+          "pdfPage": 315,
+          "printedPage": 296
+        },
+        {
+          "id": "Proposition 18.4",
+          "label": ": GS",
+          "pdfPage": 316,
+          "printedPage": 297
+        }
+      ]
+    },
+    {
+      "chapter": 19,
+      "title": "Socialism",
+      "pdfPage": 320,
+      "sections": [
+        {
+          "id": "19.1",
+          "title": "Model",
+          "pdfPage": 320,
+          "printedPage": 301,
+          "endPdfPage": 323,
+          "items": [
+            "Definition 19.1",
+            "Definition 19.2",
+            "Definition 19.3",
+            "Example 19.1",
+            "Example 19.2",
+            "Example 19.3",
+            "Example 19.4",
+            "Example 19.5",
+            "Example 19.6"
+          ]
+        },
+        {
+          "id": "19.2",
+          "title": "Properties of economic systems",
+          "pdfPage": 323,
+          "printedPage": 304,
+          "endPdfPage": 326,
+          "items": [
+            "Definition 19.4",
+            "Definition 19.5",
+            "Definition 19.6",
+            "Definition 19.7",
+            "Definition 19.8",
+            "Definition 19.9"
+          ]
+        },
+        {
+          "id": "19.3",
+          "title": "Characterization of socialism",
+          "pdfPage": 326,
+          "printedPage": 307,
+          "endPdfPage": 329,
+          "items": [
+            "Proposition 19.1",
+            "Proposition 19.2"
+          ]
+        }
+      ],
+      "problemsPdfPage": 329,
+      "endPdfPage": 331,
+      "items": [
+        {
+          "id": "Definition 19.1",
+          "label": ": Society and productivity profile",
+          "pdfPage": 320,
+          "printedPage": 301
+        },
+        {
+          "id": "Definition 19.2",
+          "label": ": Feasible wealth profile",
+          "pdfPage": 321,
+          "printedPage": 302
+        },
+        {
+          "id": "Definition 19.3",
+          "label": ": Economic system",
+          "pdfPage": 321,
+          "printedPage": 302
+        },
+        {
+          "id": "Example 19.1",
+          "label": ": Equality of input, no redistribution",
+          "pdfPage": 322,
+          "printedPage": 303
+        },
+        {
+          "id": "Example 19.2",
+          "label": ": Input to most productive, no redistribution",
+          "pdfPage": 322,
+          "printedPage": 303
+        },
+        {
+          "id": "Example 19.3",
+          "label": ": Equality of input, equality of wealth",
+          "pdfPage": 322,
+          "printedPage": 303
+        },
+        {
+          "id": "Example 19.4",
+          "label": ": Input to most productive, equality of wealth (socialism)",
+          "pdfPage": 322,
+          "printedPage": 303
+        },
+        {
+          "id": "Example 19.5",
+          "label": ": One worker, one beneficiary",
+          "pdfPage": 323,
+          "printedPage": 304
+        },
+        {
+          "id": "Example 19.6",
+          "label": ": Input to most productive, wealth relative to productivity",
+          "pdfPage": 323,
+          "printedPage": 304
+        },
+        {
+          "id": "Definition 19.4",
+          "label": ": Efficient economic system",
+          "pdfPage": 323,
+          "printedPage": 304
+        },
+        {
+          "id": "Definition 19.5",
+          "label": ": Symmetric economic system",
+          "pdfPage": 324,
+          "printedPage": 305
+        },
+        {
+          "id": "Definition 19.6",
+          "label": ": Relatively monotonic economic system",
+          "pdfPage": 324,
+          "printedPage": 305
+        },
+        {
+          "id": "Definition 19.7",
+          "label": ": Anonymous economic system",
+          "pdfPage": 325,
+          "printedPage": 306
+        },
+        {
+          "id": "Definition 19.8",
+          "label": ": Monotonicity in own productivity",
+          "pdfPage": 326,
+          "printedPage": 307
+        },
+        {
+          "id": "Definition 19.9",
+          "label": ": Monotonicity in others’ productivities",
+          "pdfPage": 326,
+          "printedPage": 307
+        },
+        {
+          "id": "Proposition 19.1",
+          "label": ": Characterization of socialist economic system",
+          "pdfPage": 326,
+          "printedPage": 307
+        },
+        {
+          "id": "Proposition 19.2",
+          "label": ": Independence of properties",
+          "pdfPage": 327,
+          "printedPage": 308
+        }
+      ]
+    },
+    {
+      "chapter": 20,
+      "title": "Aggregating preferences",
+      "pdfPage": 332,
+      "sections": [
+        {
+          "id": "20.1",
+          "title": "Social preferences",
+          "pdfPage": 332,
+          "printedPage": 313,
+          "endPdfPage": 333,
+          "items": []
+        },
+        {
+          "id": "20.2",
+          "title": "Preference aggregation functions",
+          "pdfPage": 333,
+          "printedPage": 314,
+          "endPdfPage": 335,
+          "items": [
+            "Definition 20.1",
+            "Definition 20.2",
+            "Example 20.1",
+            "Example 20.2",
+            "Example 20.3",
+            "Example 20.4",
+            "Example 20.5"
+          ]
+        },
+        {
+          "id": "20.3",
+          "title": "Properties of preference aggregation functions",
+          "pdfPage": 335,
+          "printedPage": 316,
+          "endPdfPage": 338,
+          "items": [
+            "Definition 20.3",
+            "Definition 20.4",
+            "Definition 20.5",
+            "Definition 20.6",
+            "Definition 20.7"
+          ]
+        },
+        {
+          "id": "20.4",
+          "title": "Arrow's impossibility theorem",
+          "pdfPage": 338,
+          "printedPage": 319,
+          "endPdfPage": 342,
+          "items": [
+            "Proposition 20.1"
+          ]
+        },
+        {
+          "id": "20.5",
+          "title": "Gibbard-Satterthwaite theorem",
+          "pdfPage": 342,
+          "printedPage": 323,
+          "endPdfPage": 345,
+          "items": [
+            "Definition 20.8",
+            "Definition 20.9",
+            "Definition 20.10",
+            "Proposition 20.2"
+          ]
+        }
+      ],
+      "problemsPdfPage": 345,
+      "endPdfPage": 347,
+      "items": [
+        {
+          "id": "Definition 20.1",
+          "label": ": Society",
+          "pdfPage": 333,
+          "printedPage": 314
+        },
+        {
+          "id": "Definition 20.2",
+          "label": ": Preference aggregation function",
+          "pdfPage": 333,
+          "printedPage": 314
+        },
+        {
+          "id": "Example 20.1",
+          "label": ": Counting favorites",
+          "pdfPage": 334,
+          "printedPage": 315
+        },
+        {
+          "id": "Example 20.2",
+          "label": ": Scoring rules",
+          "pdfPage": 334,
+          "printedPage": 315
+        },
+        {
+          "id": "Example 20.3",
+          "label": ": Pairwise contests",
+          "pdfPage": 334,
+          "printedPage": 315
+        },
+        {
+          "id": "Example 20.4",
+          "label": ": External preferences",
+          "pdfPage": 335,
+          "printedPage": 316
+        },
+        {
+          "id": "Example 20.5",
+          "label": ": Dictatorship",
+          "pdfPage": 335,
+          "printedPage": 316
+        },
+        {
+          "id": "Definition 20.3",
+          "label": ": Neutrality",
+          "pdfPage": 336,
+          "printedPage": 317
+        },
+        {
+          "id": "Definition 20.4",
+          "label": ": Anonymity",
+          "pdfPage": 336,
+          "printedPage": 317
+        },
+        {
+          "id": "Definition 20.5",
+          "label": ": Positive responsiveness",
+          "pdfPage": 337,
+          "printedPage": 318
+        },
+        {
+          "id": "Definition 20.6",
+          "label": ": Pareto property",
+          "pdfPage": 337,
+          "printedPage": 318
+        },
+        {
+          "id": "Definition 20.7",
+          "label": ": Independence of irrelevant alternatives",
+          "pdfPage": 337,
+          "printedPage": 318
+        },
+        {
+          "id": "Proposition 20.1",
+          "label": ": Arrow’s impossibility theorem",
+          "pdfPage": 338,
+          "printedPage": 319
+        },
+        {
+          "id": "Definition 20.8",
+          "label": ": Social choice rule",
+          "pdfPage": 342,
+          "printedPage": 323
+        },
+        {
+          "id": "Definition 20.9",
+          "label": ": Unanimous social choice rule",
+          "pdfPage": 342,
+          "printedPage": 323
+        },
+        {
+          "id": "Definition 20.10",
+          "label": ": Strategy-proof social choice rule",
+          "pdfPage": 343,
+          "printedPage": 324
+        },
+        {
+          "id": "Proposition 20.2",
+          "label": ": Gibbard-Satterthwaite theorem",
+          "pdfPage": 343,
+          "printedPage": 324
+        }
+      ]
+    }
+  ]
+}

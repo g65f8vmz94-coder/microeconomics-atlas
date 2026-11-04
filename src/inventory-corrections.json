@@ -1,0 +1,20 @@
+{
+  "removed": [
+    {
+      "id": "Proposition 8.4",
+      "label": ", in the previous chapter, shows the Pareto stability of any equilib-",
+      "pdfPage": 150,
+      "printedPage": 131,
+      "chapter": 9,
+      "reason": "跨章节正文引用，非新定义/例子/命题"
+    },
+    {
+      "id": "Example 5.7",
+      "label": "). Now, if ((p",
+      "pdfPage": 163,
+      "printedPage": 144,
+      "chapter": 10,
+      "reason": "跨章节正文引用，非新定义/例子/命题"
+    }
+  ]
+}

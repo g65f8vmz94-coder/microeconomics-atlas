@@ -1,0 +1,1 @@
+module.exports=[...['choiceproblem','rationalaction','utilitychoice','strictidentify','rationalmeaning'].map(mode=>({name:mode,mode,initial:{}})),{name:'legacy-table',mode:'rationalaction',initial:{actionView:'table'}},{name:'actor-unaware',mode:'rationalaction',initial:{noticed:6,chosen:1,phase:3}},{name:'utility-infinite',mode:'utilitychoice',initial:{utilityView:'infinite'}}];

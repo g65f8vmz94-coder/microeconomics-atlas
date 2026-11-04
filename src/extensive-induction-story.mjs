@@ -1,0 +1,13 @@
+import {historyDiameter,backwardTree,treeOutcome,treeAudit,treeNodes} from './games.mjs';
+import {extensiveInductionContent} from './extensive-induction-content.mjs';
+
+// Osborne–Rubinstein Figure 16.3, printed p.259. Players are zero-indexed here.
+export function figure163Tree(){return {id:'root',player:0,children:[
+ {label:'A',node:{id:'afterA',player:2,children:[{label:'C',node:{id:'AC',payoff:[2,3,5]}},{label:'D',node:{id:'AD',payoff:[8,4,0]}}]}},
+ {label:'B',node:{id:'afterB',player:1,children:[{label:'E',node:{id:'BE',payoff:[1,2,0]}},{label:'G',node:{id:'afterBG',player:0,children:[{label:'H',node:{id:'BGH',payoff:[3,1,4]}},{label:'F',node:{id:'BGF',payoff:[0,1,2]}},{label:'I',node:{id:'BGI',payoff:[3,3,2]}}]}}]}}
+]};}
+export function figure163Solutions(){const root=figure163Tree(),h=backwardTree(root,false),i=backwardTree(root,true);return {root,h,i,diameters:Object.fromEntries(treeNodes(root).map(n=>[n.id,historyDiameter(n)]))};}
+export function oneDeviationExample(){const root={id:'h',player:0,children:[{label:'a',node:{id:'u',payoff:[2,0]}},{label:"a′",node:{id:'hprime',player:0,children:[{label:'b',node:{id:'w',payoff:[1,0]}},{label:"b′",node:{id:'v',payoff:[3,0]}}]}}]},policy={h:0,hprime:0};return {root,policy,baseline:treeOutcome(root,policy),switchFirst:treeOutcome(root,{...policy,h:1}),switchBoth:treeOutcome(root,{h:1,hprime:1}),audit:treeAudit(root,policy)};}
+const focus={intro:['root','afterA','afterBG','afterB','root','root'],diameter:['AC','afterA','afterBG','afterB','root','root'],initialize:['AC','BGH','afterA','afterBG','afterB','root'],figure:['afterA','afterBG','afterB','root','afterBG','root'],tie:['afterBG','afterB','root','afterBG','afterB','root'],deviation:['h','hprime','h','hprime','hprime','h'],proof:['h','hprime','h','hprime','hprime','h'],equivalence:['afterBG','afterA','afterB','root','root','root'],existence:['AC','afterA','afterBG','afterB','root','root'],boundary:['root','afterBG','root','root','root','root']};
+const branches={figure:['H','H','H','H','I','I'],tie:['H','H','H','I','I','I'],equivalence:['H','H','I','I','H','I']};
+export function extensiveInductionStory(key,step=0){const c=extensiveInductionContent[key];if(!c)throw Error('Unknown §16.3 case');const k=Math.max(0,Math.min(5,Math.round(step))),{root,h,i,diameters}=figure163Solutions(),branch=(branches[key]||[])[k]||'H',solution=branch==='H'?h:i;return {key,step:k,identity:c.steps[k][0],narration:c.steps[k][1],focus:focus[key][k],branch,root,solution,solutions:{H:h,I:i},diameters,outcome:treeOutcome(root,solution.policy),audit:treeAudit(root,solution.policy),deviation:oneDeviationExample()};}

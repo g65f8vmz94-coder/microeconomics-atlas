@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';
+import {nonlinearTeachingM,discreteMenuM,optimalDiscreteMenuM,discreteValuesM} from './src/monopoly.mjs';
+const near=(x,y)=>assert.ok(Math.abs(x-y)<1e-7,`${x} != ${y}`);
+for(const [step,first,second,h,l,revenue,best] of [[0,10,9,1,1,20,27],[1,10,7,2,1,27,27],[2,6,12,2,1,24,24],[3,6,14,1,1,12,24],[4,6,12,2,1,24,24]]){let f=nonlinearTeachingM(step);near(f.first,first);near(f.second,second);assert.equal(f.outcome.H.chosen,h);assert.equal(f.outcome.L.chosen,l);near(f.outcome.profit,revenue);near(f.opt.best,best)}
+for(let i=0;i<=400;i++){const f=nonlinearTeachingM(i/100),o=discreteMenuM(f.values,f.options,'seller');near(f.outcome.profit,o.profit);for(const k of ['H','L']){assert.equal(f.outcome[k].chosen,o[k].chosen);for(let j=0;j<3;j++)near(f.outcome[k].utilities[j],f.values[k][j]-(j===0?0:j===1?f.first:f.first+f.second))}assert.ok(f.values.H[2]>f.values.H[1]&&f.values.L[2]>f.values.L[1]);assert.ok(f.outcome.profit<=f.opt.best+1e-7);if(i>=100&&i<=200)near(f.outcome.profit,f.opt.best)}
+let grid=0;for(const v of [discreteValuesM.discount,discreteValuesM.premium]){const optimum=optimalDiscreteMenuM(v).best;for(let x=0;x<=40;x++)for(let y=0;y<=80;y++){const first=x/2,total=y/2,r=discreteMenuM(v,[{q:1,m:first},{q:2,m:total}],'seller');assert.ok(r.profit<=optimum+1e-7);grid++}}
+for(const i of [1,2,4]){const f=nonlinearTeachingM(i),buyer=discreteMenuM(f.values,f.options,'buyer');assert.ok(buyer.profit<f.outcome.profit);assert.ok(f.outcome.H.tied.length>1&&f.outcome.L.tied.length>1)}
+console.log(JSON.stringify({passed:true,continuousStates:401,priceMenuGridCases:grid,globalVertexComparison:true,buyerTieDiffers:true}));

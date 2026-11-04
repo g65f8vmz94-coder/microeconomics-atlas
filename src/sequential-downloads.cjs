@@ -1,0 +1,14 @@
+module.exports=[
+ ...['satisficing','satisficingrank'].map(mode=>({name:mode,mode,initial:{}})),
+ {name:'none',mode:'satisficing',initial:{threshold:5}},
+ {name:'all',mode:'satisficing',initial:{threshold:-5}},
+ {name:'equality',mode:'satisficing',initial:{threshold:1}},
+ {name:'reverse',mode:'satisficingrank',initial:{order:23,step:3}},
+ {name:'cycle',mode:'moneypump',initial:{}},
+ {name:'free',mode:'moneypump',initial:{fee:0}},
+ {name:'menu',mode:'moneypump',initial:{pump:'menu',table:1,A:7,B:3,limit:2}},
+ {name:'no-pay',mode:'moneypump',initial:{willing:0,step:3}},
+ {name:'limited',mode:'moneypump',initial:{cash:2,step:3}},
+ {name:'recognize',mode:'moneypump',initial:{notice:3,limit:12,step:12}},
+ {name:'declining',mode:'moneypump',initial:{decay:1,limit:24,step:24}}
+];

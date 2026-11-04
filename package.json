@@ -1,0 +1,13 @@
+{
+  "name": "microeconomics-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.cjs",
+    "test:math": "node test-math.cjs",
+    "validate": "node validate-pack.cjs",
+    "preview": "python3 preview.py"
+  },
+  "description": "Osborne–Rubinstein intermediate microeconomics visual atlas",
+  "license": "AGPL-3.0-only"
+}

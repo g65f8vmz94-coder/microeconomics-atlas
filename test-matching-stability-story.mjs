@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {examples,analysis,blockers,capacityPrefs,capacityBlockers,roomPrefs,roomAssignments,roomBlockers} from './src/matching-lab.mjs';
+import {matchingStabilityKeys,matchingStabilityContent} from './src/matching-stability-content.mjs';
+import {matchingStabilityFrame,matchingStabilityModels as M} from './src/matching-stability-story.mjs';
+
+let checks=0;const eq=(a,b,msg)=>{checks++;assert.deepEqual(a,b,msg);},ok=(v,msg)=>{checks++;assert.ok(v,msg);};
+eq(matchingStabilityKeys,['d184','e185','p182','p183','p184','q181','q182','q183','q184','q185','q186','q187']);
+for(const key of matchingStabilityKeys){const c=matchingStabilityContent[key];eq(c.scenes.length,6,key+' six scenes');ok(c.question&&c.conditions&&c.proof.length===3&&c.template&&c.source,key+' teaching content');for(let step=0;step<6;step++){const f=matchingStabilityFrame(key,step);eq(f.identity,c.scenes[step][0]);eq(f.narration,c.scenes[step][1]);ok(f.matching.length>0,key+' has state');if(key==='q187'){eq(f.blocking,roomBlockers(roomPrefs,f.matching));ok(f.complete);}else if(key==='q185'){eq(f.blocking,f.complete?capacityBlockers(capacityPrefs.students,capacityPrefs.programs,2,f.matching):[]);}else{eq(f.blocking,f.complete?blockers(f.profile.X,f.profile.Y,f.matching):[]);ok(new Set(f.matching.filter(y=>y>=0)).size===f.matching.filter(y=>y>=0).length,key+' one to one');}if(f.focus)ok(f.blocking.some(b=>b[0]===f.focus[0]&&b[1]===f.focus[1]),key+' highlighted pair really blocks');}}
+eq(analysis(examples.unstable.X,examples.unstable.Y).serial,[0,1,2],'book serial result');ok(blockers(examples.unstable.X,examples.unstable.Y,M.unstable).some(([x,y])=>x===1&&y===0),'book blocker X2 Y1');eq(M.stableUnstable,[2,0,1]);eq(blockers(examples.unstable.X,examples.unstable.Y,M.stableUnstable),[]);
+eq(analysis(examples.multiple.X,examples.multiple.Y).stable.length,2,'two constructed stable matchings');eq(M.multiX,[0,1,2]);eq(M.multiY,[1,0,2]);
+const weak=examples.weakPareto.X;ok(weak.every((p,i)=>p.indexOf(M.weakAlternative[i])<=p.indexOf(M.weakX[i])),'constructed alternative never hurts X');eq(weak.filter((p,i)=>p.indexOf(M.weakAlternative[i])<p.indexOf(M.weakX[i])).length,2,'exactly two X strictly gain');ok(blockers(examples.weakPareto.X,examples.weakPareto.Y,M.weakAlternative).length>0,'alternative unstable');
+eq(M.same.trace.length-1,3);eq(M.same.matching,[1,2,0]);eq(M.unequalA,[0,1]);eq(M.unequalB,[1,0]);eq(M.single,[1]);for(const m of [M.unequalA,M.unequalB])for(let i=0;i<2;i++)ok(examples.unequal.X[i].indexOf(m[i])<2,'A top m');
+eq(M.capacity.matching,[0,2,0,1,1,2]);for(let p=0;p<3;p++)ok(M.capacity.matching.filter(x=>x===p).length<=2,'program capacity');eq(capacityBlockers(capacityPrefs.students,capacityPrefs.programs,2,M.capacity.matching),[]);
+eq(M.truthful.matching,[0,1,2]);eq(M.lied.matching,[1,0,2]);ok(examples.manipulate.Y[0].indexOf(M.lied.matching.indexOf(0))<examples.manipulate.Y[0].indexOf(M.truthful.matching.indexOf(0)),'Y1 gains by true preference');
+eq(roomAssignments.length,3);for(const assignment of roomAssignments)ok(roomBlockers(roomPrefs,assignment).length>0,'each roommate assignment blocked');
+console.log({passed:true,checks,cases:matchingStabilityKeys.length,frames:matchingStabilityKeys.length*6});
