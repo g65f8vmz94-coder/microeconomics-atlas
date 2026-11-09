@@ -1,7 +1,7 @@
 {
   "bookVersion": "2020.12.21 (h)",
   "bookSha256": "bb095ba979d71b594eaf091fa8c35200602d54180a487aa8ce29e77c64782fd4",
-  "actualNumberedProblems": 149,
+  "actualNumberedProblems": 151,
   "nominalMissingNumber": [
     "Problem 3.6"
   ],
@@ -422,6 +422,22 @@
       "pdfPage": 120,
       "printedPage": 101,
       "headingLineSha256": "d43a9fd43033cee8bcfb367dd21cc9b41c3b72b0711d97cd71dfb68f5e3a3bc7"
+    },
+    {
+      "id": "Problem 7.8",
+      "chapter": 7,
+      "number": 8,
+      "pdfPage": 121,
+      "printedPage": 102,
+      "headingLineSha256": "3a92f5923b1557e684a6c7db78aa8ce8fdfa29b86e60691f42e472975f3ecf87"
+    },
+    {
+      "id": "Problem 7.9",
+      "chapter": 7,
+      "number": 9,
+      "pdfPage": 121,
+      "printedPage": 102,
+      "headingLineSha256": "fdd9a57b420dda2f58d4131689798623b29b7db74951f3e033200af59a505ea0"
     },
     {
       "id": "Problem 8.1",
