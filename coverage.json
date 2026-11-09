@@ -11103,6 +11103,44 @@
       "modelTests": "test-aggregation-exercises.mjs",
       "browserChecks": "qa/aggregation-exercises-browser.json",
       "sourceAudit": "SOURCE-AUDIT-CH20-EXERCISES.md"
+    },
+    {
+      "id": "Problem 7.8",
+      "chapter": 7,
+      "parts": [],
+      "printedPages": "102",
+      "status": "题设、演算与迁移练习已整理，待独立复做",
+      "scope": "优惠券的搜寻成本与自我筛选",
+      "section": "7.4",
+      "entry": "learn-p7-8.html",
+      "relatedLesson": "lesson-7-4.html",
+      "evidence": [
+        {
+          "section": "7.4",
+          "entry": "learn-p7-8.html",
+          "scope": "优惠券的搜寻成本与自我筛选"
+        }
+      ],
+      "modelTests": "test-guided.cjs"
+    },
+    {
+      "id": "Problem 7.9",
+      "chapter": 7,
+      "parts": [],
+      "printedPages": "102",
+      "status": "题设、演算与迁移练习已整理，待独立复做",
+      "scope": "计件合同、参与约束与信息租金",
+      "section": "7.4",
+      "entry": "learn-p7-9.html",
+      "relatedLesson": "lesson-7-4.html",
+      "evidence": [
+        {
+          "section": "7.4",
+          "entry": "learn-p7-9.html",
+          "scope": "计件合同、参与约束与信息租金"
+        }
+      ],
+      "modelTests": "test-guided.cjs"
     }
   ]
 }
