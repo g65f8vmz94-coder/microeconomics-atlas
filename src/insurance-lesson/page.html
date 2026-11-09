@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="用两本账读懂公平保险、加价保险和全保点的导数。">
+<title>少交一元保费，会怎样？ · 习题 3.9 · 中微动态模型图谱</title>
+<style>{{stylesheet}}</style>
+</head>
+<body>
+<a class="skip" href="#ledger">跳到两本账</a>
+<header class="mast"><div class="wrap mast-inner"><a class="brand" href="index.html"><i aria-hidden="true"></i>中微动态模型图谱</a><a href="exercises.html#exercises-3">第三章习题 <span aria-hidden="true">↗</span></a></div></header>
+<main class="wrap">
+<header class="intro">
+  <div><p class="eyebrow">不确定性下的选择 <span>/</span> 习题 3.9</p>
+  <h1>少交一元保费，<wbr>会怎样？</h1>
+  <p class="lead">你手上有 100 元。手机要是摔坏，就得掏钱修。保险已经买足了，少交一点划算吗？</p></div>
+  <a class="text-link" href="#solution">直接看完整解答 ↓</a>
+</header>
+<section class="worksheet" aria-labelledby="ledger">
+  <header class="sheet-head"><div><p class="eyebrow">两种日子 · 同一本账</p><h2 id="ledger" tabindex="-1">最后剩多少？</h2></div>
+    <div class="switch" role="group" aria-label="选一份保险合同"><button type="button" id="plan-loaded" aria-pressed="true">有加价</button><button type="button" id="plan-fair" aria-pressed="false">公平价</button></div>
+  </header>
+  <p class="terms" id="terms">两种日子各占一半。{{scope}}</p>
+  <div class="sheet-grid">
+    <section class="accounts" aria-label="平安与出险的状态财富">
+      <div class="account-top"><span>你交的保费</span><strong><span data-field="premium">{{premium}}</span> <small>元</small></strong></div>
+      <div class="accounts-pair">
+        <article class="account safe"><h3><i aria-hidden="true"></i>平安无事</h3>
+          <div class="balance"><strong data-field="safe">{{safe}}</strong><span>元</span></div>
+          <div class="bar" aria-hidden="true"><i data-bar="safe" style="width:80%"></i></div>
+          <p class="cashline"><span>自己留下</span><b data-field="safe">{{safe}}</b></p>
+          <p class="cashline"><span>保险赔款</span><b>0</b></p>
+          <p class="delta" data-field="safeDelta">与全保相同</p>
+        </article>
+        <article class="account accident"><h3><i aria-hidden="true"></i>手机摔坏</h3>
+          <div class="balance"><strong data-field="accident">{{accident}}</strong><span>元</span></div>
+          <div class="bar" aria-hidden="true"><i data-bar="own" style="width:50%"></i><i class="payout" data-bar="payout" style="width:30%"></i></div>
+          <p class="cashline"><span>付修理费后</span><b data-field="ownAfterLoss">{{ownAfterLoss}}</b></p>
+          <p class="cashline"><span>保险赔款</span><b data-field="payout">{{payout}}</b></p>
+          <p class="delta" data-field="accidentDelta">与全保相同</p>
+        </article>
+      </div>
+      <div class="receipt" id="receipt" hidden><strong>出险那天，跟全保相比</strong><div><span>保费省下 <b id="saved-fee"></b></span><span>赔款少收 <b id="lost-payout"></b></span><span>合计 <b id="net-change"></b> 元</span></div></div>
+      <div class="metrics"><div><span>平均财富</span><strong><span data-field="mean">{{mean}}</span> <small>元</small></strong></div><div><span>期望效用 <small>取 <tex>v(W)=\sqrt W</tex></small></span><strong data-field="utility">{{utility}}</strong></div></div>
+    </section>
+    <div class="reading"><div class="step-label"><span id="step-number">第 1 / 4 步</span><span class="track" id="track" aria-hidden="true"></span></div>
+      <h3 id="step-title">{{title}}</h3><p id="step-note">{{note}}</p>
+      <div class="actions"><button type="button" class="primary" id="next">{{next}} <span aria-hidden="true">→</span></button>
+        <div class="sub-actions"><button type="button" id="prev" disabled>上一步</button><button type="button" id="play">连续播放</button></div>
+      </div>
+      <a id="back-proof" class="text-link" href="#solution">看这道题的完整解答 ↓</a>
+    </div>
+  </div>
+  <p class="sr" id="announcement" role="status"></p>
+</section>
+
+<section class="proof-section" aria-labelledby="solution">
+ <header class="section-intro"><p class="eyebrow">从账本到答题纸</p><h2 id="solution" tabindex="-1">这道题，卷面怎么写？</h2><p>两问都先列出两种日子剩下的钱。公平价找共同均值，有加价就看全保点附近。点算式可以回到账上核对。</p></header>
+ <div class="proof-list">
+ <article class="proof"><div class="ordinal">01</div><div><h3>先分清交的钱和赔的钱</h3><p>起初有 <tex>w</tex> 元，出事故损失 <tex>D</tex> 元，概率是 <tex>p</tex>。保费 <tex>x</tex> 两种日子都要交，出事故才收到 <tex>\lambda x</tex>。设 <tex>0&lt;p&lt;1</tex>，保费非负，全保可行。</p>
+ <a class="formula-link" id="proof-states" data-jump="loaded:2" href="#ledger"><span class="math-stack"><tex>W_{\text{平安}}=w-x</tex><tex>W_{\text{事故}}=w-D-x+\lambda x</tex></span><span class="cue">看钱从哪来 ↗</span></a>
+ <p>记下两种财富，各算一次效用，再按发生概率加权。</p><div class="formula"><tex>U(x)=(1-p)v(W_{\text{平安}})+pv(W_{\text{事故}})</tex></div></div></article>
+ <article class="proof"><div class="ordinal">02</div><div><h3>公平价为什么可以买足？</h3><p>每交一元的平均赔款是 <tex>p\lambda</tex> 元。公平时它等于 1，换保额只会把钱在两种日子间搬来搬去。每种保费对应同一个平均财富。</p>
+ <a class="formula-link" id="proof-fair" data-jump="fair:2" href="#ledger"><span class="math-stack"><tex>E[W]=w-pD+(p\lambda-1)x</tex><tex>\phantom{E[W]}=w-pD\quad(p\lambda=1)</tex></span><span class="cue">看共同均值 ↗</span></a>
+ <p>怕风险意味着效用函数 <tex>v</tex> 凹。由詹森不等式，<tex>E[v(W)]\leq v(E[W])</tex>。让赔款刚好填平损失，<tex>x_F=D/\lambda=pD</tex>，两种日子就一样富，恰好取到上界。全保至少一样好。严格凹时，任何留下风险的买法都严格更差。</p></div></article>
+ <article class="proof"><div class="ordinal">03</div><div><h3>有加价，为什么要在全保点求导？</h3><p>设 <tex>p\lambda&lt;1</tex>，<tex>v</tex> 可微且凹，全保点的边际效用为正。全保时两种财富同为 <tex>W_F=w-x_F</tex>，因此多一块钱带来的效用，在两种日子里相同。</p>
+ <p>多交一点保费，平安时的财富每元少 1，出险时每元增加 <tex>\lambda-1</tex>。给两项乘各自的概率和边际效用。</p>
+ <div class="formula math-stack"><tex>U'(x)=-(1-p)v'(W_{\text{平安}})</tex><tex>\phantom{U'(x)=}{}+p(\lambda-1)v'(W_{\text{事故}})</tex></div>
+ <a class="formula-link" id="proof-slope" data-jump="loaded:3" href="#ledger"><span class="math-stack"><tex>U'(x_F)=(p\lambda-1)v'(W_F)&lt;0</tex></span><span class="cue">把这一步放大 ↗</span></a>
+ <p>上式沿着“多交”的方向。反过来，设 <tex>\varepsilon</tex> 是少交的量，则 <tex>x=x_F-\varepsilon</tex>。在本页加价算例中，少交一点，平安多留一点，事故时净少半点。</p>
+ <div class="formula math-stack"><tex>\left.\frac{dU(x_F-\varepsilon)}{d\varepsilon}\right|_{\varepsilon=0}=-U'(x_F)</tex><tex>\phantom{X}=0.25\,v'(80)&gt;0</tex></div></div></article>
+ <article class="proof"><div class="ordinal">04</div><div><h3>最后，把“一小步”推到最优选择</h3><p>全保点导数为负，往左少买<strong>足够小的一点</strong>会更好。期望效用关于保费是凹的，往右导数只会持平或降低，所以全保和买得更多都可以排除。</p><div class="formula"><tex>0\leq x^*&lt;x_F\quad\Longrightarrow\quad \lambda x^*&lt;D</tex></div>
+ <p>最优保费也可能是 0。少交整整一元是否划算，要看具体的效用函数。账上列出的期望效用采用平方根，仅供这个数例比较。若拿掉财富边际效用为正的条件，还能构造超额保险的反例。</p><a class="text-link" href="lesson-3-5.html?case=p9&amp;phase=0">查看原题效用曲线和反例 ↗</a></div></article>
+ </div>
+</section>
+
+<section class="practice" aria-labelledby="practice-title">
+  <div><p class="eyebrow">换一份保单</p><h2 id="practice-title">这次你来算。</h2><p>手上有 120 元，摔坏手机损失 24 元，事故概率一半。每交 1 元，出险赔 1.2 元。全保要交 20 元。如果只交 19 元，两种日子各剩多少？</p></div>
+  <form id="practice-form"><div class="answer-pair"><label>平安剩多少元<input name="safe" type="text" inputmode="decimal" autocomplete="off"></label><label>出险剩多少元<input name="accident" type="text" inputmode="decimal" autocomplete="off"></label></div>
+  <label class="method">接着用什么证明“少买一点更好”？<select name="method"><option value="">选择做法</option><option value="mean">只比较平均财富</option><option value="slope">比较全保点的边际效用变化</option></select></label>
+  <div class="practice-actions"><button class="primary" type="submit">核对我的账</button><button type="button" id="show-answer" aria-expanded="false" aria-controls="worked">看解题步骤</button></div>
+  <p id="feedback" class="feedback" role="status"></p>
+  <div id="worked" hidden><strong>平安剩 101 元，出险剩 99.8 元。</strong><p>交 19 元后先剩 101 元。出险还要付 24 元修理费，同时收到 22.8 元赔款。在全保点两边都剩 100 元，少交一点的边际效用变化是 <tex>(1-0.5\times1.2)v'(100)=0.4v'(100)&gt;0</tex>。</p></div></form>
+</section>
+</main>
+<footer class="wrap foot"><div><strong>教材与算例</strong><p>Osborne–Rubinstein，《Models in Microeconomic Theory》，第 3 章习题 9，印刷页 43。手机维修情境、数值与讲解为本站自主构造。</p></div><nav aria-label="相关资源"><a id="download" href="insurance-3-9.html" download="习题3.9-保险的两本账.html">下载离线 HTML ↓</a><a href="https://github.com/g65f8vmz94-coder/microeconomics-atlas">开源代码 ↗</a><a href="lesson-3-5.html">回到第 3.5 节 ↗</a></nav></footer>
+<script type="text/plain" id="amicro-license">{{license}}</script>
+<script>{{motion}}</script>
+<script>(()=>{ {{model}}
+{{player}}
+})();</script>
+</body></html>
