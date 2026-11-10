@@ -47,7 +47,25 @@ for(const f of ['lesson-film.js','frontend.js','home-demo.js','amicro-motion.js'
 }
 write(out+'/assets/core.js',core);
 for (const file of ['cover.css','cover.js']) write(out+'/assets/'+file,read(src+'/'+file));
-const routeMotionHead=require('./src/route-motion.cjs').head();
+const routeMotion=require('./src/route-motion.cjs');
+// Hosted pages share these files; offline guides embed the same CSS and script.
+const routeVersion=version('route-motion.cjs');
+write(out+'/assets/route-motion.css',routeMotion.stylesheet);
+write(out+'/assets/route-motion.js',routeMotion.script);
+const routeMotionHead=`<link rel="stylesheet" href="assets/route-motion.css?v=${routeVersion}"><script src="assets/route-motion.js?v=${routeVersion}"></script>`;
+const marketArt=['market-scene.webp','market-boy.webp'];
+const artHashes=new Map();
+for (const file of marketArt) {
+  const bytes=fs.readFileSync(path.join(src,file));
+  write(path.join(out,'assets',file),bytes);
+  artHashes.set(file,crypto.createHash('sha256').update(bytes).digest('hex').slice(0,12));
+}
+function versionMarketArt(markup) {
+  for (const [file,hash] of artHashes) {
+    markup=markup.replace('src="assets/'+file+'"','src="assets/'+file+'?v='+hash+'"');
+  }
+  return markup;
+}
 const homeCoverHead=`<link rel="stylesheet" href="assets/cover.css?v=${version('cover.css')}"><script defer src="assets/cover.js?v=${version('cover.js')}"></script>`;
 for(const f of ['producer-story.mjs','producer-story-ui.js','consumer-story.mjs','consumer-story-ui.js','pref-story.mjs','pref-story-ui.js','lottery-story.mjs','lottery-story-ui.js','preference-story.mjs','preference-story-ui.js','eu-story.mjs','eu-story-ui.js','allais-story.mjs','allais-story-ui.js','risk-story.mjs','risk-story-ui.js']){
  const content=read(src+'/'+f).replace(/from (['"])\.\/([^'"]+\.(?:mjs|js))(?:\?v=[^'"]*)?\1/g,(_,q,target)=>'from '+q+'./'+target+'?v='+version(target)+q);
@@ -68,9 +86,12 @@ const mathScripts=(standalone,nativeMath=false)=>standalone?`${nativeMath?'<scri
 function end(scripts,standalone=false,nativeMath=false){return `${footer}</div>${standalone?motionInline:`<script src="assets/amicro-motion.js?v=${version('amicro-motion.js')}"></script>`}${mathScripts(standalone,nativeMath)}${scripts}${standalone?filmInline:`<script src="assets/lesson-film.js?v=${version('lesson-film.js')}"></script>`}${standalone?frontendInline:`<script src="assets/frontend.js?v=${version('frontend.js')}"></script>`}${standalone?siteInline:`<script src="assets/site.js?v=${version('site.js')}"></script>`}</body></html>`}
 const heroCurve=k=>Array.from({length:101},(_,i)=>{const x=k/10+(10.5-k/10)*i/100;return `${i?'L':'M'}${40+40*x},${275-24*k/x}`}).join(' ');
 const art=`<svg viewBox="0 0 500 320" aria-label="x₁+x₂=10，u=x₁x₂；切点(5,5)，效用25" role="img"><g fill="none" stroke="#dde2d5">${[70,130,190,250].map(y=>`<path d="M40 ${y}H465"/>`).join('')}${[100,180,260,340,420].map(x=>`<path d="M${x} 25V275"/>`).join('')}</g><path d="M40 22V275H470" fill="none" stroke="#71867b"/><path d="M40 35L440 275" stroke="#c35f43" stroke-width="2" fill="none"/><path d="${heroCurve(16)}" stroke="#b5c8b5" stroke-width="2" fill="none"/><path d="${heroCurve(25)}" stroke="#177468" stroke-width="3" fill="none"/><circle cx="240" cy="155" r="7" fill="#177468"/><circle cx="240" cy="155" r="17" fill="none" stroke="#177468" opacity=".2"/><path d="M240 155V275M40 155H240" stroke="#177468" stroke-dasharray="4 5" opacity=".6"/><g fill="#667a6a" font-size="13" font-family="serif"><text x="464" y="301">x₁</text><text x="13" y="29">x₂</text><text x="255" y="140">(5,5)</text><text x="343" y="193" fill="#c35f43">预算约束</text><text x="370" y="250">u=16</text><text x="395" y="208" fill="#177468">u=25</text></g></svg>`;
-let html=head('把微观经济学，变成可以推演的图',false,'home')+mast+`<main id="main">${front.homeIntro({art,count:all.length,problems:problemCount})}<div class="coverage-note">全书扩建进行中，当前${certified.size}/90节已逐项核验。绿色入口表示已有动画示例；其余示例仍在核对定义、命题、原图、证明与边界，不能统一理解为整节全部覆盖。</div><div class="catalog-layout" id="catalog"><nav class="book-rail" aria-label="章节导航"><h2>全书章节</h2>${chapters.map((t,i)=>`<a href="#chapter-${i+1}" class="chapter-link">${String(i+1).padStart(2,'0')}　${t}</a>`).join('')}</nav><div><div class="catalog-tools"><input id="search" type="search" placeholder="搜索知识点、章节或英文名称" aria-label="搜索全书小节"><select id="filter" aria-label="筛选小节"><option value="all">全部小节</option><option value="ready">已有动画示例</option><option value="practice">我已自行练习</option></select></div><p class="small" id="found" aria-live="polite"></p>${inventory.chapters.map((c,i)=>`<section class="chapter" id="chapter-${i+1}"><div class="section-heading"><h2>${String(i+1).padStart(2,'0')} / ${chapters[i]}</h2>${c.chapter<=guidedChapters?`<a href="${guideChapter(c.chapter)}">本章小节与习题 ↗</a>`:`<span>第${c.pdfPage-19}页起</span>`}</div><div class="chapter-rows">${all.filter(s=>s.chapter===c.chapter).map(s=>`<${s.engine?'a':'div'} ${s.engine?`href="${s.chapter<=guidedChapters?guideURL('s'+s.id):'lesson-'+s.id.replace('.','-')+'.html'}"`:''} class="lesson-row ${s.engine?'':'pending'}" data-id="${s.id}" data-ready="${s.engine?'yes':'no'}" data-search="${esc((s.id+' '+s.title+' '+s.english+' '+s.chapterTitle+' '+(s.question||'')+' '+(s.scenarios||[]).map(c=>c.label).join(' ')).toLowerCase())}"><span class="num">${s.id}</span><div><h3>${s.title}</h3><p>${esc(s.question||s.english)}</p></div><span class="status">${s.engine?'打开示例 ↗':'待补齐'}</span></${s.engine?'a':'div'}>`).join('')}</div></section>`).join('')}</div></div></main>`+end(`<script type="module" src="assets/home-demo.js?v=${version('home-demo.js')}"></script>`);write(out+'/index.html',html);
+let html=head('把微观经济学，变成可以推演的图',false,'home')+mast+`<main id="main">${front.homeIntro({art,count:all.length,problems:problemCount})}<div class="coverage-note">全书扩建进行中，当前${certified.size}/90节已逐项核验。绿色入口表示已有动画示例；其余示例仍在核对定义、命题、原图、证明与边界，不能统一理解为整节全部覆盖。</div><div class="catalog-layout" id="catalog"><nav class="book-rail" aria-label="章节导航"><h2>全书章节</h2>${chapters.map((t,i)=>`<a href="#chapter-${i+1}" class="chapter-link">${String(i+1).padStart(2,'0')}　${t}</a>`).join('')}</nav><div><div class="catalog-tools"><input id="search" type="search" placeholder="搜索知识点、章节或英文名称" aria-label="搜索全书小节"><select id="filter" aria-label="筛选小节"><option value="all">全部小节</option><option value="ready">已有动画示例</option><option value="practice">我已自行练习</option></select></div><p class="small" id="found" aria-live="polite"></p>${inventory.chapters.map((c,i)=>`<section class="chapter" id="chapter-${i+1}"><div class="section-heading"><h2>${String(i+1).padStart(2,'0')} / ${chapters[i]}</h2>${c.chapter<=guidedChapters?`<a href="${guideChapter(c.chapter)}">本章小节与习题 ↗</a>`:`<span>第${c.pdfPage-19}页起</span>`}</div><div class="chapter-rows">${all.filter(s=>s.chapter===c.chapter).map(s=>`<${s.engine?'a':'div'} ${s.engine?`href="${s.chapter<=guidedChapters?guideURL('s'+s.id):'lesson-'+s.id.replace('.','-')+'.html'}"`:''} class="lesson-row ${s.engine?'':'pending'}" data-id="${s.id}" data-ready="${s.engine?'yes':'no'}" data-search="${esc((s.id+' '+s.title+' '+s.english+' '+s.chapterTitle+' '+(s.question||'')+' '+(s.scenarios||[]).map(c=>c.label).join(' ')).toLowerCase())}"><span class="num">${s.id}</span><div><h3>${s.title}</h3><p>${esc(s.question||s.english)}</p></div><span class="status">${s.engine?'打开示例 ↗':'待补齐'}</span></${s.engine?'a':'div'}>`).join('')}</div></section>`).join('')}</div></div></main>`+end(`<script type="module" src="assets/home-demo.js?v=${version('home-demo.js')}"></script>`);write(out+'/index.html',versionMarketArt(html));
+const marketEntrance=require('./src/cover.cjs').coverHTML();
+write(out+'/market.html',head('市场之中',false,'home')+mast+
+  '<main id="main">'+versionMarketArt(marketEntrance)+'</main>'+end(''));
 const {insurancePage, insuranceEntry} = require('./src/insurance-lesson/build.cjs');
-write(out+'/insurance-3-9.html', insurancePage().replace('</head>',routeMotionHead+'</head>'));
+write(out+'/insurance-3-9.html', insurancePage().replace('</head>',()=>routeMotion.head()+'</head>'));
 const legacySource=src+'/legacy-monopoly.html';
 for(const s of ready){
  const filename='lesson-'+s.id.replace('.','-')+'.html',legacy=s.engine.startsWith('mono');
