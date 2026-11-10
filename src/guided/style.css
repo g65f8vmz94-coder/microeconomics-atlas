@@ -95,3 +95,24 @@
 .ticket:before{content:"";position:absolute;top:2px;bottom:2px;left:4px;border-left:1px dashed #a4b594}
 @media(max-width:650px){.narration p{order:2}.state-grid{order:4}.player-actions{order:5}.scale-note{order:6;margin-top:0}.scene-back{order:7}.with-figure .player-actions{order:3}.with-figure .figure{order:4}.with-figure .state-grid{order:5}.proof-row{grid-template-columns:26px minmax(0,1fr)}}
 .all-models{flex-basis:100%}.all-models summary{color:var(--green);cursor:pointer;padding:6px 0;font-weight:650}.all-models div{display:flex;flex-wrap:wrap;gap:0 14px}.all-models a{min-height:36px}
+
+.chapter-jumps{margin:10px 0 20px}
+.directory section[id="first"],.directory section[id="later"]{scroll-margin-top:12px;margin-top:22px}
+.directory section[id="first"] h2,.directory section[id="later"] h2{font-size:1.3rem;margin:0 0 6px}
+@media(prefers-reduced-motion:no-preference){
+  html[data-motion="normal"] .vessel i{transition:height .32s ease-out}
+  html[data-motion="normal"] .scale-track i{transition:width .32s ease-out,left .32s ease-out}
+}
+
+.payoff table{border-collapse:collapse;table-layout:fixed;width:100%;margin-top:8px;text-align:center}
+.payoff th,.payoff td{border:1px solid var(--line);padding:7px 3px;font-size:.9rem}
+.payoff th{font-weight:600;color:var(--muted);background:#f4f5ed}
+.payoff .selected{background:#e1ebdd;box-shadow:inset 0 0 0 2px var(--green);font-weight:700}
+.payoff .cell-mark{margin-right:2px;visibility:hidden;color:var(--green);font-size:.65em}.payoff .selected .cell-mark{visibility:visible}
+.payoff .corner{font-size:.78rem;color:var(--muted)}
+.holding dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(6em,1fr));gap:5px;margin:8px 0 0}
+@media(max-width:650px){.holding dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.holding dl>div{min-width:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.holding dt,.holding dd{padding:5px 8px;margin:0}
+.holding dt{background:#edf2e9;color:var(--muted);font-size:.85rem}
+.holding dd{font-weight:650}.holding dd.changed{box-shadow:inset 0 -2px var(--rust)}
