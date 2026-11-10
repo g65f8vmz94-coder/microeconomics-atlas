@@ -18,7 +18,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch01.cjs": "807233479f09ccca2b8646ee1a1d3d21e191bc3fdcc97c8eb42b18c9583e24a3",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -34,7 +34,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-1-1-audit.json",
       "modelTests": "test-relations.mjs",
@@ -467,7 +467,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch01.cjs": "807233479f09ccca2b8646ee1a1d3d21e191bc3fdcc97c8eb42b18c9583e24a3",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -483,7 +483,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-1-2-audit.json",
       "modelChecks": "qa/formation-models.json",
@@ -916,7 +916,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch01.cjs": "807233479f09ccca2b8646ee1a1d3d21e191bc3fdcc97c8eb42b18c9583e24a3",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -932,7 +932,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-1-3-audit.json",
       "modelChecks": "qa/experiment-models.json",
@@ -1367,7 +1367,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "relations.mjs": "3c4976f7c2450db7ce68058ff6c8f7af9956b22da59afa0d35fcf501c44821ff",
         "guided/ch01.cjs": "807233479f09ccca2b8646ee1a1d3d21e191bc3fdcc97c8eb42b18c9583e24a3",
@@ -1384,7 +1384,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-1-4-audit.json",
       "modelChecks": "qa/utility-models.json",
@@ -1813,7 +1813,7 @@
         "sequential-choice.mjs": "f3a86d7f3e1c87cc65d68454a73d30f473742b5b87a58680899f46099d2051d3",
         "sequential-content.mjs": "b80e8bb9e4ebc268e218586b959d958dd717c0a646332c236fd0de9a1404d324",
         "sequential-ui.js": "3c00f1170a534f92501bb57d3d294f20baffdaa0252744b1ec45128d280f09f5",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "choice-evidence.mjs": "5fbf23e91ed65eebb5c52ad9f1373ee9af051f706406a0f42d380b220a9ff87c",
         "choice-evidence-content.mjs": "71a5334e50edfb2d7504b377a75b714f33231027a95d4054dd9d9da824c5b3d5",
         "choice-evidence-ui.js": "6e127561021b7843703965f74492eca010dd0b46a530f84091861bdf457b4097",
@@ -1835,7 +1835,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-2-1-audit.json",
       "modelChecks": "qa/choice-intro-models.json",
@@ -2276,7 +2276,7 @@
         "sequential-choice.mjs": "f3a86d7f3e1c87cc65d68454a73d30f473742b5b87a58680899f46099d2051d3",
         "sequential-content.mjs": "b80e8bb9e4ebc268e218586b959d958dd717c0a646332c236fd0de9a1404d324",
         "sequential-ui.js": "3c00f1170a534f92501bb57d3d294f20baffdaa0252744b1ec45128d280f09f5",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "choice-evidence.mjs": "5fbf23e91ed65eebb5c52ad9f1373ee9af051f706406a0f42d380b220a9ff87c",
         "choice-evidence-content.mjs": "71a5334e50edfb2d7504b377a75b714f33231027a95d4054dd9d9da824c5b3d5",
         "choice-evidence-ui.js": "6e127561021b7843703965f74492eca010dd0b46a530f84091861bdf457b4097",
@@ -2298,7 +2298,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-2-2-audit.json",
       "modelChecks": "qa/rationalization-models.json",
@@ -2739,7 +2739,7 @@
         "sequential-choice.mjs": "f3a86d7f3e1c87cc65d68454a73d30f473742b5b87a58680899f46099d2051d3",
         "sequential-content.mjs": "b80e8bb9e4ebc268e218586b959d958dd717c0a646332c236fd0de9a1404d324",
         "sequential-ui.js": "3c00f1170a534f92501bb57d3d294f20baffdaa0252744b1ec45128d280f09f5",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "choice-evidence.mjs": "5fbf23e91ed65eebb5c52ad9f1373ee9af051f706406a0f42d380b220a9ff87c",
         "choice-evidence-content.mjs": "71a5334e50edfb2d7504b377a75b714f33231027a95d4054dd9d9da824c5b3d5",
         "choice-evidence-ui.js": "6e127561021b7843703965f74492eca010dd0b46a530f84091861bdf457b4097",
@@ -2761,7 +2761,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-2-3-audit.json",
       "modelChecks": "qa/alpha-models.json",
@@ -3191,7 +3191,7 @@
         "sequential-choice.mjs": "f3a86d7f3e1c87cc65d68454a73d30f473742b5b87a58680899f46099d2051d3",
         "sequential-content.mjs": "b80e8bb9e4ebc268e218586b959d958dd717c0a646332c236fd0de9a1404d324",
         "sequential-ui.js": "3c00f1170a534f92501bb57d3d294f20baffdaa0252744b1ec45128d280f09f5",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "sequential-downloads.cjs": "84e9c7ee5f5591935fa6bf65a10717e2b6469202ec3804eee747852127656e79",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "choice-evidence.mjs": "5fbf23e91ed65eebb5c52ad9f1373ee9af051f706406a0f42d380b220a9ff87c",
@@ -3214,7 +3214,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-2-4-audit.json",
       "modelChecks": "qa/sequential-models.json",
@@ -3664,7 +3664,7 @@
         "sequential-choice.mjs": "f3a86d7f3e1c87cc65d68454a73d30f473742b5b87a58680899f46099d2051d3",
         "sequential-content.mjs": "b80e8bb9e4ebc268e218586b959d958dd717c0a646332c236fd0de9a1404d324",
         "sequential-ui.js": "3c00f1170a534f92501bb57d3d294f20baffdaa0252744b1ec45128d280f09f5",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "sequential-downloads.cjs": "84e9c7ee5f5591935fa6bf65a10717e2b6469202ec3804eee747852127656e79",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "choice-evidence.mjs": "5fbf23e91ed65eebb5c52ad9f1373ee9af051f706406a0f42d380b220a9ff87c",
@@ -3687,7 +3687,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-2-5-audit.json",
       "modelChecks": "qa/sequential-models.json",
@@ -4137,7 +4137,7 @@
         "sequential-choice.mjs": "f3a86d7f3e1c87cc65d68454a73d30f473742b5b87a58680899f46099d2051d3",
         "sequential-content.mjs": "b80e8bb9e4ebc268e218586b959d958dd717c0a646332c236fd0de9a1404d324",
         "sequential-ui.js": "3c00f1170a534f92501bb57d3d294f20baffdaa0252744b1ec45128d280f09f5",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "sequential-downloads.cjs": "84e9c7ee5f5591935fa6bf65a10717e2b6469202ec3804eee747852127656e79",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "choice-evidence.mjs": "5fbf23e91ed65eebb5c52ad9f1373ee9af051f706406a0f42d380b220a9ff87c",
@@ -4161,7 +4161,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-2-6-audit.json",
       "modelTests": "test-choice-evidence.mjs",
@@ -4596,7 +4596,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch03.cjs": "6d078861b986a803ce8bdd4b5a6ff1982bbc366e7b5658ed1c5f5607ff011dff",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -4611,7 +4611,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-3-1-audit.json",
       "modelTests": "test-lottery-story.mjs",
@@ -5017,7 +5017,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch03.cjs": "6d078861b986a803ce8bdd4b5a6ff1982bbc366e7b5658ed1c5f5607ff011dff",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -5032,7 +5032,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-3-2-audit.json",
       "modelTests": "test-preference-story.mjs",
@@ -5409,7 +5409,7 @@
         38
       ],
       "codeFiles": {
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "uncertainty.mjs": "6b5c613768969d4d22d27478253452fdd3608eb842c4093d257761c59c8f8555",
         "uncertainty-ui.js": "ed2b46eeb3eba9b1d30b0f075f6bed38cfff065e4c45f1944e9f422e0410b29e",
@@ -5439,7 +5439,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-3-3-audit.json",
       "modelTests": "test-eu-story.mjs",
@@ -5883,7 +5883,7 @@
         "4-step exam proof template for Allais paradox questions"
       ],
       "codeFiles": {
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "uncertainty.mjs": "6b5c613768969d4d22d27478253452fdd3608eb842c4093d257761c59c8f8555",
         "uncertainty-ui.js": "ed2b46eeb3eba9b1d30b0f075f6bed38cfff065e4c45f1944e9f422e0410b29e",
@@ -5909,7 +5909,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "qa/allais-story-models.json",
       "browserEvidence": "qa/allais-story-browser.json",
@@ -6394,7 +6394,7 @@
         "10 complete exam-ready proof templates for all scenarios"
       ],
       "codeFiles": {
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "uncertainty.mjs": "6b5c613768969d4d22d27478253452fdd3608eb842c4093d257761c59c8f8555",
         "uncertainty-ui.js": "ed2b46eeb3eba9b1d30b0f075f6bed38cfff065e4c45f1944e9f422e0410b29e",
@@ -6424,7 +6424,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "qa/risk-story-models.json",
       "browserEvidence": "qa/risk-story-browser.json",
@@ -6840,7 +6840,7 @@
         "pref-story.mjs": "f11c823c5204af368db227de714facea4130f96e17721a23d9c4d32097cb863d",
         "pref-story-ui.js": "203b975242fb8d0e70b8d917ffdfbb3ac200c07d5a27960c5f3f4553a5b6ab29",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch04.cjs": "3bb1a7729afb4be3fdb1fc7ddce17a2f468aa42b97fbed1b6bbf4ea0ee928fef",
@@ -6857,7 +6857,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-pref-story.mjs",
       "browserEvidence": "qa/pref-story-browser.json",
@@ -7254,7 +7254,7 @@
         "pref-story.mjs": "f11c823c5204af368db227de714facea4130f96e17721a23d9c4d32097cb863d",
         "pref-story-ui.js": "203b975242fb8d0e70b8d917ffdfbb3ac200c07d5a27960c5f3f4553a5b6ab29",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch04.cjs": "3bb1a7729afb4be3fdb1fc7ddce17a2f468aa42b97fbed1b6bbf4ea0ee928fef",
@@ -7271,7 +7271,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-pref-story.mjs",
       "browserEvidence": "qa/pref-story-browser.json",
@@ -7647,7 +7647,7 @@
         "pref-story.mjs": "f11c823c5204af368db227de714facea4130f96e17721a23d9c4d32097cb863d",
         "pref-story-ui.js": "203b975242fb8d0e70b8d917ffdfbb3ac200c07d5a27960c5f3f4553a5b6ab29",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch04.cjs": "3bb1a7729afb4be3fdb1fc7ddce17a2f468aa42b97fbed1b6bbf4ea0ee928fef",
@@ -7664,7 +7664,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-pref-story.mjs",
       "browserEvidence": "qa/pref-story-browser.json",
@@ -8046,7 +8046,7 @@
         "pref-story.mjs": "f11c823c5204af368db227de714facea4130f96e17721a23d9c4d32097cb863d",
         "pref-story-ui.js": "203b975242fb8d0e70b8d917ffdfbb3ac200c07d5a27960c5f3f4553a5b6ab29",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch04.cjs": "3bb1a7729afb4be3fdb1fc7ddce17a2f468aa42b97fbed1b6bbf4ea0ee928fef",
@@ -8063,7 +8063,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-pref-story.mjs",
       "browserEvidence": "qa/pref-story-browser.json",
@@ -8457,7 +8457,7 @@
         "pref-story.mjs": "f11c823c5204af368db227de714facea4130f96e17721a23d9c4d32097cb863d",
         "pref-story-ui.js": "203b975242fb8d0e70b8d917ffdfbb3ac200c07d5a27960c5f3f4553a5b6ab29",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch04.cjs": "3bb1a7729afb4be3fdb1fc7ddce17a2f468aa42b97fbed1b6bbf4ea0ee928fef",
@@ -8474,7 +8474,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-pref-story.mjs",
       "browserEvidence": "qa/pref-story-browser.json",
@@ -8898,7 +8898,7 @@
         "pref-story.mjs": "f11c823c5204af368db227de714facea4130f96e17721a23d9c4d32097cb863d",
         "pref-story-ui.js": "203b975242fb8d0e70b8d917ffdfbb3ac200c07d5a27960c5f3f4553a5b6ab29",
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch04.cjs": "3bb1a7729afb4be3fdb1fc7ddce17a2f468aa42b97fbed1b6bbf4ea0ee928fef",
@@ -8915,7 +8915,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-pref-story.mjs",
       "browserEvidence": "qa/pref-story-browser.json",
@@ -9295,7 +9295,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "lesson-film.js": "76e044112ee5e325180e1d35718c6203a826244791ade1d221fb8fe60ef5f087",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch05.cjs": "5fdcc737c957480db19232898e19bd3cee0adc4330c0e74caf3bf7d85b48be86",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -9311,7 +9311,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-consumer-story.mjs",
       "browserEvidence": "qa/consumer-story-browser.json",
@@ -9639,7 +9639,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "lesson-film.js": "76e044112ee5e325180e1d35718c6203a826244791ade1d221fb8fe60ef5f087",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch05.cjs": "5fdcc737c957480db19232898e19bd3cee0adc4330c0e74caf3bf7d85b48be86",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -9655,7 +9655,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-consumer-story.mjs",
       "browserEvidence": "qa/consumer-story-browser.json",
@@ -9986,7 +9986,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "lesson-film.js": "76e044112ee5e325180e1d35718c6203a826244791ade1d221fb8fe60ef5f087",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch05.cjs": "5fdcc737c957480db19232898e19bd3cee0adc4330c0e74caf3bf7d85b48be86",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -10002,7 +10002,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-consumer-story.mjs",
       "browserEvidence": "qa/consumer-story-browser.json",
@@ -10330,7 +10330,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "lesson-film.js": "76e044112ee5e325180e1d35718c6203a826244791ade1d221fb8fe60ef5f087",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch05.cjs": "5fdcc737c957480db19232898e19bd3cee0adc4330c0e74caf3bf7d85b48be86",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -10346,7 +10346,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-consumer-story.mjs",
       "browserEvidence": "qa/consumer-story-browser.json",
@@ -10695,7 +10695,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "lesson-film.js": "76e044112ee5e325180e1d35718c6203a826244791ade1d221fb8fe60ef5f087",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch05.cjs": "5fdcc737c957480db19232898e19bd3cee0adc4330c0e74caf3bf7d85b48be86",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -10711,7 +10711,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-consumer-story.mjs",
       "browserEvidence": "qa/consumer-story-browser.json",
@@ -11051,7 +11051,7 @@
         "lessons.cjs": "ed9c5301b8b8fdf4f262fb79897aa7d46771091c2ba9223e4528174ac5bc1ee7",
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "lesson-film.js": "76e044112ee5e325180e1d35718c6203a826244791ade1d221fb8fe60ef5f087",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch05.cjs": "5fdcc737c957480db19232898e19bd3cee0adc4330c0e74caf3bf7d85b48be86",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -11067,7 +11067,7 @@
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-consumer-story.mjs; test-normal-continuous-story.mjs; test-slutsky-continuous-story.mjs; test-giffen-continuous-story.mjs; test-consumer-url-params.mjs; test-consumer-exercises.mjs",
       "browserEvidence": "qa/consumer-story-browser.json; qa/chapter-5-full-audit-2026-11-02.json",
@@ -11400,7 +11400,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -11417,7 +11417,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-02",
       "section63Revalidation": {
@@ -11746,7 +11746,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -11763,7 +11763,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-02",
       "section61Revalidation": {
@@ -12116,7 +12116,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -12133,7 +12133,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-02",
       "section64Revalidation": {
@@ -12479,7 +12479,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -12496,7 +12496,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-6-4-audit.json",
       "modelEvidence": "test-costs-total-story.mjs; test-costs-limit-story.mjs; test-producer-story-64.mjs; test-producer.mjs",
@@ -12822,7 +12822,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -12839,7 +12839,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "modelEvidence": "test-producer-goals.mjs",
       "browserEvidence": "qa/producer-goals-continuous-2026-11-02.json",
@@ -13142,7 +13142,7 @@
         "book-outline.json": "6098a9f493e7ca4ec11bbb9293801cc2b6fa13398d6f460c7722ee216de48122",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/katex/katex.min.css": "00e0b094171b07f58422075f469b4feac2b2f7bce1aeec943c08da4d697f4dcf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "fish-market-content.mjs": "764b4b6b410888277598031fcbe24a6752bf4ff39afffc7687d2694e4f31a1f9",
         "fish-market-story.mjs": "4c0bb157522964fd67fc91466ab26ad954ff53c8cddd281e0c69f812fa12c70a",
@@ -13158,7 +13158,7 @@
         "exercise-inventory.json": "d38a37d1be375d184152125951fa7237aeddd0b39238283c1266f04d72a6d7d4",
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-13-3-audit.json",
       "modelTests": "test-fish-market-story.mjs; test-fish-equilibrium-film.mjs; test-fish-pareto-film.mjs; test-fish-tax-film.mjs; test-health-film.mjs; test-health-general.mjs",
@@ -13487,7 +13487,7 @@
         "book-outline.json": "6098a9f493e7ca4ec11bbb9293801cc2b6fa13398d6f460c7722ee216de48122",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/katex/katex.min.css": "00e0b094171b07f58422075f469b4feac2b2f7bce1aeec943c08da4d697f4dcf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "car-market-content.mjs": "3bfb38bacd864c2309b9e7f8d28039f5ada122b11251846fa30f2402d07d2b80",
         "car-market-story.mjs": "0081a8a844102b0b44a27be151849cb209703f6df6694fe27fe86e5f527be66c",
@@ -13503,7 +13503,7 @@
         "exercise-inventory.json": "d38a37d1be375d184152125951fa7237aeddd0b39238283c1266f04d72a6d7d4",
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-13-2-audit.json",
       "modelTests": "test-car-market-story.mjs; test-car-film.mjs; test-car-no-trade-film.mjs; test-car-pareto-film.mjs",
@@ -13843,7 +13843,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -13860,7 +13860,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-7-1-audit.json",
       "modelEvidence": "test-monopoly-market-story.mjs; test-monopoly.mjs; test-monopoly-segments-story.mjs",
@@ -14252,7 +14252,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -14269,7 +14269,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-7-2-audit.json",
       "modelEvidence": "test-monopoly-teaching.mjs; test-monopoly-welfare-story.mjs; test-monopoly-cap-story.mjs; test-monopoly-subsidy-story.mjs; test-monopoly-output-goals-story.mjs; test-monopoly-marginal-story.mjs; test-monopoly-multiple-story.mjs; test-monopoly.mjs",
@@ -14592,7 +14592,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -14609,7 +14609,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-7-3-audit.json",
       "modelEvidence": "test-segments-horizontal-story.mjs; test-monopoly-segments-story.mjs; test-monopoly.mjs",
@@ -14942,7 +14942,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -14959,7 +14959,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-7-4-audit.json",
       "modelEvidence": "test-menu-proof.mjs; test-monopoly-menu-story.mjs; test-monopoly.mjs",
@@ -15272,7 +15272,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -15289,7 +15289,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-8-1-audit.json",
       "verifiedAt": "2026-11-02",
@@ -15547,7 +15547,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -15564,7 +15564,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-8-2-audit.json",
       "verifiedAt": "2026-11-02",
@@ -15808,7 +15808,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -15825,7 +15825,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-8-3-audit.json",
       "verifiedAt": "2026-11-02",
@@ -16052,7 +16052,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -16069,7 +16069,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-8-4-audit.json",
       "verifiedAt": "2026-11-02",
@@ -16307,7 +16307,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -16324,7 +16324,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-8-5-audit.json",
       "verifiedAt": "2026-11-02",
@@ -16559,7 +16559,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
@@ -16576,7 +16576,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-8-6-audit.json",
       "verifiedAt": "2026-11-02",
@@ -16865,7 +16865,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "market.mjs": "9deab993ce245128805e40299cf9e01960f91d6cd8488ed7b80a7c5bf4e024cd",
@@ -16887,7 +16887,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-9-1-audit.json",
       "verifiedAt": "2026-11-02",
@@ -17147,7 +17147,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "market.mjs": "9deab993ce245128805e40299cf9e01960f91d6cd8488ed7b80a7c5bf4e024cd",
@@ -17169,7 +17169,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-9-2-audit.json",
       "verifiedAt": "2026-11-02",
@@ -17407,7 +17407,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "market.mjs": "9deab993ce245128805e40299cf9e01960f91d6cd8488ed7b80a7c5bf4e024cd",
@@ -17429,7 +17429,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-9-3-audit.json",
       "verifiedAt": "2026-11-02",
@@ -17669,7 +17669,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "market.mjs": "9deab993ce245128805e40299cf9e01960f91d6cd8488ed7b80a7c5bf4e024cd",
@@ -17691,7 +17691,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-9-4-audit.json",
       "verifiedAt": "2026-11-03",
@@ -17915,7 +17915,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vendor/pako/pako_inflate.min.js": "2ca27e9a8dae569cdeac42752ed1aed1afeff7f19282d3cc12c0aaa54a08bc04",
         "vendor/pako/LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
         "economy.mjs": "ed8eeaf8d5ebf7aec71ac380502941bb83b2d39f778236dd9693055062f452f5",
@@ -17940,7 +17940,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-10-1-audit.json",
       "verifiedAt": "2026-11-03",
@@ -18146,7 +18146,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "economy.mjs": "ed8eeaf8d5ebf7aec71ac380502941bb83b2d39f778236dd9693055062f452f5",
         "exchange.js": "bc2a61d29174b1b6736687dbc499e539a432bc8e3860d4ba98f43068a333bf41",
         "exchange-cd.js": "1ee7a724f0761258520dcf338054d59e12306ed1bd5f70f3623b50ebdf812eb8",
@@ -18167,7 +18167,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "publicationCorrection": "Replace slash-separated household endowments with explicit household labels; slash was misread as a fraction by automatic inline math.",
       "revalidation10_3": {
@@ -18377,7 +18377,7 @@
         "amicro-motion.js": "0ae12bad7246f28010d3811c6edaa868302cfb4166432afa6adf6041f5d9f762",
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -18392,7 +18392,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T03:39:11.358433+00:00",
       "labelCorrection": {
@@ -18586,7 +18586,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -18600,7 +18600,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T04:25:19.300808+00:00",
       "welfareBuildMaintenance": {
@@ -18831,7 +18831,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -18845,7 +18845,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T04:55:55.255812+00:00",
       "release98Revalidation": {
@@ -19058,7 +19058,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -19072,7 +19072,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T10:12:41Z",
       "release98Revalidation": {
@@ -19269,7 +19269,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -19283,7 +19283,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T10:12:41Z",
       "release98Revalidation": {
@@ -19463,7 +19463,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -19477,7 +19477,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T10:12:41Z",
       "release98Revalidation": {
@@ -19663,7 +19663,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch10.cjs": "b972f79606d5516300fe2b70fd293b0eeee2cc756a6f6b924f08c97570afadb7",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -19677,7 +19677,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T10:12:41Z",
       "release98Revalidation": {
@@ -19889,7 +19889,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch11.mjs": "90065d503600702de2b2c0d17a912d7998dbdf392e566d61633e6925bf7843c1",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -19903,7 +19903,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T10:36:00+08:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -20110,7 +20110,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch11.mjs": "90065d503600702de2b2c0d17a912d7998dbdf392e566d61633e6925bf7843c1",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -20124,7 +20124,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T18:49:51+08:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -20328,7 +20328,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch12.mjs": "bdc65c489a8053fb43fb40c4100bca05ecd98579fb8d4a1a8dc657aa06c58a74",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -20342,7 +20342,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T19:14:14+08:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -20499,7 +20499,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch12.mjs": "bdc65c489a8053fb43fb40c4100bca05ecd98579fb8d4a1a8dc657aa06c58a74",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -20513,7 +20513,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T19:36:00+08:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -20705,7 +20705,7 @@
         "frontend-shell.cjs": "c8c3e3f6b533c24c36b0252fd7c111afaa69ccaf6ac9e62a18f6fd624f6267d4",
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch13.mjs": "6c1eb3d0d39cbb542be375f39a82eeed81c21622aee024504c4ae4722df7af7c",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -20719,7 +20719,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T20:00:00+08:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -20782,7 +20782,7 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch14.mjs": "04ecafcc0cc44b3138baa1767379f0422abdf68f29ce1f7c7ad5419ae53ae63a",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -20796,7 +20796,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "sourceAudit": "qa/section-14-1-audit.json",
       "modelTests": "test-contract-market-story.mjs; test-math.cjs",
@@ -20981,7 +20981,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch14.mjs": "04ecafcc0cc44b3138baa1767379f0422abdf68f29ce1f7c7ad5419ae53ae63a",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -20994,7 +20994,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T15:54:35.617Z",
       "section18_3Revalidation": {
@@ -21110,7 +21110,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -21124,7 +21124,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T16:32:33.225Z",
       "section18_3Revalidation": {
@@ -21283,7 +21283,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -21297,7 +21297,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T17:02:04.632Z",
       "section18_3Revalidation": {
@@ -21432,7 +21432,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -21446,7 +21446,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T17:32:10.917Z",
       "section18_3Revalidation": {
@@ -21576,7 +21576,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -21590,7 +21590,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T18:01:19.785Z",
       "section18_3Revalidation": {
@@ -21725,7 +21725,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -21739,7 +21739,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T18:26:05.691Z",
       "section18_3Revalidation": {
@@ -21868,7 +21868,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -21882,7 +21882,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T18:46:09.985Z",
       "section18_3Revalidation": {
@@ -22047,7 +22047,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -22061,7 +22061,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T19:07:52.860097+00:00",
       "section18_3Revalidation": {
@@ -22195,7 +22195,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch15.mjs": "7d21152fc80a16cf1e95ca35e131b7dddaef86d9b66b8d3231b4a6f891eaaa0b",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
@@ -22209,7 +22209,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T19:29:58.547406+00:00",
       "section18_3Revalidation": {
@@ -22391,7 +22391,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch16.mjs": "a30fc9c76a9603f049e90c07b5ff6d2c844daa38fc0115ddc439e131477920cb",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -22404,7 +22404,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T20:00:15.759889+00:00",
       "section18_3Revalidation": {
@@ -22524,7 +22524,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch16.mjs": "a30fc9c76a9603f049e90c07b5ff6d2c844daa38fc0115ddc439e131477920cb",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -22537,7 +22537,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T20:42:13.455434+00:00",
       "section18_3Revalidation": {
@@ -22669,7 +22669,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch16.mjs": "a30fc9c76a9603f049e90c07b5ff6d2c844daa38fc0115ddc439e131477920cb",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -22682,7 +22682,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T21:14:44.854621+00:00",
       "section18_3Revalidation": {
@@ -22834,7 +22834,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch16.mjs": "a30fc9c76a9603f049e90c07b5ff6d2c844daa38fc0115ddc439e131477920cb",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -22847,7 +22847,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T21:35:52.653893+00:00",
       "section18_3Revalidation": {
@@ -22957,7 +22957,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "guided/ch17.mjs": "d25c69bffa1332de998b96696fbfde8919b832950c759f90a2d69465c46dad98",
         "guided/build.cjs": "da057f0f8db0f667958789b65ea817d23513d8941855fd14a9e43b2e6eceae12",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
@@ -22970,7 +22970,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T22:01:11.414731+00:00",
       "section18_3Revalidation": {
@@ -23071,7 +23071,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "truthful-report-content.mjs": "9cd38fe3b91708fc45487e9b186d491be6b16773e0becd24de3f006335cbd9b5",
         "truthful-report-story.mjs": "b704522e6fcf4abf5c850f8051aa18914d65a1802f3639d93084d4d0fa19b060",
         "truthful-report-ui.js": "c9cf1bb8eb16ebcc11e0c4e74c26e483175e577efac8751885516498dbe453e0",
@@ -23087,7 +23087,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T22:24:18.199145+00:00",
       "section18_3Revalidation": {
@@ -23242,7 +23242,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "vcg-story-content.mjs": "458dc612be8fc501fe35b755801ed36ef547d21781a567ce5084a77d41fdb07d",
         "vcg-story.mjs": "1f70945f4d1168a3258cc0bd808a620e3bcb11c1741eb413a4a8f572201ae628",
         "vcg-story-ui.js": "50956b8d67cfecb5c05f3097ae99c38e7344a194c2c3a4f0dbb607dc9d1f77ca",
@@ -23258,7 +23258,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T22:58:49.187022+00:00",
       "section18_3Revalidation": {
@@ -23376,7 +23376,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "matching-lab.mjs": "28b967f8cd92a8f85a348de866b17ed258ade7fb057e51100182f9f6aa0287c2",
         "matching-lab-ui.js": "e52148b889d08cf09f27cfdab7274f47c5c8ad19c4da9c81e1cca0ec860d7123",
         "matching-foundations-content.mjs": "78f0b2c9cc396abe45c39e1679ec57530e1d9f14e3241ea0868b2fabb33f2912",
@@ -23394,7 +23394,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T23:24:34.827015+00:00",
       "section18_3Revalidation": {
@@ -23495,7 +23495,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "matching-lab.mjs": "28b967f8cd92a8f85a348de866b17ed258ade7fb057e51100182f9f6aa0287c2",
         "matching-lab-ui.js": "e52148b889d08cf09f27cfdab7274f47c5c8ad19c4da9c81e1cca0ec860d7123",
         "matching-algorithm-content.mjs": "64e657203ac3473db67d6facec4dbc567bd4c9d86e8603925337b09e0f6582eb",
@@ -23513,7 +23513,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-03T23:43:22.485732+00:00",
       "section18_3Revalidation": {
@@ -23674,7 +23674,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "matching-lab.mjs": "28b967f8cd92a8f85a348de866b17ed258ade7fb057e51100182f9f6aa0287c2",
         "matching-lab-ui.js": "e52148b889d08cf09f27cfdab7274f47c5c8ad19c4da9c81e1cca0ec860d7123",
         "matching-stability-content.mjs": "86cc1b1dd5887b38896e7d8c7457059b60022246d808798836cd8cd4fefd6c7b",
@@ -23692,7 +23692,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T00:12:06.973981+00:00",
       "section19_1Revalidation": {
@@ -23816,7 +23816,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "social-lab.mjs": "64e4943134af3ea14ef71c0eaae2f2b4ce58015e049a7d55a8d1148b2e8870c9",
         "social-lab-ui.js": "b10bfb8738723a2494affe9d8fd5ffe61319e650c264e0389880611f16e65e5c",
         "social-foundations-content.mjs": "1e6b3b0b737dc967e546114984447149114100ae93473b89bb1ee8229477c903",
@@ -23834,7 +23834,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T00:39:44.347906+00:00",
       "section19_2Revalidation": {
@@ -23934,7 +23934,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "social-lab.mjs": "64e4943134af3ea14ef71c0eaae2f2b4ce58015e049a7d55a8d1148b2e8870c9",
         "social-lab-ui.js": "b10bfb8738723a2494affe9d8fd5ffe61319e650c264e0389880611f16e65e5c",
         "social-properties-content.mjs": "883255c2e1cc2b13dbb470297fe08d9375ea3ecf45ec20e38bb233488bc463f1",
@@ -23952,7 +23952,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T01:05:11.264397+00:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -24069,7 +24069,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "social-lab.mjs": "64e4943134af3ea14ef71c0eaae2f2b4ce58015e049a7d55a8d1148b2e8870c9",
         "social-lab-ui.js": "b10bfb8738723a2494affe9d8fd5ffe61319e650c264e0389880611f16e65e5c",
         "social-characterization-content.mjs": "9ef37a21c1729e5047f940d7136fc5b2bd8d5439d57d30febf389675810f9e67",
@@ -24087,7 +24087,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T01:32:37.554520+00:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -24172,7 +24172,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "final-topics.mjs": "b95e44e836d0d6752d4d69b43d3f04bff50db13780ecc7c91a176acfbcd21365",
         "aggregation-exercises.mjs": "5fee267abadcfc1af544153d726a8e48147767bcbb2374cbfde00905ef4c825b",
         "final-ui.js": "02aec5c16b39932deba7222a9646125528c256a537e37e59289ec29785efdbe8",
@@ -24195,7 +24195,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T02:11:31.071262+00:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -24307,7 +24307,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "final-topics.mjs": "b95e44e836d0d6752d4d69b43d3f04bff50db13780ecc7c91a176acfbcd21365",
         "aggregation-exercises.mjs": "5fee267abadcfc1af544153d726a8e48147767bcbb2374cbfde00905ef4c825b",
         "final-ui.js": "02aec5c16b39932deba7222a9646125528c256a537e37e59289ec29785efdbe8",
@@ -24328,7 +24328,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T02:34:34.096036+00:00",
       "revalidatedAt": "2026-11-04T03:03:00Z",
@@ -24485,7 +24485,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "final-topics.mjs": "b95e44e836d0d6752d4d69b43d3f04bff50db13780ecc7c91a176acfbcd21365",
         "aggregation-exercises.mjs": "5fee267abadcfc1af544153d726a8e48147767bcbb2374cbfde00905ef4c825b",
         "final-ui.js": "02aec5c16b39932deba7222a9646125528c256a537e37e59289ec29785efdbe8",
@@ -24506,7 +24506,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       },
       "verifiedAt": "2026-11-04T03:03:52.627268+00:00"
     },
@@ -24595,7 +24595,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "final-topics.mjs": "b95e44e836d0d6752d4d69b43d3f04bff50db13780ecc7c91a176acfbcd21365",
         "aggregation-exercises.mjs": "5fee267abadcfc1af544153d726a8e48147767bcbb2374cbfde00905ef4c825b",
         "final-ui.js": "02aec5c16b39932deba7222a9646125528c256a537e37e59289ec29785efdbe8",
@@ -24618,7 +24618,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       }
     },
     "20.5": {
@@ -24715,7 +24715,7 @@
         "site.js": "cc3d004d5ec267a59c07936f15c73517343350ab8f243cab2e06a1229146022e",
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "standalone-style.cjs": "88d6b95dcdd8d89ce3b1aac74ba5c165e2305e1987b760ee3cf273c3d82065f1",
-        "../build.cjs": "64b097ad6012315dd925d833a0d216624b88a103da16961af831f51aa4a33857",
+        "../build.cjs": "fe83541d8535d9cb8946ee3db0a3f9fc203356e812cd665233d9054334d60ff8",
         "final-topics.mjs": "b95e44e836d0d6752d4d69b43d3f04bff50db13780ecc7c91a176acfbcd21365",
         "aggregation-exercises.mjs": "5fee267abadcfc1af544153d726a8e48147767bcbb2374cbfde00905ef4c825b",
         "final-ui.js": "02aec5c16b39932deba7222a9646125528c256a537e37e59289ec29785efdbe8",
@@ -24738,7 +24738,7 @@
         "catalog-labels.cjs": "8ddbfc1fd662414ae14c042eeb6bbf7ea67e4be5cc8c63ffd172861d048ac2e8",
         "vendor/katex/katex.min.js": "fa140498b8cfc8302cbe5e7cb1bdbc1f952bc38b3fa258ede09e73edbf9a74bc",
         "vendor/AMICRO-LICENSE.txt": "4b2e0abfc3fdc8722545c3772ee7c6fd0bcdbe8af76112af50066689fca4a9c2",
-        "route-motion.cjs": "bc70cf23da5fdf3728c61e39f84d3e882c1bf0ce61fb0c88c43a55582a86a68b"
+        "route-motion.cjs": "f111449ec92c32469d2fe34be0ce17f684dba99e23299023c76b795b4c390cba"
       }
     }
   }
