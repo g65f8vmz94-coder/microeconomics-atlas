@@ -4,6 +4,31 @@ const {renderUnit} = require('./src/guided/build.cjs');
 const {inline, equation} = require('./src/guided/format.cjs');
 const {givenPoints, proofRows} = require('./src/guided/unit-flow.cjs');
 
+function checkConditionSource(body, unit, meta) {
+  const {points, references} = givenPoints(unit.given);
+  const label = meta.key;
+  assert.ok(points.length, label + ' empty conditions');
+
+  // Account for every authored character, including citations moved to the footer.
+  let remaining = unit.given;
+  for (const reference of references) {
+    assert.ok(remaining.includes(reference), label + ' unknown source');
+    remaining = remaining.replace(reference, '');
+  }
+  assert.equal(points.join(''), remaining, label + ' incomplete condition source');
+
+  const cards = [...body.matchAll(/<aside class="condition-card"[^>]*>([\s\S]*?)<\/aside>/g)];
+  assert.equal(cards.length, 1, label + ' condition card count');
+  const items = [...cards[0][1].matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/g)];
+  assert.deepEqual(items.map(m => m[1].replace(/<span id="given-\d+-title"><\/span>/g, '')),
+    points.map(inline), label + ' ordered conditions');
+  const resources = body.match(/<details class="guided-resources">([\s\S]*?)<\/details>/)?.[1];
+  assert.ok(resources, label + ' missing textbook sources');
+  const citations = [...resources.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(m => m[1]);
+  assert.equal(citations[0], 'Osborne–Rubinstein，《Models in Microeconomic Theory》，' + meta.kind + ' ' + meta.id + '。', label);
+  assert.equal(citations[1], references.length ? references.map(inline).join('') : '印刷第 ' + meta.page + ' 页。', label);
+}
+
 async function main() {
   const chapters = catalog(require('./coverage.json'));
   const units = Object.assign({}, ...await loadChapters(chapters));
@@ -26,6 +51,8 @@ async function main() {
         assert(targets.has(id), meta.key + ' legacy anchor ' + id);
       }
       const steps = [...body.matchAll(/<section class="guided-step guided-([^"]+)" id="([^"]+)"/g)].map(m => m[1]);
+      checkConditionSource(body, unit, meta);
+      assert.equal(steps.filter(k => k === 'given').length, 1, meta.key + ' separate reading stops');
       assert.equal(steps[0], 'given');
       assert.equal(steps.at(-1), 'practice');
       assert.equal(steps.filter(k => k === 'scene').length, unit.frames.length);

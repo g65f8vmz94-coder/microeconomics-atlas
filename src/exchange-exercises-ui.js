@@ -52,6 +52,22 @@ export function startExchangeExercises(requested){
    else{body+=b.dot(base.C.A,'C',C.g,'competitive',true)+b.dot(base.M.A,'M',C.p,'monopoly',true);if(current.feasible)body+=b.dot(current.A,'',C.r,'chosen');metrics=[['当前价格',price],['竞争价格',base.competitive],['个人2最优报价',base.monopoly],['个人2比竞争时增益',current.feasible?current.u2-base.C.u2:'该报价无法交付']];reading='个人1在报价下选择最优束，个人2接收剩余。图用双方效用均为x₁x₂、总资源(10,10)的明确例子。个人1的报价回应轨迹是赤线，个人2在这条轨迹上选自己最喜欢的点M；它通常不同于竞争均衡C。默认禀赋(8,2)时，个人2报价√(3/8)，其效用28.6061高于竞争时25。';formula=String.raw`A(p)=\left(\frac{e_1+\frac{e_2}{p}}{2},\frac{pe_1+e_2}{2}\right),\quad p_M=\sqrt{\frac{e_2(20-e_2)}{e_1(20-e_1)}}`;extra='<button data-action="competitive">比较竞争价格</button> <button data-action="monopoly">采用个人2最优报价</button>'+table(['配置','个人1商品1','个人1商品2','个人2效用'],[['C',...base.C.A,base.C.u2],['M',...base.M.A,base.M.u2]]);}
    picture=svg(body);legend='E：最初禀赋；赤线：个人1报价回应；紫线：个人2经过最优点的无差异线。点坐标始终表示个人1。';boundary='自主CD例用于展示原题可能性。价格须使个人2能交付剩余商品；越出可行报价区间的需求不被裁成实际分配。';result={base,current,reopened};
   }
+  let given;
+  if(kind.startsWith('nonconvex'))given='两种商品的总量都为正，两人的效用同为 x₁²+x₂²。当前禀赋分别为（'+result.eA+'）和（'+result.eB+'）。';
+  else if(['equal-efficient','equal-core','free-good'].includes(kind))given='每人最初有一单位商品1或一单位商品2，所有人的效用都是两种数量的最小值。两类人数分别为 '+(s.n2+s.extra)+' 和 '+s.n2+'。';
+  else if(['replicate','same-type'].includes(kind))given='两类消费者各复制 '+s.n+' 份，同类型的禀赋和偏好完全相同。'+(result.strict?'本图用严格凸的 Cobb–Douglas 偏好，禀赋分别是 (2,1) 和 (1,2)。':'这组对照采用线性效用 x₁+x₂，禀赋分别是 (1,0) 和 (0,1)。');
+  else if(['bundle-market','nonlinear-bundles'].includes(kind))given='四人各有一整套商品束，依次为 (2,0)、(0,2)、(1,0)、(0,1)。每人只能换取一整套。图中自设第1人的效用为 x₁+3x₂，其余三人为 3x₁+x₂。';
+  else if(['price-setter','reopen-monopoly'].includes(kind))given='图中两人效用均为 x₁x₂，两种商品各有10单位。个人2报相对价格，个人1按预算选束，个人2得到余量。'+(kind==='reopen-monopoly'?'每轮成交后的配置即下一轮的禀赋。':'');
+  else given={
+   'linear-complement':'A初有 (α,0)，效用为两种数量之和；B初有 (0,β)，效用为两种数量的最小值。α>0，且 α≤β≤2α。',
+   'one-two':'一位A持有 (1,0)，效用为两种数量之和；两位B各持有 (0,1)，效用为两种数量的最小值。',
+   opposite:'每位A带来 α 单位商品1，只在乎商品2；每位B带来 β 单位商品2，只在乎商品1。以商品2作计价单位。',
+   'original-cd':'A的禀赋为 (2,3)，效用为 x₁x₂；B的禀赋为 (5,4)，效用为 x₁²x₂。商品2价格取1。',
+   robinson:'只有一位消费者，独自拥有两种商品的全部存量。原题假设偏好单调、连续且凸；要求初始禀赋在按支持价格给出的预算内最优。',
+   'boundary-contract':'两种商品各有1单位，两人的偏好均严格单调、凸且可微。本人两种数量之和小于、等于、大于1时，边际替代率分别大于、等于、小于1。',
+   indivisible:`原题有奇数人，估值各异。每人初有1件，最终可持0、1、2件，效用为货币加上持有件数乘本人估值，每人的初始货币均超过最高估值。此图 ${result.n} 人的估值为 ${result.values?.join('、')}。`
+  }[kind];
+  $('case').dataset.filmGiven=given;
   window.microMotion.chart($('plot'),picture);$('legend').textContent=legend;$('metrics').innerHTML=metrics.map(([a,b])=>'<div class="metric"><label>'+esc(a)+'</label><strong>'+esc(f(b))+'</strong></div>').join('');$('reading').textContent=reading;$('formula').textContent=formula;$('extra').innerHTML=extra;$('boundary').textContent='Osborne–Rubinstein 第10章，印刷'+c.page+'页。'+boundary;spec.forEach(q=>{if($('out-'+q.k))$('out-'+q.k).value=f(state[q.k]);$(q.k).value=state[q.k]});if(kind==='robinson')$('price').disabled=s.mode==='support';if(kind==='price-setter')$('factor').disabled=s.mode!=='trial';if(kind==='bundle-market'||kind==='nonlinear-bundles'){for(const k of ['big','smallA','smallB'])$(k).disabled=s.mode==='linear';$('ratio').disabled=s.mode==='bundle'}if(kind.startsWith('nonconvex'))for(const k of ['chooseA','chooseB'])$(k).disabled=s.price!==.5;last={name,state:{...state},result};
  }
  function stop(){clearInterval(timer);timer=null;$('play').textContent='播放变化'}

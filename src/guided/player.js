@@ -28,7 +28,57 @@
   let returnId = '';
   let returnTop = null;
 
-  const owner = id => byId(id)?.closest('.guided-step');
+  const desk = flow.parentElement;
+  const card = desk.querySelector('.condition-card');
+  const conditions = byId('condition-text');
+  const sizeButton = card.querySelector('.condition-size');
+  const narrow = matchMedia('(max-width:799px)');
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  let cardMotion;
+  function owner(id) {
+    const element = byId(id);
+    if (element === desk || card.contains(element)) return steps[0];
+    return element?.closest('.guided-step');
+  }
+  function measureCard() {
+    desk.style.setProperty('--reference-height', card.offsetHeight + 'px');
+    const overflows = conditions.scrollHeight > conditions.clientHeight + 1;
+    const expanded = card.hasAttribute('data-expanded');
+    sizeButton.hidden = !(desk.hasAttribute('data-docked') && narrow.matches && (expanded || overflows));
+    conditions.tabIndex = overflows ? 0 : -1;
+  }
+  sizeButton.addEventListener('click', () => {
+    const expanded = card.toggleAttribute('data-expanded');
+    sizeButton.setAttribute('aria-expanded', String(expanded));
+    sizeButton.textContent = expanded ? '收回全题' : '展开全题';
+    if (!expanded) conditions.scrollTop = 0;
+    measureCard();
+  });
+  // Measure natural reflow (including font and viewport changes) for anchor offsets.
+  if ('ResizeObserver' in window) {
+    const observer = new ResizeObserver(measureCard);
+    observer.observe(card);
+    observer.observe(conditions.firstElementChild);
+  }
+  function stopMotion() { cardMotion?.cancel(); }
+  reduced.addEventListener('change', stopMotion);
+  narrow.addEventListener('change', () => {stopMotion(); measureCard();});
+  new MutationObserver(stopMotion).observe(document.documentElement, {attributes:true, attributeFilter:['data-motion']});
+  function carryCard(before) {
+    if (!before || !card.animate || reduced.matches || document.documentElement.dataset.motion === 'reduced') return;
+    const after = card.getBoundingClientRect();
+    const x = before.left - after.left;
+    const y = Math.min(90, Math.max(-90, before.top - after.top));
+    // Keeping the width and position in step holds the paper's outer edge
+    // steady. Text reflows at its reading size instead of stretching sideways.
+    const start = {transform:`translate(${x}px,${y}px)`};
+    const end = {transform:'none'};
+    if (Math.abs(before.width - after.width) > 1) {
+      start.width = before.width + 'px';
+      end.width = after.width + 'px';
+    }
+    cardMotion = card.animate([start,end], {duration:260,easing:'cubic-bezier(.2,.75,.25,1)'});
+  }
   const firstUnread = () => reasoning.find(step => !seen.has(step.id));
   function locationId() {
     const url = new URL(location.href);
@@ -81,6 +131,18 @@
       previous.href = firstUnread() ? '#' + firstUnread().id : '#answer';
       previous.textContent = firstUnread() ? '回顾推理' : '← 上一步';
     }
+    const docked = step !== steps[0];
+    const crossing = !!current && docked !== desk.hasAttribute('data-docked');
+    const before = crossing ? card.getBoundingClientRect() : null;
+    if (crossing) {
+      stopMotion();
+      card.removeAttribute('data-expanded');
+      sizeButton.setAttribute('aria-expanded', 'false');
+      sizeButton.textContent = '展开全题';
+      conditions.scrollTop = 0;
+    }
+    desk.toggleAttribute('data-docked', docked);
+    desk.dataset.ready = '';
     if (current !== step) {
       for (const panel of steps) {
         panel.hidden = panel !== step;
@@ -89,6 +151,7 @@
       current = step;
     }
     flow.dataset.interactive = '';
+    measureCard();
     writeHistory(method, id, restore && !missing);
     if (focus) {
       const target = byId(id);
@@ -99,13 +162,15 @@
         window.scrollBy({top: sourceLink.getBoundingClientRect().top - backTop, behavior: 'instant'});
         return;
       }
-      const destination = target?.classList.contains('guided-answer-row') ? target : step;
+      const destination = !docked ? card : target?.classList.contains('guided-answer-row') ? target : step;
       destination.focus({preventScroll: true});
       const bounds = destination.getBoundingClientRect();
-      if (bounds.top < 0 || bounds.top > innerHeight / 2) {
-        destination.scrollIntoView({block: 'start', behavior: 'instant'});
+      const clearance = docked && narrow.matches ? card.offsetHeight + 8 : 10;
+      if (bounds.top < clearance || bounds.top > innerHeight / 2) {
+        window.scrollBy({top:bounds.top - clearance, behavior:'instant'});
       }
     }
+    carryCard(before);
   }
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');

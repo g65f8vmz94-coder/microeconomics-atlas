@@ -537,7 +537,13 @@ export function renderConsumerStory(meta, requested, phase = 0) {
   if(slutskyContext.dataset.signature!==html){slutskyContext.dataset.signature=html;slutskyContext.innerHTML=html;}
  }else slutskyContext?.remove();
 
+ const st=frame.state;
+ const rule={intro:'先给预算，暂未指定购买规则',cheaper:'只买较便宜品，同价时两样各花一半',equal:'两样买相同数量',half:'两样各花一半',cap:'先买至多7个包子，再买豆浆',expensive:'只买较贵品，同价买商品1'}[st.rule];
+ const preference={cd:mode==='normal'?'乘积效用':'Cobb–Douglas 偏好',product:'乘积效用',complement:'完全互补',linear:'完全替代',quasi:'拟线性偏好',giffen:'本例的分段效用'}[st.model];
+ const price=st.p1??st.p;
+ const current=price==null?'':`这一幕：商品1单价 ${cNum(price)} 元，商品2单价 ${cNum(st.q)} 元，${mode==='slutsky'?'实际预算':'预算'} ${cNum(st.w+(st.extraW||0))} 元。`;
  Object.assign(plot.dataset, {
+  filmGiven: current+(preference?'当前偏好：'+preference+'。':'')+(rule?'当前规则：'+rule+'。':''),
   filmIntro: story.intro,
   filmPhase: frame.title,
   filmNarration: frame.narration,

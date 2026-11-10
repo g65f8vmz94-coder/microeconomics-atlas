@@ -98,10 +98,13 @@ function stepMarkup(steps, step, i) {
   const prev = steps[i - 1], next = steps[i + 1];
   // In the script-free copy, the only forward link to the paper follows the
   // final deduction. A direct visit to practice also has a route to reasoning.
-  const previousId = prev?.id === 'answer' ? 'solution' : prev?.id;
+  const previousId = prev?.kind === 'given' ? 'given' : prev?.id === 'answer' ? 'solution' : prev?.id;
   const previous = prev ? `<a data-direction="previous" href="#${previousId}">${prev.id === 'answer' ? '回顾推理' : '← 上一步'}</a>` : '';
   const nextLabel = next?.id === 'answer' ? '展开完整手写答卷' : next?.id === 'practice' ? '换道题试试' : '下一步';
   const forward = next ? `<a class="primary" data-direction="next" href="#${next.id}">${nextLabel} →</a>` : '<a href="#given">从头复习 ↑</a>';
+  if (step.kind === 'given') {
+    return `<section class="guided-step guided-given" id="given-start" aria-labelledby="given-heading"><nav class="guided-controls" aria-label="本页步骤"><a class="primary" data-direction="next" href="#${next.id}">${next.kind === 'account' ? '先算一笔账' : '开始看图'} →</a><span class="guided-progress">第 1 / ${steps.length} 步</span></nav></section>`;
+  }
   const titleId = {given: 'given-heading', scene: 'scene-title', practice: 'practice-heading'}[step.id] || step.id + '-title';
   return `<section class="guided-step guided-${step.kind}" id="${step.id}" tabindex="-1" aria-labelledby="${titleId}">
 <p class="guided-progress step-kicker">第 ${i + 1} / ${steps.length} 步 · ${escape(step.phase)}</p>

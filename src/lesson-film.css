@@ -1,25 +1,23 @@
 /* A lecture stage, rather than a parameter dashboard. */
 .film-mode .controls,.film-mode .learning-path,.film-mode .model-menu,.film-mode .chapter-menu,.film-mode .guide-tabs{display:none!important}
 .film-mode .lesson-top,.film-mode .focus-question{display:none}
-.film-mode .workspace{display:block;border:0;padding:0;margin-top:18px}
-.film-mode .stage{max-width:1200px;margin:auto;min-width:0;display:grid;grid-template-columns:minmax(290px,.78fr) minmax(0,1.4fr);column-gap:34px;align-items:start}
-.film-mode .stage>.lesson-film{grid-column:1;grid-row:1 / span 2;align-self:start;margin:0}
-.film-mode .stage.fairness-story{display:block}
-.film-mode .stage.fairness-story>.lesson-film{max-width:960px;margin:0 auto 20px}
-.film-mode .stage.nonlinear-story{display:block}
-.film-mode .stage.nonlinear-story>.lesson-film{max-width:960px;margin:0 auto 20px}
-.film-mode .stage.bundling-story{display:block}
-.film-mode .stage.bundling-story>.lesson-film{max-width:960px;margin:0 auto 20px}
-.film-mode .stage.bundling-story>#plot{max-width:760px;margin:0 auto}
-.film-mode .stage.twopart-story{display:block}
-.film-mode .stage.twopart-story>.lesson-film{max-width:960px;margin:0 auto 20px}
-.film-mode .stage>#legend{grid-column:2;grid-row:1;align-self:end}
-.film-mode .stage>#plot{grid-column:2;grid-row:2}
-@media(min-width:901px){.film-mode .stage.strategic-story>#strategic-brief,.film-mode .stage.strategic-story>#matching-stability-brief{grid-column:1 / -1;grid-row:1;max-width:none;margin:0 0 20px}.film-mode .stage.strategic-story>.lesson-film{grid-row:2 / span 2}.film-mode .stage.strategic-story>#legend{grid-row:2}.film-mode .stage.strategic-story>#plot{grid-row:3}}
-.film-mode .stage>:not(.lesson-film):not(#legend):not(#plot){grid-column:1 / -1;width:100%;max-width:960px;margin-left:auto;margin-right:auto}
-.film-mode .stage-title{display:none}
-.film-mode .lesson-top .hero{padding-bottom:12px}
-.film-mode .focus-question{max-width:850px;margin-bottom:20px}
+.film-mode .workspace{display:grid;grid-template-columns:minmax(230px,1fr) minmax(0,2.4fr);align-items:start;gap:clamp(18px,3vw,42px);border:0;padding:0;margin:18px auto;max-width:1280px}
+.film-mode .stage{min-width:0;grid-column:2}
+.film-mode .stage.bundling-story>#plot{max-width:760px;margin:auto}
+#film-conditions{position:sticky;top:12px;z-index:2;min-width:0;background:var(--paper,#fff);border-block:2px solid var(--accent,#177468);padding:10px 0;color:var(--ink)}
+#film-conditions h2{margin:0 0 6px;font-size:17px}
+#condition-text{overflow:auto;max-height:calc(100vh - 90px);max-height:calc(100dvh - 90px);scrollbar-width:thin}
+#film-conditions p{margin:0 0 8px;font-size:14px;line-height:1.65;overflow-wrap:anywhere}
+#film-conditions p:last-child{margin-bottom:0}
+#film-conditions p:empty{display:none}
+#film-values{font-variant-numeric:tabular-nums}
+@media(max-width:760px){
+ .film-mode .workspace{display:block}
+ #film-conditions{top:0;margin-bottom:12px}
+ #condition-text{max-height:42vh;max-height:42svh}
+ .workspace:has([data-state="playing"]) #condition-text{max-height:27vh;max-height:27svh}
+ .film-transport button{scroll-margin-top:52vh}
+}
 .lesson-film{max-width:960px;margin:0 auto 26px;padding:24px 0 20px;border-top:2px solid var(--green,#177468);border-bottom:1px solid var(--line,#d8ded1)}
 .film-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:var(--muted,#66786d)}
 .film-topline span:first-child{letter-spacing:.12em;color:var(--green,#177468)}
@@ -43,7 +41,7 @@
 .film-mode .lesson-end{max-width:960px;margin:auto}
 .film-mode .chapter-back{font-size:13px;white-space:nowrap}
 @media(max-width:620px){.lesson-film{padding-top:18px;margin-bottom:20px}.film-topline{font-size:11px}.film-caption{min-height:0;font-size:16px;line-height:1.85}.film-transport button{padding:9px 15px}.film-mode .metrics{gap:12px}.film-mode .plot{min-height:0}}
-@media(max-width:900px){.film-mode .stage{display:block;max-width:960px}.film-mode .stage>.lesson-film{margin-bottom:20px}}
+
 @media(prefers-reduced-motion:reduce){.lesson-film *{animation:none!important;transition:none!important}}
 
 /* Home explanation only; keep the shared lesson-film rules above intact. */
@@ -64,12 +62,6 @@
 @media(max-width:620px){#home-demo .home-film-transport progress{flex-basis:100%}.atlas-ui #home-demo .home-film-caption{min-height:0}#home-demo .home-film-story{font-size:13px}}
 @media(prefers-reduced-motion:reduce){#home-demo *{animation:none!important;transition:none!important}}
 
-.film-mode .stage.discrete-story{display:block}
-.film-mode .stage.discrete-story>.lesson-film{max-width:960px;margin:0 auto 20px}
-
-.film-mode .stage.jungle-intro{display:block}
-.film-mode .stage.jungle-intro>.lesson-film{max-width:960px;margin:0 auto 20px}
-
 .film-mode .crumb{display:flex;flex-wrap:wrap;gap:6px 20px}
 .film-mode .lesson-end [hidden]{display:none}
 .film-mode .model-notes{grid-column:1/-1;min-width:0}
@@ -79,8 +71,6 @@
 .film-mode #film-solution{display:inline-block;margin-top:8px;color:var(--accent)}
 .film-mode .film-transport button:disabled{opacity:.6;cursor:default}
 .film-mode .film-episodes nav>a{max-width:100%;overflow-wrap:anywhere}
-.film-mode #film-conditions{margin:0 0 12px;font-size:14px}
-.film-mode #film-conditions summary{color:var(--accent);padding:4px 0}
 @media(max-width:620px){
  .film-mode .film-transport{gap:6px}
  .film-mode .film-transport button{padding:6px 10px}

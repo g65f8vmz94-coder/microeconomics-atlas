@@ -38,9 +38,13 @@ export function startStrategicExercises(requested){
  function curves(pay,a,b,max,discontinuous=false){const W=innerWidth<=620?360:650,left=45,right=W-25,top=32,bottom=298,points=[0,1].map(i=>Array.from({length:161},(_,k)=>{const x=max*k/160;return[x,pay(i===0?x:a,i===1?x:b)[i]]})),lo=Math.min(0,...points.flat().map(x=>x[1])),hi=Math.max(1,...points.flat().map(x=>x[1])),X=v=>left+(right-left)*v/max,Y=v=>bottom-(v-lo)/(hi-lo)*(bottom-top);let body='<path d="M'+left+' '+top+'V'+bottom+'H'+right+'" stroke="'+C.line+'" fill="none"/>';
   points.forEach((ps,i)=>{let d='';ps.forEach(([x,v],k)=>{const cutoff=i===0?b:a,broken=discontinuous&&k&&ps[k-1][0]<=cutoff&&x>=cutoff;d+=(k&&!broken?'L':'M')+X(x)+' '+Y(v)+' '});body+='<path d="'+d+'" fill="none" stroke="'+[C.g,C.p][i]+'" stroke-width="2"/>'+circle(X([a,b][i]),Y(pay(a,b)[i]),[C.g,C.p][i],'choice-'+i)});body+=text(left,bottom+27,'0',C.muted,12)+text(right,bottom+27,f(max),C.muted,12,'end')+text(left,19,'固定对手，改变自己的行动',C.muted,12);return svg(body,355)}
  function draw(){
-  const c=exercise15Cases[name],kind=c.kind,s=state;let picture='',metrics=[],reading='',formula='',extra='',legend='绿色：玩家1 / 概率；紫色：玩家2；赤色：当前选择',result={};
+  const c=exercise15Cases[name],kind=c.kind,s=state;let picture='',metrics=[],reading='',formula='',extra='',legend='绿色：玩家1 / 概率；紫色：玩家2；赤色：当前选择',result={},given='';
   if(['centipede','demand','demand-priority','cheap','competitive','comparative'].includes(kind)){
    const m=p15Finite(kind,s.delta||0),a=+s.a,b=+s.b,u=m.M[a][b],br=[Math.max(...m.M.map(r=>r[b][0])),Math.max(...m.M[a].map(v=>v[1]))];result={m,a,b,u,br};picture=heatmap(m,a,b);metrics=[['玩家1收益',u[0]],['玩家2收益',u[1]],['玩家1可获增益',br[0]-u[0]],['玩家2可获增益',br[1]-u[1]]];
+   if(kind==='centipede')given='两人各从0开始，轮流决定停止或继续，最多100步。继续使自己少1、对方多2；停止或走满100步时按当时的金额结算。';
+   else if(kind.startsWith('demand'))given='两人各自同时报0到10的整数需求，分10个单位。合计至多10时各拿所报数量。'+(kind==='demand'?'超过10时两人都得零。':'超过10时先满足较小的需求，另一人得剩余；相等则各得5。');
+   else if(kind==='cheap')given='发送者先说B或S，再与接收者各选B或S；接收者看得到消息。两人同选B得(2,1)，同选S得(1,2)，错开得(0,0)。消息本身无成本。';
+   else given='按行 T、B 和列 L、R 排列，每格先写玩家1收益，再写玩家2收益。当前矩阵：'+m.M.map(row=>row.map(pair=>'('+pair+')').join('、')).join('；')+'。';
    const desc={centipede:'每人的行动是自己第一次停止的机会编号；50表示50次都继续。这里枚举51×51对自然计划，逐一检验单方改计划。唯一纯NE是双方都计划在自己的第一次机会停止，实际在第一步结束。完整树策略的路径外写法可有多种，不与自然计划编号混同。',demand:'需求总和恰为10的11对都是均衡；另外(10,10)也是零收益均衡，因为任何单方需求都无法获得正收益。', 'demand-priority':'超额时，小需求者按自己需求取得，大需求者拿余下；相同则各5。枚举全部121对，均衡恰为{5,6}×{5,6}的四对，绿色格表示双方都无法单方改进。',cheap:'发送者必须同时决定说什么、实际做什么；接收者必须为两条消息各写一个回应。消息本身不进入收益。枚举4×4完整计划，共6个纯策略均衡；只写实际收到消息后的回应会漏掉可偏离的计划。',competitive:'固定玩家2的收益，只提高玩家1在(B,L)的一格；变化幅度小于1，保持严格相反的排序。严格竞争的均衡收益等于保底值，点对点提高收益不会降低其最大最小值。',comparative:'原矩阵有(T,L)和(B,R)两个纯NE，玩家1分别得1、3。把(T,R)的收益从2提高到大于3后，(B,R)消失，只剩玩家1得1的(T,L)。另外一人的所有收益保持不变。'};reading=desc[kind];formula=String.raw`a^*\in NE\iff\forall i,\forall a_i:\ u_i(a^*)\ge u_i(a_i,a^*_{-i})`;
    extra=table(['均衡：玩家1行动','玩家2行动','收益'],m.ne.map(([i,j])=>[m.rows[i],m.cols[j],m.M[i][j].join('，')]));if(m.rows.length<=4)extra+=table(['玩家1行动',...m.cols],m.rows.map((r,i)=>[r,...m.M[i].map(v=>v.join('，'))]));extra+='<button data-equilibrium>移到第一个纯均衡</button>';
   }else if(kind==='guess'){
@@ -68,6 +72,23 @@ export function startStrategicExercises(requested){
    if(kind==='kantian-price'){let lam=s.scale;if(s.scope==='bounded')lam=Math.min(lam,1/Math.max(a,b));const after=pay(lam*a,lam*b),low=Math.min(a,b),high=Math.max(a,b),ke=Math.abs(low-.5)<1e-8||s.scope==='bounded'&&Math.abs(high-1)<1e-8&&low<=.5;picture=bars(['企业1利润','企业2利润'],[{values:u,color:C.p},{values:after,color:C.g}]);metrics.push(['实际共同倍数',lam],['当前康德稳定',ke?'是':'否']);reading='正价格同时乘以λ，大小关系保持。若允许任意正价格，最低价格必须为1/2，较高价企业一直无销量；不要求价格相等。若把行动限在(0,1]且只比较变动后仍可行的λ，还会出现“最高价1、最低价≤1/2”的边界。原书§15.6写了正行动上界与全部λ却未说明越界比较，故本题把两种约定明示。0价格在乘法下无法离开，已从本实验排除。';formula=String.raw`\pi_{\min}(\lambda)=\lambda p_{\min}\max\{0,1-\lambda p_{\min}\},\quad p_{\min}=\tfrac12\ \text{(无上界)}`}
    result={a,b,z,w,u};
   }
+  $('plot').dataset.filmGiven=given||{
+   guess:'每人同时报1至100的整数。目标是所有报告均值的三分之二。若自己的报告是整数集合中最接近目标的数之一，就得1，否则得0。',
+   clean:'每户同时决定是否打扫。打扫者自己付成本 B；其他住户每有一家不打扫，自己就承担损失 L。',
+   'demand-limit':'两人同时索取0到1之间的份额。所得等于所要份额乘成交概率；总需求不超过 1−ε 时必成交，达到1时成交概率为零，中间以可微函数过渡。',
+   mixed23:'行方选 T 或 B，列方选 L、M 或 R。两行的收益对依列序为 '+p15Matrix23.map(row=>row.map(pair=>'('+pair+')').join('、')).join('；')+'。',
+   hawk:'每人选鹰或鸽。两鹰相遇各损失 c，两鸽平分1，鹰遇鸽得1、鸽得0。',
+   attack:'一人选一个目标攻击，另一人同时选一个防守。选中同一目标双方得零；否则攻方得到该目标价值，守方损失同额。',
+   oneill:'双方各从2、3、4、J中暗选一张。两张数字不同或同为J时玩家1赢，其他情况玩家2赢。',
+   committee:'三人各自决定是否付成本 c 到会。两人支持 A，一人支持 B。到会者以多数决定；平票（含无人到会）时两项各有一半机会，当选自己支持的方案得1。',
+   attrition:'两人同时选非负退出时刻。争夺持续到较早退出的时刻，双方各付已用时间的成本。退出较晚者得物品，同刻退出则平分物品价值。',
+   war:'两人同时选非负投入，各自承担自己的投入成本。物品价值为 V；正总投入时，胜率等于自己的投入份额，两人都投零时各有一半机会。',
+   allpay:'每人同时报一个非负出价，双方都支付各自出价。较高者赢得物品，平局时各获一半机会。',
+   location:'选民均匀分布在单位线段，两名候选人同时选位置。选民投给较近者，等距平分选票；候选人对胜、平、负的收益依次为1、0、−1。',
+   'smooth-demand':'两人同时索取0到1之间的份额。每人得到自己所要份额乘成交概率；本例成交概率为总需求未满1时剩余份额的 k 次方，达到1时为零。',
+   contribution:`两人各选非负贡献，总额为 C。净收益等于对总额的估值减本人出资。估值从零起步，递增、可微且凹；两人的边际估值各在某个正总额等于1，玩家2的边际估值处处更高。本图用 ln(1+C) 的2倍和 ${s.z} 倍举例。`,
+   'kantian-price':'两家零成本企业同时报正价格。低价者供应全部需求，同价平分。最低价为 p 时，需求为 max{0,1−p}。共同变价时，两家价格同乘一个正数。'
+  }[kind];
   window.microMotion.chart($('plot'),picture);$('legend').textContent=legend;$('metrics').innerHTML=metrics.map(([a,b])=>'<div class="metric"><label>'+esc(a)+'</label><strong>'+esc(f(b))+'</strong></div>').join('');$('reading').textContent=reading;$('formula').textContent=formula;$('extra').innerHTML=extra;$('boundary').textContent='Osborne–Rubinstein 第15章印刷'+c.page+'页。连续行动不由滑块刻度定义；各题的推导列出所用假设与原文条件。';spec.forEach(q=>{if($('out-'+q.k))$('out-'+q.k).value=f(state[q.k]);$(q.k).value=state[q.k]});last={name,kind,state,result};
  }
  function stop(){clearInterval(timer);timer=null;$('play').textContent='播放变化'}
