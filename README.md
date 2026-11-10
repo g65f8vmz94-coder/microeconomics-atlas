@@ -6,6 +6,12 @@
 
 全书有 90 个小节和 151 道章末题。可以按题号找到条件和算例，从每行解答跳回对应画面，再换一道题独立判断。[打开全书随题图解](https://microeconomics-atlas-mingze.synb636.chatgpt.site/learn)
 
+## 市场入口
+
+从男孩身后望进集市，移动鼠标可以看见近处人物与远处拱廊的相对位移。画面上的曲线通向具体课程，也可以从正门直接进入全书目录。手机和键盘均可直接打开这些链接。[进入市场](https://microeconomics-atlas-mingze.synb636.chatgpt.site/market)
+
+场景与人物是为本项目生成的两张独立插画。图线、坐标、标注和课程链接由 `src/cover.cjs` 生成，构图与视差分别在 `src/cover.css` 和 `src/cover.js`。分层响应指针的方式参考了 Parallax.js，场景标记连接到内容的方式参考了 Codrops 的交互商场地图。[分层视差示例](https://github.com/wagerfield/parallax/blob/master/examples/pages/hoveronly.html) · [Interactive 3D Mall Map](https://github.com/codrops/Interactive3DMallMap)
+
 ## 本地运行
 
 需要 Node.js 18 或更新版本，以及 Python 3（仅用于本地预览和部分数学核验）。无需安装 npm 依赖。
