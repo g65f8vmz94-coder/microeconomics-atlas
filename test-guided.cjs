@@ -10,9 +10,9 @@ const root=path.join(__dirname,'dist');
 const modules=chapters.map(c=>require('./src/guided/ch'+String(c.number).padStart(2,'0')+'.cjs'));
 const content=Object.assign({},...modules);
 const expected=chapters.flatMap(c=>[...c.sections,...c.problems].map(m=>m.key));
-assert.equal(chapters.length,10);
-assert.equal(chapters.flatMap(c=>c.sections).length,55);
-assert.equal(chapters.flatMap(c=>c.problems).length,80);
+assert.equal(chapters.length,20);
+assert.equal(chapters.flatMap(c=>c.sections).length,90);
+assert.equal(chapters.flatMap(c=>c.problems).length,151);
 assert.deepEqual(Object.keys(content).sort(),expected.filter(k=>k!=='p3.9').sort());
 assert.equal(inventory.actualNumberedProblems,inventory.problems.length);
 assert.equal(inventory.problems.filter(p=>p.id==='Problem 3.6').length,0);
@@ -52,6 +52,13 @@ for(const [key,u] of Object.entries(content)){
   for(const node of g.nodes)check(node.x>=0&&node.x<=1&&node.y>=0&&node.y<=1,'node coordinates');
   for(const edge of g.frames.flat())check(edge.length===2&&edge.every(id=>ids.has(id)),'named endpoints');
  }
+ if(u.payoff){
+  const g=u.payoff;
+  check(g.players.length===2&&g.cells.length===g.rows.length&&g.cols.length>=2,'payoff dimensions');
+  check(g.cells.every(r=>r.length===g.cols.length&&r.every(v=>v.length===2&&v.every(Number.isFinite))),'payoff pairs');
+  check(g.frames.length===u.frames.length&&g.frames.every(([r,c])=>Number.isInteger(r)&&Number.isInteger(c)&&g.cells[r]?.[c]),'highlighted strategy profile');
+ }
+ if(u.holds)check(u.holds.frames.length===u.frames.length&&u.holds.frames.every(f=>f.length===u.holds.labels.length&&f.every(v=>typeof v==='string'&&v.trim())),'tentative assignments');
  if(u.portions)check(u.portions.frames.length===u.frames.length&&u.portions.frames.every(f=>f.length===2&&f.every(([q,p])=>q>=0&&q<=u.portions.max&&p>=0)),'contract menu');
  if(u.tickets)check(u.tickets.counts.length===u.frames.length&&u.tickets.counts.every(c=>c.every(Number.isInteger)&&c.reduce((a,b)=>a+b,0)===4),'four equiprobable tickets');
  const html=fs.readFileSync(path.join(root,urlFor(key)),'utf8');
@@ -70,5 +77,11 @@ for(const [q,p,mr,profit]of rows('s7.2')){assert.equal(p,12-q);assert.equal(mr,1
 assert.deepEqual(rows('p7.8').at(-1).slice(2),[7,4]);
 assert.equal(new Set(rows('s8.2').at(-1)).size,3);
 for(const [,d,s,z]of rows('s10.3'))assert.ok(Math.abs(d-s-z)<1e-9);
+const ch14 = chapters.find(c=>c.number===14);
+assert.equal(ch14.problems.find(p=>p.id==='14.1').page,'211–212');
+for(const [w,b,where,profit] of rows('s14.1')){
+ assert.equal(where,b>w?'去新店':'留原店');
+ if(b>w)assert.equal(profit,8-b);
+}
 for(const key of expected)assert.ok(fs.existsSync(path.join(root,urlFor(key))),key);
-console.log(JSON.stringify({chapters:10,sections:55,problems:80,newUnits:Object.keys(content).length,frames,proofs,plots,networks}));
+console.log(JSON.stringify({chapters:chapters.length,sections:90,problems:inventory.actualNumberedProblems,newUnits:Object.keys(content).length,frames,proofs,plots,networks}));
