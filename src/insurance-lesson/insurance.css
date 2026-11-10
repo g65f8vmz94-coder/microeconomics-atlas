@@ -33,29 +33,77 @@ h2 { font-size: clamp(1.5rem, 3vw, 2.05rem); }
 .mast a { display: inline-flex; min-height: 50px; align-items: center; color: inherit; font-size: .9rem; text-decoration: none; }
 .mast .brand { font: 700 1.12rem var(--serif); letter-spacing: .055em; }
 .mast a:hover { text-decoration: underline; }
-.intro { padding: clamp(24px, 3.5vw, 46px) 0 16px; }
 h1 { margin: 6px 0 12px; font-size: clamp(2rem, 4.8vw, 3.6rem); line-height: 1.16; }
 h1 span { display: inline-block; }
-.lead { max-width: 48em; }
 [id] { scroll-margin-top: 12px; }
-.question, .condition { border-block: 1px solid var(--rule); }
+.condition { border-block: 1px solid var(--rule); }
 summary { padding: 10px 2px; font-size: .94rem; font-weight: 650; }
 summary::marker { color: var(--brass); }
-.question-body { max-width: 56em; padding: 0 0 18px; }
-.question-body p + p, .condition p { margin-top: 8px; }
+.insurance-layout {
+  width: min(1240px, calc(100% - 64px));
+  margin-block: clamp(16px, 3vw, 36px);
+}
+.problem-card {
+  max-width: 56rem;
+  margin-inline: auto;
+  background: var(--page);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--brass);
+  padding: clamp(18px, 3vw, 38px);
+}
+.problem-head { border-bottom: 1px solid var(--rule); padding-bottom: 10px; }
+.problem-head h1 { margin-bottom: 0; }
+.question-body { padding-block: 14px 4px; }
+.question-body p + p { margin-top: 10px; }
+.question-body b { color: var(--green); }
+.question-body:focus-visible { outline-offset: 2px; }
+.scroll-cue { display: none; }
+.problem-start { margin-top: 20px; }
+
+/* The question stays outside the routed panels. Only their own fragments dock it. */
+.insurance-layout:has(> .lesson-panel:target, > .lesson-panel :target) {
+  display: grid;
+  grid-template-columns: minmax(15rem, .82fr) minmax(0, 2fr);
+  gap: clamp(16px, 2vw, 28px);
+  align-items: start;
+
+  & > .problem-card {
+    position: sticky;
+    top: 12px;
+    z-index: 1;
+    width: 100%;
+    max-height: calc(100dvh - 24px);
+    display: flex;
+    flex-direction: column;
+    padding: 14px 18px;
+  }
+  & .problem-head h1 { font-size: clamp(1.22rem, 1.8vw, 1.6rem); margin-top: 4px; }
+  & .question-body { overflow-y: auto; min-height: 0; padding-right: 4px; }
+  & .problem-start { display: none; }
+}
+.lesson-panel { min-width: 0; }
+@keyframes insurance-dock {
+  from { translate: var(--dock-x, 12px) var(--dock-y, 0); }
+  to { translate: 0 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html[data-motion="normal"] .insurance-layout:has(> .lesson-panel:target, > .lesson-panel :target) > .problem-card {
+    animation: insurance-dock 160ms ease-out;
+  }
+}
 /* Native fragment navigation selects one panel and one ledger step, also offline without scripts. */
 .lesson-panel, .ledger-step, .skip, .return-to-proof { display: none; }
-main:not(:has(.proof-section :target, .practice-panel:target, .practice-panel :target)) > .ledger-panel,
 .lesson-panel:where(:target, :has(:target)),
 .worksheet:not(:has(.ledger-step:target, .ledger-step :target)) > .ledger-step:first-of-type,
 .ledger-step:where(:target, :has(:target)),
-body:not(:has(.proof-section :target, .practice-panel:target, .practice-panel :target)) .ledger-skip,
+body:not(:has(.lesson-panel:target, .lesson-panel :target)) .problem-skip,
+body:has(.ledger-panel :target) .ledger-skip,
 body:has(.proof-section :target) .proof-skip,
 body:has(.practice-panel:target, .practice-panel :target) .practice-skip,
 .sheet-grid:target .return-to-proof { display: block; }
 .sheet-grid:target .actions { display: none; }
 .panel-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 16px 0 30px; }
-.worksheet { margin: 24px 0 28px; border: 1px solid var(--rule); border-top: 3px solid var(--brass); background: var(--page); }
+.worksheet { margin: 0 0 22px; border: 1px solid var(--rule); border-top: 3px solid var(--brass); background: var(--page); }
 .sheet-head { padding: 20px 24px 0; }
 .sheet-head h2 { margin: 2px 0; }
 .primary { background: var(--green); color: #fffaf0; }
@@ -100,12 +148,12 @@ small { font: 500 .79rem var(--sans); }
 .metrics strong { font-size: 1.3rem; }
 .receipt { margin-top: 9px; padding-left: 10px; border-left: 2px solid var(--brass); }
 .receipt > div { display: flex; flex-wrap: wrap; gap: 0 12px; }
-.practice { margin: 28px 0; padding: 15px 0 22px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(16px, 5vw, 68px); }
+.practice { margin: 0 0 22px; padding: 0 0 22px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(16px, 5vw, 68px); }
 .practice h2 { margin: 4px 0 9px; }
 .practice label { display: block; font-size: .9rem; }
 .practice input, .practice select { display: block; width: 100%; min-height: 44px; margin: 3px 0 8px; padding: 6px 8px; background: var(--page); border: 1px solid #aa9e84; border-radius: 3px; font-size: 16px; }
 .feedback:not(:empty), #worked { margin-top: 10px; padding-left: 10px; border-left: 2px solid var(--brass); }
-.proof-section { margin-block: 30px; }
+.proof-section { margin-bottom: 24px; }
 .proof-head { margin-bottom: 14px; align-items: end; }
 .notes-control { display: flex; align-items: center; gap: 5px; min-height: 44px; color: var(--muted); font-size: .9rem; }
 .notes-control input { width: 17px; height: 17px; accent-color: var(--green); }
@@ -124,8 +172,36 @@ math { font-family: "STIX Two Math", "Cambria Math", math; }
 .foot { align-items: start; border-top: 1px solid var(--rule); padding: 16px 0 28px; font-size: .85rem; color: var(--muted); }
 .foot > div { max-width: 40em; }
 .foot nav { display: flex; flex-wrap: wrap; gap: 6px 16px; }
-@media (max-width: 760px) {
+@media (min-width: 901px) and (max-width: 1120px) {
+  .sheet-grid, .practice { grid-template-columns: minmax(0, 1fr); }
+  .answer-line { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+}
+@media (max-width: 900px) {
+  :root { --dock-height: min(31dvh, 13.5rem); }
+  :root:has(.lesson-panel:target, .lesson-panel :target) { scroll-padding-top: calc(var(--dock-height) + 6px); }
   .wrap { width: calc(100% - 28px); }
+  .insurance-layout:has(> .lesson-panel:target, > .lesson-panel :target) {
+    display: block;
+    margin-top: 0;
+
+    & > .problem-card {
+      --dock-x: 0;
+      --dock-y: 6px;
+      top: 0;
+      height: var(--dock-height);
+      max-width: none;
+      padding: 6px 12px 8px;
+      margin-bottom: 14px;
+      box-shadow: 0 3px 0 rgb(113 86 44 / 12%);
+    }
+    & .problem-head { padding-bottom: 4px; }
+    & .problem-head h1 { font-size: 1.12rem; margin: 0; }
+    & .problem-head .eyebrow { display: flex; align-items: baseline; justify-content: space-between; font-size: .77rem; }
+    & .scroll-cue { display: inline; color: var(--muted); font-weight: 500; letter-spacing: normal; }
+    & .question-body { padding-block: 6px; font-size: .94rem; line-height: 1.55; }
+  }
+}
+@media (max-width: 760px) {
   .sheet-grid, .practice { grid-template-columns: minmax(0, 1fr); }
   .reading { padding: 16px; }
   .reading h3 { margin: 6px 0; }
@@ -144,14 +220,17 @@ math { font-family: "STIX Two Math", "Cambria Math", math; }
   .sheet-head h2 { font-size: 1.2rem; }
   .cashline, .delta { font-size: .8rem; }
   .account { padding: 8px; }
-  .intro { padding: 16px 0 10px; }
-  .worksheet { margin-top: 14px; }
   .practice-actions button { padding-inline: 10px; }
 }
 @media print {
   body { background: white; color: black; }
   .wrap { width: 100%; }
-  .mast, .skip, .actions, .return-to-proof, .panel-nav, .practice-actions, .notes-control, .aside a, .foot { display: none; }
+  .insurance-layout:has(> .lesson-panel:target, > .lesson-panel :target) {
+    display: block;
+    & > .problem-card { position: static; height: auto; max-height: none; max-width: none; box-shadow: none; margin-bottom: 16px; }
+    & .question-body { overflow: visible; }
+  }
+  .mast, .problem-start, .skip, .actions, .return-to-proof, .panel-nav, .practice-actions, .notes-control, .aside a, .foot { display: none; }
   .proof-section { margin: 0; }
   .answer-line { break-inside: avoid; }
 }

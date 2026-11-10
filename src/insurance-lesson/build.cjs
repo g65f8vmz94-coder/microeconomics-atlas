@@ -61,7 +61,7 @@ function insurancePage() {
 }
 
 // Existing shared links with a playback position or model parameters still open
-// their original curve. A fresh visit to exercise 3.9 opens its worked ledger.
+// their original curve. A fresh visit to exercise 3.9 opens its full problem statement.
 function insuranceEntry(html) {
   const route = `<script>(()=>{const q=new URLSearchParams(location.search);if(q.get('case')==='p9'&&[...q.keys()].every(k=>k==='case')&&!location.hash){location.replace(new URL('insurance-3-9.html',location.href))}})();</script>`;
   return html.replace('</head>', route + '</head>')

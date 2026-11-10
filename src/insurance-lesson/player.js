@@ -19,7 +19,7 @@ function syncFragment() {
   const target = byId(location.hash.slice(1));
   const step = target?.closest('.ledger-step');
   skip.href = step ? location.hash : '#ledger';
-  if (target?.id === 'worked' || target?.id === 'problem') target.open = true;
+  if (target?.id === 'worked') target.open = true;
   if (step) {
     byId('announcement').textContent = step.querySelector('.step-label').textContent + '。' +
       step.querySelector('h3').textContent + '。' + step.querySelector('.reading > p').textContent;

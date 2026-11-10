@@ -11,9 +11,37 @@ function basket(e,r) {
 }
 const stock = [6,6];
 const homes = [[4,2],[2,4]];
+const openingRicePrice = 0.5;
 function orders(r) {
   const [a,b] = homes.map(e => basket(e,r));
   return [r,pair(...a),pair(...b),num(a[0]+b[0]-stock[0])];
+}
+// Read the budgets and both orders from the very model used by the price table.
+function firstOrders() {
+  const r = openingRicePrice;
+  const budgets = homes.map(e => value(e,r));
+  const wA = budgets[0], riceMoney = wA/4, beanMoney = wA-riceMoney;
+  const [bestRice,bestBeans] = basket(homes[0],r);
+  const account = (who, endowment) => {
+    const w = value(endowment,r), half = w/2;
+    const [rice, beans] = basket(endowment,r);
+    return {
+      title: who+'有 '+w+' 元购买力，单子上填多少斤？',
+      text: who+'把 '+half+' 元留给米、'+half+' 元留给豆。每样花的钱除以它的单价，就得到斤数。',
+      lines:[['米的斤数',T`${half}\div ${r}=${num(rice)}`],['豆的斤数',T`${half}\div 1=${num(beans)}`]],
+      result: who+'想要 '+num(rice)+' 斤米、'+num(beans)+' 斤豆，写作 '+pair(rice,beans)+'。'+(rice===endowment[0] && beans===endowment[1] ? '这恰好就是'+who+'带来的那篮。' : '和自己带来的相比，'+who+'想多拿 '+num(rice-endowment[0])+' 斤米、少拿 '+num(endowment[1]-beans)+' 斤豆。')
+    };
+  };
+  return [
+    {title:'先看家底：两篮货按今天的价签值几元？',
+     text:'米每斤 '+r+' 元，豆每斤 1 元。拿自家带来的米和豆分别算价，再加起来，就知道这一家能开多大的订单。',
+     lines:homes.map(([rice,beans], i)=>[i?'乙的家底（元）':'甲的家底（元）',T`${rice}\times${r}+${beans}\times1=${budgets[i]}`])},
+    {title:'甲有 '+wA+' 元，为什么两样各花一半？',
+     text:`先试两种买法。花 ${riceMoney} 元买米、${beanMoney} 元买豆，买到 ${riceMoney/r} 斤米和 ${beanMoney} 斤豆；两样各花 ${wA/2} 元，能买 ${bestRice} 斤米和 ${bestBeans} 斤豆。`,
+     lines:[['前一种篮子的得分',T`2\times3=6`],['各花一半的得分',T`4\times2=8`]],
+     result:'米每元能买 2 斤，豆每元能买 1 斤，所以篮子的得分是两笔花费乘积的 2 倍。总钱数固定时，两笔钱越接近，乘积越大，正好相等时最大。'},
+    account('甲',homes[0]), account('乙',homes[1])
+  ];
 }
 function gap(r) { return homes.reduce((s,e) => s+basket(e,r)[0],-stock[0]); }
 const testRates = [.4,2.5,1];
@@ -62,15 +90,16 @@ module.exports = {
   },
   's10.2': {
     title:'大家都按自己的打算下单，店里刚好有这么多货吗？',
-    given:'示例中两户米豆禀赋分别为 (4,2)、(2,4)，都想把米量乘豆量做大。豆价 1，试调米价。最后一列是全场想买的米减去库存 6。',
-    columns:['米价','甲的订单','乙的订单','米缺口'],
+    given:'甲带来 4 斤米、2 斤豆，乙带来 2 斤米、4 斤豆，米和豆都可以分着买。两家都用“米的斤数 × 豆的斤数”给自家篮子打分，想挑分数最高的那篮。豆价固定为每斤 1 元，试调米价，把两户想买的米加起来与库存 6 斤相比。',
+    preparation:firstOrders(),
+    columns:['米价（元/斤）','甲想要（米，豆）','乙想要（米，豆）','米缺口（斤）'],
     frames:[
-      ['米卖 0.5，够买吗？',orders(.5),'米比豆便宜，两户最想要的米加起来超过 6。'],
-      ['把米价提到 2',orders(2),'一斤米能换更多豆；重新按各自禀赋计收入，米反而有剩。'],
-      ['把米价定在 1',orders(1),'每户都要三米三豆，两样货都能照单发出。']
+      ['两张订单都交来了，6 斤米够分吗？',orders(openingRicePrice),'甲要 4 斤米，乙要 5 斤米，合计要 9 斤。桌上只有 6 斤，缺 3 斤。这两张单还没法同时成交。'],
+      ['把米价提到 2',orders(2),'甲的家底变成 10 元，半数 5 元买米，能买 2.5 斤。乙的家底是 8 元，拿 4 元买 2 斤米。合计要 4.5 斤，比库存少 1.5 斤。'],
+      ['把米价定在 1',orders(1),'两家带来的货现在各值 6 元。每家拿 3 元买米、3 元买豆，各得 3 斤米、3 斤豆。两张订单正好分完 6 斤米和 6 斤豆。']
     ],
     proof:[
-      ['为什么各花一半',T`xy=\frac{(rx)y}{r}\le\frac{w^2}{4r}`,'花光收入 w 时，米豆支出之和固定，两项相等时乘积最大。这就算出了表里的个人最优订单。',0],
+      ['为什么各花一半',T`xy=\frac{(rx)y}{r}\le\frac{w^2}{4r}`,T`设两笔花费分别是 $w/2+d$ 和 $w/2-d$，乘积是 $w^2/4-d^2$。两边各花一半时 $d=0$，乘积最大。米的斤数等于买米的钱除以米价 $r$，豆价为 1，所以最优订单为 $(w/(2r),w/2)$。`,0],
       ['找出清价格',T`z_1(r)=\frac{3}{r}-3`,'两户米需求相加再减 6，只有 r=1 时为零。正价格同比缩放得到同一均衡。',2],
       ['一项出清怎样带动另一项',T`p_1z_1+p_2z_2=0`,'单调偏好下最优束花光预算，逐人加总即得此式。豆价为正，米缺口为零就逼出豆缺口为零；豆若免费，还得单查豆的数量。',2]
     ],

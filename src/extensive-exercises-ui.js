@@ -52,6 +52,20 @@ export function startExtensiveExercises(requested){
   }else{
    const t=p16Delay(s.c,s.offer);picture=delayPicture(s.c,s.step);metrics=[['玩家1等一期净收益',t.baseline[0]],['最好的其他首期报价',t.bestDeviation],['当前偏离收益',t.deviation],['这套构造是否SPE',t.valid?'是':'否']];reading='首期玩家1要全体，玩家2拒绝，下期玩家2给玩家1份额1−c，自己留c；扣掉一期等待成本，净收益为(1−2c,0)。若首期玩家1改报任何其他划分，拒绝后的子博弈改用x=c的立即协议族，玩家2有很高的继续价值，玩家1最多立即拿c。因此 c≤1/3 时，等待所得1−2c不少于偏离所得c。历史依赖的后续必须写进策略；只画一条延迟路径不够。';formula=String.raw`1-2c\ge c\iff c\le\frac13;\qquad u_1^{\text{偏离}}(a)=\begin{cases}a&a\le c\\-c&c<a<1\end{cases}`;extra=table(['策略所处历史','后续采用的立即协议族'],[['首期按约定要全体并被拒绝','x=1；玩家2提议(1−c,c)'],['首期改报其他划分并被拒绝','x=c；玩家2提议(0,1)']]);boundary='永久拖延时成本继续累积，净收益−∞；c>1/3时此构造失效，红色改进量不被当作SPE。不据此声称其他延迟构造一定不存在。';result=t;
   }
+  let given;
+  if(kind.startsWith('trust'))given='甲有10元，先转出其中任意金额 x；乙得到 3x，决定返还其中多少。两人只在意最终所得。'+(kind==='trust-repeat'?'同一过程公开重复三次，各轮收益相加。':'');
+  else if(kind.startsWith('auction'))given='物品对两人各值12元，甲有9元，乙有6元。甲先报价，首报至少3元；此后轮流加价，报价为不超过12的整数，也可停止。赢家付出报价，赢而付不起得−100，输家得0。';
+  else if(kind==='communication'||kind==='communication-tree')given='起初只有玩家1知道消息。收到者可停止，也可付成本 c 将消息传给一位尚未知情的人。若最终人人收到，每人获益1，否则为0；发送者另付其转发成本。';
+  else if(kind.endsWith('-project'))given='两位邻居各报非负出资，知道彼此的项目价值；雇人成本100元，项目失败时均不付款。'+(kind==='sequential-project'?'甲先报价，乙看到后报价；原题只规定合计低于和高于100时的结果。':'同时报价，合计至少100元就雇佣，每人的估值均不超过100元。');
+  else if(['unequal-cost','equal-cost','delay'].includes(kind))given='两人分一单位可分割收益，甲先提议，被拒绝就换对方提议。成交时的净收益为本人份额减已付等待成本。'+(kind==='unequal-cost'?'乙每期的成本严格高于甲。':'两人每期付相同的正成本；按持续付费约定，永久不成交的净收益趋于负无穷。');
+  else if(kind==='race')given='甲先走，两人轮流停留、走一步或走两步，成本分别是0、2、4.5。连续两次停留则无人得奖，先到或越过终点者得奖金，已付成本均须扣除。';
+  else if(kind==='infinite')given='一人每期选择停止或继续。在任何有限期停止，收益均为0；一直继续得1。考察在每个历史都停止的策略。';
+  else if(kind==='solomon')given='真主人估值8，另一人估值2。甲让则物归乙；甲争而乙让则物归甲。双方都争时乙付5拿物，甲另付罚款 ε。';
+  else {
+   const describe=node=>node.payoff?'('+node.payoff.join('，')+')':'玩家'+(node.player+1)+'选择：'+node.children.map(edge=>edge.label+' → '+describe(edge.node)).join('；');
+   given='图中数值为构造例，收益对按甲、乙顺序书写。'+describe(result.analysis.nodes[0])+'。';
+  }
+  $('case').dataset.filmGiven=given;
   window.microMotion.chart($('plot'),picture);$('legend').textContent='绿色：玩家1 / 已经过的路径；紫色：玩家2；赤色：损失或条件失效。';$('metrics').innerHTML=metrics.map(([a,b])=>'<div class="metric"><label>'+esc(a)+'</label><strong>'+esc(f(b))+'</strong></div>').join('');$('reading').textContent=reading;$('formula').textContent=formula;$('extra').innerHTML=extra;$('boundary').textContent='Osborne–Rubinstein 第16章，印刷'+c.page+'页。'+boundary;spec.forEach(q=>{if($('out-'+q.k))$('out-'+q.k).value=f(state[q.k]);$(q.k).value=state[q.k]});last={name,state:{...state},result};
  }
  function stop(){clearInterval(timer);timer=null;$('play').textContent='播放变化'}

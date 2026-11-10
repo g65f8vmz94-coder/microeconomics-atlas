@@ -19,6 +19,7 @@ const sx=x=>60+x*48,sy=y=>330-y*28;
 function point(x,y,label,c=g){const half=label.length*6*Math.max(1,600/Math.max(270,$('plot').clientWidth));return `<circle cx="${sx(x)}" cy="${sy(y)}" r="5" fill="${c}"/>`+text(Math.max(half+10,Math.min(590-half,sx(x))),sy(Math.min(9.3,Math.max(.4,y)))-18,label,c)}
 function path(fn,c,dash=''){const parts=[];let open=false;for(let i=0;i<=250;i++){const x=i/25,y=fn(x);if(!Number.isFinite(y)||y<0||y>10){open=false;continue}parts.push((open?'L':'M')+sx(x).toFixed(2)+','+sy(y).toFixed(2));open=true}return `<path d="${parts.join(' ')}" fill="none" stroke="${c}" stroke-width="2" ${dash?`stroke-dasharray="${dash}"`:''}/>`}
 function draw(){const s=state,r=cdExchange({...s,report:s.a});let svg='',metrics=[],read='',formula='',extra='',warning=meta.boundary;
+ $('e1').dataset.filmGiven=`两人交换可分割的两种商品，总量分别为10和10。A带来（${f(s.e1)}，${f(s.e2)}），B带来（${f(10-s.e1)}，${f(10-s.e2)}）。两人的偏好均为 Cobb–Douglas，商品1的支出份额分别为 ${f(s.a)} 和 ${f(s.b)}。这是本站数值示例。`;
  const axes=`<rect x="60" y="50" width="480" height="280" fill="none" stroke="#95a58f"/>${[2,4,6,8].map(x=>`<path d="M${sx(x)} 50V330M60 ${sy(x)}H540" stroke="#dce2d3"/>`).join('')}${[0,2,4,6,8,10].map(x=>text(sx(x),350,x,g,10)+text(37,sy(x)+4,x,g,10)).join('')}${text(105,374,'A原点',g,11)}${text(500,28,'B原点',purple,11)}`;
  const equilibrium=r.equilibrium.A;
  if(mode==='excess'){

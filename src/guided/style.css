@@ -249,3 +249,64 @@
   }
   @keyframes folio-reveal { from { opacity:.82; transform:translateY(3px); } to { opacity:1; transform:none; } }
 }
+
+/* The same sheet holds the givens from the first reading to the final line. */
+.study-desk { margin:clamp(18px,3vw,34px) 0 24px; --reference-gap:12px; }
+.study-desk .guided-flow { min-width:0; margin:0; }
+.condition-card,.guided-step.guided-given { background:#f4f1e4; border:1px solid #beb8a2; }
+.condition-card {
+  border-top:4px solid #946039; border-bottom:0;
+  padding:clamp(16px,3vw,32px) clamp(16px,3.3vw,36px) 4px;
+  min-width:0; color:#243d32; overflow-wrap:anywhere;
+}
+.condition-head { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:0 0 10px; }
+.guide .condition-head h2 { font:680 clamp(1.35rem,2.4vw,2rem)/1.4 var(--serif); margin:0; }
+.condition-text:focus-visible {outline-offset:-3px}
+.condition-text ul { list-style:disc; margin:0; padding-inline-start:1.25em; max-width:48em; }
+.condition-text li { padding-inline-start:.18em; font-size:clamp(1rem,1.2vw,1.13rem); line-height:1.75; }
+.condition-text li+li { margin-top:.3em; }
+.condition-text li::marker { color:#9b693e; font-size:.75em; }
+.guided-step.guided-given { padding:0 clamp(16px,3.3vw,36px) clamp(16px,2.4vw,25px); border-top:0; }
+.guided-given .guided-controls { margin-top:0; padding-top:14px; border-top:0; }
+.guided-given .guided-progress {font-weight:600}
+.condition-size { font-size:.84rem; color:var(--green); padding:2px 6px; min-height:30px; background:transparent; border:0; text-decoration:underline; text-underline-offset:.2em; }
+
+/* Fragment navigation selects the same layout even in a script-free download. */
+.study-desk:is([data-docked],:not([data-ready]):has(.guided-step:not(.guided-given):target,.guided-step:not(.guided-given) :target)) {
+  & .condition-card {
+    position:sticky; top:var(--reference-gap); z-index:2; align-self:start;
+    border:1px solid #b8b59b; border-top:3px solid #946039; padding:12px 14px 14px;
+  }
+  & .condition-head { margin:0 0 5px; }
+  & .condition-head h2 { color:#725138; font:700 .98rem/1.4 var(--sans); }
+  & .condition-text { overflow:auto; max-height:calc(100vh - 6rem); max-height:calc(100dvh - 6rem); scrollbar-width:thin; }
+  & .condition-text li {font-size:.93rem;line-height:1.55}
+  @media (min-width:800px) {
+    display:grid; grid-template-columns:minmax(0,1fr) clamp(13rem,24%,17rem); gap:clamp(14px,2vw,28px);
+    & .condition-card { grid-column:2;grid-row:1; }
+    & .guided-flow {grid-column:1;grid-row:1;}
+  }
+  @media (max-width:799px) {
+    --reference-gap:0px;
+    & .condition-card { padding:8px 12px; margin-bottom:10px;box-shadow:0 2px 0 #ded9c8; }
+    & .condition-text {max-height:min(25vh,11.5rem);max-height:min(25svh,11.5rem);}
+    & .condition-text li {font-size:.9rem;}
+    & .condition-card[data-expanded] .condition-text {max-height:54vh;max-height:54svh;}
+    & .guided-step, & .guided-answer-row, & .guided-step :is(a,input,summary,button) {
+      scroll-margin-top:calc(var(--reference-height,min(35vh,15rem)) + 8px);
+    }
+  }
+}
+@media print {
+  .study-desk {display:block!important}
+  .study-desk .condition-card {position:static!important;border:1px solid #aaa;}
+  .study-desk .condition-text {overflow:visible!important;max-height:none!important}
+  .condition-size {display:none!important}
+}
+.guided-ledger {margin:16px 0 20px;border-block:1px solid var(--line)}
+.guided-ledger>div {display:flex;align-items:baseline;justify-content:space-between;gap:8px 18px;flex-wrap:wrap;padding:8px 0;}
+.guided-ledger>div+div {border-top:1px dotted #c9c1ad}
+.guided-ledger dt {color:var(--muted);font-weight:600}
+.guided-ledger dd {margin:0;min-width:0;max-width:100%}
+.guided-ledger .guided-equation {margin:0}
+.ledger-link {margin-inline-end:18px}
