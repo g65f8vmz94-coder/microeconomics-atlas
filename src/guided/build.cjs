@@ -1,5 +1,6 @@
 const fs=require('node:fs');
 const path=require('node:path');
+const routeMotionHead=require('../route-motion.cjs').head();
 const {escape,inline,equation}=require('./format.cjs');
 const {axisPlot,relationDiagram,amountsIn,miniScale,cups,tickets,payoffTable,holdingBoard}=require('./figure.cjs');
 const {catalog,urlFor,chapterURL,loadChapters}=require('./catalog.cjs');
@@ -18,7 +19,7 @@ function frameData(unit) {
   return unit.frames.map(([action,values,why])=>({action:inline(action),values:values.map(inline),why:inline(why)}));
 }
 function page({title,main,footer='',scripts='',skip='main'}) {
-  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="从生活里的选择到可复用的微观经济学解题步骤。"><title>${escape(title)} · 中微动态图谱</title><style>${css}</style></head><body class="guide"><a class="skip" href="#${skip}">跳到主要内容</a><header class="mast"><div class="wrap mast-inner"><a class="brand" data-site href="index.html"><i aria-hidden="true"></i>中微动态模型图谱</a><a href="learn.html">全书图解 ↗</a></div></header><main class="wrap" id="main">${main}</main><footer class="wrap foot"><div>${footer}</div><nav class="resource-links" aria-label="课外资源"><a href="learn.html">全书目录</a><a href="${github}">开源代码 ↗</a></nav></footer><script>if(location.protocol==='file:'){for(const a of document.querySelectorAll('a[data-site]'))a.href=new URL(a.getAttribute('href'),${json(online)});}</script>${scripts}</body></html>`;
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="从生活里的选择到可复用的微观经济学解题步骤。"><title>${escape(title)} · 中微动态图谱</title><style>${css}</style>${routeMotionHead}</head><body class="guide"><a class="skip" href="#${skip}">跳到主要内容</a><header class="mast"><div class="wrap mast-inner"><a class="brand" data-site href="index.html"><i aria-hidden="true"></i>中微动态模型图谱</a><a href="learn.html">全书图解 ↗</a></div></header><main class="wrap" id="main">${main}</main><footer class="wrap foot"><div>${footer}</div><nav class="resource-links" aria-label="课外资源"><a href="learn.html">全书目录</a><a href="${github}">开源代码 ↗</a></nav></footer><script>if(location.protocol==='file:'){for(const a of document.querySelectorAll('a[data-site]'))a.href=new URL(a.getAttribute('href'),${json(online)});}</script>${scripts}</body></html>`;
 }
 function resourceLinks(meta) {
   let details=extLink(meta.classic,meta.related?'查看本节的菜单模型 ↗':meta.kind==='习题'?'看原题模型与演算 ↗':'看本节原图与全部模型 ↗');
