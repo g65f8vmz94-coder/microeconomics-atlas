@@ -61,7 +61,8 @@
       "number": 7,
       "pdfPage": 33,
       "printedPage": 14,
-      "headingLineSha256": "681b888a635fc33f650b4c7756b354e5bbe366af50c8aa83b6c557d960baae7e"
+      "headingLineSha256": "681b888a635fc33f650b4c7756b354e5bbe366af50c8aa83b6c557d960baae7e",
+      "lastPrintedPage": 15
     },
     {
       "id": "Problem 1.8",
@@ -85,7 +86,8 @@
       "number": 1,
       "pdfPage": 46,
       "printedPage": 27,
-      "headingLineSha256": "c1f1f73a059a3484bbc83d8f955c3c8f9dea2297d852411fb7bb04031ada6e6f"
+      "headingLineSha256": "c1f1f73a059a3484bbc83d8f955c3c8f9dea2297d852411fb7bb04031ada6e6f",
+      "lastPrintedPage": 28
     },
     {
       "id": "Problem 2.2",
@@ -117,7 +119,8 @@
       "number": 5,
       "pdfPage": 47,
       "printedPage": 28,
-      "headingLineSha256": "d666a6d841404ad1ab8494285eade4563ba03362def1d64ad99d3ad2faf7b91e"
+      "headingLineSha256": "d666a6d841404ad1ab8494285eade4563ba03362def1d64ad99d3ad2faf7b91e",
+      "lastPrintedPage": 29
     },
     {
       "id": "Problem 2.6",
@@ -213,7 +216,8 @@
       "number": 1,
       "pdfPage": 73,
       "printedPage": 54,
-      "headingLineSha256": "f5c92b14d067a52b75206af0041a26378744c75d38bc953f9beee060012a1d7c"
+      "headingLineSha256": "f5c92b14d067a52b75206af0041a26378744c75d38bc953f9beee060012a1d7c",
+      "lastPrintedPage": 55
     },
     {
       "id": "Problem 4.2",
@@ -285,7 +289,8 @@
       "number": 3,
       "pdfPage": 90,
       "printedPage": 71,
-      "headingLineSha256": "ce4659418175d69f56cf6aef0a640c028973c32407d5b0fbf767e3b630afef73"
+      "headingLineSha256": "ce4659418175d69f56cf6aef0a640c028973c32407d5b0fbf767e3b630afef73",
+      "lastPrintedPage": 72
     },
     {
       "id": "Problem 5.4",
@@ -317,7 +322,8 @@
       "number": 7,
       "pdfPage": 91,
       "printedPage": 72,
-      "headingLineSha256": "5a32eed32bbee56cc5758df0328c1fe804ef130bfcb2121bf46236e0ebc306d6"
+      "headingLineSha256": "5a32eed32bbee56cc5758df0328c1fe804ef130bfcb2121bf46236e0ebc306d6",
+      "lastPrintedPage": 73
     },
     {
       "id": "Problem 5.8",
@@ -333,7 +339,8 @@
       "number": 9,
       "pdfPage": 92,
       "printedPage": 73,
-      "headingLineSha256": "1962d775873ed36c645dd3b8f12d2469b3aff3b1814d795c77bef79f94007d67"
+      "headingLineSha256": "1962d775873ed36c645dd3b8f12d2469b3aff3b1814d795c77bef79f94007d67",
+      "lastPrintedPage": 74
     },
     {
       "id": "Problem 6.1",
@@ -373,7 +380,8 @@
       "number": 1,
       "pdfPage": 118,
       "printedPage": 99,
-      "headingLineSha256": "15d2ca671931141695752d90aadc663ddb1bb0126a1ec4f362269fd50593b237"
+      "headingLineSha256": "15d2ca671931141695752d90aadc663ddb1bb0126a1ec4f362269fd50593b237",
+      "lastPrintedPage": 100
     },
     {
       "id": "Problem 7.2",
@@ -421,7 +429,8 @@
       "number": 7,
       "pdfPage": 120,
       "printedPage": 101,
-      "headingLineSha256": "d43a9fd43033cee8bcfb367dd21cc9b41c3b72b0711d97cd71dfb68f5e3a3bc7"
+      "headingLineSha256": "d43a9fd43033cee8bcfb367dd21cc9b41c3b72b0711d97cd71dfb68f5e3a3bc7",
+      "lastPrintedPage": 102
     },
     {
       "id": "Problem 7.8",
@@ -581,7 +590,8 @@
       "number": 1,
       "pdfPage": 171,
       "printedPage": 152,
-      "headingLineSha256": "1d19f1c34c0522d238ef816987c920598d6366ee5bbc050a6706708bb6cef76c"
+      "headingLineSha256": "1d19f1c34c0522d238ef816987c920598d6366ee5bbc050a6706708bb6cef76c",
+      "lastPrintedPage": 153
     },
     {
       "id": "Problem 10.2",
@@ -597,7 +607,8 @@
       "number": 3,
       "pdfPage": 172,
       "printedPage": 153,
-      "headingLineSha256": "6efd52fa96495339ba8a0855572e94f15f3cf91e446796fcb669f70675abdbb5"
+      "headingLineSha256": "6efd52fa96495339ba8a0855572e94f15f3cf91e446796fcb669f70675abdbb5",
+      "lastPrintedPage": 154
     },
     {
       "id": "Problem 10.4",
@@ -621,7 +632,8 @@
       "number": 6,
       "pdfPage": 173,
       "printedPage": 154,
-      "headingLineSha256": "e4db2de48b66df567b144b5f70a13379de51e0c719e4f89e7b2da6da90d886fb"
+      "headingLineSha256": "e4db2de48b66df567b144b5f70a13379de51e0c719e4f89e7b2da6da90d886fb",
+      "lastPrintedPage": 155
     },
     {
       "id": "Problem 10.7",
@@ -709,7 +721,8 @@
       "number": 8,
       "pdfPage": 191,
       "printedPage": 172,
-      "headingLineSha256": "f7e5926e2715297bb850f39773395af513f60d7fd9ccad3db6f75dcedf9686cd"
+      "headingLineSha256": "f7e5926e2715297bb850f39773395af513f60d7fd9ccad3db6f75dcedf9686cd",
+      "lastPrintedPage": 173
     },
     {
       "id": "Problem 11.9",
@@ -733,7 +746,8 @@
       "number": 1,
       "pdfPage": 202,
       "printedPage": 183,
-      "headingLineSha256": "cc3751b1bc56ca1534ed35f0aaee11e24d1f84b763a3e6bf390aab4cd8611302"
+      "headingLineSha256": "cc3751b1bc56ca1534ed35f0aaee11e24d1f84b763a3e6bf390aab4cd8611302",
+      "lastPrintedPage": 184
     },
     {
       "id": "Problem 12.2",
@@ -757,7 +771,8 @@
       "number": 4,
       "pdfPage": 203,
       "printedPage": 184,
-      "headingLineSha256": "59288b32d2fc64a5c64923852857c0e87eef03cfb308d089a90a7c5df76b53f5"
+      "headingLineSha256": "59288b32d2fc64a5c64923852857c0e87eef03cfb308d089a90a7c5df76b53f5",
+      "lastPrintedPage": 185
     },
     {
       "id": "Problem 12.5",
@@ -797,7 +812,8 @@
       "number": 4,
       "pdfPage": 219,
       "printedPage": 200,
-      "headingLineSha256": "85e5e97b014c44324f0fdf03eb9872c794e947c0c97ff92a731189539bde395f"
+      "headingLineSha256": "85e5e97b014c44324f0fdf03eb9872c794e947c0c97ff92a731189539bde395f",
+      "lastPrintedPage": 201
     },
     {
       "id": "Problem 13.5",
@@ -813,7 +829,8 @@
       "number": 1,
       "pdfPage": 230,
       "printedPage": 211,
-      "headingLineSha256": "76b9f93863f8202d5ba021f82a4118727169ddbe74f425f42a7e0dcd42cbc2e1"
+      "headingLineSha256": "76b9f93863f8202d5ba021f82a4118727169ddbe74f425f42a7e0dcd42cbc2e1",
+      "lastPrintedPage": 212
     },
     {
       "id": "Problem 14.2",
@@ -821,7 +838,8 @@
       "number": 2,
       "pdfPage": 231,
       "printedPage": 212,
-      "headingLineSha256": "3065cf810c6240d28b38c0ccf1677be87acfaf3809cdbfa766c425d044250590"
+      "headingLineSha256": "3065cf810c6240d28b38c0ccf1677be87acfaf3809cdbfa766c425d044250590",
+      "lastPrintedPage": 213
     },
     {
       "id": "Problem 15.1",
@@ -829,7 +847,8 @@
       "number": 1,
       "pdfPage": 260,
       "printedPage": 241,
-      "headingLineSha256": "b206655ea1c50bb7094495d88448ea496fb2cca1000ec2975a1db78934d84b94"
+      "headingLineSha256": "b206655ea1c50bb7094495d88448ea496fb2cca1000ec2975a1db78934d84b94",
+      "lastPrintedPage": 242
     },
     {
       "id": "Problem 15.2",
@@ -885,7 +904,8 @@
       "number": 8,
       "pdfPage": 262,
       "printedPage": 243,
-      "headingLineSha256": "c7ad6fe008c367dc90c9d04900d7ab32b7566c126632aafeff5c84a71ef04366"
+      "headingLineSha256": "c7ad6fe008c367dc90c9d04900d7ab32b7566c126632aafeff5c84a71ef04366",
+      "lastPrintedPage": 244
     },
     {
       "id": "Problem 15.9",
@@ -949,7 +969,8 @@
       "number": 16,
       "pdfPage": 264,
       "printedPage": 245,
-      "headingLineSha256": "7b2322dee09379675081f2a1ae6b8d7b837b37b188652d7cc462f20be4615e7a"
+      "headingLineSha256": "7b2322dee09379675081f2a1ae6b8d7b837b37b188652d7cc462f20be4615e7a",
+      "lastPrintedPage": 246
     },
     {
       "id": "Problem 15.17",
@@ -1005,7 +1026,8 @@
       "number": 5,
       "pdfPage": 294,
       "printedPage": 275,
-      "headingLineSha256": "986aa8639016ee3c216a3425b09a227f26660cc95854174e488fba22e5564a4d"
+      "headingLineSha256": "986aa8639016ee3c216a3425b09a227f26660cc95854174e488fba22e5564a4d",
+      "lastPrintedPage": 276
     },
     {
       "id": "Problem 16.6",
@@ -1045,7 +1067,8 @@
       "number": 10,
       "pdfPage": 296,
       "printedPage": 277,
-      "headingLineSha256": "22cac7ccc07677e564fb1335d30eaabee4de96143123c615597664d60a52bdc1"
+      "headingLineSha256": "22cac7ccc07677e564fb1335d30eaabee4de96143123c615597664d60a52bdc1",
+      "lastPrintedPage": 278
     },
     {
       "id": "Problem 16.11",
@@ -1165,7 +1188,8 @@
       "number": 3,
       "pdfPage": 329,
       "printedPage": 310,
-      "headingLineSha256": "69109e86234cf42b49eba66affdf91a8de4d605c9402b1efd3ae4950661be036"
+      "headingLineSha256": "69109e86234cf42b49eba66affdf91a8de4d605c9402b1efd3ae4950661be036",
+      "lastPrintedPage": 311
     },
     {
       "id": "Problem 20.1",
@@ -1197,7 +1221,8 @@
       "number": 4,
       "pdfPage": 346,
       "printedPage": 327,
-      "headingLineSha256": "6033575ba5ba390f3945e4fb3e6597c796a38e450c9eb72193647b1aacf06103"
+      "headingLineSha256": "6033575ba5ba390f3945e4fb3e6597c796a38e450c9eb72193647b1aacf06103",
+      "lastPrintedPage": 328
     },
     {
       "id": "Problem 20.5",
