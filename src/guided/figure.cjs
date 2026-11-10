@@ -63,4 +63,16 @@ function tickets(box) {
   const frames=box.counts.map(cards);
   return `<figure class="figure ticket-box" data-tickets='${escape(JSON.stringify(frames))}'><figcaption>每张券被抽到的机会相同</figcaption><div class="ticket-tray">${frames[0].map(s=>`<span class="ticket">${escape(s)}</span>`).join('')}</div></figure>`;
 }
-module.exports={axisPlot,relationDiagram,amountsIn,miniScale,cups,tickets};
+function payoffTable(game) {
+  const [rowPlayer,colPlayer]=game.players;
+  const heading=game.cols.map(label=>`<th scope="col">${inline(label)}</th>`).join('');
+  const body=game.cells.map((row,i)=>`<tr><th scope="row">${inline(game.rows[i])}</th>`+row.map(([a,b],j)=>{
+    const selected=game.frames[0][0]===i&&game.frames[0][1]===j;
+    return `<td data-choice="${i},${j}" class="${selected?'selected':''}"><span class="cell-mark" aria-hidden="true">●</span>${inline(a)}，${inline(b)}</td>`;
+  }).join('')+'</tr>').join('');
+  return `<figure class="figure payoff" data-moves='${escape(JSON.stringify(game.frames))}'><figcaption>${inline(rowPlayer)}选行，${inline(colPlayer)}选列。每格的两个数按这个顺序读，圆点标出当前结果。</figcaption><table><thead><tr><td class="corner">行／列</td>${heading}</tr></thead><tbody>${body}</tbody></table></figure>`;
+}
+function holdingBoard(board) {
+  return `<figure class="figure holding" data-rounds='${escape(JSON.stringify(board.frames))}'><figcaption>同一个岗位竖着读，比较每轮暂留的人。</figcaption><dl>${board.labels.map((label,i)=>`<div><dt>${inline(label)}</dt><dd>${escape(board.frames[0][i])}</dd></div>`).join('')}</dl></figure>`;
+}
+module.exports={axisPlot,relationDiagram,amountsIn,miniScale,cups,tickets,payoffTable,holdingBoard};

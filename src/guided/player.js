@@ -11,6 +11,8 @@
   const cups=Array.from(document.querySelectorAll('.cup-option'),el=>({fill:el.querySelector('.vessel i'),tag:el.querySelector('.cup-tag'),max:Number(el.dataset.max),states:JSON.parse(el.dataset.cups)}));
   const tray=document.querySelector('.ticket-box');
   const tickets=tray?JSON.parse(tray.dataset.tickets):null;
+  const payoff=document.querySelector('.payoff'), moves=payoff?JSON.parse(payoff.dataset.moves):[];
+  const holding=document.querySelector('.holding'), rounds=holding?JSON.parse(holding.dataset.rounds):[];
   const pips=Array.from(document.querySelectorAll('.pips i'));
   let step=-1, timer=0, origin=null;
   function pause() {
@@ -41,6 +43,17 @@
     }
     if(tray)Array.from(tray.querySelectorAll('.ticket')).forEach((el,i)=>{
       if(el.textContent!==tickets[n][i]){el.textContent=tickets[n][i];if(animate&&!reduced.matches)window.microMotion.reveal(el,3);}
+    });
+    if(payoff){
+      const selected=moves[n].join(',');
+      for(const cell of payoff.querySelectorAll('[data-choice]')){
+        const chosen=cell.dataset.choice===selected;
+        cell.classList.toggle('selected',chosen);
+        if(chosen)cell.setAttribute('aria-current','true');else cell.removeAttribute('aria-current');
+      }
+    }
+    if(holding)Array.from(holding.querySelectorAll('dd')).forEach((slot,i)=>{
+      slot.textContent=rounds[n][i];slot.classList.toggle('changed',n>0&&rounds[n-1][i]!==rounds[n][i]);
     });
     byId('scene-title').innerHTML=target.action;
     byId('scene-why').innerHTML=target.why;

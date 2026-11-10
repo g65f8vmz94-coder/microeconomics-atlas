@@ -4,7 +4,7 @@
 
 网站目前按 20 章、90 节组织。这里公开的是可维护的生成源码。教材 PDF、课堂 PPT、个人 Obsidian 笔记、部署账号配置和构建后的大体积页面包均未收入仓库。
 
-前十章有 55 个小节和 80 道章末题。可以按题号找到条件和算例，从每行解答跳回对应画面，再换一道题独立判断。[打开前十章随题图解](https://microeconomics-atlas-mingze.synb636.chatgpt.site/learn)
+全书有 90 个小节和 151 道章末题。可以按题号找到条件和算例，从每行解答跳回对应画面，再换一道题独立判断。[打开全书随题图解](https://microeconomics-atlas-mingze.synb636.chatgpt.site/learn)
 
 ## 本地运行
 
@@ -30,7 +30,7 @@ npm run validate
 ## 源码结构
 
 - `src/`：经济模型、课程叙事、可视化、导航、样式和随站分发的第三方资源。
-- `src/guided/` 保存前十章的情境、逐步画面、解答与迁移题。每章独立维护，课程页和离线 HTML 共用同一份数据。
+- `src/guided/` 保存全书的情境、逐步画面、解答与迁移题。每章独立维护，课程页和离线 HTML 共用同一份数据。
 - `build.cjs`：从同一份源码生成全站页面和独立 HTML 下载。
 - `src/book-outline.json`、`src/section-audits.json`：章节清单与逐节来源核对记录。
 - `coverage.json`：已有知识点的覆盖索引；“已整理”不等于“已掌握”。
