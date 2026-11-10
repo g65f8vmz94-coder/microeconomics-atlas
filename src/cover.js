@@ -43,14 +43,21 @@
     // Anchor the drawing to the pointer, moving it only as far as needed
     // to keep it inside the visible scene and clear of the entrance links.
     function place(x,y) {
-      const box=cover.getBoundingClientRect(), w=card.offsetWidth, h=card.offsetHeight;
+      const box=cover.getBoundingClientRect(), w=card.offsetWidth;
       const pad=8, top=Math.max(pad,pad-box.top);
-      const bottom=Math.max(top,Math.min(box.height, innerHeight-box.top)-h-pad);
+      const limit=Math.min(box.height,innerHeight-box.top)-pad;
       const maxX=Math.max(pad,box.width-w-pad);
       const clamp=(v,lo,hi)=>Math.max(lo,Math.min(hi,v));
       const px=x-box.left, py=y-box.top;
       const copy=cover.querySelector('.market-copy').getBoundingClientRect();
       const blocked={l:copy.left-box.left-4,r:copy.right-box.left+4,t:copy.top-box.top-4,b:copy.bottom-box.top+4};
+      // If a phone has no room beside the title, keep both entrance buttons
+      // reachable. Longer descriptions scroll inside the available space.
+      if (blocked.l-pad<w && maxX<blocked.r) {
+        const room=Math.floor(Math.max(blocked.t-top,limit-blocked.b));
+        if (room>=150) card.style.maxHeight=room+'px';
+      }
+      const h=card.offsetHeight, bottom=Math.max(top,limit-h);
       const idealX=px-w*.5, idealY=py-h*.55;
       let best;
       for(const left of [idealX,blocked.r,blocked.l-w,pad,maxX]){
