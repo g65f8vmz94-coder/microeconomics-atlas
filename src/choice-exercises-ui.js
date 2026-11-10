@@ -25,7 +25,7 @@ export function startChoiceExercises(initial){
    b+=r('focus',left+dx*.23,158,both?dx*1.54:dx*.54,43,'none',C.gold,.95);
    b+=t(21,109,'A',C.green,20)+t(W-28,244,'B',C.purple,20);
    ['a','x','y','b'].forEach((n,i)=>b+=t(12+dx*(i+.5),i===0?151:i===3?222:182,n,C.ink,24,'middle'));
-   b+=t(W/2,307,phase>=2?'共同部分：x、y都在里面':'名字不同，不代表已知是不同的人',C.muted,small?13:17,'middle');
+   b+=t(W/2,307,phase>=2?'共同部分：x、y都在里面':'两个名字可以指同一个人，也可以指两个人；按题设说明的身份分组',C.muted,small?13:17,'middle');
    const lines=phase>=4?['c(A) = c(A∩B) = c(B)','所以 x = y']:phase>=3?['从B缩到交集，也必须选y','同一个选择不能有两个赢家']:phase>=2?['从A缩到交集，必须选x']:['A选x，B选y','两个原赢家都在另一份名单中'];
    lines.forEach((l,i)=>b+=t(W/2,358+i*36,l,C.green,small?14:20,'middle','p2-line-'+i));
   }else if(id==='p7'){
@@ -59,7 +59,7 @@ export function startChoiceExercises(initial){
  }
  function draw(){const s=cxScene(id,phase),step=c.phases[phase];$('cx-phase').value=phase;$('plot').dataset.phase=phase;$('plot').dataset.exercise=id;
   Object.assign($('plot').dataset,{filmIntro:c.intro,filmPhase:step.heading,filmNarration:step.text,filmConclusion:c.end});window.microMotion.chart($('plot'),graphic(s));
-  $('legend').textContent='金点追踪当前考察对象；浅色保留已离场对象的位置；绿色标出最终选择。符号图与数值例子都不替代下方的一般证明。';
+  $('legend').textContent='金点追踪当前考察对象；浅色保留已离场对象的位置；绿色标出最终选择。';
   $('metrics').innerHTML=[['原题','第2章 · '+id.replace(/^p/,'').replace('qualified',' 有达标').replace('none',' 无达标')],['当前步骤',(phase+1)+' / '+c.phases.length],['讲解方式','跟随图像，逐步推理']].map(([l,v])=>'<div class="metric"><label>'+esc(l)+'</label><strong>'+esc(v)+'</strong></div>').join('');
   $('reading').textContent=step.text;const previous=c.phases.slice(0,phase+1).filter(x=>x.formula).at(-1);$('formula').textContent=step.formula||previous?.formula||(id==='p8'?'2+3=5':String.raw`c(A)\in A`);
   $('boundary').textContent='原题：Osborne–Rubinstein，第2章习题1—8，印刷27—29页／PDF46—48页。分数、菜单与交易数值为自主构造；原题条件、补充的破同分规则和措辞问题分别说明。';

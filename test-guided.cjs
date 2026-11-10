@@ -64,6 +64,14 @@ async function main() {
    if(u.tickets)check(u.tickets.counts.length===u.frames.length&&u.tickets.counts.every(c=>c.every(Number.isInteger)&&c.reduce((a,b)=>a+b,0)===4),'four equiprobable tickets');
    const html=fs.readFileSync(path.join(root,urlFor(key)),'utf8');
    check(html.includes('id="guide-data"')&&html.includes('id="solution"')&&html.includes('id="transfer"'),'published entry');
+   const paperRows=(html.match(/<article class="guided-answer-row"/g)||[]).length;
+   if(key.startsWith('p')){
+    check(u.proofNotes?.length===u.proof.length && u.proofNotes.every(v=>typeof v==='string'&&v.trim()),'a written margin note for every deduction');
+    check(paperRows===u.proof.length && html.includes('id="answer"'),'complete written paper');
+    const lastReason=html.lastIndexOf('<section class="guided-step guided-reasoning"');
+    check(lastReason>0 && lastReason<html.indexOf('id="answer"'),'reasoning precedes the full paper');
+   } else check(paperRows===0,'concept teaching path');
+   check((html.match(/<section class="guided-step guided-scene"/g)||[]).length===u.frames.length,'one scene per stop');
    check(!/<script\b[^>]+src=|<link\s+[^>]*stylesheet|katex-error/.test(html),'self-contained page');
    frames+=u.frames.length;proofs+=u.proof.length;
   }

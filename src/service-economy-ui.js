@@ -139,9 +139,9 @@ export function startServiceEconomyStory(requested) {
     if($('legend'))$('legend').textContent=frame.kind==='raffle'?'同一批1,200人始终保留；绿色是L票人群，紫色是H票人群。':frame.kind==='matching'?'同一批A类与B类人在两个场馆间重新分布；概率始终由当前真实人数计算。':'绿色始终代表网点0，紫色始终代表网点1；金色标出当前正在检查的分界或居民。';
     if($('metrics'))$('metrics').innerHTML=metrics(frame).map(([label,value])=>`<div class="metric"><label>${esc(label)}</label><strong>${esc(value)}</strong></div>`).join('');
     if($('reading'))$('reading').textContent=frame.narration;if($('formula'))$('formula').textContent=content.formula;if($('boundary'))$('boundary').textContent=content.trap;
-    if($('extra'))$('extra').innerHTML=`<h3>严谨证明或计算路线</h3><ol>${content.proof.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
+    if($('extra'))$('extra').innerHTML=`<h3>解题步骤</h3><ol>${content.proof.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((el,i)=>{el.textContent=[content.question,content.conditions,content.template][i]||'';});
-    const guideBoundary=document.querySelector('.study-guide>.boundary');if(guideBoundary)guideBoundary.textContent='教材原式、本站校准、一般证明与数值例分开标注；连贯动画帮助看因果，不代替独立计算。';
+    const guideBoundary=document.querySelector('.study-guide>.boundary');if(guideBoundary)guideBoundary.textContent='教材原式、本站校准、一般证明与数值例分开标注。';
     const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+`downloads/ch13-service-${key}.html`;dl.textContent='下载本段完整动画代码 ↓';}
     window.microMath?.refresh?.();
   }

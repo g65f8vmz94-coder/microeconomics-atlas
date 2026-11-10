@@ -239,10 +239,10 @@ export function startUncertaintyStory(requested) {
     if ($('reading')) $('reading').textContent = phase[1];
     if ($('formula')) $('formula').textContent = content.formula;
     if ($('boundary')) $('boundary').textContent = content.trap;
-    if ($('extra')) $('extra').innerHTML = `<h3>严谨证明或计算路线</h3><ol>${content.proof.map(x => `<li>${esc(x)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
+    if ($('extra')) $('extra').innerHTML = `<h3>解题步骤</h3><ol>${content.proof.map(x => `<li>${esc(x)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((el, i) => { el.textContent = [content.question, content.conditions, content.template][i] || ''; });
     const guideBoundary = document.querySelector('.study-guide>.boundary');
-    if (guideBoundary) guideBoundary.textContent = '教材结论、原题条件、自主数值图和原文排版校正分开标注；有限画面不替代一般证明。';
+    if (guideBoundary) guideBoundary.textContent = '教材结论、原题条件、自主数值图和原文排版校正分开标注；先用状态价格写个人预算，再按状态逐一检查出清。';
     const dl = document.querySelector('.lesson-end a[download]');
     if (dl) {
       dl.href = (location.protocol === 'file:' || location.pathname.includes('/downloads/') ? 'https://microeconomics-atlas-mingze.synb636.chatgpt.site/' : '') + `downloads/ch11-uncertainty-${key}.html`;

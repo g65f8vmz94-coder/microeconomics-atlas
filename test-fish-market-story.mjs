@@ -38,7 +38,11 @@ const healthCommon=fishMarketStory('p5b',5);near(healthCommon.currentY,health.so
 const base=survivalProbability(.7,.8);assert.ok(survivalProbability(.8,.8)>base&&survivalProbability(.7,.9)>base);economicChecks+=2;
 
 assert.ok(fishMarketContent.q134.trap.includes('定义域'));contentChecks++;
-assert.ok(fishMarketContent.fishTax.trap.includes('税本身'));contentChecks++;
+const taxNote = fishMarketContent.fishTax.trap;
+assert.match(taxNote, /税后价格.*捕量/);
+assert.match(taxNote, /每人.*正返还/);
+assert.match(taxNote, /返还总额.*至多.*实际税收/);
+contentChecks += 3;
 assert.ok(fishMarketContent.p5a.source.includes('不属于13.3正文'));contentChecks++;
 assert.ok(fishMarketContent.p5b.trap.includes('共同调整'));contentChecks++;
 

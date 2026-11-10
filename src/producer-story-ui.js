@@ -360,7 +360,7 @@ export const producerProofs = {
  techchange: String.raw`<details class="sd-proof" open><summary>图6.2b 技术整体提升但投入产出反而下降反例分析</summary><ol>
 <li><strong>反例构造</strong>：旧技术 <span class="equation">f(a) = \sqrt{a}</span>；新技术 <span class="equation">g(a) = \sqrt{a} + \delta a e^{-a}</span>（取 <span class="equation">\delta = 0.7</span>）。显然对任意 <span class="equation">a > 0</span>，<span class="equation">g(a) > f(a)</span>，新技术整体严格更优。</li>
 <li><strong>边际产出局部下降</strong>：新技术导数为 <span class="equation">g'(a) = \frac{1}{2\sqrt{a}} + \delta (1-a)e^{-a}</span>。当 <span class="equation">a > 1</span> 时，<span class="equation">1-a < 0</span>，额外增量产生负导数修正，导致局部边际产出低于旧技术：<span class="equation">g'(a) < f'(a)</span>。</li>
-<li><strong>自主数值反例</strong>：当 <span class="equation">w=0.29, p=1</span> 时，模型计算旧技术选择 <span class="equation">a_f \approx 2.97, y_f \approx 1.72</span>；新技术选择 <span class="equation">a_g \approx 1.73, y_g \approx 1.53</span>。最大利润约从0.862增至1.028。数值不是教材原题数据。</li>
+<li><strong>自主数值反例</strong>：当 <span class="equation">w=0.29, p=1</span> 时，模型计算旧技术选择 <span class="equation">a_f \approx 2.97, y_f \approx 1.72</span>；新技术选择 <span class="equation">a_g \approx 1.73, y_g \approx 1.53</span>。最大利润约从0.862增至1.028。</li>
 <li><strong>再看充分条件</strong>：最后换为 <span class="equation">g(a)=1.7\sqrt a</span>，其正投入边际产出不低于旧技术；本例最优投入约为8.59。一般推论可结合两技术在零点相同、正投入处可导和严格凹、价格为正且最优解存在等条件；它们是一组充分条件，不是唯一可能条件。</li>
 </ol></details>`,
 
@@ -382,7 +382,7 @@ export const producerProofs = {
 
  acproof: String.raw`<details class="sd-proof" open><summary>做题：平均成本何时升、何时降？</summary><ol>
 <li><strong>先列成本：</strong>本例启动费用可避免，停产成本为零；做正数量时总成本为下式。产量可以连续变化，数字是自主举例。<div class="equation">C(y)=4+y+\frac{y^2}{2},\quad y>0</div></li>
-<li><strong>分清两笔账：</strong>平均成本是总成本除以杯数；边际成本是当前产量附近多做极少一点时的单位增量成本。<div class="equation">AC(y)=\frac4y+1+\frac y2,\quad MC(y)=1+y</div>边际成本是导数，通常不等于从整数杯数多做整整一杯的成本差。</li>
+<li><strong>分清两笔账：</strong>平均成本是总成本除以杯数；边际成本是当前产量附近多做极少一点时的单位增量成本。<div class="equation">AC(y)=\frac4y+1+\frac y2,\quad MC(y)=1+y</div>边际成本读成本曲线在该点的斜率；整整多做一杯的成本读两个产量点的成本差。</li>
 <li><strong>判断方向：</strong>对平均成本求导，正产量时分母为正，所以符号由边际成本与平均成本的差决定。<div class="equation">AC'(y)=\frac{MC(y)-AC(y)}y</div>边际低于平均，平均下降；边际高于平均，平均上升。</li>
 <li><strong>求本例最低：</strong>令两者相等得正解，检查其左侧边际低、右侧边际高，所以这是本例的全局最低点。<div class="equation">1+y=\frac4y+1+\frac y2,\quad y=\sqrt8</div>一般情形下，等号只给出驻点；还要比较边界和其他候选。</li>
 <li><strong>教材条件：</strong>命题6.5在无固定成本的设定下陈述；本图有可避免的启动成本，是该正产量导数恒等式的自主延伸。停产点不能代入平均成本。</li>
@@ -394,7 +394,7 @@ export const producerProofs = {
 <li><strong>产量目标：</strong>先找不亏损的产量，再取最大的。此例解出两个保本点，右边是最大产量。<div class="equation">AC(y)=5\iff y=4\pm\sqrt8,\quad y_{\text{产量}}=4+\sqrt8</div></li>
 <li><strong>检查临界价格：</strong>最低平均成本为1+√8。高于它时本例有正利润；等于它时，利润目标在停产与正产量间并列，而产量目标选正产量；低于它两者都停产。</li>
 <li><strong>推广要查什么：</strong>固定成本是否能通过停产避免、价格是否给定、成本是否连续以及最优值是否存在，都要先核对。教材命题6.7的凸且可微成本假设与这里正产量含启动费用的例子不同；这里通过直接比较利润验证。书中图6.5(b)的平均成本画成先降后升，而全域凸且 <span class="equation">C(0)=0</span> 的成本函数，其平均成本不会下降；图形与命题条件要分开看。</li>
-<li><strong>找不到保本交点不等于一定停产：</strong>教材命题6.6没有明确补充成本连续或最大值存在条件。允许内部跳跃时，可能存在正的非亏损产量却没有最大的那个；应先检查可行集与最优值，参见同节“成本跳跃”自主反例。</li>
+<li><strong>没有保本交点时，先检验有没有正的非亏损产量：</strong>教材命题6.6没有明确补充成本连续或最大值存在条件。允许内部跳跃时，可能存在正的非亏损产量却没有最大的那个；应先检查可行集与最优值，参见同节“成本跳跃”自主反例。</li>
 </ol></details>`,
 
  coststatic: String.raw`<details class="sd-proof" open><summary>做题：价格或成本变化时怎么比较？</summary><ol>
@@ -437,7 +437,7 @@ export const producerProofs = {
 
  goals: String.raw`<details class="sd-proof" open><summary>§6.5 生产者偏好、企业社会责任与目标假说反思</summary><ol>
 <li><strong>七离散方案权衡</strong>：教材第75页开篇展示快递公司在衰退期的7个可行方案。纯利润最大化对应留100人（裁96人），利润200万美元；不裁员（留196人）利润降至40万美元。</li>
-<li><strong>自主权衡例子</strong>：用 <span class="equation">U = \pi - \lambda (196 - N)</span> 表示考虑裁员人数的偏好，逐一比较七个方案。这里的得分和权重不是教材给定数据，也不是现金支出。<span class="equation">\lambda</span> 增加时，最优留用人数弱不下降；并列方案都应保留。</li>
+<li><strong>自主权衡例子</strong>：用 <span class="equation">U = \pi - \lambda (196 - N)</span> 表示考虑裁员人数的偏好，逐一比较七个方案。这里的权重是本站设定的偏好参数，得分衡量经理如何权衡利润与留任人数。<span class="equation">\lambda</span> 增加时，最优留用人数弱不下降；并列方案都应保留。</li>
 <li><strong>做题先比较，再找分界</strong>：留100人与144人得分相等时，<span class="equation">2-96\lambda=1.6-52\lambda</span>，所以 <span class="equation">\lambda=0.4/44</span>。留144、170和196人的得分在 <span class="equation">\lambda=1.2/52</span> 时相等。还须比较其他方案，不能只看两条得分相等就断言它们最优。</li>
 <li><strong>为什么留用人数不会减少？</strong>把较低权重下的最优人数记为 <span class="equation">N_1</span>，较高权重下记为 <span class="equation">N_2</span>。各自最优的不等式相加后得到 <span class="equation">(\lambda_2-\lambda_1)(N_2-N_1)\ge0</span>；权重严格增加时，<span class="equation">N_2\ge N_1</span>。这是自主账本的结论，并非要求所有企业都采用这种偏好。</li>
 <li><strong>“应该”还是“实际上”？</strong>规范说法是“企业应该追求利润”；描述说法是“企业实际上倾向追求利润”；分析上的理由是“这个假设便于研究”。三者不是同一句话。教材报告不同学科学生选择有差异，但差异本身不能证明原因是入学前自我选择还是学习经历。</li>
@@ -464,7 +464,7 @@ export function renderProducerStory(meta, requested, phase = 0) {
  const guides=['先看题设：启动费用、成本函数和数量能否连续。','追踪同一产量下平均成本和边际成本的高低。','相等只是驻点；再看两侧及其他产量，判断是否最低。'];
  const supplyGuides=['先读售价、启动费用、成本函数和两位阿姨的目标。','利润目标看收入与成本的差；产量目标找不亏钱范围的右端。','价格碰到最低平均成本时检查并列；更低时比较停产。'];
  const factoryGuides=['先看两家技术、投入单价与各自启动费。','同一产量比较一家和两家平分的总成本。','等成本处并列；零产量不开厂，不能把启动费画成实际成本。'];
- const technologyGuides=['先认横轴原料、纵轴豆浆，例子中的数量允许连续。','跟着同一个点增加原料，比较切线斜率如何变化。','切线是局部边际产出，原点割线是平均产出；例子不代替一般条件。'];
+ const technologyGuides=['先认横轴原料、纵轴豆浆，例子中的数量允许连续。','跟着同一个点增加原料，比较切线斜率如何变化。','切线是局部边际产出，原点割线是平均产出。'];
  const objectiveGuides=['先固定同一技术、价格和四位店主各自的目标。','逐项计算收入、成本、产量和利润；注意最低产量和成员人数限制。','目标变了，选择可能不同；本例数值与额外条件不可直接推广。'];
  const outputGuides=['先辨认两家摊使用的是不同技术和价格，数量可连续。','同一投入比较收入与原料成本；收入不低于成本才可选。','不亏钱的最大产量与利润最大是两种目标；先检查严格凹和最优解存在。'];
  const profitGuides=['先确认技术、售价和原料单价，利润等于收入减成本。','跟着同一投入增加，比较收入点和成本点之间的距离。','正内点可用边际条件；别忘了停产、可导性和全局比较。'];
@@ -535,7 +535,7 @@ export function renderProducerStory(meta, requested, phase = 0) {
  let priceSituation=pEl('priceproof-situation');
  if(mode==='priceproof'){
   if(!priceSituation){priceSituation=document.createElement('section');priceSituation.id='priceproof-situation';priceSituation.setAttribute('aria-label','豆浆店五个生产方案');pEl('legend').before(priceSituation)}
-  const html='<p class="reading"><strong>题设与条件：</strong>阿姨的可选方案在工资变化前后相同，每杯售价1元。五个自主方案按“劳动力投入，豆浆产量”列出：0=(0,0)、1=(1,2)、2=(2,2.5)、3=(3,6)、4=(4,6.2)。工资由1元涨到2.1元；可用0方案停产。这是有限方案演示，不声称它满足教材的凹生产函数假设。</p><p class="reading"><strong>这张图要回答：</strong>工资涨后，阿姨选择什么？为什么两次最优选择可以说明投入不会增加？</p>';
+  const html='<p class="reading"><strong>题设与条件：</strong>阿姨的可选方案在工资变化前后相同，每杯售价1元。五个自主方案按“劳动力投入，豆浆产量”列出：0=(0,0)、1=(1,2)、2=(2,2.5)、3=(3,6)、4=(4,6.2)。工资由1元涨到2.1元；可用0方案停产。这组离散方案可以逐项比较；教材的连续模型另有生产函数凹性的假设。</p><p class="reading"><strong>这张图要回答：</strong>工资涨后，阿姨选择什么？为什么两次最优选择可以说明投入不会增加？</p>';
   if(priceSituation.dataset.signature!==html){priceSituation.dataset.signature=html;priceSituation.innerHTML=html;}
  }else priceSituation?.remove();
 
@@ -589,7 +589,7 @@ export function renderProducerStory(meta, requested, phase = 0) {
  let goalSituation=pEl('goals-situation');
  if(mode==='goals'){
   if(!goalSituation){goalSituation=document.createElement('section');goalSituation.id='goals-situation';goalSituation.setAttribute('aria-label','快递公司原题条件与问题');pEl('legend').before(goalSituation)}
-  const html='<p class="reading"><strong>教材原题：</strong>快递公司有196名员工，经济衰退后仍有正利润。财务部门只列出七个留用方案及预计年利润：留下100人时预计赚200万美元，全部留下时预计赚40万美元。利润是预测，不是实际已经赚到的钱。</p><p class="reading"><strong>这张图要回答：</strong>如果只看利润，会留下多少人？如果经理也在意裁员给员工带来的影响，选择可能怎样改变？下方的主观权衡函数和权重是自主举例，并非教材给定，也不是实际发生的支出。</p>';
+  const html='<p class="reading"><strong>教材原题：</strong>快递公司有196名员工，经济衰退后仍有正利润。财务部门只列出七个留用方案及预计年利润：留下100人时预计赚200万美元，全部留下时预计赚40万美元。利润是预测，不是实际已经赚到的钱。</p><p class="reading"><strong>这张图要回答：</strong>如果只看利润，会留下多少人？如果经理也在意裁员给员工带来的影响，选择可能怎样改变？下方函数与权重由本站设定，得分衡量经理对各方案的偏好，实际支出另计。</p>';
   if(goalSituation.dataset.signature!==html){goalSituation.dataset.signature=html;goalSituation.innerHTML=html;}
  }else goalSituation?.remove();
 
@@ -637,7 +637,7 @@ export function renderProducerStory(meta, requested, phase = 0) {
  }else goalLedger?.remove();
  pEl('reading').textContent = frame.narration;
  pEl('formula').textContent = frame.formula;
- pEl('boundary').textContent = `Osborne–Rubinstein §6.1—6.5，印刷75—86页／PDF94—105。${frame.source}。有限数值与图形演示服务于直观理解，不代替全象限一般数学证明。`;
+ pEl('boundary').textContent = `Osborne–Rubinstein §6.1—6.5，印刷75—86页／PDF94—105。${frame.source}。`;
  pEl('extra').innerHTML = producerProofs[mode] || '';
 
  if (pEl('step')) {

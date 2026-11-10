@@ -56,7 +56,7 @@ function draw(){const s=state,r=cdExchange({...s,report:s.a});let svg='',metrics
   if(clear)svg+=point(...equilibrium,'A、B选择重合',g);
   else{if(a.every(x=>x>=0&&x<=10))svg+=point(...a,'A想选的配置',g);if(bAsA.every(x=>x>=0&&x<=10))svg+=point(...bAsA,'B想选的配置',purple);svg+=point(...equilibrium,'均衡配置','#a37b21');}
   metrics=[['A想要的商品1',r.at.A[0]],['B想要的商品1',r.at.B[0]],['总需求减总禀赋',r.excess[0]],['出清的相对价格',r.eq]];
-  read='A和B各自在预算集里最优化，但只有二人的需求同时可行才是竞争均衡。绿色点和紫色点重合时，两个个体的消费愿望恰好分完所有资源。盒外需求仍在读数中显示，不把它裁剪成可行选择。';formula='w_A=p·e_A；x_A=αw_A/p，y_A=(1−α)w_A；x_A+x_B=10，y_A+y_B=10';last=r;
+  read='A和B各自在预算集里最优化，但只有二人的需求同时可行才是竞争均衡。绿色点和紫色点重合时，两个个体的消费愿望恰好分完所有资源。盒外的个人需求保留在读数中，可与全市场的资源总量对照。';formula='w_A=p·e_A；x_A=αw_A/p，y_A=(1−α)w_A；x_A+x_B=10，y_A+y_B=10';last=r;
  }
  if(mode==='excess')last=r;
  $('plot').innerHTML=`<svg viewBox="0 0 600 380" role="img" aria-label="${meta.title}">${svg}</svg>`;

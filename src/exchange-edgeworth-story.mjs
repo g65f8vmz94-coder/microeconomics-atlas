@@ -328,7 +328,7 @@ export function edgeworthStory(key = 'boxconstruction', stepIndex = 0, state = {
       {
         step: 4,
         title: '核心端点的利益边界含义',
-        desc: '端点 (4,4) 让甲效用刚好保底16、乙得到全部交易增益；端点 (6,6) 反之。红线段涵盖本数值例的全部核心配置，不等于“全部博弈均衡”。',
+        desc: '端点 (4,4) 让甲效用刚好保底16、乙得到全部交易增益；端点 (6,6) 反之。红线段标出本例中所有能抵御联盟阻挡的配置。',
         focus: 'endpoints',
         formula: 'P_{\\min}=(4, 4) \\implies u_1=16, \\quad u_2=36, \\quad P_{\\max}=(6, 6) \\implies u_1=36, \\quad u_2=16'
       },

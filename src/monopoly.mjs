@@ -66,7 +66,7 @@ export function capTeachingM(m,step=0){
   `老太太自己算过：每杯卖${num(pm)}元、做${num(m.qm)}杯最赚钱。政府把上限设在${num(cap)}元，高于她原本的售价，所以她不用改变做法。`,
   `上限降到每杯${num(pm)}元，刚好碰到原来的售价；她仍做${num(m.qm)}杯。接下来如果再压低价格，就要重新算卖多少杯最赚钱。`,
   `上限降到每杯${num(pc)}元，她会做${num(m.qc)}杯，比原先多。此时多做一杯的成本与顾客愿付的价格相等；按本例口径，这恰是社会最优产量。`,
-  `上限再压到每杯${num(cap)}元，老太太只愿做${num(r.q)}杯，比原来的${num(m.qm)}杯还少。价格低了，不代表人人都能买到：供给也可能减少。`,
+  `上限再压到每杯${num(cap)}元，老太太只愿做${num(r.q)}杯，比原来的${num(m.qm)}杯还少。限价降低了成交价。再看卖方愿意提供几件，才知道多少人买得到。`,
   `再把上限调回${num(pc)}元。看金圈：圈左边多卖一杯能收限价；圈右边想多卖，还得顺着需求降价。做题时要把这个折点与驻点、边界一起比较利润。`
  ];
  const changing=t>1e-9;
@@ -121,7 +121,7 @@ export function marketTeachingM({a1=100,a2=80,c=20,k=.4}={},step=0){
  const phase=clampM(Number(step)||0,0,3),i=Math.floor(phase),t=phase-i,anchors=[.7,.5,.65,.5].map(v=>a1*v),price=anchors[i]+(anchors[Math.min(i+1,3)]-anchors[i])*t;
  const quantities=[Math.max(0,a1-price),Math.max(0,(a2-price)/1.2)],total=quantities[0]+quantities[1],cost=c*total+k*total*total/2,revenue=price*total,profit=revenue-cost,f=x=>Number(x.toFixed(2));
  const titles=['一个卖家，两个集市','同一个价格降低，顾客各自决定买多少','提价后，收入和利润一定增加吗？','再看：销量、成本和目标要一起考虑'];
- const text=[`街上只有阿姨一家卖豆浆，她先在两个集市都标价${f(price)}元。第一个集市买${f(quantities[0])}杯，第二个买${f(quantities[1])}杯；顾客决定买多少，她不能只靠自己定价决定销量。`,`同一标价降到${f(price)}元，两个集市分别买${f(quantities[0])}和${f(quantities[1])}杯。阿姨一共要准备${f(total)}杯，成本要按这一个总量计算。`,`把价格改成${f(price)}元，收入是${f(revenue)}元，成本${f(cost)}元，利润${f(profit)}元。价格更高并不自动意味着利润更高，要把顾客反应与成本一起算。`,`回到${f(price)}元时，总销量${f(total)}杯，利润${f(profit)}元。如果阿姨追求利润和追求销量，比较的目标就不同；这两个价格只是候选，不代表找到了最优。`];
+ const text=[`街上只有阿姨一家卖豆浆，她先在两个集市都标价${f(price)}元。第一个集市买${f(quantities[0])}杯，第二个买${f(quantities[1])}杯；顾客决定买多少，她不能只靠自己定价决定销量。`,`同一标价降到${f(price)}元，两个集市分别买${f(quantities[0])}和${f(quantities[1])}杯。阿姨一共要准备${f(total)}杯，成本要按这一个总量计算。`,`把价格改成${f(price)}元，收入是${f(revenue)}元，成本${f(cost)}元，利润${f(profit)}元。价格更高并不自动意味着利润更高，要把顾客反应与成本一起算。`,`回到${f(price)}元时，总销量${f(total)}杯，利润${f(profit)}元。如果阿姨追求利润和追求销量，比较的目标就不同；算出这两个候选价格的利润，再与其他可行价格比较。`];
  return {phase,price,quantities,total,cost,revenue,profit,title:t>1e-9?'标价改变，顾客分别作出选择':titles[i],narration:t>1e-9?`同一价格正变到约${f(price)}元，两个集市分别买约${f(quantities[0])}和${f(quantities[1])}杯；总成本和利润按当前总量重算。`:text[i]};
 }
 export const menuPresetsM={standard:{a:2,d:.2,label:'沿用原演示：分离菜单'},high:{a:3.4,d:.2,label:'高型估值很高：只服务高型'},close:{a:1.6,d:.5,label:'两类接近：同一选项'}};
@@ -219,7 +219,7 @@ export function taxDiscreteTeachingM(step=0){
   '每杯税0.1元时，卖两人赚1元，只卖一人赚0.9元。阿姨仍标价0.6元，销量没有改变。',
   '每杯税0.25元时，卖两人只赚0.7元，只卖一人赚0.75元。阿姨改为标价1元、只卖一杯：顾客价上涨0.4元，比税0.25元还多。',
   '每杯税升到1.1元，卖一人或两人的利润都小于零，阿姨选择不卖；这时没有实际成交价格，不能继续计算价格涨幅。',
-  '回到税0.25元：价格从0.6跳到1元，关键是阿姨换了服务对象。这个例子说明可能超额转嫁，不代表所有税或所有市场都会如此。'
+  '回到税0.25元：价格从0.6跳到1元，关键是阿姨换了服务对象。代入本例的需求和成本，比较税额与涨价幅度，就能看到超额转嫁。'
  ];
  const narration=moving?`每杯税正在变为${num(tax)}元：卖两人利润${num(2*(.6-tax))}元，只卖一人利润${num(1-tax)}元。阿姨${r.after.q?'选择卖'+r.after.q+'杯，顾客价'+num(r.after.price)+'元':'选择停卖，没有实际成交价'}。`:texts[i];
  return {phase,tax,outcome:r,title:moving?'税变化，卖家重新比较':titles[i],narration};
@@ -258,7 +258,7 @@ export function optimalDiscreteMenuM(values=discreteValuesM.discount){
 export function nonlinearTeachingM(step=0){
  const phase=clampM(Number(step)||0,0,4),i=Math.floor(phase),f=phase-i,mix=i===1?f:i>=2?1:0,values={H:[0,12-4*mix,19+mix],L:[0,10-4*mix,13-6*mix]},first=10-4*mix,second=i===0?9-2*f:i===1?7+5*f:i===2?12+2*f:i===3?14-2*f:12,options=[{q:1,m:first},{q:2,m:first+second}],outcome=discreteMenuM(values,options,'seller'),opt=optimalDiscreteMenuM(values),n=x=>Number(x.toFixed(3));
  const titles=['第一杯10元，第二杯加9元','把第二杯降到7元','换一组顾客，第二杯可以更贵','第二杯再涨，会有人改选','回到第二种最优菜单'];
- const texts=['第一组顾客：爱喝者对一杯、两杯的总估值是12、19元；另一位是10、13元。第一杯10元、第二杯加9元时，两人都只买一杯，收入20元。','第二杯加7元时，爱喝者买一杯和两杯的净好处都是2元；另一位买一杯和不买都得0。假设无差异时选对卖家收入较高的选项，两人分别买两杯和一杯，收入27元。','换成第二组顾客：爱喝者对一杯、两杯的总估值为8、20元，另一位为6、7元。第一杯6元、第二杯加12元，两人分别买两杯和一杯，收入24元。','第二杯加14元时，爱喝者更愿意只买一杯；另一位也买一杯，总收入12元。价格更高，不代表收入更高。','回到第一杯6元、第二杯加12元，假设无差异时选对卖家有利的方案，两人的选择让阿姨收入24元。这一组的最优第二杯反而更贵。'];
+ const texts=['第一组顾客：爱喝者对一杯、两杯的总估值是12、19元；另一位是10、13元。第一杯10元、第二杯加9元时，两人都只买一杯，收入20元。','第二杯加7元时，爱喝者买一杯和两杯的净好处都是2元；另一位买一杯和不买都得0。假设无差异时选对卖家收入较高的选项，两人分别买两杯和一杯，收入27元。','换成第二组顾客：爱喝者对一杯、两杯的总估值为8、20元，另一位为6、7元。第一杯6元、第二杯加12元，两人分别买两杯和一杯，收入24元。','第二杯加14元时，爱喝者更愿意只买一杯；另一位也买一杯，总收入12元。把新价格乘上新销量，再比较收入。','回到第一杯6元、第二杯加12元，假设无差异时选对卖家有利的方案，两人的选择让阿姨收入24元。这一组的最优第二杯反而更贵。'];
  const changing=f>1e-9,bridge=i===1&&changing,phrase=bridge?'现在只是在两组自主构造的顾客之间过渡，不是说价格变化会改变顾客偏好。':'两位顾客都重新比较不买、一杯和两杯的净好处。',title=changing?(bridge?'换一组顾客，重新比较':'菜单改变，顾客重新选择'):titles[i];
  const narration=changing?`第一杯${n(first)}元，第二杯追加${n(second)}元，两杯总价${n(first+second)}元。${phrase}阿姨当前收入${n(outcome.profit)}元。`:texts[i];
  return {phase,values,first,second,options,outcome,opt,title,narration,bridge};

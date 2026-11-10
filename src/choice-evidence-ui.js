@@ -29,7 +29,7 @@ export function startChoiceEvidence(initial){
   });
   g.add(g.text(12,337,'收益：美元；格子等宽，不表示概率大小',muted,g.small?12:15));
   if(phase>=3){g.add(g.text(12,374,'相同概率下，D 比 C 多给：',ink,g.small?14:17));const cells=evDominance(),cell=(g.W-24)/5;cells.forEach((r,i)=>{const x=12+i*cell+cell/2;g.add(g.text(x,406,r.color,muted,13,'middle')+g.text(x,433,(r.gain>0?'+':'')+r.gain,r.gain?green:muted,17,'middle'));});}
-  else g.add(g.text(12,385,phase===1?'相似的概率，不等于完全相同':'先看清每一种可能发生的结果',phase===1?red:muted,g.small?14:18));
+  else g.add(g.text(12,385,phase===1?'逐项核对两份概率':'先看清每一种可能发生的结果',phase===1?red:muted,g.small?14:18));
   if(phase>=5){strip(g,'lottery-AB',490,'原表提问 · A、B',['A','B'],[51,49],[purple,green],true);strip(g,'lottery-CD',580,'拆分表提问 · C、D',['C','D'],[7,93],[purple,green],true);}
   return g.finish();
  }
@@ -53,7 +53,7 @@ export function startChoiceEvidence(initial){
   $('formula').textContent=mode==='attention'?(phase>=5?String.raw`c(\{A,B,C\})=B,\quad c(\{A,B\})=A\ne B`:phase>=3?String.raw`8.3>8.1,\quad9>7`:String.raw`9.1>8.3,\quad6<9`):mode==='framing'?(phase>=4?String.raw`F_A=F_C,\quad F_B=F_D;\qquad\mathbb E[A]=${evExpected('A')},\quad\mathbb E[B]=${evExpected('B')}`:phase>=3?String.raw`D(s)\ge C(s)\text{ 对每个 }s`:phase>=2?String.raw`F_A=F_C,\quad F_B=F_D`:String.raw`0.90+0.06+0.01+0.03=1;\qquad0.90+0.07+0.01+0.02=1`):(phase>=2?String.raw`X=\{(W-80,\text{看}),(W-40,\text{不看})\};\qquad\Delta\text{支出}=40`:phase>=1?String.raw`W_{\text{门口}}=W-40`:String.raw`p=40`);
   $('legend').textContent=mode==='attention'?'相机身份与位置固定；色带每条各为100%。群体结果与自主假想的个人记录分开。':mode==='framing'?'相同收益事件可拆分和重命名；矩形等宽用于排版，概率以文字为准。下方保留原表与精确合并核算。':'两条故事使用同一个出门前财富参照；最终选项合在同一处，避免误把不同心理账目当成不同票价。';
   $('boundary').textContent='Osborne–Rubinstein §2.6，印刷24—27页（原PDF43—46页）。历史在线实验面向全球具有相近学业背景的学生；人数和比例沿用原书约数，本页未重新调查。原书记录、可能解释、自主假想与迁移练习分别标注。';
-  $('extra').innerHTML='<p>这一节的三种检验要分开：相机例关注菜单变化与α；彩票和丢票例关注同一选项集合是否因描述不同而改变选择。这里的“理性”沿用本书的技术定义，不等于给参与者贴聪明或愚笨的标签。</p><details open><summary>原书数字与逐项核算</summary>'+records()+'</details>'+proof();
+  $('extra').innerHTML='<p>这一节的三种检验要分开：相机例关注菜单变化与α；彩票和丢票例关注同一选项集合是否因描述不同而改变选择。此处按教材定义检查：能否用同一份偏好排序解释不同菜单下的选择。</p><details open><summary>原书数字与逐项核算</summary>'+records()+'</details>'+proof();
   $('advance').disabled=phase>=last;$('play').disabled=phase>=last;$('plot').tabIndex=-1;$('plot').setAttribute('role','region');$('plot').setAttribute('aria-label',content.title);window.microMath?.refresh();
   const u=new URL(location.href);u.searchParams.set('case',mode);u.searchParams.set('phase',phase);history.replaceState(null,'',u);
   const download=document.querySelector('.lesson-end a[download]');if(download){download.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+'downloads/ch2-evidence-'+mode+'.html';download.textContent='下载本段独立代码 ↓';download.title='内含本段完整讲解、公式、模型和字体';}

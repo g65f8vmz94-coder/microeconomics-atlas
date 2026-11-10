@@ -164,7 +164,7 @@ export function startIndivisibleStory(requested) {
     if ($('reading')) $('reading').textContent = phase[1];
     if ($('formula')) $('formula').textContent = c.formula;
     if ($('boundary')) $('boundary').textContent = c.trap;
-    if ($('extra')) $('extra').innerHTML = `<h3>严谨证明或计算路线</h3><ol>${c.proof.map(x => `<li>${esc(x)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(c.template)}</p><h3>最容易混淆</h3><p>${esc(c.trap)}</p><p>来源：Osborne–Rubinstein ${esc(c.source)}</p>`;
+    if ($('extra')) $('extra').innerHTML = `<h3>解题步骤</h3><ol>${c.proof.map(x => `<li>${esc(x)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(c.template)}</p><h3>最容易混淆</h3><p>${esc(c.trap)}</p><p>来源：Osborne–Rubinstein ${esc(c.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((el, i) => { el.textContent = [c.question, c.conditions, c.template][i] || ''; });
     const guideBoundary = document.querySelector('.study-guide>.boundary');
     if (guideBoundary) guideBoundary.textContent = '生活引入与数值构造会明确标“自主构造”；教材定义、命题与原题条件不会混写。';

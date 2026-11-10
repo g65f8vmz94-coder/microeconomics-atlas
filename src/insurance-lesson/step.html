@@ -1,0 +1,35 @@
+<article class="ledger-step" id="{{id}}" tabindex="-1" aria-labelledby="title-{{id}}">
+  <p class="terms">本金 100 元，出险概率一半。{{scope}}</p>
+  <div class="sheet-grid" {{reviewTarget}}>
+    <section class="reading" aria-labelledby="title-{{id}}">
+      <div class="step-label"><span>{{label}} · 第 {{number}} / {{stepCount}} 步</span><progress aria-hidden="true" value="{{number}}" max="{{stepCount}}"></progress></div>
+      <h3 id="title-{{id}}">{{title}}</h3><p>{{note}}</p>
+      <div class="step-equation">{{stepMath}}</div>
+      <div class="actions">
+        <a class="action primary" data-forward href="#{{nextId}}" aria-keyshortcuts="ArrowRight">{{next}} →</a>{{previousLink}}
+      </div>
+      {{returnLink}}
+    </section>
+    <section class="accounts" aria-label="两种状态下的财富">
+      <div class="account-top"><span>交给保险公司的保费</span><strong><span data-field="premium">{{premium}}</span> <small>元</small></strong></div>
+      <div class="accounts-pair">
+        <article class="account safe"><h3><i aria-hidden="true"></i>平安无事</h3>
+          <div class="balance"><strong data-field="safe">{{safe}}</strong> 元</div>
+          <div class="bar" aria-hidden="true"><i data-bar="safe" style="width:{{safePercent}}%"></i></div>
+          <p class="cashline"><span>交保费后</span><b data-field="safe">{{safe}}</b></p>
+          <p class="cashline"><span>保险赔款</span><b>0</b></p>
+          <p class="delta" data-field="safeDelta">{{safeDelta}}</p>
+        </article>
+        <article class="account accident"><h3><i aria-hidden="true"></i>手机摔坏</h3>
+          <div class="balance"><strong data-field="accident">{{accident}}</strong> 元</div>
+          <div class="bar" aria-hidden="true"><i data-bar="own" style="width:{{ownPercent}}%"></i><i class="payout" data-bar="payout" style="width:{{payoutPercent}}%"></i></div>
+          <p class="cashline"><span>付修理费后</span><b data-field="ownAfterLoss">{{ownAfterLoss}}</b></p>
+          <p class="cashline"><span>保险赔款</span><b data-field="payout">{{payout}}</b></p>
+          <p class="delta" data-field="accidentDelta">{{accidentDelta}}</p>
+        </article>
+      </div>
+      <div class="receipt" {{hideReceipt}}><strong>出险余额相对全保的变化</strong><div><span>省保费 <b>+{{savedFee}}</b></span><span>减赔款 <b>−{{lostPayout}}</b></span><span>净变化 <b>−{{netLoss}}</b> 元</span></div></div>
+      <div class="metrics"><div><span>平均财富</span><strong><span data-field="mean">{{mean}}</span> <small>元</small></strong></div><div><span>期望效用 · <tex>v(W)=\sqrt W</tex></span><strong data-field="utility">{{utility}}</strong></div></div>
+    </section>
+  </div>
+</article>

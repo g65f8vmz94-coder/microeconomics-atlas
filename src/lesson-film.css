@@ -1,5 +1,5 @@
 /* A lecture stage, rather than a parameter dashboard. */
-.film-mode .controls,.film-mode .learning-path,.film-mode .model-menu,.film-mode .chapter-menu,.film-mode .guide-tabs,.film-mode #practice,.film-mode #progress-notice{display:none!important}
+.film-mode .controls,.film-mode .learning-path,.film-mode .model-menu,.film-mode .chapter-menu,.film-mode .guide-tabs{display:none!important}
 .film-mode .lesson-top,.film-mode .focus-question{display:none}
 .film-mode .workspace{display:block;border:0;padding:0;margin-top:18px}
 .film-mode .stage{max-width:1200px;margin:auto;min-width:0;display:grid;grid-template-columns:minmax(290px,.78fr) minmax(0,1.4fr);column-gap:34px;align-items:start}
@@ -23,7 +23,7 @@
 .lesson-film{max-width:960px;margin:0 auto 26px;padding:24px 0 20px;border-top:2px solid var(--green,#177468);border-bottom:1px solid var(--line,#d8ded1)}
 .film-topline{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:var(--muted,#66786d)}
 .film-topline span:first-child{letter-spacing:.12em;color:var(--green,#177468)}
-.lesson-film h2{font-size:clamp(21px,2.5vw,29px);font-weight:550;line-height:1.5;margin:14px 0 10px}
+.lesson-film #film-title{font-size:clamp(21px,2.5vw,29px);font-weight:550;line-height:1.5;margin:14px 0 10px}
 .film-caption{font-size:clamp(16px,1.45vw,19px);line-height:1.9;max-width:850px;min-height:3.8em;margin:0 0 18px;color:var(--ink,#243e3a)}
 .film-transport{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .film-transport button{font-size:14px;padding:10px 20px;min-height:44px}
@@ -69,3 +69,19 @@
 
 .film-mode .stage.jungle-intro{display:block}
 .film-mode .stage.jungle-intro>.lesson-film{max-width:960px;margin:0 auto 20px}
+
+.film-mode .crumb{display:flex;flex-wrap:wrap;gap:6px 20px}
+.film-mode .lesson-end [hidden]{display:none}
+.film-mode .model-notes{grid-column:1/-1;min-width:0}
+.film-mode .model-notes>summary,.film-mode .study-guide>summary{color:var(--accent);cursor:pointer;padding:9px 0}
+.film-mode #extra details>summary{list-style:revert;pointer-events:auto;cursor:pointer}
+.film-mode #film-phase{font-weight:600;margin:0 0 8px}
+.film-mode #film-solution{display:inline-block;margin-top:8px;color:var(--accent)}
+.film-mode .film-transport button:disabled{opacity:.6;cursor:default}
+.film-mode .film-episodes nav>a{max-width:100%;overflow-wrap:anywhere}
+.film-mode #film-conditions{margin:0 0 12px;font-size:14px}
+.film-mode #film-conditions summary{color:var(--accent);padding:4px 0}
+@media(max-width:620px){
+ .film-mode .film-transport{gap:6px}
+ .film-mode .film-transport button{padding:6px 10px}
+}

@@ -72,7 +72,7 @@ export const producerStories = {
    ),
    makeProducerFrame(
     '目标四：劳动者合作社（人均利润最大化）',
-    '合作社把利润平均分给成员，比较每人的收益。本例额外规定至少一名成员，将人数作为连续近似，选1人时人均利润3元；真实人数通常是整数，不能把本例规模推广给所有合作社。',
+    '合作社把利润平均分给成员，比较每人的收益。本例额外规定至少一名成员，将人数作为连续近似，选1人时人均利润3元；若按整个人头雇用，还要比较相邻整数人数的结果。',
     String.raw`\max \frac{p f(a) - w a}{a} = p \frac{f(a)}{a} - w`,
     '原书第77页合作社模型拓展',
     { objective: 'coop', A: 2, p: 2, w: 1 }
@@ -102,7 +102,7 @@ export const producerStories = {
    ),
    makeProducerFrame(
     '几何直观：割线斜率与成本线斜率重合',
-    '投入16时做出8杯，收入16元、原料花16元，恰好不亏不赚。再多投入就亏钱，所以16是本例的不亏损最大投入，8杯是最大产量。它不是利润最大点：投入4时的利润反而更高。',
+    '投入16时做出8杯，收入16元、原料花16元，恰好不亏不赚。再多投入就亏钱，所以16是本例的不亏损最大投入，8杯是最大产量。再比较两个点的利润，投入4时赚得更多。',
     String.raw`a^* = \left(\frac{p A}{w}\right)^2 \quad (\text{平方根技术 } f(a)=A\sqrt{a})`,
     '原书第78页几何解法总结',
     { p: 2, w: 1, A: 2, solution: true, trial: 16 }
@@ -148,7 +148,7 @@ export const producerStories = {
   frames: [
    makeProducerFrame(
     '定义6.3：利润最大化问题',
-    '自主例子里，投入1单位原料做2杯，收入4元、成本1元，利润3元。再增加原料，收入和成本都会增加；要比较它们之间的差，而不是只看收入。',
+    '自主例子里，投入1单位原料做2杯，收入4元、成本1元，利润3元。再增加原料，收入和成本都会增加；用收入减去成本，比较各方案留下的钱。',
     String.raw`\max_{a \ge 0} \pi(a) = p f(a) - w a`,
     '原书定义6.3 · 印刷79页',
     { p: 2, w: 1, A: 2, b: 0, trial: 1 }
@@ -211,7 +211,7 @@ export const producerStories = {
   id: '6.3',
   title: '§6.3 图6.2b 技术改进悖论：利润最大化投入反缩减',
   intro: '阿姨换了一台磨豆机：用同样原料，它做出的豆浆更多。可她重新算利润后，为什么可能反而少用原料、少做豆浆？',
-  end: '同样投入产出更多，不代表每一点的边际产出都更高；最优投入和产量可以减少，而最大利润仍可能增加。换一组条件要重新检查。',
+  end: '同样投入时比较曲线高度；再多投一点的收益要比较该点的斜率；最优投入和产量可以减少，而最大利润仍可能增加。换一组条件要重新检查。',
   frames: [
    makeProducerFrame(
     '先看旧磨豆机和原料账',
@@ -268,7 +268,7 @@ export const producerStories = {
     '换一种技术：两杯的极限碰不到',
     '现在换成另一种自主技术，公式见下方；投入仍每单位1元。要做1.8杯需约2.30单位原料；有限投入只能接近2杯，无法达到2杯。不能把上一幅的平方根公式继续套用。',
     String.raw`y=2(1-e^{-a}),\quad \lim_{y\to2^-}C(y)=+\infty`,
-    '自主构造的渐近饱和技术；并非原书给出的特定函数',
+    '原书 §6.4 成本函数；渐近饱和的生产函数为本站自主构造',
     { kind: 'saturating', A: 2, w: 1, y: 1.8 }
    )
   ]
@@ -303,7 +303,7 @@ export const producerStories = {
    ),
    makeProducerFrame('没有开摊费：先做两杯', '假设阿姨没有开摊费，正产量总成本为 y+y²/2，杯数可以连续变化。做2杯时平均每杯2元，边际成本3元／杯。接下来让产量一点点靠近零，看看两笔成本靠近哪里。', String.raw`C(y)=y+\frac{y^2}{2},\quad AC(2)=2,\quad MC(2)=3`, '原书命题6.5b · 印刷82页；豆浆例子为自主构造', {F:0,c:1,k:1,convex:true,limit:true,y:2}),
    makeProducerFrame('做半杯：两笔成本更接近', '产量降到0.5杯时，平均每杯1.25元，边际成本1.5元／杯。模型允许杯数连续，并不表示现实中必须卖半杯。', String.raw`AC(0.5)=1.25,\quad MC(0.5)=1.5`, '原书命题6.5b · 自主数值示例', {F:0,c:1,k:1,convex:true,limit:true,y:.5}),
-   makeProducerFrame('只靠近零，不把零当作正产量', '产量再缩到0.05杯时，平均成本1.025元／杯，边际成本1.05元／杯；继续靠近零，两者都靠近1元／杯。注意，零杯的平均成本本身没有定义。', String.raw`AC(0.05)=1.025,\quad MC(0.05)=1.05`, '原书命题6.5b · 自主数值示例', {F:0,c:1,k:1,convex:true,limit:true,y:.05}),
+   makeProducerFrame('从正产量一侧逐渐靠近零', '产量再缩到0.05杯时，平均成本1.025元／杯，边际成本1.05元／杯；继续靠近零，两者都靠近1元／杯。注意，零杯的平均成本本身没有定义。', String.raw`AC(0.05)=1.025,\quad MC(0.05)=1.05`, '原书命题6.5b · 自主数值示例', {F:0,c:1,k:1,convex:true,limit:true,y:.05}),
    makeProducerFrame('做题时：把极限写清楚', '没有固定成本、C(0)=0，且成本在零点右侧可导时，C(y)/y就是从原点到成本曲线的割线斜率；当y从正数靠近零，割线斜率趋近零点右导数，也就是零点的边际成本。', String.raw`\lim_{y\to0^+}AC(y)=\lim_{y\to0^+}\frac{C(y)-C(0)}{y}=C'_+(0)=MC(0)`, '原书命题6.5b及证明 · 印刷82页', {F:0,c:1,k:1,convex:true,limit:true,y:.05})
   ]
  },
@@ -331,7 +331,7 @@ export const producerStories = {
    makeProducerFrame('目标一：利润最多做几杯？', '想利润最高，先比较多做一点能多收5元／杯、成本增加多少。此例正产量利润为凹函数，边际成本等于5时是4杯；收入20元，成本16元，利润4元，高于停产的0元。', String.raw`MC(y)=1+y=5\Rightarrow y_{\pi}=4,\quad\pi(4)=20-16=4`, '原书命题6.7 · 印刷84页；固定成本为自主延伸', {F:4,c:1,k:1,p:5,stage:'profit'}),
    makeProducerFrame('目标二：不亏钱，尽量多做', '另一位只要求不亏钱，就沿平均成本曲线找售价覆盖成本的范围。此例右边界约6.83杯，收入刚好等于成本，利润为零；比利润最大时的4杯多。', String.raw`AC(y)=\frac4y+1+\frac y2=5\Rightarrow y_{\text{产量}}=4+\sqrt8\approx6.83`, '原书命题6.6 · 印刷83页；数值自主构造', {F:4,c:1,k:1,p:5,stage:'both'}),
    makeProducerFrame('售价降到保本门槛', '售价降到最低平均成本约3.83元／杯时，正产量约2.83杯恰好保本。利润目标在停产与这2.83杯之间并列；不亏钱且产量最大的目标选择2.83杯。', String.raw`p=1+\sqrt8,\quad y=\sqrt8,\quad\pi(y)=\pi(0)=0`, '原书命题6.6—6.7 · 自主固定成本例子', {F:4,c:1,k:1,p:1+Math.sqrt(8),stage:'tie'}),
-   makeProducerFrame('售价再低：两人都不开摊', '售价降到3元／杯，低于本例最低平均成本；任何正产量都亏损，停产成本为零。两位阿姨都选择0杯。不要把停产画成平均成本曲线上的点，因为0杯的平均成本未定义。', String.raw`p=3<1+\sqrt8,\quad y_{\pi}=y_{\text{产量}}=0`, '原书第83—84页；本例启动成本可避免', {F:4,c:1,k:1,p:3,stage:'shutdown'}),
+   makeProducerFrame('售价再低：两人都不开摊', '售价降到3元／杯，低于本例最低平均成本；任何正产量都亏损，停产成本为零。两位阿姨都选择0杯。停产时产量为零，平均成本的分母也为零，所以平均成本只画在正产量处。', String.raw`p=3<1+\sqrt8,\quad y_{\pi}=y_{\text{产量}}=0`, '原书第83—84页；本例启动成本可避免', {F:4,c:1,k:1,p:3,stage:'shutdown'}),
    makeProducerFrame('换题先认目标，再检查停产', '先写利润或不亏损条件。利润目标比较所有候选和停产；产量目标找非亏损集合的最大值。一般成本若有跳跃，不能未经验证就把最大值或平均成本交点当成一定存在。', String.raw`\max_{y\ge0}\{py-C(y)\},\quad \max\{y\ge0:py\ge C(y)\}`, '原书命题6.6—6.7及成本连续性边界', {F:4,c:1,k:1,p:3,stage:'shutdown'})
   ]
  },
@@ -395,7 +395,7 @@ export const producerStories = {
    ),
    makeProducerFrame(
     '开始考虑裁员的心理代价',
-    '每减少1单位原有劳动力，老板感到0.3单位主观代价。现在最优保留约2.04单位；这不是实际支付的工资或现金成本。小数代表可连续变化的劳动投入，不是把现实中的人分割。',
+    '每减少1单位原有劳动力，老板感到0.3单位主观代价。现在最优保留约2.04单位；这不是实际支付的工资或现金成本。这里按等效劳动量计量，半个单位可以对应半份工时。',
     String.raw`\ell=0.3,\quad a^*=\left(\frac1{1-0.3}\right)^2\approx2.04`,
     '原书习题6.3 · 自主数值例子',
     { A: 2, b: 0, p: 1, w: 1, a0: 4, loss: .3 }
@@ -492,7 +492,7 @@ export const producerStories = {
    ),
    makeProducerFrame(
     '试着把员工去留也放进自己的账本',
-    '自主构造一个简单权衡：每裁一人减去 λ 百万美元的主观成本。当 λ=0.015 时，逐项比较七个方案，最优是留下144人，即裁52人。该偏好函数和权重并非教材数据。',
+    '自主构造一个简单权衡：每裁一人减去 λ 百万美元的主观成本。当 λ=0.015 时，逐项比较七个方案，最优是留下144人，即裁52人。',
     String.raw`\max \pi(N) - \lambda (196 - N)`,
     '原书第84—85页偏好讨论；自主构造的偏好函数与参数',
     { lambda: .015 }
@@ -511,7 +511,7 @@ export const producerStories = {
   id: '6.2',
   title: '命题6.6边界：成本跳跃与最大产量不存在反例',
   intro: '阿姨只想不亏钱地尽量多卖。她越做越接近一杯，却发现恰好做一杯反而会亏钱：到底有没有最大的可行产量？',
-  end: '可行产量可以无限接近1，却没有最大的那个数。想用保本交点法，先核对最大值是否存在；连续与有界是一组常用的充分条件，不是唯一可能。',
+  end: '可行产量可以无限接近1，却没有最大的那个数。想用保本交点法，先核对最大值是否存在；连续与有界给出一组常用的充分条件。',
   frames: [
    makeProducerFrame(
     '先做半杯：不亏钱',
@@ -554,7 +554,7 @@ export function producerFrame(mode, phase) {
  }
  if(mode==='technology'&&!Number.isInteger(idx)){
   const base=Math.floor(idx),t=idx-base,from=story.frames[base];
-  if(base===0){const a=1+2*t,m=powerP(2,.5),f=n=>Number(n.toFixed(3));return {...from,title:'同一台磨豆机，原料逐渐增加',narration:`原料约${f(a)}单位，豆浆约${f(m.f(a))}杯；在当前位置，极小幅增加原料时的边际产出约${f(m.mp(a))}杯／单位。金色切线的斜率表示局部变化，不等于整整多放1单位的实际增量；本例导数公式只用于正投入。`,formula:String.raw`f(a)=2\sqrt a,\quad f'(a)=\frac1{\sqrt a}\quad(a>0)`,state:{...from.state,a,tangent:true}};}
+  if(base===0){const a=1+2*t,m=powerP(2,.5),f=n=>Number(n.toFixed(3));return {...from,title:'同一台磨豆机，原料逐渐增加',narration:`原料约${f(a)}单位，豆浆约${f(m.f(a))}杯；在当前位置，极小幅增加原料时的边际产出约${f(m.mp(a))}杯／单位。金色切线的斜率表示局部变化；要算多放整整1单位的增量，读曲线上两个投入点的产出差；本例导数公式只用于正投入。`,formula:String.raw`f(a)=2\sqrt a,\quad f'(a)=\frac1{\sqrt a}\quad(a>0)`,state:{...from.state,a,tangent:true}};}
   return {...from,title:'从局部变化转向每单位平均',narration:'先记住这个点的切线斜率。接下来连接原点和同一个点，看看从零开始平均每单位原料做出多少豆浆。'};
  }
  if(mode==='output'&&!Number.isInteger(idx)){
@@ -574,7 +574,7 @@ export function producerFrame(mode, phase) {
   const base=Math.floor(idx),t=idx-base,lambda=.015*(base+t),z=producerGoalsP(lambda);
   const names=z.winners.map(x=>`留${x.N}人`).join('、');
   return {...story.frames[base],title:'权衡发生变化，重新比较七个方案',
-   narration:`假想每裁一人的主观代价约${Number((lambda*100).toFixed(3))}万美元；七个方案的预计利润保持不变。按这本自主账本，当前最优是${names}${z.winners.length>1?'（并列）':''}。这些数字是比较假设，不是实际支付的工资或教材调查结果。`,
+   narration:`假想每裁一人的主观代价约${Number((lambda*100).toFixed(3))}万美元；七个方案的预计利润保持不变。按这本自主账本，当前最优是${names}${z.winners.length>1?'（并列）':''}。这些数字是本站为比较方案设定的权重，工资另计。`,
    formula:String.raw`U(N)=\pi(N)-\lambda(196-N)`,state:{lambda}};
  }
  if(mode==='techchange'&&!Number.isInteger(idx)){
@@ -593,7 +593,7 @@ export function producerFrame(mode, phase) {
  }
  if(mode==='existence'&&!Number.isInteger(idx)){
   const base=Math.floor(idx),t=idx-base,from=story.frames[base],y=base===0?.5+.4*t:base===1?.9+.09*t:.99+.0099*t,z=jumpCostP(2,y),f=n=>Number(n.toFixed(4));
-  return {...from,title:'不到一杯，还可以再多做一点',narration:`现在尝试${f(y)}杯，收入约${f(2*y)}元，成本约${f(z.C(y))}元，仍有利润。数量始终小于1；接近1不等于能在1处忽略跳跃成本。`,formula:String.raw`0<y<1,\quad R(y)=2y,\quad C(y)=y^2`,state:{...from.state,y}};
+  return {...from,title:'不到一杯，还可以再多做一点',narration:`现在尝试${f(y)}杯，收入约${f(2*y)}元，成本约${f(z.C(y))}元，仍有利润。数量始终小于1；把产量恰为1代回成本函数，单独计入跳跃成本。`,formula:String.raw`0<y<1,\quad R(y)=2y,\quad C(y)=y^2`,state:{...from.state,y}};
  }
  if(mode==='coststatic'&&!Number.isInteger(idx)){
   const base=Math.floor(idx),t=idx-base,from=story.frames[base],price=base===0?4+2*t:t<.5?6-4*t:4,factor=base===0||t<.5?1:1-(t-.5),z=costStaticsP({p:4,newP:price,c:1,k:1,F:0,factor}),f=n=>Number(n.toFixed(2));

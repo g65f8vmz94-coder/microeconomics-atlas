@@ -321,10 +321,10 @@ export function startProductionEconomyStory(requested) {
     if (pe$('reading')) pe$('reading').textContent = phase[1];
     if (pe$('formula')) pe$('formula').textContent = content.formula;
     if (pe$('boundary')) pe$('boundary').textContent = content.trap;
-    if (pe$('extra')) pe$('extra').innerHTML = `<h3>严谨证明或计算路线</h3><ol>${content.proof.map(item => `<li>${peEsc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${peEsc(content.template)}</p><h3>最容易混淆</h3><p>${peEsc(content.trap)}</p><p>来源：Osborne–Rubinstein ${peEsc(content.source)}</p>`;
+    if (pe$('extra')) pe$('extra').innerHTML = `<h3>解题步骤</h3><ol>${content.proof.map(item => `<li>${peEsc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${peEsc(content.template)}</p><h3>最容易混淆</h3><p>${peEsc(content.trap)}</p><p>来源：Osborne–Rubinstein ${peEsc(content.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((el, i) => { el.textContent = [content.question, content.conditions, content.template][i] || ''; });
     const guideBoundary = document.querySelector('.study-guide>.boundary');
-    if (guideBoundary) guideBoundary.textContent = '教材定义、一般证明、原题条件和本站自主数值图分开标注；动画帮助看清因果，不代替一般数学证明。';
+    if (guideBoundary) guideBoundary.textContent = '教材定义、一般证明、原题条件和本站自主数值图分开标注；各步在同一组资源约束下核对产出与消费。';
     const dl = document.querySelector('.lesson-end a[download]');
     if (dl) {
       dl.href = (location.protocol === 'file:' || location.pathname.includes('/downloads/') ? 'https://microeconomics-atlas-mingze.synb636.chatgpt.site/' : '') + `downloads/ch12-production-${peKey}.html`;

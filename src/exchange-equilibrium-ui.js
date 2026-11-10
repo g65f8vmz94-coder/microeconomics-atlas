@@ -52,7 +52,7 @@ export function startEquilibriumStory(requested){
   const status=[['各人在预算内最优',f.check.individualOptimal?'都是':'未全部满足'],['总资源完整分配',f.check.allocation?'是':'否'],['当前是否均衡',f.check.equilibrium?'是':'否']];
   $('metrics').innerHTML=status.map(([a,b])=>'<div class="metric"><label>'+esc(a)+'</label><strong>'+b+'</strong></div>').join('');$('reading').textContent=phase[1];$('formula').textContent=c.formula;$('boundary').textContent=c.trap;
   $('legend').textContent='空心圈＝原禀赋；实心点＝本步篮子；灰线＝预算线；紫虚线＝本步无差异线；金箭头＝净交易。下方空框为原总量、色条为本步总量。'+(f.kind==='linear'?'坐标0—24；免费时预算向右不限。':'两张个人图坐标均为0—12，画框不限制个人预算。');
-  $('extra').innerHTML='<h3>把条件与原理连起来</h3><ol>'+c.proof.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><h3>同类题怎么上手</h3><p>'+esc(c.template)+'</p><h3>最容易混淆的地方</h3><p>'+esc(c.trap)+'</p><p>来源：Osborne–Rubinstein '+esc(c.source)+' 中文解释与图形为本站编写，图中的指定数值不能代替一般证明。</p>';
+  $('extra').innerHTML='<h3>把条件与原理连起来</h3><ol>'+c.proof.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><h3>同类题怎么上手</h3><p>'+esc(c.template)+'</p><h3>最容易混淆的地方</h3><p>'+esc(c.trap)+'</p><p>来源：Osborne–Rubinstein '+esc(c.source)+' 中文解释、数值算例与图形为本站编写。</p>';
   document.querySelectorAll('.study-guide .guide-panel').forEach((el,i)=>el.textContent=[c.question,c.conditions,c.template][i]||'');const gb=document.querySelector('.study-guide>.boundary');if(gb)gb.textContent='本段对应§10.2正文，印刷139—144页；章末习题另行审核。';
   const download=document.querySelector('.lesson-end a[download]');if(download){download.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+'downloads/ch10-equilibrium-'+key+'.html';download.textContent='下载本段完整动画代码 ↓';}
   window.microMath?.refresh?.();

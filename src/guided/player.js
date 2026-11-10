@@ -1,122 +1,163 @@
 (() => {
-  const byId=id=>document.getElementById(id);
-  const data=JSON.parse(byId('guide-data').textContent);
-  const reduced=window.microMotion.reduced;
-  const cards=Array.from(document.querySelectorAll('.state-cell'));
-  const stepButtons=Array.from(document.querySelectorAll('[data-proof-step]'));
-  const chart=byId('plot-dot');
-  const pos=chart?JSON.parse(chart.dataset.positions):null;
-  const edges=Array.from(document.querySelectorAll('.net-edge'));
-  const scales=Array.from(document.querySelectorAll('.mini-scale'),el=>({bar:el.querySelector('i'),zero:Number(el.dataset.zero),values:JSON.parse(el.dataset.values)}));
-  const cups=Array.from(document.querySelectorAll('.cup-option'),el=>({fill:el.querySelector('.vessel i'),tag:el.querySelector('.cup-tag'),max:Number(el.dataset.max),states:JSON.parse(el.dataset.cups)}));
-  const tray=document.querySelector('.ticket-box');
-  const tickets=tray?JSON.parse(tray.dataset.tickets):null;
-  const payoff=document.querySelector('.payoff'), moves=payoff?JSON.parse(payoff.dataset.moves):[];
-  const holding=document.querySelector('.holding'), rounds=holding?JSON.parse(holding.dataset.rounds):[];
-  const pips=Array.from(document.querySelectorAll('.pips i'));
-  let step=-1, timer=0, origin=null;
-  function pause() {
-    clearTimeout(timer); timer=0; byId('play').textContent='连续播放';
-  }
-  function fromURL() {
-    const n=Number(new URL(location.href).searchParams.get('step')||1);
-    return Number.isInteger(n)?Math.max(0,Math.min(n-1,data.frames.length-1)):0;
-  }
-  function show(n,{save=true,announce=true,animate=true}={}) {
-    const target=data.frames[n], prior=n>0?data.frames[n-1]:null;
-    cards.forEach((card,i)=>{
-      const changed=!!prior && prior.values[i]!==target.values[i];
-      const value=card.querySelector('.value'), before=card.querySelector('.before');
-      const newValue=value.innerHTML!==target.values[i];
-      value.innerHTML=target.values[i];
-      card.classList.toggle('changed',changed);
-      before.innerHTML=changed?'原先 '+prior.values[i]:'';
-      if (animate && !reduced.matches && newValue) window.microMotion.reveal(value,3);
+  const byId = id => document.getElementById(id);
+  const flow = document.querySelector('.guided-flow');
+  if (location.protocol === 'file:') {
+    // Browsers treat local files as opaque origins. A blob download works
+    // even after renaming the file. Capture before hiding any reading steps.
+    const link = document.querySelector('a[download]');
+    const source = '<!doctype html>\n' + document.documentElement.outerHTML;
+    link.addEventListener('click', () => {
+      if (link.protocol !== 'blob:') {
+        link.href = URL.createObjectURL(new Blob([source], {type: 'text/html;charset=utf-8'}));
+      }
     });
-    for(const s of scales){
-      s.bar.style.left=Math.min(s.zero,s.values[n])+'%';
-      s.bar.style.width=Math.abs(s.values[n]-s.zero)+'%';
+  }
+  const steps = Array.from(flow.children);
+  const reasoning = steps.filter(step => step.classList.contains('guided-reasoning'));
+  const scenes = steps.filter(step => step.classList.contains('guided-scene'));
+  const paper = byId('answer');
+  const storageKey = 'guided-proof:' + flow.dataset.unit;
+  const proofIds = new Set(reasoning.map(step => step.id));
+  // A reload or a trip to a model preserves progress within this tab. Some
+  // browsers restrict storage on file: pages; history state also carries it.
+  let saved = [];
+  try { saved = JSON.parse(sessionStorage.getItem(storageKey)) || []; } catch {}
+  const state = history.state?.guided || {};
+  const seen = new Set([...(Array.isArray(saved) ? saved : []), ...(state.seen || [])].filter(id => proofIds.has(id)));
+  let current;
+  let returnId = '';
+  let returnTop = null;
+
+  const owner = id => byId(id)?.closest('.guided-step');
+  const firstUnread = () => reasoning.find(step => !seen.has(step.id));
+  function locationId() {
+    const url = new URL(location.href);
+    const hash = url.hash.slice(1);
+    const sceneAnchor = ['', 'scene', 'scene-title', 'scene-why'].includes(hash);
+    const old = Number(url.searchParams.get('step'));
+    if (sceneAnchor && url.searchParams.has('step') && Number.isInteger(old)) {
+      return scenes[Math.min(Math.max(old, 1), scenes.length) - 1].id;
     }
-    for(const c of cups){
-      const [quantity,price]=c.states[n];
-      c.fill.style.height=(100*quantity/c.max)+'%';c.tag.textContent=quantity===0?'不买':price+' 元';
+    return owner(hash) ? hash : steps[0].id;
+  }
+  function writeHistory(method, id, keepURL) {
+    const url = new URL(location.href);
+    if (!keepURL) {
+      url.hash = id === 'scene' && url.protocol === 'file:' && url.searchParams.has('step') ? 'scene-1' : id;
+      // Changing a file URL's query via History API is restricted. Its
+      // fragment always takes precedence over the original query.
+      if (url.protocol !== 'file:') url.searchParams.delete('step');
     }
-    if(tray)Array.from(tray.querySelectorAll('.ticket')).forEach((el,i)=>{
-      if(el.textContent!==tickets[n][i]){el.textContent=tickets[n][i];if(animate&&!reduced.matches)window.microMotion.reveal(el,3);}
-    });
-    if(payoff){
-      const selected=moves[n].join(',');
-      for(const cell of payoff.querySelectorAll('[data-choice]')){
-        const chosen=cell.dataset.choice===selected;
-        cell.classList.toggle('selected',chosen);
-        if(chosen)cell.setAttribute('aria-current','true');else cell.removeAttribute('aria-current');
+    const value = {...history.state, guided: {seen: [...seen], returnId, returnTop}};
+    try { history[method](value, '', url.href); } catch {
+      if (url.hash !== location.hash) location.hash = url.hash;
+    }
+  }
+  function remember(step) {
+    if (!proofIds.has(step.id) || seen.has(step.id)) return;
+    seen.add(step.id);
+    try { sessionStorage.setItem(storageKey, JSON.stringify([...seen])); } catch {}
+  }
+  function navigate(requested, {method = 'pushState', origin = '', sourceTop = null, backTop = null, restore = false, focus = true} = {}) {
+    let id = requested;
+    let step = owner(id) || steps[0];
+    const missing = paper && step === paper && firstUnread();
+    if (missing) {
+      id = missing.id;
+      step = missing;
+    }
+    remember(step);
+    returnId = owner(origin) && step.classList.contains('guided-scene') ? origin : '';
+    returnTop = returnId && Number.isFinite(sourceTop) ? sourceTop : null;
+    const back = step.querySelector('[data-return]');
+    if (back) {
+      back.dataset.defaultHref ||= back.getAttribute('href');
+      back.dataset.defaultLabel ||= back.textContent;
+      back.setAttribute('href', returnId ? '#' + returnId : back.dataset.defaultHref);
+      back.textContent = returnId ? '← 回到刚才那一行' : back.dataset.defaultLabel;
+    }
+    if (step.id === 'practice' && paper) {
+      const previous = step.querySelector('[data-direction="previous"]');
+      previous.href = firstUnread() ? '#' + firstUnread().id : '#answer';
+      previous.textContent = firstUnread() ? '回顾推理' : '← 上一步';
+    }
+    if (current !== step) {
+      for (const panel of steps) {
+        panel.hidden = panel !== step;
+        panel.classList.toggle('is-current', panel === step);
+      }
+      current = step;
+    }
+    flow.dataset.interactive = '';
+    writeHistory(method, id, restore && !missing);
+    if (focus) {
+      const target = byId(id);
+      // A figure comparison from the paper can return to a specific row.
+      const sourceLink = Number.isFinite(backTop) && target?.querySelector('[data-compare-from]');
+      if (sourceLink) {
+        sourceLink.focus({preventScroll: true});
+        window.scrollBy({top: sourceLink.getBoundingClientRect().top - backTop, behavior: 'instant'});
+        return;
+      }
+      const destination = target?.classList.contains('guided-answer-row') ? target : step;
+      destination.focus({preventScroll: true});
+      const bounds = destination.getBoundingClientRect();
+      if (bounds.top < 0 || bounds.top > innerHeight / 2) {
+        destination.scrollIntoView({block: 'start', behavior: 'instant'});
       }
     }
-    if(holding)Array.from(holding.querySelectorAll('dd')).forEach((slot,i)=>{
-      slot.textContent=rounds[n][i];slot.classList.toggle('changed',n>0&&rounds[n-1][i]!==rounds[n][i]);
-    });
-    byId('scene-title').innerHTML=target.action;
-    byId('scene-why').innerHTML=target.why;
-    byId('counter').textContent='第 '+(n+1)+' / '+data.frames.length+' 步';
-    pips.forEach((el,i)=>el.classList.toggle('on',i<=n));
-    if(chart){chart.setAttribute('cx',pos[n][0]);chart.setAttribute('cy',pos[n][1]);}
-    for(const edge of edges)edge.style.display=edge.dataset.visible[n]==='1'?'':'none';
-    byId('previous').disabled=n===0;
-    byId('next').textContent=n===data.frames.length-1?'从头再看 ↺':'看下一步 →';
-    step=n;
-    if(save){
-      const url=new URL(location.href);url.searchParams.set('step',String(n+1));
-      try{history.replaceState(history.state,'',url)}catch{}
-    }
-    if(announce)byId('announce').textContent=byId('counter').textContent+'。'+byId('scene-title').textContent+'。'+byId('scene-why').textContent;
   }
-  function advance(){show((step+1)%data.frames.length)}
-  function schedule(){
-    if(step===data.frames.length-1){pause();return;}
-    byId('play').textContent='暂停播放';
-    const readingMs=Math.min(12500,Math.max(5600,byId('scene-why').textContent.length*135));
-    timer=setTimeout(()=>{advance();schedule()},readingMs);
-  }
-  byId('next').addEventListener('click',()=>{pause();advance()});
-  byId('previous').addEventListener('click',()=>{pause();show(Math.max(0,step-1))});
-  byId('play').addEventListener('click',()=>{
-    if(timer){pause();return;}
-    if(step===data.frames.length-1)show(0);
-    schedule();
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
+        event.ctrlKey || event.shiftKey || event.altKey || link.target || link.hasAttribute('download')) return;
+    const id = link.hash.slice(1);
+    if (!owner(id)) return;
+    event.preventDefault();
+    const jumpMenu = link.closest('.guided-jumps');
+    if (jumpMenu) jumpMenu.open = false;
+    navigate(id, {origin: link.dataset.compareFrom, sourceTop: link.getBoundingClientRect().top,
+      backTop: link.hasAttribute('data-return') ? returnTop : null});
   });
-  function focusAt(el){
-    el.focus({preventScroll:true});
-    el.scrollIntoView({block:'start',behavior:'instant'});
+  function restoreLocation(focus) {
+    navigate(locationId(), {method: 'replaceState', restore: true, origin: history.state?.guided?.returnId, sourceTop: history.state?.guided?.returnTop, focus});
   }
-  stepButtons.forEach(link=>link.addEventListener('click',e=>{
-    e.preventDefault();pause();origin=link;
-    show(Number(link.dataset.proofStep),{animate:false});
-    const back=byId('back-to-proof');back.href='#'+link.id;back.textContent='回到刚才那行解答 ↓';
-    focusAt(byId('scene'));
-  }));
-  byId('back-to-proof').addEventListener('click',e=>{
-    pause();if(origin){e.preventDefault();focusAt(origin)}
+  // Native back/forward can fire both events. The second pass is harmless
+  // and also handles pasted/edited fragments that have no history state.
+  window.addEventListener('popstate', () => restoreLocation(true));
+  window.addEventListener('hashchange', () => restoreLocation(true));
+  // On a cached history traversal another copy of this unit may have advanced.
+  window.addEventListener('pageshow', event => {
+    if (!event.persisted) return;
+    try {
+      for (const id of JSON.parse(sessionStorage.getItem(storageKey)) || []) {
+        if (proofIds.has(id)) seen.add(id);
+      }
+    } catch {}
+    restoreLocation(false);
   });
-  for(const a of document.querySelectorAll('.unit-nav a'))a.addEventListener('click',pause);
-  function motionPreference(){byId('play').hidden=reduced.matches;if(reduced.matches)pause();}
-  document.addEventListener('visibilitychange',()=>{if(document.hidden)pause()});
-  window.addEventListener('pagehide',pause);
-  window.addEventListener('popstate',()=>{pause();show(fromURL(),{save:false,animate:false,announce:false})});
-  reduced.addEventListener('change',motionPreference);motionPreference();
-  show(fromURL(),{save:false,animate:false,announce:false});
+  restoreLocation(false);
 
-  const form=byId('transfer');
-  function feedback(message){byId('feedback').innerHTML=message;}
-  form.addEventListener('change',()=>feedback(''));
-  form.addEventListener('submit',e=>{
-    e.preventDefault();pause();
-    const choice=form.querySelector('input:checked');
-    if(!choice){feedback('先选一个答案，或者直接看做法。');form.querySelector('input').focus();return;}
-    feedback((Number(choice.value)===data.correct?'<strong>这次判断对了。</strong> ':'<strong>再核对一下条件。</strong> ')+data.explain);
+  const form = byId('transfer');
+  const feedback = byId('feedback');
+  const worked = byId('worked');
+  const data = JSON.parse(byId('guide-data').textContent);
+  form.querySelector('[type="submit"]').hidden = false;
+  form.addEventListener('change', () => { feedback.replaceChildren(); });
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const choice = form.querySelector('input:checked');
+    if (!choice) {
+      feedback.textContent = '先选一个答案，或展开做法。';
+      form.querySelector('input').focus();
+      return;
+    }
+    worked.open = false;
+    const verdict = Number(choice.value) === data.correct ? '这次判断对了。' : '再核对一下条件。';
+    feedback.innerHTML = '<strong>' + verdict + '</strong> ' + data.explain;
   });
-  byId('reveal').addEventListener('click',()=>{
-    pause();const panel=byId('worked');panel.hidden=!panel.hidden;
-    byId('reveal').setAttribute('aria-expanded',String(!panel.hidden));
-    byId('reveal').textContent=panel.hidden?'直接看做法':'收起做法';
+  worked.addEventListener('toggle', () => {
+    byId('reveal').textContent = worked.open ? '收起做法' : '看做法';
+    if (worked.open) feedback.replaceChildren();
   });
 })();

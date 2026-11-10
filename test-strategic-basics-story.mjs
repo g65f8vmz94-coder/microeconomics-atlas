@@ -11,5 +11,8 @@ let pure=[];for(let a=180;a<=300;a++)for(let b=180;b<=300;b++){const r=traveler(
 const ne=(game)=>analyzeBasicGame(game).ne;eq(ne(matrixGames.pd),[[1,1]]);eq(ne(strategicBasicsGames.sympathy),[[0,0],[1,1]]);eq(ne(matrixGames.bach),[[0,0],[1,1]]);eq(ne(strategicBasicsGames.favorite),[[0,1],[1,0]]);eq(ne(strategicBasicsGames.parity),[]);eq(ne(strategicBasicsGames.fingers),[]);eq(ne(matrixGames.gates),[[0,0],[1,1],[2,2]]);
 for(let i=0;i<5;i++)for(let j=0;j<5;j++)eq(strategicBasicsGames.fingers.M[i][j],strategicBasicsGames.parity.M[i%2][j%2]);
 for(const key of ['symmetry','favorite']){const g=key==='symmetry'?matrixGames.pd:strategicBasicsGames.favorite;for(let i=0;i<2;i++)for(let j=0;j<2;j++)ok(g.M[i][j][0]===g.M[j][i][1],key+' symmetric payoff representation');}
-ok(strategicBasicsContent.sympathy.source.includes('本站自主例'),'modified preferences provenance');ok(strategicBasicsContent.behavior.conditions.includes('历史'),'historical sample boundary');
+ok(strategicBasicsContent.sympathy.source.includes('本站自主例'), 'modified preferences provenance');
+const sample = strategicBasicsContent.behavior;
+ok(/原书.*当时.*课堂参与者/.test(sample.conditions), 'the observation identifies its source and participants');
+ok(/比例.*那次课堂样本/.test(sample.trap), 'the reported proportions describe that classroom sample');
 console.log({passed:true,cases:strategicBasicsKeys.length,frames:strategicBasicsKeys.length*6,checks});

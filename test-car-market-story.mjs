@@ -38,6 +38,11 @@ const lowFinal=carMarketStory('carOnlyLow',5);assert.equal(lowFinal.m,1);assert.
 
 assert.ok(carMarketContent.carOnlyLow.trap.includes('尺度不一致'));contentChecks++;
 assert.ok(carMarketContent.carNone.trap.includes('离轨信念'));contentChecks++;
-assert.ok(carMarketContent.q133.trap.includes('不保证均衡唯一'));contentChecks++;
+const existenceNote = carMarketContent.q133.trap;
+assert.match(existenceNote, /至少一个正交易均衡/);
+for (const candidate of [one, two]) {
+  assert.ok(existenceNote.includes(`m=${candidate.m}`), 'the example identifies both valid trading equilibria');
+}
+contentChecks += 3;
 
 console.log(JSON.stringify({section:'13.2',cases:carMarketKeys.length,states:carMarketKeys.length*6,contentChecks,economicChecks,status:'passed'}));

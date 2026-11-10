@@ -49,7 +49,7 @@ export function startSocialChoiceStory(requested){
   const metrics=f.mode==='median'?[['真峰值',f.truePeak],['本次报告',f.report],['实际中位数',f.outcome]]:f.mode==='binary'?[['a票',f.votesA],['b票',f.votesB],['获选方案',names[f.outcome]]]:[['当前获选',names[f.outcome]],['示意规则',f.rule==='dictator'?'固定2号首选':f.rule==='plurality'?'只数首位票':f.rule||'首位票'],['三人模型输入数',audit.profiles]];
   if($('metrics'))$('metrics').innerHTML=metrics.map(([a,b])=>'<div class="metric"><label>'+esc(a)+'</label><strong>'+esc(b)+'</strong></div>').join('');
   if($('reading'))$('reading').textContent=f.scene[1];if($('formula'))$('formula').textContent=c.formula;if($('boundary'))$('boundary').textContent=c.trap;
-  if($('extra'))$('extra').innerHTML='<h3>严谨证明与计算路线</h3><ol>'+c.proof.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ol><h3>考试时怎么套</h3><p>'+esc(c.template)+'</p><h3>最容易混淆</h3><p>'+esc(c.trap)+'</p><p>来源：'+esc(c.source)+'</p>';
+  if($('extra'))$('extra').innerHTML='<h3>证明与计算</h3><ol>'+c.proof.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ol><h3>考试时怎么套</h3><p>'+esc(c.template)+'</p><h3>最容易混淆</h3><p>'+esc(c.trap)+'</p><p>来源：'+esc(c.source)+'</p>';
   document.querySelectorAll('.study-guide .guide-panel').forEach((el,j)=>el.textContent=[c.question,c.conditions,c.template][j]||'');const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+'downloads/ch20-choice-'+key+'.html';dl.textContent='下载本段完整动画代码 ↓';}
   window.microMath?.refresh?.();
  }

@@ -12,7 +12,7 @@ export const cases={
  p171:{section:'17.3',label:'命题17.1 · 诚实报告为何最优',page:285,kind:'proof',note:'证明延续至印刷286页；固定任意他人报告，比较两种决策的真实效用。'},
  nonexec:{section:'17.3',label:'讨论 · 未建成仍需付款',page:286,kind:'nonexecution',note:'不实施项目时，关键反对者仍可能付钱。'},
  rebate:{section:'17.3',label:'讨论 · 返还付款破坏激励',page:287,kind:'rebate',note:'讨论起于印刷286页；两人计算例在287页，平分收款后个人1可通过报-8获利。'},
- fairness:{section:'17.3',label:'讨论 · 货币估值与公平',page:287,kind:'fairness',note:'原书两名富人各100、99名穷人各-1；货币和不等于道德判断。'},
+ fairness:{section:'17.3',label:'讨论 · 货币估值与公平',page:287,kind:'fairness',note:'原书两名富人各100、99名穷人各-1；把各人的货币估值加总可判定总估值的正负；要讨论公平，还要说明怎样衡量每个人的得失。'},
  q171a:{section:'17.3',label:'习题17.1(a) · 九个报告组合',page:287,kind:'budgetGrid',note:'报告与估值仅取4、-1、-5；按全部九个组合核对。'},
  q171b:{section:'17.3',label:'习题17.1(b) · 平衡预算的障碍',page:287,kind:'budgetProof',note:'原题(b)只写 only if，字面结论有反例；证明须使用题首的 if and only if。'},
  q172a:{section:'17.3',label:'习题17.2(a) · 第二价格拍卖',page:288,kind:'second',note:'最高报价者胜；平手由最小编号胜；赢家支付其他人最高报价。'},

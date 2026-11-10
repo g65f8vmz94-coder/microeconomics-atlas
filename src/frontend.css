@@ -180,3 +180,21 @@ html[data-motion=reduced]{scroll-behavior:auto!important}html[data-motion=reduce
 .sequential-page .sd-settings{grid-column:1/-1}.sequential-page .sd-settings>summary{cursor:pointer;min-height:44px;padding:10px 0}.sequential-page .sd-table-scroll{max-width:100%;overflow-x:auto;margin:16px 0}.sequential-page .alpha-table{border-collapse:collapse;width:100%;min-width:340px;font-size:14px}.sequential-page .alpha-table th,.sequential-page .alpha-table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.sequential-page .sd-proof li{margin:16px 0 24px}.sequential-page .sd-proof h4{font-size:16px;margin:0 0 6px}.sequential-page .sd-proof p{margin:0 0 12px}.sequential-page #fields>button{width:100%}
 
 .atlas-ui .formula-symbol-guide{font-size:14px;line-height:1.85;color:var(--muted);margin:10px 0 22px}
+
+/* Keep the twenty chapter links reachable on short screens, including zoom. */
+.atlas-ui .book-rail{max-height:calc(100dvh - 40px);overflow-y:auto}
+.atlas-ui .site-index-panel{max-width:100%;overscroll-behavior:contain}
+.atlas-ui .site-index-panel nav a{min-width:0;white-space:normal;overflow-wrap:anywhere}
+.atlas-ui .lesson-row[hidden],.atlas-ui .chapter[hidden]{display:none}
+.atlas-ui .exercise-parts{display:flex;flex-wrap:wrap;gap:4px 16px}
+.atlas-ui .exercise-row details{margin:4px 0}
+.atlas-ui .exercise-row summary,.atlas-ui .answer-link{font-size:14px;color:var(--accent)}
+.atlas-ui .answer-link{justify-self:end}
+@media(max-width:620px){
+ .atlas-ui .exercise-row{grid-template-columns:30px minmax(0,1fr);gap:4px 10px}
+ .atlas-ui .answer-link{grid-column:2;justify-self:start;padding:6px 0}
+ .atlas-ui .section-heading{flex-wrap:wrap}
+}
+.atlas-ui .exercise-chapter{margin:0;border-bottom:1px solid var(--line)}
+.atlas-ui .exercise-chapter>summary{padding:15px 0;font-size:18px;font-weight:600;cursor:pointer}
+.atlas-ui .exercise-chapter>summary small{color:var(--muted);font-weight:400;white-space:nowrap}

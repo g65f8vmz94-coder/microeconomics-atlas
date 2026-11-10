@@ -60,4 +60,19 @@ function inline(value) {
   return String(value).split(/(\$[^$\n]+\$)/g).map(s=>s.startsWith('$')&&s.endsWith('$')&&s.length>2
     ? inlineMath(s.slice(1,-1)) : prose(s)).join('');
 }
-module.exports={escape,math,equation,inline};
+// Prefer a sentence's own pause; inside a long clause Chinese words stay together.
+const words=new Intl.Segmenter('zh-CN',{granularity:'word'});
+function heading(text) {
+  if (/[$\\]/.test(text)) return inline(text);
+  const clauses=String(text).match(/[^，。？！：；、]+[，。？！：；、]*/gu)||[text];
+  return clauses.map(clause=>{
+    const groups=[];
+    for(const {segment} of words.segment(clause)) {
+      if(groups.length && /^[，。？！：；、”’）的吗呢了着过]+$/u.test(segment))
+        groups[groups.length-1]+=segment;
+      else groups.push(segment);
+    }
+    return '<span class="heading-clause">'+groups.map(escape).join('<wbr>')+'</span>';
+  }).join('<wbr>');
+}
+module.exports={escape,math,equation,inline,heading};
