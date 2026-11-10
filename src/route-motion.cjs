@@ -68,7 +68,8 @@ function install() {
     if (!/^https?:$/.test(url.protocol) || url.origin !== location.origin) return;
     const path = url.pathname.replace(/\.html\/?$/i, '').replace(/\/$/, '');
     const slash = path.lastIndexOf('/');
-    const slug = path.slice(slash + 1);
+    const name = path.slice(slash + 1);
+    const slug = name === 'market' ? 'index' : name;
     const chapter = /^learn-(\d+)$/.exec(slug);
     const unit = /^(?:learn-[sp]|lesson-)(\d+)-\d+$/.exec(slug);
     const insurance = slug === 'insurance-3-9';
@@ -148,9 +149,11 @@ function compactLines(source) {
     .join('\n');
 }
 
+const stylesheet = compactLines(css);
+const script = '(' + compactLines(install.toString()) + ')();';
+
 function head() {
-  return '<style>' + compactLines(css) + '</style><script>(' +
-    compactLines(install.toString()) + ')();</script>';
+  return '<style>' + stylesheet + '</style><script>' + script + '</script>';
 }
 
-module.exports = { head };
+module.exports = { head, stylesheet, script };
