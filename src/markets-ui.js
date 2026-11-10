@@ -39,16 +39,16 @@ function render(){
   r.sorted.forEach((p,i)=>{svg+=dot(cs.X(i+1),cs.Y(p.v),p.own?C.p:C.g,p.id)});
   svg+=cs.line([0,s.price],[r.people.length+1,s.price],C.r)+cs.line([r.s+.5,0],[r.s+.5,max],C.m,'5 5');
   metrics=[['均衡价格区间',`[${f(r.lo)}, ${f(r.hi)}]`],['尝试价格是否可出清',r.equilibrium?'可以':'不可以'],['必须持有 / 最多可持有',`${r.strict} / ${r.weak}`],['已有物品总数',r.s]];
-  reading=r.equilibrium?'当前价格允许出清。边界上估值恰等于价格的人无差异，需要选择合适的持有者；不能把所有无差异买家都强制算作购买。':'当前价格不能出清。即使把物品分给估值最高的人，仍会有人不愿接受这套配置。移动价格进入绿色区间，再检查个人最优。';
+  reading=r.equilibrium?'当前价格允许出清。边界上估值恰等于价格的人无差异，可以持有也可以放弃。数出剩下几件，再选同样多的持有者。':'当前价格不能出清。即使把物品分给估值最高的人，仍会有人不愿接受这套配置。移动价格进入绿色区间，再检查个人最优。';
   formula='按估值排序 v₁ ≥ … ≥ vₙ；s件物品的均衡价格满足 vₛ₊₁ ≤ p ≤ vₛ';legend='绿色点：原买方　紫色点：原卖方　红线：尝试价格　虚线：前s人的界线';
   extra=table(['个人','估值','初始持有','分给前s人后','货币净流入','效用变化'],r.allocation.map(x=>[x.id,x.v,x.own,x.has,x.money,x.gain]))+'<p>表格始终展示“给前s人”的可行分配；仅当当前价格在均衡区间中，它才同时满足每个人最优。买方有足够现金，无并列时持有者唯一，价格仍可能不唯一。</p>';last=r;
  }else if(key==='insurance'){
   disable('shock',s.mode!=='aggregate');disable('capital',s.mode!=='insurer');disable('belief',s.mode!=='belief');
   const r=insurance(s.mode,s.pi,s.shock,s.capital,s.belief,s.progress);svg=bars(r.names,[{name:'state1',values:r.shown.map(x=>x[0]),color:C.r},{name:'state2',values:r.shown.map(x=>x[1]),color:C.g}]);
   metrics=[['状态价格比 p₁/p₂',r.p],['概率比 π/(1−π)',r.fair],['交易进度',f(s.progress*100)+'%'],['终点是否完全保险',Math.abs(r.a[0][0]-r.a[0][1])<1e-7?'第一位完全保险':'第一位仍有状态差异']];
-  reading={pool:'总财富在两种状态都为10。互相承担风险后，每人的两根柱子重合；共同信念、严格风险厌恶和总财富不变共同支撑完全保险。',aggregate:'灾难毁掉的是总财富。交换只能重新分担风险，不能创造已经消失的资源；灾难状态的支付更稀缺，状态价格比高于概率比。',insurer:'保险人的资本能否覆盖灾难赔付，决定了能否完全保险。资本不足时保险人在状态1恰好用尽资源，投保人保留部分风险。',belief:'两人看待同一事件的概率不同。这里是风险中性者的投机交易，各自认为自己占优；两根柱子的差距不等于“客观收益增加”。'}[s.mode];
+  reading={pool:'总财富在两种状态都为10。互相承担风险后，每人的两根柱子重合；共同信念、严格风险厌恶和总财富不变共同支撑完全保险。',aggregate:'灾难毁掉的是总财富。交易把损失分摊给两人，灾难发生时可分的总量仍然更少；灾难状态的支付更稀缺，状态价格比高于概率比。',insurer:'保险人的资本能否覆盖灾难赔付，决定了能否完全保险。资本不足时保险人在状态1恰好用尽资源，投保人保留部分风险。',belief:'两人看待同一事件的概率不同。这里是风险中性者的投机交易，先看每个人的红绿柱，读出两种状态各付给他多少；再用他自己的概率加权，和交易前比较期望收益。'}[s.mode];
   formula=s.mode==='insurer'?'πu′(x₁) / [(1−π)u′(x₂)] = p₁/p₂；资本充足条件：α ≥ 3(1−π)':'预算：p₁x₁+p₂x₂=p₁e₁+p₂e₂；逐状态资源守恒';legend='红色：状态1的支付　绿色：状态2的支付（同一次未来只实现一种状态）';
-  extra=table(['个体','初始(状态1,状态2)','当前(状态1,状态2)','初始期望效用','当前期望效用'],r.names.map((n,i)=>[n,r.e[i].map(f).join(' / '),r.shown[i].map(f).join(' / '),r.eu0[i],r.eu[i]]))+`<p>${r.note} 中间进度是沿预算线的交易插值，不宣称是一条价格调整过程。</p>`;last=r;
+  extra=table(['个体','初始(状态1,状态2)','当前(状态1,状态2)','初始期望效用','当前期望效用'],r.names.map((n,i)=>[n,r.e[i].map(f).join(' / '),r.shown[i].map(f).join(' / '),r.eu0[i],r.eu[i]]))+`<p>${r.note} 拖动进度，观察按当前价格沿预算线交易时，两人的支付怎样改变。</p>`;last=r;
  }else if(key==='production-economy'){
   const eq=production(1,s.A,s.B,s.share,s.alpha,s.beta).eq,r=production(eq*s.mult,s.A,s.B,s.share,s.alpha,s.beta),p=eq*s.mult,cs=chart(s.A*1.55,s.B*1.55,'商品1','商品2');svg=cs.svg+cs.curve(x=>s.B*Math.sqrt(Math.max(0,1-(x/s.A)**2)),C.g,s.A);
   const end=Math.min(s.A*1.55,r.profit/p),start=Math.max(0,(r.profit-s.B*1.55)/p);svg+=cs.line([start,r.profit-p*start],[end,r.profit-p*end],C.m,'5 5');
@@ -90,7 +90,7 @@ function render(){
  }else if(key==='contracts'){
   const r=wages(s.v,s.w,s.entry);svg=bars(['生产率','现有报价','新报价'],[{name:'wages',values:[s.v,s.w,s.entry],color:C.g}],16);
   metrics=[['原雇主每人利润',r.profit],['新合同是否被选',r.entryAccepted?'会':'不会严格转向'],['新雇主每人利润',r.entryProfit],['现有集合是否均衡',r.stable?'是':'否']];
-  reading=r.stable?'工资等于生产率。降低报价无人接受；提高报价虽然能吸引工人，却亏损。现有合同无人想撤回，也没有可盈利的新合同。':r.withdraw?'当前工资超过生产率，雇主每雇一人都亏损，因此会撤回报价。':'当前工资低于生产率。新雇主只要稍微提高工资、仍低于生产率，就既能吸引工人又能盈利；图中某个新报价失败，不代表没有其他进入机会。';
+  reading=r.stable?'工资等于生产率。降低报价无人接受；提高报价虽然能吸引工人，却亏损。现有合同无人想撤回，也没有可盈利的新合同。':r.withdraw?'当前工资超过生产率，雇主每雇一人都亏损，因此会撤回报价。':'当前工资低于生产率。新雇主只要稍微提高工资、仍低于生产率，就既能吸引工人又能盈利；换一个报价再试，把每种报价的客源和利润都列出来。';
   formula='均衡报价集合 W*={v}；若 w<v，则 w<w′<v 的新报价可盈利进入';legend='同一单位：每位工人的产出 / 工资';extra='<p>工人同质，雇主可自由提出新合同，外部选择为零。这里的均衡是合同集合，而不是特定工人与特定企业的配对名单。</p>';last=r;
  }else if(key==='signaling'){
   const r=signaling(4,10,3,s.bH,s.low,s.menu,s.t,s.w),cs=chart(4,12,'教育要求 t','工资 w');svg=cs.svg;

@@ -42,7 +42,7 @@ export function exchangeModelStory(key,step=0){
  }else if(key==='allocation101'){
   f.assignment=[[[8,2],[2,8]],[[6,4],[4,6]],[[8,4],[4,6]],[[6,4],[4,6]],[[4,4],[4,6]],[[0,0],[10,10]]][t].map(v=>v.slice());f.kind=t===2?'指派超出资源：大米缺2千克':t===4?'指派未分完资源：大米剩2千克':'逐种商品核对是否分配完整';
  }else{
-  f.point=t<2?[3,3]:t===2?[6,6]:t===3?[0,18]:t===4?[6,6]:[0,18];f.baselinePoint=[3,3];f.utility=f.point[0]+f.point[1];f.kind='甲的个人最优性；不把个人预算当全市场资源';
+  f.point=t<2?[3,3]:t===2?[6,6]:t===3?[0,18]:t===4?[6,6]:[0,18];f.baselinePoint=[3,3];f.utility=f.point[0]+f.point[1];f.kind='按甲的预算检验个人最优，再按总禀赋检验资源可行';
  }
  f.resources=exchangeModelAssignment(f.endowments,f.assignment);f.budget=exchangeModelBudget(f.prices,f.endowments[0]);f.plot=exchangeModelBudgetPlot(f.prices,f.endowments[0]);
  f.pointCost=f.point&&f.budget.valid?f.budget.cost(f.point):null;f.affordable=f.point&&f.budget.valid?f.budget.affordable(f.point):null;

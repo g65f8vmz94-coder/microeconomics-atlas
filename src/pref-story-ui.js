@@ -340,7 +340,7 @@ export function renderPrefStory(mode,phase){
  pEl('metrics').innerHTML=metrics.map(([k,v])=>`<div class="metric"><label>${pEsc(k)}</label><strong>${pEsc(v)}</strong></div>`).join('');
  pEl('reading').textContent=frame.narration;
  pEl('formula').textContent=frame.formula;
- pEl('boundary').textContent=`Osborne–Rubinstein §4.1—4.6，印刷45—56页／PDF64—75。${frame.source}。有限数值与图形演示服务于直观理解，不代替全象限一般数学证明。`;
+ pEl('boundary').textContent=`Osborne–Rubinstein §4.1—4.6，印刷45—56页／PDF64—75。${frame.source}。`;
  pEl('extra').innerHTML=prefProofs[mode]||'';
 
  pEl('step').value=phase;

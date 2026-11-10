@@ -66,7 +66,9 @@ for (let step = 0; step < 6; step++) {
 
 const specialization = productionEconomyStory('p1b', 5);
 assert.deepEqual(specialization.people.map(x => x.mode), ['good1', 'tie', 'good2']);
-for (const term of ['生产前沿', '产出价值', '生产—消费计划']) assert.ok(productionEconomyContent.p1b.trap.includes(term));
+const frontierNote = productionEconomyContent.p1b.trap;
+assert.match(frontierNote, /tᵢ=p₁\/p₂.*生产前沿.*产出价值.*等于cᵢ/);
+assert.match(frontierNote, /生产—消费计划.*偏好.*消费束/);
 economicChecks += 2;
 
 const noTrade = productionEconomyStory('p1c', 5);

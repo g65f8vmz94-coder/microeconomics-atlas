@@ -42,7 +42,7 @@ export function startTruthfulReportStory(requested){
   if($('legend'))$('legend').textContent='左边的“诚实”是同一组别人报告下的比较基准；右边是当前递交的数字。规则只看报告，收益始终用真实估值计算。';
   if($('metrics'))$('metrics').innerHTML=[['我的真估值',fmt(f.value)],['当前报告',fmt(f.report)],['诚实的真实效用',fmt(f.honestUtility)],['当前的真实效用',fmt(f.currentUtility)]].map(([l,v])=>`<div class="metric"><label>${esc(l)}</label><strong>${esc(v)}</strong></div>`).join('');
   if($('reading'))$('reading').textContent=f.narration;if($('formula'))$('formula').textContent=c.formula;if($('boundary'))$('boundary').textContent=c.trap;
-  if($('extra'))$('extra').innerHTML='<h3>严谨检验与计算路线</h3><ol>'+c.proof.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ol><h3>考试时怎么套</h3><p>'+esc(c.template)+'</p><h3>最容易混淆</h3><p>'+esc(c.trap)+'</p><p>来源：'+esc(c.source)+'</p>';
+  if($('extra'))$('extra').innerHTML='<h3>解题步骤</h3><ol>'+c.proof.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ol><h3>考试时怎么套</h3><p>'+esc(c.template)+'</p><h3>最容易混淆</h3><p>'+esc(c.trap)+'</p><p>来源：'+esc(c.source)+'</p>';
   document.querySelectorAll('.study-guide .guide-panel').forEach((el,j)=>el.textContent=[c.question,c.conditions,c.template][j]||'');const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+'downloads/ch17-truth-'+key+'.html';dl.textContent='下载本段完整动画代码 ↓';}window.microMath?.refresh?.();
  }
  function configure(next){stop();key=truthfulReportKeys.includes(next)?next:'d173';window.TRUTHFUL_REPORT_DEFAULT=key;const q=new URLSearchParams(location.search),n=Number(q.get('filmStep'));step=(!q.has('case')||q.get('case')===key)&&Number.isFinite(n)?Math.max(0,Math.min(5,Math.round(n))):0;draw();}

@@ -78,7 +78,7 @@ export function startSequentialChoice(initial){
    phase=v.completed?'第 '+v.completed+' 笔：换物，再记账':'先看手里和钱包';
    text=last?`刚才拿 ${name(last.from)}，这次面前是 ${set(last.menu)}，按选择记录换成 ${name(last.to)}。这一笔付 ${f(last.fee)} 美元，钱包从 ${f(last.cash)} 变成 ${f(last.remaining)} 美元。`+(v.returned?`东西回到最初的 ${start}，累计已经付出 ${f(v.paid)} 美元。`:`当前拿着 ${name(v.held)}；${v.cycles?'已完成 '+v.cycles+' 圈，现在又离开了起点。':'还未完成一圈。'}${v.stop?'':'接着看下一次。'}`):intro;
    if(v.stop){phase='在这里停下，不能继续扣钱';text+=(last?' 下一笔：':' ')+stopText[v.stop]+'。没有执行的交易，不记进收支账。';}
-   conclusion=v.stop?`${stopText[v.stop]}。实际只完成 ${v.completed} 笔，共付 ${f(v.paid)} 美元，剩 ${f(v.cash)} 美元。循环选择不等于可以无条件一直收费。`:v.completed&&v.paid===0?`这次完成 ${v.completed} 笔，但每笔都是免费交换，钱包仍有 ${f(v.cash)} 美元。物品即使绕成一圈，也没有发生货币损失；收费条件不能省略。`:state.decay?`这次完成 ${v.completed} 笔，共付约 ${f(v.paid)} 美元。每笔费用都减半，越往后越少；总和不会超过 ${f(2*state.fee)} 美元。这是自主边界例，不是教材“每次至少愿付1美元”的假设。`:v.returned?`东西回到 ${start}，钱包却少了 ${f(v.paid)} 美元。记住：物品绕一圈，钱没有绕回来。但要继续亏钱，还得继续愿付、付得起，并且没有识破后停止。`:`这个观察窗口内完成 ${v.completed} 笔，付出 ${f(v.paid)} 美元，此刻没有停在起始物品上。先认清所处位置，不能说每一个观察窗口的末尾都刚好回到起点。`;
+   conclusion=v.stop?`${stopText[v.stop]}。实际只完成 ${v.completed} 笔，共付 ${f(v.paid)} 美元，剩 ${f(v.cash)} 美元。沿环再走一轮，要满足哪些付费条件？。`:v.completed&&v.paid===0?`这次完成 ${v.completed} 笔，但每笔都是免费交换，钱包仍有 ${f(v.cash)} 美元。物品即使绕成一圈，也没有发生货币损失；收费条件不能省略。`:state.decay?`这次完成 ${v.completed} 笔，共付约 ${f(v.paid)} 美元。每笔费用都减半，越往后越少；总和不会超过 ${f(2*state.fee)} 美元。这是本站自主构造的边界例。教材设定每次至少愿付1美元。`:v.returned?`东西回到 ${start}，钱包却少了 ${f(v.paid)} 美元。记住：物品绕一圈，钱没有绕回来。但要继续亏钱，还得继续愿付、付得起，并且没有识破后停止。`:`这个观察窗口内完成 ${v.completed} 笔，付出 ${f(v.paid)} 美元，此刻没有停在起始物品上。先认清所处位置，不能说每一个观察窗口的末尾都刚好回到起点。`;
   }
   Object.assign($('plot').dataset,{filmIntro:intro,filmPhase:phase,filmNarration:text,filmConclusion:conclusion});
  }

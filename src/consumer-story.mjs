@@ -42,7 +42,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '实物禀赋与市场交换：财富内生化',
-    '现在换一个问题：阿姨一开始不是拿现金，而是已有4个包子和4杯豆浆，可以按市价交换。按现在的价格，它们合计值12元；她也可以原样保留，所以预算线经过这个初始篮子。',
+    '现在让阿姨带着4个包子和4杯豆浆来赶集。她可以按市价交换。按现在的价格，它们合计值12元；她也可以原样保留，所以预算线经过这个初始篮子。',
     String.raw`w = p_1 e_1 + p_2 e_2,\quad B((p_1, p_2), p \cdot e) = \{x \in \mathbb{R}_+^2 : p \cdot x \le p \cdot e\}`,
     '原书印刷57—58页禀赋模型',
     { p: 2, q: 1, w: 12, endowment: [4, 4], mode: 'endowment' }
@@ -56,7 +56,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '换回现金题：重新拿12元去买',
-    '现在换回最初的现金题：手里只有12元，包子2元、豆浆1元。注意这是另一个设定，不能把刚才的实物价值继续当作现金收入。',
+    '现在换回最初的现金题：手里只有12元，包子2元、豆浆1元。按这12元现金画预算线。',
     String.raw`2x_1+x_2\le12`,
     '原书定义5.1 · 自主数值',
     { p: 2, q: 1, w: 12, mode: 'base' }
@@ -100,7 +100,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '例5.3：两种商品各花一半财富',
-    '包子2元、豆浆1元、预算12元都不变，只换规则：两样各花6元。包子能买3个，豆浆能买6杯。注意：各花一半的钱，不等于两样数量相同！',
+    '包子2元、豆浆1元、预算12元都不变，只换规则：两样各花6元。包子能买3个，豆浆能买6杯。同样花6元，单价越高，买到的数量越少。',
     String.raw`x_1 = \frac{w}{2p_1},\quad x_2 = \frac{w}{2p_2}`,
     '原书例5.3 · 印刷59页',
     { rule: 'half', p: 2, q: 1, w: 12 }
@@ -164,7 +164,7 @@ export const consumerStories = {
     { p: 1, q: 1, w: 12, lambda: 1 }
    ),
    makeConsumerFrame(
-    '只有包子涨价：这不是同时翻倍',
+    '只有包子涨价，豆浆价格照旧',
     '包子涨到2元，豆浆仍是1元，预算仍是12元。按两样各花一半的规则，买3个包子和6杯豆浆；预算线变了。这只是本规则的结果，不能推断所有购买规则的变化方向。',
     String.raw`(p_1,p_2,w)=(2,1,12),\quad x=(3,6)`,
     '原书第59页需求定义 · 自主对比例子',
@@ -225,7 +225,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '逐步逼近上确界：每一个候选点都能被超越',
-    '现在取 x₁=0.95，效用也是0.95；还可以选择 x₁=0.975，效用更高。效用上确界为1，却没有任何可行束达到1。图的纵轴是效用，不是商品2。',
+    '现在取 x₁=0.95，效用也是0.95；还可以选择 x₁=0.975，效用更高。效用上确界为1，却没有任何可行束达到1。图的纵轴读效用。',
     String.raw`\sup_{x \in B} u(x) = 1,\quad \text{但 } \forall x \in B,\ u(x) < 1`,
     '原书第60页连续性条件 · 自主反例的上确界',
     { progress: .95 }
@@ -248,7 +248,7 @@ export const consumerStories = {
   frames: [
    makeConsumerFrame(
     '先算两笔交换账',
-    '包子2元、豆浆1元，预算12元。假设满意程度 u=x₁x₂，先比较篮子(2,8)：附近多拿一点包子、保持满意程度时，阿姨每增加1单位包子愿放弃约4杯豆浆；市场实际只要求2杯。这是局部交换率，不是说一次换整单位仍精确相同。',
+    '包子2元、豆浆1元，预算12元。假设满意程度 u=x₁x₂，先比较篮子(2,8)：附近多拿一点包子、保持满意程度时，阿姨每增加1单位包子愿放弃约4杯豆浆；市场实际只要求2杯。这个交换率给出当前点附近微小调整的近似值。',
     String.raw`MRS(x_1, x_2) = \frac{\partial u/\partial x_1}{\partial u/\partial x_2} = -\left.\frac{dx_2}{dx_1}\right|_{u=\text{常数}}`,
     '原书定义5.4 · 印刷62页',
     { p: 2, q: 1, w: 12, model: 'product', candidate: [2, 8] }
@@ -320,7 +320,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '越过临界预算，包子开始进入篮子',
-    '预算回到6元后，篮子又是(1.25,2.25)。在这个给定偏好和固定价格下，继续增加预算时最优豆浆数量保持2.25；这不代表豆浆没有额外效用，也不是所有偏好的结论。',
+    '预算回到6元后，篮子又是(1.25,2.25)。在这个给定偏好和固定价格下，继续增加预算时最优豆浆数量保持2.25；豆浆仍能增加效用。在这组价格下，新增预算都用来买包子。',
     String.raw`x_2^*=\frac{9}{4},\quad x_1^*=\frac{w-9/4}{3}\quad(w>9/4)`,
     '原书例5.8 · 印刷63—64页 · 自主数值',
     { p: 3, q: 1, w: 6, model: 'quasi' }
@@ -383,7 +383,7 @@ export const consumerStories = {
   id: '5.5',
   title: '§5.5 显示偏好弱公理 (WARP)',
   intro: '同一位顾客两次拿2元买包子和豆浆，价格换了，她的选择也换了。两次选择能否由同一套稳定、单调的偏好解释？',
-  end: '两次互相买得起，且至少一次严格有剩钱，才出现这里的 WARP 反向矛盾；通过这两次检验不代表整个需求函数已经被理性化。',
+  end: '两次互相买得起，且至少一次严格有剩钱，才出现这里的 WARP 反向矛盾；这次检验只涉及两次购买；要解释整条需求规则，还要核对其他预算下的选择。',
   frames: [
    makeConsumerFrame(
     '第一次：能买包子，却选了豆浆',
@@ -459,7 +459,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '预算少时：先看4元',
-    '两种价格仍是1元；如果预算是4元，她拿2元买包子，买2个。点(4,2)表示预算4元、包子2个，不能把横轴读成包子价格。',
+    '两种价格仍是1元；如果预算是4元，她拿2元买包子，买2个。沿横轴找到预算4元，向上读出包子2个，对应点(4,2)。',
     String.raw`x_1(4)=\frac{4}{2}=2`,
     '原书定义5.8 · 印刷68页 · 自主数值',
     { curve: 'engel', p: 1, q: 1, w: 4 }
@@ -480,7 +480,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '包子降价，豆浆仍买6杯',
-    '包子从2元降到1元，预算仍12元、豆浆仍1元。在各花一半的规则下，豆浆数量始终是6杯，所以紫点沿水平线移动；这不代表所有商品之间都没有交叉影响。',
+    '包子从2元降到1元，预算仍12元、豆浆仍1元。在各花一半的规则下，豆浆数量始终是6杯，所以紫点沿水平线移动；换一种偏好，包子降价也可能改变豆浆需求。',
     String.raw`\hat{x}_2(1)=\hat{x}_2(2)=6`,
     '原书定义5.8 · 印刷68页 · 自主数值',
     { curve: 'cross', p: 1, q: 1, w: 12 }
@@ -495,7 +495,7 @@ export const consumerStories = {
   end: '本例中包子随预算增加；一般判断还要看偏好和题目条件，不能只凭一次观察下结论。',
   frames: [
    makeConsumerFrame('先看8元怎么花', '阿姨有8元，包子和豆浆都卖1元。假设她的满意程度由两样数量的乘积决定，那么各买4份最满意，绿点 A 是原来的最优篮子。', String.raw`x_1+x_2=8,\quad u=x_1x_2,\quad A=(4,4)`, '原书定义5.9 · 印刷69页 · 自主数值', {p:1,q:1,w:8,extraW:0,model:'cd',stage:'initial'}),
-   makeConsumerFrame('钱多了，先假想不多买包子', '现在钱增加到12元，价格和偏好不变。先假设包子仍买4个，多出的4元全部买豆浆，得到金点 D=(4,8)。这是为了比较而假想的篮子，不是已经选定的新最优。', String.raw`D=(4,8),\quad MRS(D)=\frac{8}{4}=2>\frac{p_1}{p_2}=1`, '原书命题5.4 · 印刷70页 · 自主数值', {p:1,q:1,w:8,extraW:4,model:'cd',stage:'budget'}),
+   makeConsumerFrame('钱多了，先假想不多买包子', '现在钱增加到12元，价格和偏好不变。先假设包子仍买4个，多出的4元全部买豆浆，得到金点 D=(4,8)。先把这个篮子作为比较点，下一步检验它是否最优。', String.raw`D=(4,8),\quad MRS(D)=\frac{8}{4}=2>\frac{p_1}{p_2}=1`, '原书命题5.4 · 印刷70页 · 自主数值', {p:1,q:1,w:8,extraW:4,model:'cd',stage:'budget'}),
    makeConsumerFrame('沿新预算线比较：换一点包子', 'D 点附近，她愿意用约2杯豆浆换1个包子，市场却只要她放弃1杯。沿新预算线比较，满意程度从 D 的32升到 B 的36；本例最优是各买6份。', String.raw`u(D)=4\times8=32<36=6\times6=u(B),\quad B=(6,6)`, '原书第70页几何推导 · 自主数值', {p:1,q:1,w:8,extraW:4,model:'cd',stage:'optimal',candidate:[6,6]}),
    makeConsumerFrame('记住结论，也记住条件', '这个例子里两样各花一半，价格固定时包子数量等于预算的一半，预算从8变12，包子从4变6。在相关收入范围内需求不减少，称正常；仅看两个点不能证明别的偏好也如此。', String.raw`x_1^*(w)=\frac{w}{2}\quad(w>0,\;p_1=p_2=1)`, '原书定义5.9、命题5.4 · 印刷69—70页', {p:1,q:1,w:8,extraW:4,model:'cd',stage:'optimal',candidate:[6,6]})
   ]
@@ -516,7 +516,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '第二步：价格上涨与 Slutsky 补偿财富',
-    '包子涨到2元。原来那篮东西现在要18元，比原预算多6元。先假想补给阿姨6元，让旧篮子刚好买得起；金色预算线经过 A。这不是说她的满意程度一定不变。',
+    '包子涨到2元。原来那篮东西现在要18元，比原预算多6元。先假想补给阿姨6元，让旧篮子刚好买得起；金色预算线经过 A。阿姨现在可以在这条线上重新挑选。',
     String.raw`w' = p_1' a_1 + p_2 a_2 = 2 \times 6 + 1 \times 6 = 18`,
     '原书第70页公式推导',
     { step: 1, p0: 1, p1: 2, q: 1, w: 12, compW: 18 }
@@ -566,7 +566,7 @@ export const consumerStories = {
    ),
    makeConsumerFrame(
     '折线偏好构造：u = min{x₁+x₂, 4x₁+2x₂−12}',
-    '主食涨到1.5元，配菜仍是1元，钱也仍是10元。她选的购物篮变成约1.33份主食、8份配菜：主食更贵了，她却买得更多。这个变化来自下面写明的特殊偏好，不是假定人人都会这样。',
+    '主食涨到1.5元，配菜仍是1元，钱也仍是10元。她选的购物篮变成约1.33份主食、8份配菜：主食更贵了，她却买得更多。下面用这个例子里的偏好解释她为什么会这样选。',
     String.raw`u(x) = \min\{x_1 + x_2,\ 4x_1 + 2x_2 - 12\}`,
     '原书第69页 · 独立几何模型构造',
     { p: 1.5, q: 1, w: 10, model: 'giffen' }
@@ -599,9 +599,9 @@ export function consumerFrame(mode, phase) {
  }
  if(mode==='normal'&&!Number.isInteger(idx)){
   const base=Math.floor(idx),t=idx-base,from=story.frames[base],f=n=>Number(n.toFixed(2));
-  if(base===0){const extra=4*t,y=4+extra;return {...from,title:'钱逐渐增加：先造一个比较篮子',narration:`预算约${f(8+extra)}元，包子仍假想买4个，剩下的钱买约${f(y)}杯豆浆。金点只是比较用的篮子，不是实际决定。`,formula:String.raw`D=(4,4+\Delta w),\quad MRS(D)=\frac{x_2}{x_1}`,state:{...from.state,extraW:extra,stage:'budget'}};}
+  if(base===0){const extra=4*t,y=4+extra;return {...from,title:'钱逐渐增加：先造一个比较篮子',narration:`预算约${f(8+extra)}元，包子仍假想买4个，剩下的钱买约${f(y)}杯豆浆。金点标出假想的比较篮子。`,formula:String.raw`D=(4,4+\Delta w),\quad MRS(D)=\frac{x_2}{x_1}`,state:{...from.state,extraW:extra,stage:'budget'}};}
   if(base===1){const x=4+2*t,y=8-2*t;return {...from,title:'沿新预算线比较篮子',narration:`12元预算不变，比较篮子约(${f(x)},${f(y)})，满意程度约${f(x*y)}；这是沿预算线做的假想比较，直到找到最优篮子。`,formula:String.raw`x_1+x_2=12,\quad u=x_1x_2`,state:{...from.state,stage:'trial',candidate:[x,y]}};}
-  return {...from,title:'把这个例子和一般结论区分开',narration:'本例最优篮子是(6,6)；接下来将总结正常品的判断，并说明这个例子不能代替一般证明。'};
+  return {...from,title:'把这个例子和一般结论区分开',narration:'本例最优篮子是(6,6)；固定两种价格，比较收入提高前后的最优购买量，就能判断这段区间里的收入效应。'};
  }
  if(mode==='rationalize'&&!Number.isInteger(idx)){
   const base=Math.floor(idx),t=idx-base,from=story.frames[base];

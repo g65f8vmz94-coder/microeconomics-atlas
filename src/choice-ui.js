@@ -37,7 +37,7 @@ function stage(){const small=$('plot').clientWidth<500,W=small?360:560,H=small?3
  const bars=(labels,vals,colors)=>{const n=labels.length,base=H-57,top=65,cell=(W-56)/n;vals.forEach((v,i)=>{let x=28+i*cell+cell*.15,bw=cell*.7,h=Math.max(3,(base-top)*v/100);add(`<rect data-motion="choice-bar-${i}" x="${x}" y="${base-h}" width="${bw}" height="${h}" rx="5" fill="${colors?.[i]||C.green}" opacity=".83"/>${text(x+bw/2,base+24,labels[i],C.ink,small?13:15)}${text(x+bw/2,base-h-10,fmt(v)+'%',C.ink,small?14:16)}`)});};
  return {W,H,small,text,line,add,cards,bars,html:()=>`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(caseNames[mode])}动态图" xmlns="http://www.w3.org/2000/svg">${shapes}</svg>`};}
 function draw(){
- const g=stage(),step=state.step??0,metrics=[];let reading='',formula='',extra='',boundary=`原教材第2章，印刷页17—29。当前图是可计算的有限样例；不把图上的几项比较当成一般定理的证明。`,result={};
+ const g=stage(),step=state.step??0,metrics=[];let reading='',formula='',extra='',boundary=`原教材第2章，印刷页17—29。图中逐项列出本例的菜单与选择。`,result={};
  const add=(k,v)=>metrics.push([k,v]);
  if(['choiceproblem','rationalaction','rationalize','example1'].includes(mode)){
   const list=menus(3),mask=list[state.menu],table=mode==='choiceproblem'?table24(0):table24(state.table),bad=alphaFailures(table,3),rank=rankFromAlpha(table,3),chosen=table[mask];
@@ -52,8 +52,8 @@ function draw(){
   let labels,visible,chosen,full,small;
   if(mode==='median'){labels=['a₁','a₂','a₃','a₄','a₅'];full=31;small=28;visible=step?small:full;chosen=medianChoice(visible,5);reading='全菜单选五个中的 a₃；缩小为 {a₃,a₄,a₅} 后选 a₄。a₃ 仍在菜单中却失去胜出地位。若改把“位置”视为备选项，可用偏好“中位位置优先”解释；但这已改变了备选集合。';formula='c({a₁,…,a₅})=a₃；c({a₃,a₄,a₅})=a₄';boundary='例2.2，印刷页19—20。图中五个候选的位置固定，缩小菜单改变其相对位置。';}
   if(mode==='restaurant'){labels=['三文鱼','牛排','蜗牛','蛙腿'];full=15;small=3;visible=step?full:small;chosen=step?1:0;reading='加入两道自己厌恶的菜后，点餐者改选牛排。书中解释是新菜单让“牛排”被理解为较高品质；若把高品质与低品质牛排当成不同备选项，行为便可用新的固定排序解释。';formula='c({三文鱼,牛排})=三文鱼；c(四道菜)=牛排';boundary='例2.3，印刷页20。价格与故事来自教材引述；图像强调菜单改变选项含义。';}
-  if(mode==='party'){labels=['A','B₁','B₂'];full=7;small=3;visible=step?full:small;chosen=step?0:1;reading='只有 A 与 B₁ 邀请时参加 B₁；B₂ 也邀请时，怕得罪另一位朋友，转而参加 A。B₁ 的社会含义随 B₂ 是否在场而改变。';formula='c({A,B₁})=B₁；c({A,B₁,B₂})=A';boundary='例2.4，印刷页21。情境依赖不等于现实中所有类似选择都违背理性。';}
-  if(mode==='alpha'){labels=['a','b','c'];full=7;small=5;visible=step?small:full;chosen=step?2:0;reading='α 要求：大菜单选了 a，只要缩小菜单仍包含 a，就必须继续选 a。这里缩小到 {a,c} 后改选 c，是直接反例。';formula='B⊂A 且 c(A)∈B ⇒ c(B)=c(A)';boundary='定义2.3，印刷页21。反例是教学构造，不是教材的观察数据。';}
+  if(mode==='party'){labels=['A','B₁','B₂'];full=7;small=3;visible=step?full:small;chosen=step?0:1;reading='只有 A 与 B₁ 邀请时参加 B₁；B₂ 也邀请时，怕得罪另一位朋友，转而参加 A。B₁ 的社会含义随 B₂ 是否在场而改变。';formula='c({A,B₁})=B₁；c({A,B₁,B₂})=A';boundary='例2.4，印刷页21。把情境也写进选项，再检查能否用同一个排序解释两次选择。';}
+  if(mode==='alpha'){labels=['a','b','c'];full=7;small=5;visible=step?small:full;chosen=step?2:0;reading='α 要求：大菜单选了 a，只要缩小菜单仍包含 a，就必须继续选 a。这里缩小到 {a,c} 后改选 c，是直接反例。';formula='B⊂A 且 c(A)∈B ⇒ c(B)=c(A)';boundary='定义2.3，印刷页21。反例的数据为本站自主构造。';}
   if(mode==='rationalalpha'){labels=['a','b','c'];full=7;small=5;visible=step?small:full;chosen=0;reading='若 a 在大菜单是唯一最优，那么在包含 a 的任何小菜单里，它仍优于其中每个备选，所以选择不变。这正是命题2.1的一般证明结构。';formula='∀y∈A：a≽y；B⊂A 且 a∈B ⇒ ∀y∈B：a≽y';boundary='命题2.1，印刷页21。图只展示一个包含关系；文字给出一般论证。';}
   g.cards(labels,members(visible,labels.length),chosen,step?'缩小或扩展后的菜单':'最初菜单');add('菜单',visible===full?'完整/扩展':'缩小/原始');add('选中',labels[chosen]);result={visible,chosen,full,small};
  }else if(mode==='constructrank'){
@@ -91,7 +91,7 @@ function draw(){
   reading=step?'把红、黄事件拆成更细的颜色后，D 在每个对应颜色事件上不劣于 C，且在黑、绿事件上更好；教材记录约93%选 D。':'A 与 C、B 与 D 分别给出相同的最终收益分布。原表述下教材记录约51%选 A；换表述后选择比例改变。';
   formula='F_A=F_C，F_B=F_D';
   extra=`<details><summary>查看教材中的颜色、概率和收益</summary><table><thead><tr><th>转盘</th><th>颜色：概率→收益</th></tr></thead><tbody>${labels.map(l=>`<tr><th>${l}</th><td>${frameData[l].map(([color,p,v])=>`${color} ${Math.round(p*100)}% → $${v}`).join('；')}</td></tr>`).join('')}</tbody></table></details>`;
-  boundary='§2.6.2，印刷页25—26。F 表示最终收益分布；51%与93%是教材历史群体结果。相同收益分布不等于所有人都按期望金额选择。';result={labels,rates,distributionLeft:outcomeDistribution(frameData[left]),distributionRight:outcomeDistribution(frameData[right])};
+  boundary='§2.6.2，印刷页25—26。F 表示最终收益分布；51%与93%是教材历史群体结果。比较时先核对两张彩票的最终收益分布，再看参与者实际选了哪张。';result={labels,rates,distributionLeft:outcomeDistribution(frameData[left]),distributionRight:outcomeDistribution(frameData[right])};
  }else if(mode==='mental'){
   const buy=step?sourceRates.mental.cash:sourceRates.mental.ticket;g.bars(['再买票','不买票'],[buy,100-buy],[C.green,C.purple]);add('描述',step?'丢失40美元':'丢失40美元的票');add('愿意买票',buy+'%');
   reading='两种情境的最终选项都是“比出门前少80美元并看演出”或“少40美元且不看演出”。教材中的不同群体分别有65%与79%愿意再买票；这提示心理账户与表述可能改变判断。';formula='P(T)=0.65；P(C)=0.79';boundary='§2.6.3，印刷页26—27。T表示丢票组、C表示丢现金组；两个群体人数相近但不同，群体比例不证明同一人自相矛盾。';result={buy};
@@ -114,12 +114,12 @@ function draw(){
  }else if(mode==='p7'){
   const n=state.size,visible=Array.from({length:n},(_,i)=>i),subset=step===0?[0,1]:step===1?[0,1,2]:visible,chosen=0;
   g.cards(visible.map(i=>i<26?String.fromCharCode(97+i):String(i)),subset,chosen,`有限图示 ${n} 项 · 从两两比较扩到任意菜单`);
-  add('图示项数',n);add('图中最优','a');reading='一般证明从每对 {x,y} 的选择定义 x≽y。α 排除三元偏好循环：三项菜单的赢家在所有含它的两项菜单中仍赢；再用 α 说明任意菜单的选择压过其中每个选项。图中的 n 项只帮助看证明结构，不替代无限集论证。';formula='x≽y ⇔ c({x,y})=x；∀A，c(A)≽y（y∈A）';boundary='习题2.7，印刷页29。X 可无限，图仅显示3至8项；证明使用定义在每个非空子集上的选择函数。';result={n,subset,chosen};
+  add('图示项数',n);add('图中最优','a');reading='一般证明从每对 {x,y} 的选择定义 x≽y。α 排除三元偏好循环：三项菜单的赢家在所有含它的两项菜单中仍赢；再用 α 说明任意菜单的选择压过其中每个选项。图中依次列出前 n 项；一般论证对任意 n 成立。';formula='x≽y ⇔ c({x,y})=x；∀A，c(A)≽y（y∈A）';boundary='习题2.7，印刷页29。X 可无限，图仅显示3至8项；证明使用定义在每个非空子集上的选择函数。';result={n,subset,chosen};
  }else if(mode==='p8'){
   const n=step===0?2:step===1?5:5,unit=g.W/9,start=(g.W-6*unit)/2;
   for(let i=0;i<6;i++)g.add(`<rect data-motion="choice-unit-${i}" x="${start+i*unit}" y="${g.H*.5}" width="${unit*.78}" height="${unit*.78}" rx="6" fill="${i<n?C.green:'#e6d8d1'}" opacity="${i<n?1:.35}"/>`);
   g.add(g.text(g.W/2,g.H*.28,step===0?'先收到 2 件':step===1?'再收到 3 件':'实际 5 件；却按 6 件结算',C.ink,g.small?17:20));
-  add('实际件数',n);add('误计件数',step===2?6:n);add('多付',step===2?`$${state.price}`:'$0');reading='若交易者把2+3误算为6，可能按6件付款却只收到5件。在单价固定且无法核对货物时，每次交易多付一件的价钱；但“必定破产”还需要关于交易、纠错和环境的额外假设。';formula='2+3=5；按6件付款 − 实得5件价值 = 多付1件价格';boundary='习题2.8，印刷页29。题目是开放式讨论；图给一个可被利用的交易情境，不声称算错必然导致金钱泵。';result={actual:n,perceived:step===2?6:n,overpaid:step===2?state.price:0};
+  add('实际件数',n);add('误计件数',step===2?6:n);add('多付',step===2?`$${state.price}`:'$0');reading='若交易者把2+3误算为6，可能按6件付款却只收到5件。在单价固定且无法核对货物时，每次交易多付一件的价钱；但“必定破产”还需要关于交易、纠错和环境的额外假设。';formula='2+3=5；按6件付款 − 实得5件价值 = 多付1件价格';boundary='习题2.8，印刷页29。题目是开放式讨论；沿交易环走一遍，核对换回原物时累计支付了多少。';result={actual:n,perceived:step===2?6:n,overpaid:step===2?state.price:0};
  }
  window.microMotion.chart($('plot'),g.html());$('metrics').innerHTML=metrics.map(([k,v])=>`<div class="metric"><label>${esc(k)}</label><strong>${esc(fmt(v))}</strong></div>`).join('');$('reading').textContent=reading;$('formula').textContent=formula;$('boundary').textContent=boundary;$('extra').innerHTML=extra;$('legend').textContent='绿色表示当前选项或群体比例；金色标记持续追踪的对象；淡色表示暂时不在菜单中。';for(const c of spec){$(c.k).value=state[c.k];if($('out-'+c.k))$('out-'+c.k).value=fmt(state[c.k])}last=result;
 }

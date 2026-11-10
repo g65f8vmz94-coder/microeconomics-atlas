@@ -110,6 +110,6 @@ export function shapleyAxiomWitness(rule){
   'min-equal':{miss:'效率',lambda:[1,3,6],detail:'只生产最低者可产的1单位并平分；最大可生产量为6。'},
   'priority-shapley':{miss:'对称性',lambda:[1,1],detail:'同等生产率时，编号靠前者取得共同的第一层增量。'},
   social:{miss:'零贡献',lambda:[0,2],detail:'0生产率者仍分得最高产出的半数。'},
-  proportional:{miss:'边际贡献',lambda:[1,2],delta:1,who:1,detail:'提高最高生产率者后，其新增财富不等于只含增量经济中的财富。'}
+  proportional:{miss:'边际贡献',lambda:[1,2],delta:1,who:1,detail:'提高最高生产率者后，把他实际增加的财富与单独分配增量经济所得的财富比较，两项数值不同。'}
  };return map[rule];
 }

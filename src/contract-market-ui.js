@@ -34,7 +34,7 @@ export function startContractMarketStory(requested){
     if($('legend'))$('legend').textContent='绿：被选的现有报价；紫：未选报价；金：新店报价；红虚线：工人的生产价值。';
     if($('metrics'))$('metrics').innerHTML=[['当前 W',f.W.length?'{'+f.W.join('，')+'}':'∅'],['被选工资',f.market.selected.length?fmt(f.market.selected[0]):'无'],['被选店利润',f.market.profits.length?fmt(f.market.profits[0]):'无'],['新店利润',f.entry===null?'未报价':f.entryProfit===null?'未被选':fmt(f.entryProfit)]].map(([label,value])=>`<div class="metric"><label>${esc(label)}</label><strong>${esc(value)}</strong></div>`).join('');
     if($('reading'))$('reading').textContent=f.narration;if($('formula'))$('formula').textContent=c.formula;if($('boundary'))$('boundary').textContent=c.trap;
-    if($('extra'))$('extra').innerHTML=`<h3>严谨证明与计算路线</h3><ol>${c.proof.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(c.template)}</p><h3>最容易混淆</h3><p>${esc(c.trap)}</p><p>来源：${esc(c.source)}</p>`;
+    if($('extra'))$('extra').innerHTML=`<h3>证明与计算</h3><ol>${c.proof.map(x=>`<li>${esc(x)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(c.template)}</p><h3>最容易混淆</h3><p>${esc(c.trap)}</p><p>来源：${esc(c.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((el,i)=>{el.textContent=[c.question,c.conditions,c.template][i]||'';});
     const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+`downloads/ch14-contract-${key}.html`;dl.textContent='下载本段完整动画代码 ↓';}
     window.microMath?.refresh?.();

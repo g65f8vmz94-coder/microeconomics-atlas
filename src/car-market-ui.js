@@ -118,7 +118,7 @@ export function startCarMarketStory(requested) {
     if($('legend'))$('legend').textContent='同一排车辆始终按质量从低到高排列：红色表示当前待售，深灰表示留下；绿色虚线是平均质量或信念，金线是统一价格。';
     if($('metrics'))$('metrics').innerHTML=metrics(frame).map(([label,value])=>`<div class="metric"><label>${esc(label)}</label><strong>${esc(value)}</strong></div>`).join('');
     if($('reading'))$('reading').textContent=frame.narration;if($('formula'))$('formula').textContent=content.formula;if($('boundary'))$('boundary').textContent=content.trap;
-    if($('extra'))$('extra').innerHTML=`<h3>严谨证明或计算路线</h3><ol>${content.proof.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
+    if($('extra'))$('extra').innerHTML=`<h3>解题步骤</h3><ol>${content.proof.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((element,index)=>{element.textContent=[content.question,content.conditions,content.template][index]||'';});
     const guideBoundary=document.querySelector('.study-guide>.boundary');if(guideBoundary)guideBoundary.textContent='生活例只负责把信息差讲清楚；教材定义、一般证明、离轨信念与自主六车数值分开标注。';
     const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+`downloads/ch13-car-${key}.html`;dl.textContent='下载本段完整动画代码 ↓';}

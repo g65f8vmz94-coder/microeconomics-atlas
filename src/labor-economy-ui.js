@@ -277,10 +277,10 @@ export function startLaborEconomyStory(requested) {
     if (le$('reading')) le$('reading').textContent = phase[1];
     if (le$('formula')) le$('formula').textContent = content.formula;
     if (le$('boundary')) le$('boundary').textContent = content.trap;
-    if (le$('extra')) le$('extra').innerHTML = `<h3>严谨证明或计算路线</h3><ol>${content.proof.map(item => `<li>${leEsc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${leEsc(content.template)}</p><h3>最容易混淆</h3><p>${leEsc(content.trap)}</p><p>来源：Osborne–Rubinstein ${leEsc(content.source)}</p>`;
+    if (le$('extra')) le$('extra').innerHTML = `<h3>解题步骤</h3><ol>${content.proof.map(item => `<li>${leEsc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${leEsc(content.template)}</p><h3>最容易混淆</h3><p>${leEsc(content.trap)}</p><p>来源：Osborne–Rubinstein ${leEsc(content.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((el, i) => { el.textContent = [content.question, content.conditions, content.template][i] || ''; });
     const guideBoundary = document.querySelector('.study-guide>.boundary');
-    if (guideBoundary) guideBoundary.textContent = '教材定义、一般证明、原题条件和本站自主反例分开标注；连贯动画帮助看因果，不代替独立计算。';
+    if (guideBoundary) guideBoundary.textContent = '教材定义、一般证明、原题条件和本站自主反例分开标注。';
     const dl = document.querySelector('.lesson-end a[download]');
     if (dl) {
       dl.href = (location.protocol === 'file:' || location.pathname.includes('/downloads/') ? 'https://microeconomics-atlas-mingze.synb636.chatgpt.site/' : '') + `downloads/ch12-labor-${leKey}.html`;

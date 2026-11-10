@@ -89,7 +89,7 @@ export function renderEuStory(mode,phase){
  euEl('metrics').innerHTML=metrics.map(([k,v])=>`<div class="metric"><label>${euEsc(k)}</label><strong>${euEsc(v)}</strong></div>`).join('');
  euEl('reading').textContent=frame.narration;
  euEl('formula').textContent=frame.formula;
- euEl('boundary').textContent=`Osborne–Rubinstein §3.3，印刷35—38页／PDF54—57。${frame.source}。图示数值用于直观看清加权求和、公共项抵消、二元折算与仿射变换，不代替一般代数证明；第38页下方起进入§3.4。`;
+ euEl('boundary').textContent=`Osborne–Rubinstein §3.3，印刷35—38页／PDF54—57。${frame.source}。沿图中的概率权重求和，可逐项核对公共项抵消、二元折算与仿射变换；第38页下方起进入§3.4。`;
  euEl('extra').innerHTML=euProofs[mode];
  euEl('step').value=phase;euEl('advance').disabled=phase>=story.frames.length-1;euEl('play').disabled=phase>=story.frames.length-1;
  const link=document.querySelector('.lesson-end a[download]');

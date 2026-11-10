@@ -119,7 +119,7 @@ function draw(){
   formula=String.raw`(x,y)\in B(\mu)\iff y\succ_x\mu(x),\ x\succ_y\mu^{-1}(y)`;
   reading='先读取两侧排序，再沿着同一组人物观察配对如何变化。红线标出的阻挡对表示双方都想从当前配对中离开。';
   if(kind==='society')reading='社会由人数相同的 X、Y 两侧构成。每个 X 严格排列全部 Y，每个 Y 严格排列全部 X；改变方法时，偏好档案不变，只改变配对规则。';
-  if(kind==='matching'){reading='匹配必须让每个 X 恰好对应一个 Y，且任何两个 X 不能占用同一个 Y。枚举完整匹配可见不同合法结果；合法不等于稳定。';formula=String.raw`\mu:X\to Y,\quad x\ne x'\Rightarrow\mu(x)\ne\mu(x')`}
+  if(kind==='matching'){reading='匹配必须让每个 X 恰好对应一个 Y，且任何两个 X 不能占用同一个 Y。枚举完整匹配可见不同合法结果；先核对配对是否合法，再找有无阻挡对。';formula=String.raw`\mu:X\to Y,\quad x\ne x'\Rightarrow\mu(x)\ne\mu(x')`}
   if(kind==='method')reading='匹配方法以整份偏好档案为输入，输出一个完整配对。切换方法，观察同一份偏好如何得到不同结果；方法定义并不自动保证稳定。';
   if(kind==='serial'||kind==='unstable')reading='X 按编号依次选择仍可用的 Y；只参考 X 的排序。原书例18.5中终态是 X1–Y1、X2–Y2、X3–Y3，但 X2 与 Y1 更喜欢彼此，因此顺序独裁不保证稳定。';
   if(kind==='rank')reading='每一对的“不满意度”取两侧名次之和，枚举完整匹配后使总和最小。原书允许任意对两侧名次均递增的函数；这里具体取 α(a,b)=a+b。分数最小与阻挡对为零是两项不同检查。';
@@ -129,7 +129,7 @@ function draw(){
   if(kind==='stable')reading='只有终态才判断稳定。切到顺序独裁并走到末轮，红虚线显示阻挡对；再切换延迟接受比较。两端都严格偏好彼此，才算阻挡对。';
   if(kind==='gsStable')reading='若 X 更喜欢某 Y 胜过终态对象，那么 X 必曾更早向 Y 申请并被拒绝。Y 此后只会换到更偏好的 X，因此 Y 在终态不会也更喜欢这个 X；阻挡对不存在。';
   if(kind==='xBest'||kind==='yWorst'){
-   reading=kind==='xBest'?'枚举本例所有稳定匹配。X 方提议结果给每个 X 在稳定集合中的最好对象；切换 Y 方提议可见 X 方可能变差。这个结论只在稳定匹配之间比较。':'与 X 方最优相对，X 方提议结果使每个 Y 在稳定集合里拿到最差的对象。切换提议方观察各人的名次，不要把“最差”理解成所有合法匹配中的最差。';
+   reading=kind==='xBest'?'枚举本例所有稳定匹配。X 方提议结果给每个 X 在稳定集合中的最好对象；切换 Y 方提议可见 X 方可能变差。这个结论只在稳定匹配之间比较。':'与 X 方最优相对，X 方提议结果使每个 Y 在稳定集合里拿到最差的对象。切换提议方观察各人的名次；这里的“最差”只在稳定匹配中比较。';
    formula=kind==='xBest'?String.raw`\forall x,\ \forall\psi\in\mathcal S:\ \mu_{GSX}(x)\succeq_x\psi(x)`:String.raw`\forall y,\ \forall\psi\in\mathcal S:\ \psi^{-1}(y)\succeq_y\mu_{GSX}^{-1}(y)`;
   }
   if(kind==='pareto'){

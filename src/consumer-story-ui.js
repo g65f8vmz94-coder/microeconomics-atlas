@@ -394,7 +394,7 @@ const consumerProofs = {
 
  curves: String.raw`<details class="sd-proof" open><summary>三大需求曲线体系与微观比较静态</summary><ol>
 <li><strong>常规需求</strong>：<span class="equation">x_1^*(p_1) = x_1(p_1, p_2^0, w^0)</span>，沿自身价格轴刻画价格机制。</li>
-<li><strong>交叉需求</strong>：<span class="equation">\hat{x}_2(p_1) = x_2(p_1, p_2^0, w^0)</span>。可微时，交叉价格效应为正或负对应该方向的毛替代或毛互补；零效应不属于严格正负。本例固定支出份额，豆浆数量恒为6，不代表一般结果。</li>
+<li><strong>交叉需求</strong>：<span class="equation">\hat{x}_2(p_1) = x_2(p_1, p_2^0, w^0)</span>。可微时，交叉价格效应为正或负对应该方向的毛替代或毛互补；零效应不属于严格正负。豆浆所占的预算份额与它的单价都固定，因此始终买6杯。</li>
 <li><strong>恩格尔曲线</strong>：<span class="equation">x_1(w) = x_1(p_1^0, p_2^0, w)</span>。在相关财富区间里需求不减少称为正常，减少称为劣等；可微时可结合导数判断，单点导数为零不能单独判定整个区间。</li>
 <li><strong>换数字怎么做</strong>：先从需求函数代入保持不变的价格和预算，再选出变化的变量作横轴；给这个变量代入两个值求纵轴数量，标点并连成相应曲线。这个画面横轴是价格或预算，纵轴是数量；与常见的价格纵轴画法相反。</li>
 </ol></details>`,
@@ -437,7 +437,7 @@ export function renderConsumerStory(meta, requested, phase = 0) {
  const plot = cEl('plot');
  const ruleGuides=['先看清包子和豆浆的单价、现金预算与购买规则。','在同一预算线内，按当前规则算出并找到购物篮。','比较数量相同与花钱相同；不同规则不一定来自同一套偏好。'];
  const homGuides=['先看两种价格、预算及各花一半的例子。','价格与预算同时乘同一个正数，比较每个篮子的可负担性。','单独改变一种价格不属于同比缩放；本例选择变化不能推广为所有规则。'];
- const curveGuides=['先看图上横轴是什么条件，纵轴是哪种商品数量。','一次只改变包子价或预算；按规则计算并跟着紫点走。','区分自身需求、交叉需求和恩格尔曲线；例子方向不代表所有规则。'];
+ const curveGuides=['先看图上横轴是什么条件，纵轴是哪种商品数量。','一次只改变包子价或预算；按规则计算并跟着紫点走。','区分自身需求、交叉需求和恩格尔曲线；换一种选择规则，再比较变化方向。'];
  const optGuides=['先看预算、价格与当前顾客的偏好。','在可负担的篮子中比较满意程度，留意偏好和价格何时改变。','平滑切点、折点与整条最优线是不同情况；条件不能混用。'];
  const mrsGuides=['先看当前篮子、价格与本例偏好。','比较局部愿意放弃多少豆浆与市场要求放弃多少。','内点相等后还要检查全局；角点只比较可行的一侧。'];
  const cornerGuides=['先看包子和豆浆的价格、预算与给定偏好。','追踪预算增加时紫点何时离开纵轴。','等号也可能落在角点；先验非负与预算，再决定是否为内点。'];
@@ -493,7 +493,7 @@ export function renderConsumerStory(meta, requested, phase = 0) {
  let mrsContext=cEl('mrs-situation');
  if(mode==='mrs'){
   if(!mrsContext){mrsContext=document.createElement('section');mrsContext.id='mrs-situation';mrsContext.setAttribute('aria-label','购物情境、条件与问题');cEl('legend').before(mrsContext)}
-  const html='<p class="reading"><strong>情境与条件：</strong>阿姨有12元，包子 x₁ 每个2元、豆浆 x₂ 每杯1元，假设满意程度 u=x₁x₂；数量可为小数，生活情境和数字是自主举例。先比较(2,8)，再看(3,6)与(4,4)。</p><p class="reading"><strong>这张图要回答：</strong>在当前篮子附近，阿姨愿意用多少豆浆换一点包子？市场价格要求她放弃多少？两者相等为什么提示内点可能最优？金色虚线是紫色无差异曲线在当前点的局部切线，不代表整条曲线。</p>';
+  const html='<p class="reading"><strong>情境与条件：</strong>阿姨有12元，包子 x₁ 每个2元、豆浆 x₂ 每杯1元，假设满意程度 u=x₁x₂；数量可为小数，生活情境和数字是自主举例。先比较(2,8)，再看(3,6)与(4,4)。</p><p class="reading"><strong>这张图要回答：</strong>在当前篮子附近，阿姨愿意用多少豆浆换一点包子？市场价格要求她放弃多少？两者相等为什么提示内点可能最优？金色虚线在当前点与紫色无差异曲线相切，读它的斜率可得局部交换率。</p>';
   if(mrsContext.dataset.signature!==html){mrsContext.dataset.signature=html;mrsContext.innerHTML=html;}
  }else mrsContext?.remove();
  let cornerContext=cEl('corners-situation');
@@ -576,7 +576,7 @@ export function renderConsumerStory(meta, requested, phase = 0) {
  cEl('metrics').innerHTML = metrics.map(([k, v]) => `<div class="metric"><label>${cEsc(k)}</label><strong${['homogeneous','curves','optimum','existence','mrs','corners','warp','rationalize','normal','property'].includes(mode) && k === '核心指标' ? ' style="font-size:1rem;line-height:1.6"' : ''}>${cEsc(v)}</strong></div>`).join('');
  cEl('reading').textContent = frame.narration;
  cEl('formula').textContent = frame.formula;
- cEl('boundary').textContent = `Osborne–Rubinstein §5.1—5.6，印刷57—74页／PDF76—93。${frame.source}。有限数值与图形演示服务于直观理解，不代替全象限一般数学证明。`;
+ cEl('boundary').textContent = `Osborne–Rubinstein §5.1—5.6，印刷57—74页／PDF76—93。${frame.source}。`;
  cEl('extra').innerHTML = consumerProofs[mode] || '';
 
  if (cEl('step')) {

@@ -75,7 +75,7 @@ export function startStrategicFoundationsStory(requested){
   const u=f.audit.u,g=f.audit.gains,metrics=[['王阿姨收益',f.visibleCells?u[0]:'待揭晓'],['李叔收益',f.visibleCells?u[1]:'待揭晓'],['王单改最多增益',f.visibleCells?g[0]:'待查'],['李单改最多增益',f.visibleCells?g[1]:'待查']];
   if($('metrics'))$('metrics').innerHTML=metrics.map(([label,value])=>'<div class="metric"><label>'+esc(label)+'</label><strong>'+esc(value)+'</strong></div>').join('');
   if($('reading'))$('reading').textContent=f.narration;if($('formula'))$('formula').textContent=c.formula;if($('boundary'))$('boundary').textContent=c.trap;
-  if($('extra'))$('extra').innerHTML='<h3>严谨证明与计算路线</h3><ol>'+c.proof.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><h3>考试时怎么套</h3><p>'+esc(c.template)+'</p><h3>最容易混淆</h3><p>'+esc(c.trap)+'</p><p>来源：'+esc(c.source)+'</p>';
+  if($('extra'))$('extra').innerHTML='<h3>证明与计算</h3><ol>'+c.proof.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol><h3>考试时怎么套</h3><p>'+esc(c.template)+'</p><h3>最容易混淆</h3><p>'+esc(c.trap)+'</p><p>来源：'+esc(c.source)+'</p>';
   document.querySelectorAll('.study-guide .guide-panel').forEach((el,i)=>{el.textContent=[c.question,c.conditions,c.template][i]||'';});
   const guideBoundary=document.querySelector('.study-guide>.boundary');if(guideBoundary)guideBoundary.textContent='摊主、收益数字、换刻度与并列最优表均为本站辅助讲解；原书定义与其静态、单人偏离边界按页码标明。';
   const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+'downloads/ch15-foundations-'+key+'.html';dl.textContent='下载本段完整动画代码 ↓';}

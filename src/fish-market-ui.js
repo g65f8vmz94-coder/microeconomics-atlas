@@ -112,7 +112,7 @@ export function startFishMarketStory(requested) {
     if($('legend')) $('legend').textContent=(frame.kind==='health'||frame.kind==='healthExternal')?'绿色实线固定平均服务量做私人选择；紫色虚线表示所有人服务量与平均量一起变化；金点追踪共同调整。':'绿色斜线是单位捕鱼成本，红色横线是消费者单位价值，金点追踪当前总捕捞；税收题另用金色虚线表示成本加单位税。';
     if($('metrics')) $('metrics').innerHTML=metrics(frame).map(([label,value])=>`<div class="metric"><label>${esc(label)}</label><strong>${esc(value)}</strong></div>`).join('');
     if($('reading')) $('reading').textContent=frame.narration;if($('formula')) $('formula').textContent=content.formula;if($('boundary')) $('boundary').textContent=content.trap;
-    if($('extra')) $('extra').innerHTML=`<h3>严谨证明或计算路线</h3><ol>${content.proof.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
+    if($('extra')) $('extra').innerHTML=`<h3>解题步骤</h3><ol>${content.proof.map(item=>`<li>${esc(item)}</li>`).join('')}</ol><h3>考试时怎么套</h3><p>${esc(content.template)}</p><h3>最容易混淆</h3><p>${esc(content.trap)}</p><p>来源：Osborne–Rubinstein ${esc(content.source)}</p>`;
     document.querySelectorAll('.study-guide .guide-panel').forEach((element,index)=>{element.textContent=[content.question,content.conditions,content.template][index]||'';});
     const guideBoundary=document.querySelector('.study-guide>.boundary');if(guideBoundary)guideBoundary.textContent='码头与王阿姨只负责建立直觉；一般模型、本站线性/指数数值例、正文结论和章末习题边界分别标注。';
     const dl=document.querySelector('.lesson-end a[download]');if(dl){dl.href=(location.protocol==='file:'||location.pathname.includes('/downloads/')?'https://microeconomics-atlas-mingze.synb636.chatgpt.site/':'')+`downloads/ch13-fish-${key}.html`;dl.textContent='下载本段完整动画代码 ↓';}
