@@ -263,4 +263,4 @@ for(const mode of ['attention','framing','mental'])write(out+'/downloads/ch2-evi
 
 for(const id of ['p1a','p1b','p1c','p1d','p1e','p2','p3qualified','p3none','p4qualified','p4none','p5a','p5b','p6','p7','p8'])write(out+'/downloads/ch2-exercise-'+id+'.html',read(out+'/downloads/lesson-2-6.html').replace('<script type="module">','<script>window.CHOICE_EXERCISE_DEFAULT='+JSON.stringify(id)+';</script><script type="module">'));
 
-require('./src/guided/build.cjs').buildGuides(out,coverage);
+require('./src/guided/build.cjs').buildGuides(out,coverage).catch(err=>{console.error(err);process.exitCode=1;});
