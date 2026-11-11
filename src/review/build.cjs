@@ -6,28 +6,19 @@ const {givenPoints, proofRows, answerSheet, formula} = require('../guided/unit-f
 const {urlFor} = require('../guided/catalog.cjs');
 const {manuscript, renderMath} = require('../insurance-lesson/build.cjs');
 const {formulaRoute} = require('../formula-route.cjs');
+const {sectionNotes,claimNotes,reviewControls} = require('./formal-render.cjs');
 const assignments = [
   [5,'支出函数','习题 5','56'],[5,'时间偏好与借贷','习题 8','57'],[6,'鲁滨逊的生产与消费','习题 4','66–67'],
-  [7,'三种菜单怎样定价','习题 7','78'],[8,'四个人怎样分四间房','例 8.1 扩展','82']
+  [7,'隐性歧视的最优菜单','习题 7','78'],[8,'产权分配与竞争均衡','例 8.1 扩展','82']
 ];
 const chapterURL = n => `review-${n}.html`;
 const workURL = i => `review-hw3-${i+1}.html`;
 const folder = path.join(__dirname,'homework');
 function readClaims(items) {
-  const rows = fs.readFileSync(path.join(__dirname,'propositions.txt'),'utf8').trim().split('\n').filter(line=>line && !line.startsWith('#'));
-  const entries = new Map();
-  for(const line of rows) {
-    const [id,title,statement,cue,...extra] = line.split('|');
-    const key = id.startsWith('L')?'Lemma '+id.slice(1):'Proposition '+id;
-    if(!cue || extra.length || entries.has(key)) throw Error('Invalid review notes: '+id);
-    entries.set(key,{title,statement,cue});
-  }
-  const claims = items.filter(item=>/^(Proposition|Lemma) /.test(item.id));
-  if(entries.size!==claims.length || claims.some(item=>!entries.has(item.id)))throw Error('Review notes differ from the textbook inventory');
-  return claims.map(item=>({...item,...entries.get(item.id)}));
+  return items.filter(item=>/^(Proposition|Lemma) /.test(item.id));
 }
 function chapterDirectory(chapters) {
-  return `<section class="review-index" id="chapters"><h2>按章查阅</h2><p>每章收齐小节、编号命题与引理、章末题的参考解答。四小时只安排精选练习，其余可按需翻阅。</p><div class="chapter-shelf">${chapters.map(ch=>`<a href="${chapterURL(ch.number)}"><small>${String(ch.number).padStart(2,'0')}</small><span>${escape(ch.title)}</span></a>`).join('')}</div></section>`;
+  return `<section class="review-index" id="chapters"><h2>按章查阅</h2><p>按原书结构查定义、公式、符号、命题证明与习题批注。四小时安排重点复习，全书内容可随时查阅。</p><div class="chapter-shelf">${chapters.map(ch=>`<a href="${chapterURL(ch.number)}"><small>${String(ch.number).padStart(2,'0')}</small><span>${escape(ch.title)}</span></a>`).join('')}</div></section>`;
 }
 function workList(filter) {
   return `<ul class="review-list">${assignments.map(([ch,title,ref,p],i)=>!filter||ch===filter?`<li><a href="${workURL(i)}">第 ${ch} 章 · ${ref}　${title}</a><small>中文本第 ${p} 页</small></li>`:'').join('')}</ul>`;
@@ -37,21 +28,15 @@ function question(meta,unit) {
   const insurance=meta.key==='p3.9';
   const given=insurance?'有事故和无事故两种状态。给定初始财富、损失、事故概率和赔付倍率，选保费。分别在公平价与保险有加价时判断应否全保。':givenPoints(unit.given).points.map(inline).join('');
   const rows=insurance?manuscript().replaceAll('href="#check-',`href="${url}#check-`):answerSheet(meta,unit,proofRows(unit),{lessonURL:url,idPrefix:meta.key+'-'});
-  return `<details class="review-problem" id="p${meta.id}"><summary><small>习题 ${meta.id}</small><strong>${escape(unit.title)}</strong></summary><div class="review-inside"><div class="given-box"><b>题目条件</b><p>${given}</p><small>英文本第 ${meta.page} 页 · 本站参考解答</small></div>${rows}<a href="${url}">从头看这道题的图解 →</a></div></details>`;
+  return `<details class="review-problem" id="p${meta.id}"><summary><small>习题 ${meta.id}</small><strong>题干、解答与批注</strong></summary><div class="review-inside"><div class="given-box"><b>题目条件</b><p>${given}</p><small>英文本第 ${meta.page} 页 · 本站参考解答</small></div>${rows}<a href="${url}">从头看这道题的图解 →</a></div></details>`;
 }
 function chapterPage(ch,content,claims) {
-  const sections = ch.sections.map(meta=>{
-    const u=content[meta.key];
-    return `<details><summary><small>§ ${meta.id}</small><strong>${escape(meta.theme)}</strong></summary><div class="review-inside"><p>${inline(u.given)}</p>${proofRows(u).map(r=>`<div class="section-line"><b>${inline(r.method)}</b>${formula(r.tex)}<p>${inline(r.why)}</p></div>`).join('')}<a href="${urlFor(meta.key)}">看本节图解 →</a></div></details>`;
-  }).join('');
+  const sections = ch.sections.map((meta,i)=>sectionNotes(meta,i===0)).join('');
   const records=claims.filter(x=>x.chapter===ch.number);
-  const statements=records.map(r=>{
-    const [kind,id]=r.id.split(' ');
-    return `<article class="claim" id="${kind.toLowerCase()}-${id}"><small>${kind==='Lemma'?'引理':'命题'} ${id} · 英文本第 ${r.printedPage} 页</small><h3>${escape(r.title)}</h3><p>${inline(r.statement)}</p><div class="claim-cue"><b>证明起笔</b> ${inline(r.cue)}</div><a href="${escape(r.evidence[0].entry)}">对照模型与原例 →</a></article>`;
-  }).join('');
+  const statements=records.map(claimNotes).join('');
   const hasHomework=assignments.some(([n])=>n===ch.number);
-  return `<main class="sprint review" id="main"><header><a href="formula-4h.html#chapters">← 四小时通道 · 全书目录</a><p class="folio">第 ${ch.number} 章</p><h1>${escape(ch.title)}</h1><p>${escape(ch.question)}</p><nav class="section-tabs"><a href="#principles">小节 ${ch.sections.length}</a><a href="#claims">命题与引理 ${records.length}</a><a href="#problems">章末题 ${ch.problems.length}</a>${hasHomework?'<a href="#assigned">课堂作业</a>':''}</nav></header>
-<section id="principles"><h2>小节与公式</h2>${sections}</section><section id="claims"><h2>命题与引理</h2>${statements}</section>
+  return `<main class="sprint review" id="main"><header><a href="formula-4h.html#chapters">← 四小时通道 · 全书目录</a><p class="folio">第 ${ch.number} 章</p><h1>${escape(ch.title)}</h1><p>本章 ${ch.sections.length} 节 · ${records.length} 条命题与引理 · ${ch.problems.length} 道章末习题。先读条件，再核对符号和推导。</p><nav class="section-tabs"><a href="#principles">小节 ${ch.sections.length}</a><a href="#claims">命题与引理 ${records.length}</a><a href="#problems">章末题 ${ch.problems.length}</a>${hasHomework?'<a href="#assigned">课堂作业</a>':''}</nav></header>
+${reviewControls(ch)}<section id="principles"><h2>定义、公式与推导</h2>${sections}</section><section id="claims"><h2>命题与引理</h2>${statements}</section>
 ${hasHomework?`<section id="assigned"><h2>课堂作业</h2><p>第三次作业 · 更正后的题目与加问</p>${workList(ch.number)}</section>`:''}
 <section id="problems"><h2>章末习题与批注</h2><p>点题号看整份答卷。批注解释每一步为什么这样写。</p>${ch.number===3?'<p><small>英文本本章题号从 5 跳至 7，沿用原书编号。</small></p>':''}${ch.problems.map(m=>question(m,content[m.key])).join('')}</section><footer><a href="formula-4h.html#chapters">← 换一章复习</a></footer></main>`;
 }

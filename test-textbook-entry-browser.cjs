@@ -149,12 +149,8 @@ async function check(browser, root, {width, input, reducedMotion='no-preference'
     await follow(page,page.locator('.market-routes .formula-door'),quickURL,input);
     await fits(page);
     assert.equal(await page.locator('.sprint-hour').count(),4);
-    assert.ok(await page.locator('.sprint-math math').count()>10);
-    for (const d of await page.locator('.sprint-quiz details').all()) {
-      assert.ok(!await d.evaluate(el=>el.open));
-      await d.locator('summary').click();
-      assert.ok(await d.evaluate(el=>el.open));
-    }
+    assert.equal(await page.locator('.sprint-item').count(),20);
+    assert.equal(await page.locator('.chapter-shelf a').count(),20);
     await back(page,home);
     assert.ok(await film.isHidden(),'back should return directly to market');
     await follow(page,page.locator('.market-routes .home-open'),new URL('learn.html',root).href,input);
