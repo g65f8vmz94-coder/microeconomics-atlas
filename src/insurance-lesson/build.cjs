@@ -16,8 +16,12 @@ function fill(template, data) {
 
 function renderMath(template) {
   return template.replace(/<tex>([\s\S]*?)<\/tex>/g, (_, tex) =>
-    math(tex.replaceAll('&lt;', '<').replaceAll('&gt;', '>'))
+    math(tex.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&amp;', '&'))
   );
+}
+
+function manuscript() {
+  return renderMath(read('manuscript.html'));
 }
 
 function difference(value) {
@@ -54,7 +58,7 @@ function insurancePage() {
     });
   }).join('');
   return fill(renderMath(read('page.html')), {
-    steps, lastStep: timeline.at(-1).id, stylesheet: read('insurance.css'),
+    steps, manuscript: manuscript(), lastStep: timeline.at(-1).id, stylesheet: read('insurance.css'),
     model: read('model.js'), player: read('player.js'),
     motion: read('../amicro-motion.js'), license: read('../vendor/AMICRO-LICENSE.txt')
   });
@@ -68,4 +72,4 @@ function insuranceEntry(html) {
     .replace('href="lesson-3-5.html?case=p9">习题3.9 保险', 'href="insurance-3-9.html">习题3.9 保险 · 两种日子的账本');
 }
 
-module.exports = {insurancePage, insuranceEntry};
+module.exports = {insurancePage, insuranceEntry, manuscript, renderMath};

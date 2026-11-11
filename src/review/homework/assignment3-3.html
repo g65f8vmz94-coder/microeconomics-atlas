@@ -1,0 +1,126 @@
+<p><strong>题意。</strong> 一单位时间用于休闲 <tex>l</tex> 与劳动 <tex>x</tex>，故 <tex>l+x=1</tex>。劳动生产消费品 <tex>f(x)</tex>，<tex>f</tex> 递增且严格凹。偏好单调、凸，具有可微效用表示 <tex>u(l,c)</tex>。题目共7小问，后4问讨论两个独立决策单位通过工资 <tex>w</tex> 协调。</p>
+<h3>（1）写出统一决策的最优化问题</h3>
+<p><strong>解。</strong> 可行集合为</p>
+<div class="hw-equation"><tex>0\le l\le1,\qquad 0\le c\le f(1-l).</tex></div>
+<p>因此</p>
+<div class="hw-equation"><tex>\boxed{\max_{0\le l\le1,\ 0\le c\le f(1-l)}u(l,c).}</tex></div>
+<p>由于效用对消费单调递增，最优时充分消费生产出的产品：</p>
+<div class="hw-equation"><tex>c=f(1-l).</tex></div>
+<p>可化为</p>
+<div class="hw-equation"><tex>\boxed{\max_{0\le l\le1}u\bigl(l,f(1-l)\bigr).}</tex></div>
+<h3>（2）求 <tex>f(x)=\sqrt{x}</tex>、<tex>u(l,c)=lc</tex> 时的解</h3>
+<p><strong>解。</strong> 代入生产边界：</p>
+<div class="hw-equation"><tex>\max_{0\le l\le1}F(l),\qquad F(l)=l\sqrt{1-l}.</tex></div>
+<p>当 <tex>0&lt;l&lt;1</tex>，</p>
+<div class="hw-equation"><tex>F'(l)=\sqrt{1-l}-\frac{l}{2\sqrt{1-l}}
+=\frac{2-3l}{2\sqrt{1-l}}.</tex></div>
+<p>故 <tex>F'(l)&gt;0</tex> 当 <tex>l&lt;2/3</tex>，<tex>F'(l)&lt;0</tex> 当 <tex>l&gt;2/3</tex>；端点效用均为0，而内点效用为正。因此唯一全局最优为</p>
+<div class="hw-equation"><tex>\boxed{l^*=\frac23,\quad x^*=\frac13,\quad c^*=\frac1{\sqrt3}.}</tex></div>
+<p>效用为</p>
+<div class="hw-equation"><tex>\boxed{u^*=\frac{2}{3\sqrt3}.}</tex></div>
+<h3>（3）为何最优处MRS等于劳动边际产出</h3>
+<p><strong>解。</strong> 在可微内点最优处，对复合函数求导：</p>
+<div class="hw-equation"><tex>\frac{d}{dl}u\bigl(l,f(1-l)\bigr)
+=u_l(l,c)-u_c(l,c)f'(1-l)=0.</tex></div>
+<p>若 <tex>u_c&gt;0</tex>，则</p>
+<div class="hw-equation"><tex>\boxed{MRS_{l,c}(l^*,c^*)=\frac{u_l(l^*,c^*)}{u_c(l^*,c^*)}
+=f'(1-l^*).}</tex></div>
+<p>左端是愿意为多一单位休闲放弃多少消费，右端是多休闲一单位实际少生产多少消费。最优内点要求两者一致。</p>
+<p>在第（2）问中，</p>
+<div class="hw-equation"><tex>\frac{u_l}{u_c}=\frac{c}{l}
+=\frac{1/\sqrt3}{2/3}
+=\frac{\sqrt3}{2}
+=f'(1/3).</tex></div>
+<p>这一等式需要内点。若题目给出的具体偏好使最优点在端点，应改用单侧最优条件，不能机械套相切式。</p>
+<h3>（4）写出生产与消费两个决策单位的协调条件</h3>
+<p><strong>解。</strong> 把消费品价格归一化为1，劳动工资为 <tex>w</tex>。</p>
+<p>生产单位选择劳动需求 <tex>x</tex>，最大化利润：</p>
+<div class="hw-equation"><tex>x^P(w)\in\arg\max_{0\le x\le1}\{f(x)-wx\},\qquad
+\pi(w)=f(x^P(w))-wx^P(w).</tex></div>
+<p>消费单位把 <tex>\pi(w)</tex> 当作给定的利润收入，选择休闲与消费：</p>
+<div class="hw-equation"><tex>(l^C(w),c^C(w))\in
+\arg\max_{0\le l\le1,\ c\ge0}
+\{u(l,c):c\le w(1-l)+\pi(w)\}.</tex></div>
+<p>协调一致要求</p>
+<div class="hw-equation"><tex>\boxed{x^P(w)=1-l^C(w),\qquad c^C(w)=f(x^P(w)).}</tex></div>
+<p>如果消费预算用尽，并且利润全部归消费者，则两种出清条件互相蕴含。以上同时写出可以避免漏掉生产、消费与劳动之间的关系。</p>
+<p>内点形式为</p>
+<div class="hw-equation"><tex>\boxed{
+f'(x)=w,\quad
+\frac{u_l(l,c)}{u_c(l,c)}=w,\quad
+x=1-l,\quad
+c=f(x),\quad
+\pi=f(x)-wx.
+}</tex></div>
+<h3>（5）求协调工资与配置</h3>
+<p><strong>解。</strong> 对 <tex>f(x)=\sqrt{x}</tex>，内点生产选择满足</p>
+<div class="hw-equation"><tex>\frac1{2\sqrt{x}}=w,
+\qquad
+x^P(w)=\frac1{4w^2}.</tex></div>
+<p>相应产出与利润为</p>
+<div class="hw-equation"><tex>c^P(w)=\frac1{2w},\qquad
+\pi(w)=\frac1{4w}.</tex></div>
+<p>消费单位最大化</p>
+<div class="hw-equation"><tex>l[w(1-l)+\pi],</tex></div>
+<p>一阶条件为</p>
+<div class="hw-equation"><tex>w+\pi-2wl=0,</tex></div>
+<p>从而</p>
+<div class="hw-equation"><tex>l^C=\frac{w+\pi}{2w},\qquad c^C=\frac{w+\pi}{2}.</tex></div>
+<p>代入 <tex>\pi=1/(4w)</tex> 并要求产品市场出清：</p>
+<div class="hw-equation"><tex>\frac12\left(w+\frac1{4w}\right)=\frac1{2w}.</tex></div>
+<p>整理得</p>
+<div class="hw-equation"><tex>4w^2+1=4,\qquad
+\boxed{w^*=\frac{\sqrt3}{2}.}</tex></div>
+<p>进一步得到</p>
+<div class="hw-equation"><tex>\boxed{
+x^*=\frac13,\quad l^*=\frac23,\quad
+c^*=\frac1{\sqrt3},\quad \pi^*=\frac1{2\sqrt3}.
+}</tex></div>
+<p>这些值均满足所用的内点条件。若生产单位限定 <tex>x\le1</tex>，则 <tex>w\le1/2</tex> 时生产选择 <tex>x=1</tex>，利润为 <tex>1-w</tex>，消费单位会选择 <tex>l=1</tex>，无法满足劳动出清；所以没有遗漏这一边界上的协调工资。</p>
+<h3>（6）作图说明两种决策方式为什么得到同一配置</h3>
+<p><strong>解。</strong> 横轴休闲 <tex>l</tex>，纵轴消费 <tex>c</tex>。生产边界为</p>
+<div class="hw-equation"><tex>c=f(1-l)=\sqrt{1-l}.</tex></div>
+<p>统一决策的最优点 <tex>E^*</tex> 是无差异曲线与生产边界的切点。</p>
+<p>两个单位独立决策时，消费预算线为</p>
+<div class="hw-equation"><tex>c=w^*(1-l)+\pi^*.</tex></div>
+<p>其斜率为 <tex>-w^*</tex>。生产利润最大化保证该线支撑生产集合：对所有可行劳动 <tex>x</tex>，</p>
+<div class="hw-equation"><tex>f(x)-w^*x\le\pi^*,
+\quad\text{即}\quad
+f(1-l)\le w^*(1-l)+\pi^*.</tex></div>
+<p>在均衡点两者相等；消费最优又保证预算线与无差异曲线相切。于是</p>
+<div class="hw-equation"><tex>\boxed{MRS_{l,c}=w^*=f'(1-l^*).}</tex></div>
+<p>这正是统一决策的最优条件。</p>
+<p>更完整地说，任何技术可行的消费束都位于这条预算线之下；而协调点是整个预算集内最优且本身技术可行，故必然也是原技术可行集合内的最优点。这说明的不只是一阶条件相同，而是整体最优化结果相同。</p>
+<figure><img loading="lazy" src="assets/review-robinson.png" alt="鲁滨逊两种生产目标"><figcaption>鲁滨逊两种生产目标 · 本站解题示意图</figcaption></figure>
+<p>左图：绿色无差异曲线、橙色预算线与蓝色生产边界在同一点相切。右图供下一问使用：产出最大化时，橙色预算线仅与所选无差异曲线相切，不能支撑整个生产集合。</p>
+<h3>（7）生产单位改为产出最大化，为什么结果不同</h3>
+<p><strong>解。</strong> 依照本章定义，产出最大化是在不亏损约束下尽可能扩大产出：</p>
+<div class="hw-equation"><tex>\max_{0\le x\le1}f(x)\quad\text{s.t.}\quad f(x)-wx\ge0.</tex></div>
+<p>在正劳动、未触及时间上限且零利润约束绑定的情况下，最优生产选择满足</p>
+<div class="hw-equation"><tex>f(x_O)=wx_O,\qquad \pi_O=0,
+\qquad w=\frac{f(x_O)}{x_O}.</tex></div>
+<p>消费预算线因此为</p>
+<div class="hw-equation"><tex>c=w(1-l).</tex></div>
+<p>协调时，若消费选择为内点，则</p>
+<div class="hw-equation"><tex>MRS_{l,c}=w=\frac{f(x_O)}{x_O}.</tex></div>
+<p>而在本章 <tex>f(0)=0</tex>、<tex>f</tex> 严格凹且可微的条件下，对 <tex>x_O&gt;0</tex> 有</p>
+<div class="hw-equation"><tex>\frac{f(x_O)}{x_O}&gt;f'(x_O).</tex></div>
+<p>于是</p>
+<div class="hw-equation"><tex>\boxed{MRS_{l,c}&gt;f'(x_O).}</tex></div>
+<p>增加一点休闲导致的效用收益高于少生产一点产品造成的效用损失，因此该点不是原统一决策问题的内点最优点。图上表现为预算线的斜率绝对值大于生产边界的斜率绝对值，两者未相切。</p>
+<p><strong>用本题函数给出具体结果。</strong> <tex>f(x)=\sqrt{x}</tex> 时，不亏损约束为</p>
+<div class="hw-equation"><tex>\sqrt{x}\ge wx.</tex></div>
+<p>当 <tex>w&gt;1</tex>，产出最大化选择</p>
+<div class="hw-equation"><tex>x_O=\frac1{w^2},\qquad c_O=\frac1w,\qquad\pi_O=0.</tex></div>
+<p>消费单位最大化 <tex>wl(1-l)</tex>，所以</p>
+<div class="hw-equation"><tex>l_O=\frac12,\qquad c_O=\frac w2.</tex></div>
+<p>出清要求 <tex>w/2=1/w</tex>，因此</p>
+<div class="hw-equation"><tex>\boxed{
+w_O=\sqrt2,\quad l_O=\frac12,\quad
+x_O=\frac12,\quad c_O=\frac1{\sqrt2}.
+}</tex></div>
+<p>它与统一最优的 <tex>(l^*,c^*)=(2/3,1/\sqrt3)</tex> 不同，且</p>
+<div class="hw-equation"><tex>\frac1{2\sqrt2}&lt;\frac2{3\sqrt3}.</tex></div>
+<p>即产出虽然更高，但休闲更少，总效用更低。对 <tex>w\le1</tex> 的边界，生产单位选 <tex>x=1</tex>；如上一问一样消费选择无法与劳动需求协调，因此本题没有遗漏另一类边界解。</p>
+<p class="margin-note"><strong>条件说明：</strong> 一般函数下，上述“必然不同”的相切论证适用于内点、零利润约束绑定的情形。若允许角点，原题宽泛假设并不能无条件排除两个机制恰好重合；本题指定的平方根技术与乘积效用满足上述条件，计算结果明确不同。例如 <tex>f(x)=\ln(1+x)</tex>、<tex>u(l,c)=2l+c</tex> 时，统一决策选择 <tex>(l,c)=(1,0)</tex>；取 <tex>w=1</tex>，产出最大化单位也只能选择 <tex>x=0</tex>，消费单位同样选择 <tex>(1,0)</tex>。这个边界例子说明写明内点条件的必要性。</p>
+<p class="margin-note"><strong>易漏步骤：</strong> 写 <tex>x=1-l</tex>；利润要返还给消费单位；消费决策时利润是给定收入；求工资后检查内点；产出最大化用不亏损边界，利润最大化用边际产出等于工资。</p>

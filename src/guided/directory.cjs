@@ -20,7 +20,7 @@ function chapter(ch,content,page){
   function list(items){
     return items.map(m=>`<a class="unit-row" href="${urlFor(m.key)}"><span class="idx">${m.id}</span><strong>${heading(content[m.key].title)}</strong><span aria-hidden="true">↗</span></a>`).join('');
   }
-  const lead = `<header class="hub-head"><nav class="crumbs" aria-label="当前位置"><a href="learn.html">全书目录</a><span>/</span>第 ${ch.number} 章</nav><h1>${heading(ch.title)}</h1><p class="hub-lead">${inline(ch.question)}</p></header>`;
+  const lead = `<header class="hub-head"><nav class="crumbs" aria-label="当前位置"><a href="learn.html">全书目录</a><span>/</span>第 ${ch.number} 章</nav><h1>${heading(ch.title)}</h1><p class="hub-lead">${inline(ch.question)}</p><a href="formula-4h.html#hour-${ch.number<=5?1:ch.number<=7?2:ch.number<=14?3:4}">已懂直觉，转到本组公式 →</a></header>`;
   const choices = part('sections','学一个概念',ch.sections.length+' 个小节',list(ch.sections),true) + part('problems','做一道习题',ch.problems.length+' 道习题',list(ch.problems));
   return page({title:'第 '+ch.number+' 章 · '+ch.title,main:`<div class="directory">${lead}<div class="directory-parts">${choices}</div></div>`,scripts:`<script>${revealHash}</script>`,footer:''});
 }
@@ -46,7 +46,7 @@ function index(chapters,content,page){
       statusText.textContent=found.length?'找到 '+found.length+' 项':'换个题号或关键词试试。';
     }field.addEventListener('input',runSearch);window.addEventListener('pageshow',runSearch);
   </script>`;
-  const intro='<header class="hub-head"><p class="eyebrow">Osborne–Rubinstein · 中级微观经济学</p><h1>全书随题图解</h1><p class="hub-lead">今天想弄懂哪个问题？</p></header>';
+  const intro='<header class="hub-head"><p class="eyebrow">Osborne–Rubinstein · 中级微观经济学</p><h1>全书随题图解</h1><p class="hub-lead">今天想弄懂哪个问题？</p><a href="formula-4h.html">转到 4h 速通公式版 →</a></header>';
   return page({title:'全书随题图解',main:`<div class="directory">${intro}${search}<div class="directory-parts" id="topics">${shelves}</div></div>`,scripts:script,footer:''});
 }
 module.exports={chapter,index};

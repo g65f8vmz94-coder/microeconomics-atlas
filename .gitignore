@@ -6,3 +6,6 @@ node_modules/
 .DS_Store
 .openai/
 *.zip
+
+# Optional scans used only by the local opening-film preview.
+local-preview-art/

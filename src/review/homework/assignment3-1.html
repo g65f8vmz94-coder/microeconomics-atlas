@@ -1,0 +1,76 @@
+<p><strong>题意。</strong> 偏好单调、连续且凸，给定参考消费束 <tex>x^*=(x_1^*,x_2^*)</tex>，定义达到至少与 <tex>x^*</tex> 同样好的生活水平所需的最低支出：</p>
+<div class="hw-equation"><tex>e(p,x^*)=\min_{x\succeq x^*,\,x\in\mathbb R_+^2}p\cdot x,
+\qquad p=(p_1,p_2)\gg0.</tex></div>
+<p>要求证明价格单调性和一次齐次性，再求 <tex>u(x)=x_1^\alpha x_2^\beta</tex>（<tex>\alpha,\beta&gt;0</tex>）的具体支出函数。</p>
+<p class="margin-note"><strong>起笔方向：固定“至少一样好”的消费束集合，比较不同价格下购买同一消费束的费用。</strong></p>
+<h3>（1）对每一种商品价格不下降</h3>
+<p><strong>解。</strong> 记</p>
+<div class="hw-equation"><tex>S(x^*)=\{x\in\mathbb R_+^2:x\succeq x^*\}.</tex></div>
+<p>这个集合只取决于偏好和 <tex>x^*</tex>，不随价格变化。令 <tex>p'_1\ge p_1</tex>、<tex>p'_2=p_2</tex>。对于任意 <tex>x\in S(x^*)</tex>，由于 <tex>x_1\ge0</tex>，</p>
+<div class="hw-equation"><tex>p'\cdot x=p\cdot x+(p'_1-p_1)x_1
+\ge p\cdot x\ge e(p,x^*).</tex></div>
+<p>对左端在 <tex>S(x^*)</tex> 上取最小值，得到</p>
+<div class="hw-equation"><tex>\boxed{e((p'_1,p_2),x^*)\ge e((p_1,p_2),x^*).}</tex></div>
+<p>同理，提高 <tex>p_2</tex> 也不会降低支出函数。</p>
+<p class="margin-note"><strong>关于“增函数”的严谨口径：这里的一般结论是弱递增，即不下降。</strong> 例如 <tex>u=x_1+x_2</tex>、目标效用为2、<tex>p_2=1</tex>，当 <tex>p_1&gt;1</tex> 时全买商品2，最低支出始终为2；提高 <tex>p_1</tex> 不会提高最低支出。若新价格下的最优束仍严格购买涨价商品，则上面的第一处不等式为严格，可得支出严格上升。</p>
+<h3>（2）价格的一次齐次性</h3>
+<p><strong>解。</strong> 对任意 <tex>\lambda&gt;0</tex>，</p>
+<div class="hw-equation"><tex>\begin{aligned}
+e(\lambda p,x^*)
+&amp;=\min_{x\in S(x^*)}(\lambda p)\cdot x\\
+&amp;=\min_{x\in S(x^*)}\lambda(p\cdot x)\\
+&amp;=\lambda\min_{x\in S(x^*)}p\cdot x\\
+&amp;=\boxed{\lambda e(p,x^*)}.
+\end{aligned}</tex></div>
+<p>第三个等号成立，因为 <tex>\lambda</tex> 是与选择变量 <tex>x</tex> 无关的正常数。所有价格同比例变化，不改变成本最小的消费组合，但把最低花费按同一比例放大。</p>
+<h3>（3）老师补充 一般参数的CD支出函数</h3>
+<p>设</p>
+<div class="hw-equation"><tex>u(x_1,x_2)=x_1^\alpha x_2^\beta,\qquad
+u^*=(x_1^*)^\alpha(x_2^*)^\beta,
+\quad \alpha,\beta&gt;0.</tex></div>
+<p>不预先假设 <tex>\alpha+\beta=1</tex>。对 <tex>u^*&gt;0</tex>，求解</p>
+<div class="hw-equation"><tex>\min_{x_1,x_2\ge0}p_1x_1+p_2x_2
+\quad\text{s.t.}\quad x_1^\alpha x_2^\beta\ge u^*.</tex></div>
+<p><strong>第一步：说明内点与约束取等号。</strong> 因 <tex>u^*&gt;0</tex>，任何可行束的两种商品数量都为正。若最优束的效用严格高于目标，把两种商品同时乘以一个略小于1的数，仍可达到目标且支出更低，矛盾。因此最优时</p>
+<div class="hw-equation"><tex>x_1^\alpha x_2^\beta=u^*.</tex></div>
+<p><strong>第二步：求最优比例。</strong> 采用对数约束，拉格朗日函数为</p>
+<div class="hw-equation"><tex>\mathcal L=p_1x_1+p_2x_2+
+\mu(\ln u^*-\alpha\ln x_1-\beta\ln x_2).</tex></div>
+<p>一阶条件：</p>
+<div class="hw-equation"><tex>p_1=\frac{\mu\alpha}{x_1},\qquad
+p_2=\frac{\mu\beta}{x_2}.</tex></div>
+<p>因而</p>
+<div class="hw-equation"><tex>\boxed{\frac{p_1x_1}{p_2x_2}=\frac{\alpha}{\beta}},
+\qquad
+x_2=\frac{\beta p_1}{\alpha p_2}x_1.</tex></div>
+<p><strong>第三步：代回效用约束。</strong> 得到补偿需求（希克斯需求）</p>
+<div class="hw-equation"><tex>h_1(p,u^*)=(u^*)^{\frac1{\alpha+\beta}}
+\left(\frac{\alpha p_2}{\beta p_1}\right)^{\frac{\beta}{\alpha+\beta}},</tex></div>
+<div class="hw-equation"><tex>h_2(p,u^*)=(u^*)^{\frac1{\alpha+\beta}}
+\left(\frac{\beta p_1}{\alpha p_2}\right)^{\frac{\alpha}{\alpha+\beta}}.</tex></div>
+<p><strong>第四步：计算最低支出。</strong> 由 <tex>p_1h_1/\alpha=p_2h_2/\beta</tex>，</p>
+<div class="hw-equation"><tex>\boxed{
+e(p,u^*)=(\alpha+\beta)
+\left(\frac{p_1}{\alpha}\right)^{\frac{\alpha}{\alpha+\beta}}
+\left(\frac{p_2}{\beta}\right)^{\frac{\beta}{\alpha+\beta}}
+(u^*)^{\frac1{\alpha+\beta}}.
+}</tex></div>
+<p>等价地，</p>
+<div class="hw-equation"><tex>\boxed{
+e(p,u^*)=
+\left[
+\frac{(\alpha+\beta)^{\alpha+\beta}}{\alpha^\alpha\beta^\beta}
+p_1^\alpha p_2^\beta u^*
+\right]^{\frac1{\alpha+\beta}}.
+}</tex></div>
+<p><strong>第五步：确认全局最小，而非只写一阶条件。</strong> 在约束边界上令 <tex>x_1=t&gt;0</tex>，目标化为</p>
+<div class="hw-equation"><tex>C(t)=p_1t+p_2(u^*)^{1/\beta}t^{-\alpha/\beta}.</tex></div>
+<p>有</p>
+<div class="hw-equation"><tex>C''(t)=p_2(u^*)^{1/\beta}\frac{\alpha}{\beta}
+\left(\frac{\alpha}{\beta}+1\right)t^{-\alpha/\beta-2}&gt;0.</tex></div>
+<p>且 <tex>t\to0^+</tex> 或 <tex>t\to\infty</tex> 时 <tex>C(t)\to\infty</tex>，所求驻点是唯一全局最小点。如果 <tex>u^*=0</tex>，原点可行且支出为0，故 <tex>e(p,0)=0</tex>。</p>
+<p>当 <tex>\alpha+\beta=1</tex> 时，上式才简化为</p>
+<div class="hw-equation"><tex>e(p,u^*)=\frac{p_1^\alpha p_2^\beta}{\alpha^\alpha\beta^\beta}u^*.</tex></div>
+<figure><img loading="lazy" src="assets/review-expenditure.png" alt="支出最小化"><figcaption>支出最小化 · 本站解题示意图</figcaption></figure>
+<p>图示取 <tex>u=x_1x_2</tex>、<tex>p_1=p_2=1</tex>、<tex>u^*=1</tex>。参考束 <tex>(2,0.5)</tex> 花费2.5，但 <tex>(1,1)</tex> 同样达到效用1，只需花费2。支出函数求的是达到目标效用的最低花费，不是固定原消费束后的购买成本。</p>
+<p class="margin-note"><strong>易漏步骤：</strong> 价格为正；单调性一般是弱不等式；齐次性的倍数 <tex>\lambda&gt;0</tex>；CD不能擅自令参数之和为1；说明全局最优。</p>

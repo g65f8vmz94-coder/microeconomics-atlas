@@ -8,9 +8,9 @@
 
 ## 市场入口
 
-从男孩身后望进集市，移动鼠标可以看见近处人物与远处拱廊的相对位移。在空白处停留片刻，会从二十章中抽出一张可拖动的模型图。每轮各章出现一次，六秒无操作后小图消散。手机轻点市场画面，键盘可选「随机看一张图」并用方向键调整。[进入市场](https://microeconomics-atlas-mingze.synb636.chatgpt.site/market)
+从开阔的通道望进集市，移动鼠标可以带动市场背景的轻微视差。在空白处停留片刻，会从二十章中抽出一张可拖动的模型图。每轮各章出现一次，六秒无操作后小图消散。手机轻点市场画面，键盘可选「随机看一张图」并用方向键调整。[进入市场](https://microeconomics-atlas-mingze.synb636.chatgpt.site/market)
 
-场景与人物是为本项目生成的两张独立插画。图线、坐标、标注和课程链接由 `src/cover.cjs` 生成，构图与视差分别在 `src/cover.css` 和 `src/cover.js`。分层响应指针的方式参考了 Parallax.js，场景标记连接到内容的方式参考了 Codrops 的交互商场地图。[分层视差示例](https://github.com/wagerfield/parallax/blob/master/examples/pages/hoveronly.html) · [Interactive 3D Mall Map](https://github.com/codrops/Interactive3DMallMap) · [指针图像与消散参考](https://github.com/codrops/ImageTrailEffects)
+市场场景是为本项目生成的插画。图线、坐标、标注和课程链接由 `src/cover.cjs` 生成，构图与视差分别在 `src/cover.css` 和 `src/cover.js`。分层响应指针的方式参考了 Parallax.js，场景标记连接到内容的方式参考了 Codrops 的交互商场地图。[分层视差示例](https://github.com/wagerfield/parallax/blob/master/examples/pages/hoveronly.html) · [Interactive 3D Mall Map](https://github.com/codrops/Interactive3DMallMap) · [指针图像与消散参考](https://github.com/codrops/ImageTrailEffects)
 
 ## 本地运行
 
@@ -48,3 +48,7 @@ npm run validate
 本仓库的原创程序、界面和原创讲解采用 [GNU AGPL-3.0-only](LICENSE)。修改后作为网站向他人提供时，应按该许可提供相应源码。第三方资源保留各自许可，见 [THIRD_PARTY.md](THIRD_PARTY.md)；本许可不覆盖原著或课堂课件。
 
 欢迎通过 Issue 报告模型、公式、来源或手机排版问题。提交修改时请保留原例与自主示例的来源区分，并附上能复现问题的条件。
+
+首页采用全视口片头，暗色市场中的课程标识转为英文和中文两幕满版封面，再加速翻过十张精选模型图，最后从纸上的市场拉近到「市场之中」全屏封面。封面使用市场场景，前景留出开阔的通道，桌面指针会轻微带动背景。可跳过、重播或在支持的浏览器中点击「全屏观看」；减少动态效果时直接进入市场。两条学习路线分别为 `learn.html`（生活例子理解版）与 `formula-4h.html`（4 个 60 分钟单元，含闭卷自测和条件核对）。速通入口还可查阅 90 节、76 条编号命题、6 条引理、151 道章末题及现已核对的课堂作业。章末题的条件、完整答卷和逐行旁注可直接展开。图版从现有课程模型构建，编号命题与课堂作业维护在 <code>src/review/</code>。首页右上角的「课程目录」通往 `catalog.html`，中英文课本链接在 `catalog.html#books`。
+
+常规 `node build.cjs` 即可复现公开网站的片头：两本教材的封面识别图随站提供，来源与许可单独列于 `THIRD_PARTY.md`，不属于原创代码的 AGPL 许可。片头的档案排版、刻度仪和扫光参考 [dsh-startup-screen](https://github.com/QIFANAI/dsh-startup-screen)，前后景视差参考 [dsh-plugin-wallpaper-engine](https://github.com/elysia395/dsh-wallpaper-engine)。

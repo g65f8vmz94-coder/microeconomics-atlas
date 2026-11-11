@@ -1,0 +1,57 @@
+<p><strong>题意。</strong> 两期各有收入 <tex>y&gt;0</tex>，借贷利率为 <tex>r&gt;0</tex>，预算集为</p>
+<div class="hw-equation"><tex>B(r,y)=\{(x_1,x_2)\ge0:(1+r)x_1+x_2\le(2+r)y\}.</tex></div>
+<p>需求满足WARP、总在预算线上选择，两期消费都是正常商品。令 <tex>r_2&gt;r_1</tex>，记</p>
+<div class="hw-equation"><tex>a=x(r_1,y),\qquad b=x(r_2,y).</tex></div>
+<p>当 <tex>x_1&gt;y</tex> 时借款，借款额为 <tex>x_1-y</tex>；当 <tex>x_1&lt;y</tex> 时储蓄，储蓄额为 <tex>y-x_1</tex>。</p>
+<p class="margin-note"><strong>起笔方向：两条预算线都过禀赋点 <tex>(y,y)</tex>；利率上升使斜率绝对值变大。借款者要引入补偿预算，储蓄者不转为借款可直接用WARP反证。</strong></p>
+<h3>（1）原来借款，利率上升后减少借款</h3>
+<p><strong>解。</strong> 假设 <tex>a_1&gt;y</tex>。旧选择满足</p>
+<div class="hw-equation"><tex>(1+r_1)a_1+a_2=(2+r_1)y.</tex></div>
+<p>把价格改为 <tex>(1+r_2,1)</tex>，并给予恰好购买旧束 <tex>a</tex> 的补偿财富</p>
+<div class="hw-equation"><tex>\widetilde w=(1+r_2)a_1+a_2.</tex></div>
+<p>新利率下真实财富为</p>
+<div class="hw-equation"><tex>w_2=(2+r_2)y.</tex></div>
+<p>两者之差是</p>
+<div class="hw-equation"><tex>\begin{aligned}
+\widetilde w-w_2
+&amp;=(1+r_2)a_1+a_2-(2+r_2)y\\
+&amp;=(r_2-r_1)(a_1-y)&gt;0.
+\end{aligned}</tex></div>
+<p>所以真实新预算比补偿预算财富更少。</p>
+<p>设 <tex>z</tex> 为补偿预算下的选择。下面先证明 <tex>z_1\le a_1</tex>。由于补偿后 <tex>a</tex> 可负担，若反而 <tex>z_1&gt;a_1</tex>，利用补偿预算等式可得</p>
+<div class="hw-equation"><tex>\begin{aligned}
+(1+r_1)z_1+z_2
+&amp;=\widetilde w-(r_2-r_1)z_1\\
+&amp;=(2+r_1)y+(r_2-r_1)(a_1-z_1)\\
+&amp;&lt;(2+r_1)y.
+\end{aligned}</tex></div>
+<p>这意味着 <tex>z</tex> 在旧预算内严格可负担，而旧预算选择 <tex>a</tex>；补偿预算中 <tex>a</tex> 可负担却选择 <tex>z</tex>，与WARP矛盾。故</p>
+<div class="hw-equation"><tex>z_1\le a_1.</tex></div>
+<p>再固定新价格 <tex>(1+r_2,1)</tex>，把财富从 <tex>\widetilde w</tex> 降至 <tex>w_2</tex>。由于日期1消费是正常商品，</p>
+<div class="hw-equation"><tex>b_1\le z_1\le a_1.</tex></div>
+<p>按课本“正常品”的恩格尔函数严格递增口径，<tex>\widetilde w&gt;w_2</tex> 给出 <tex>b_1&lt;z_1</tex>，故 <tex>b_1&lt;a_1</tex>。如果采用弱正常品口径，则只能主张不增加。</p>
+<p>因此，原借款额为 <tex>a_1-y&gt;0</tex>，新借款额为 <tex>\max\{b_1-y,0\}</tex>，满足</p>
+<div class="hw-equation"><tex>\boxed{\max\{b_1-y,0\}&lt;a_1-y}</tex></div>
+<p>（严格正常品口径）。当 <tex>b_1&lt;y</tex> 时，消费者转为储蓄者。</p>
+<p>补偿预算也可写为题目形式：取 <tex>\widetilde y=\widetilde w/(2+r_2)&gt;y</tex>，则 <tex>z=x(r_2,\widetilde y)</tex>，因此上述正常性比较仍在题目的需求函数定义域内。</p>
+<figure><img loading="lazy" src="assets/review-intertemporal.png" alt="借款者跨期预算"><figcaption>借款者跨期预算 · 本站解题示意图</figcaption></figure>
+<p>图取 <tex>y=1,r_1=0.1,r_2=0.6</tex>，用正常品偏好 <tex>u=x_1^{0.7}x_2^{0.3}</tex> 示意。<tex>a\to z</tex>：补偿价格变化使当期消费减少；<tex>z\to b</tex>：真实财富低于补偿财富，正常品需求进一步减少。图只帮助理解，证明适用于题设中的一般需求。</p>
+<h3>（2）原来储蓄，利率上升后不会转为借款</h3>
+<p><strong>解。</strong> 假设 <tex>a_1&lt;y</tex>。在新利率下计算旧束的费用：</p>
+<div class="hw-equation"><tex>\begin{aligned}
+(1+r_2)a_1+a_2
+&amp;=(2+r_2)y+(r_2-r_1)(a_1-y)\\
+&amp;&lt;(2+r_2)y.
+\end{aligned}</tex></div>
+<p>所以 <tex>a</tex> 在新预算内严格可负担。</p>
+<p>若消费者在新利率下反而借款，即 <tex>b_1&gt;y</tex>，则由新预算等式，</p>
+<div class="hw-equation"><tex>\begin{aligned}
+(1+r_1)b_1+b_2
+&amp;=(2+r_2)y-(r_2-r_1)b_1\\
+&amp;=(2+r_1)y+(r_2-r_1)(y-b_1)\\
+&amp;&lt;(2+r_1)y.
+\end{aligned}</tex></div>
+<p>所以 <tex>b</tex> 在旧预算内严格可负担。这就出现了：旧预算中同时买得起 <tex>a,b</tex> 却选 <tex>a</tex>；新预算中同时买得起 <tex>a,b</tex> 却选 <tex>b</tex>，与WARP矛盾。因此</p>
+<div class="hw-equation"><tex>\boxed{b_1\le y,}</tex></div>
+<p>即不会转为借款者。这一问实际上不需要正常品假设。</p>
+<p class="margin-note"><strong>易漏步骤：</strong> 利率上升既改变相对价格，也改变禀赋价值；不能把财富视为不变。第二问只要求“不转为借款”，并不要求证明储蓄额一定增加。</p>

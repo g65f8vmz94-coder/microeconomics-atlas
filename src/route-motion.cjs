@@ -2,7 +2,7 @@
 
 const css = `
 @view-transition { navigation: auto; }
-@media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce), (scripting: none) {
   @view-transition { navigation: none; }
 }
 @keyframes atlas-enter {
@@ -73,7 +73,7 @@ function install() {
     const chapter = /^learn-(\d+)$/.exec(slug);
     const unit = /^(?:learn-[sp]|lesson-)(\d+)-\d+$/.exec(slug);
     const insurance = slug === 'insurance-3-9';
-    if (chapter || unit || insurance || /^(index|about|exercises|learn)$/.test(slug)) {
+    if (chapter || unit || insurance || /^(index|book-en|book-zh|about|exercises|learn)$/.test(slug)) {
       return { base: path.slice(0, slash + 1), slug, depth: chapter ? 1 : unit || insurance ? 2 : 0,
         chapter: Number((chapter || unit)?.[1] || (insurance ? 3 : 0)) };
     }

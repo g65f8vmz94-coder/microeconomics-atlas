@@ -78,14 +78,15 @@ function answerTable(meta, unit, rowIndex) {
     : '<details class="guided-answer-data"><summary>对照数据表</summary>' + table + '</details>';
 }
 
-function answerSheet(meta, unit, rows) {
+function answerSheet(meta, unit, rows, {idPrefix = '', lessonURL = ''} = {}) {
   return rows.map((row, i) => {
-    const id = 'answer-row-' + (i + 1);
+    const id = idPrefix + 'answer-row-' + (i + 1);
     // The formula and the full argument belong on the paper, including a
     // prose-only counterexample or boundary case. The margin names the method.
     const note = typeof row.note === 'string' && row.note.trim() ? row.note : unit.frames[row.frame][2];
+    const sceneLink = lessonURL ? `<a href="${escape(lessonURL)}#${sceneId(row.frame)}">回看这一步的图解 ↗</a>` : compareLink(row, id);
     const part = row.label && row.label !== rows[i-1]?.label ? '<span class="guided-answer-part">' + row.label + '</span>' : '';
-    return `<article class="guided-answer-row" id="${id}" tabindex="-1"><div class="guided-answer-text" aria-label="答卷正文"><h3>${part}${heading(row.method)}</h3>${formula(row.tex)}<p>${inline(row.why)}</p>${answerTable(meta, unit, i)}</div><aside class="guided-answer-note" aria-label="思路旁注"><strong>思路</strong><p>${inline(note)}</p>${compareLink(row, id)}</aside></article>`;
+    return `<article class="guided-answer-row" id="${id}" tabindex="-1"><div class="guided-answer-text" aria-label="答卷正文"><h3>${part}${heading(row.method)}</h3>${formula(row.tex)}<p>${inline(row.why)}</p>${answerTable(meta, unit, i)}</div><aside class="guided-answer-note" aria-label="思路旁注"><strong>思路</strong><p>${inline(note)}</p>${sceneLink}</aside></article>`;
   }).join('');
 }
 

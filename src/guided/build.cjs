@@ -135,5 +135,6 @@ async function buildGuides(out,coverage) {
     write(chapterURL(ch.number),renderChapter(ch,content));
   }
   write('learn.html',renderIndex(chapters,content));
+  return {chapters, content};
 }
 module.exports={buildGuides,renderUnit,renderChapter,renderIndex};

@@ -1,0 +1,63 @@
+<p><strong>题目数据。</strong> 两个消费者最多消费2单位，生产成本为0。</p>
+<div class="table-wrap"><table><thead><tr><th>数量 <tex>q</tex></th><th><tex>V^1(q)</tex></th><th><tex>MV^1(q)</tex></th><th><tex>V^2(q)</tex></th><th><tex>MV^2(q)</tex></th></tr></thead><tbody><tr><td>0</td><td>0</td><td>—</td><td>0</td><td>—</td></tr>
+<tr><td>1</td><td>12</td><td>12</td><td>10</td><td>10</td></tr>
+<tr><td>2</td><td>19</td><td>7</td><td>13</td><td>3</td></tr></tbody></table></div>
+<p>消费者选择使“总价值减总支付”最大的方案，也可以选择不买。下文按题目第（3）问指定的选择处理无差异：允许消费者在多个最优选项中选出题目所列方案。</p>
+<h3>（1）统一单位价格</h3>
+<p><strong>解。</strong> 消费者1的两单位边际价值为12、7，消费者2的为10、3。按单价 <tex>p</tex> 分段：</p>
+<div class="table-wrap"><table><thead><tr><th>单位价格</th><th>消费者1数量</th><th>消费者2数量</th><th>总销量</th><th>利润</th></tr></thead><tbody><tr><td><tex>0\le p\le3</tex></td><td>2</td><td>2</td><td>4</td><td><tex>4p</tex></td></tr>
+<tr><td><tex>3&lt;p\le7</tex></td><td>2</td><td>1</td><td>3</td><td><tex>3p</tex></td></tr>
+<tr><td><tex>7&lt;p\le10</tex></td><td>1</td><td>1</td><td>2</td><td><tex>2p</tex></td></tr>
+<tr><td><tex>10&lt;p\le12</tex></td><td>1</td><td>0</td><td>1</td><td><tex>p</tex></td></tr>
+<tr><td><tex>p&gt;12</tex></td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table></div>
+<p>各段利润随价格增加而增加，只需比较上端点：</p>
+<div class="hw-equation"><tex>\pi(3)=12,\quad \pi(7)=21,\quad
+\pi(10)=20,\quad \pi(12)=12.</tex></div>
+<p>所以</p>
+<div class="hw-equation"><tex>\boxed{p^*=7,\quad (q_1,q_2)=(2,1),\quad\pi^*=21.}</tex></div>
+<p>核验：价格7时，消费者1购买1单位和2单位的净效用均为5；消费者2购买1单位净效用3，购买2单位净效用 <tex>13-14=-1</tex>。故消费者1取2单位、消费者2取1单位是与最优化相容的选择。</p>
+<h3>（2）只提供一种套餐 <tex>(q,m)</tex></h3>
+<p><strong>解。</strong> <tex>m</tex> 是整个套餐总价。逐一检查 <tex>q=1,2</tex>：</p>
+<p>若 <tex>q=1</tex>：</p>
+<p>- <tex>m\le10</tex>，两人都买，最高收入 <tex>2\times10=20</tex>；</p>
+<p>- <tex>10&lt;m\le12</tex>，只有消费者1买，最高收入12。</p>
+<p>若 <tex>q=2</tex>：</p>
+<p>- <tex>m\le13</tex>，两人都买，最高收入 <tex>2\times13=26</tex>；</p>
+<p>- <tex>13&lt;m\le19</tex>，只有消费者1买，最高收入19。</p>
+<p>所以</p>
+<div class="hw-equation"><tex>\boxed{(q,m)=(2,13),\qquad\pi^*=26.}</tex></div>
+<h3>（3）证明菜单 <tex>\{(1,10),(2,17)\}</tex> 最优</h3>
+<p><strong>第一步：验证参与约束与激励约束。</strong></p>
+<div class="table-wrap"><table><thead><tr><th>消费者</th><th>不购买</th><th>选 <tex>(1,10)</tex></th><th>选 <tex>(2,17)</tex></th></tr></thead><tbody><tr><td>1</td><td>0</td><td><tex>12-10=2</tex></td><td><tex>19-17=2</tex></td></tr>
+<tr><td>2</td><td>0</td><td><tex>10-10=0</tex></td><td><tex>13-17=-4</tex></td></tr></tbody></table></div>
+<p>消费者1可以最优地选择 <tex>(2,17)</tex>，消费者2可以最优地选择 <tex>(1,10)</tex>。生产成本为0，因此利润为</p>
+<div class="hw-equation"><tex>\boxed{\pi=17+10=27.}</tex></div>
+<p><strong>第二步：证明任何其他菜单都不能获得更高利润。</strong></p>
+<p>设两个消费者实际选择的数量与支付分别为 <tex>(q_1,m_1)</tex>、<tex>(q_2,m_2)</tex>。两条激励约束为</p>
+<div class="hw-equation"><tex>V^1(q_1)-m_1\ge V^1(q_2)-m_2,</tex></div>
+<div class="hw-equation"><tex>V^2(q_2)-m_2\ge V^2(q_1)-m_1.</tex></div>
+<p>相加得到</p>
+<div class="hw-equation"><tex>V^1(q_1)-V^2(q_1)\ge V^1(q_2)-V^2(q_2).</tex></div>
+<p>而两类型的价值差在 <tex>q=0,1,2</tex> 时分别为 <tex>0,2,6</tex>，严格递增。因此</p>
+<div class="hw-equation"><tex>q_1\ge q_2.</tex></div>
+<p>所有可能的数量组合仅有</p>
+<div class="hw-equation"><tex>(0,0),(1,0),(2,0),(1,1),(2,1),(2,2).</tex></div>
+<p>它们的利润上界如下：</p>
+<div class="table-wrap"><table><thead><tr><th><tex>(q_1,q_2)</tex></th><th>上界依据</th><th>利润上界</th></tr></thead><tbody><tr><td><tex>(0,0)</tex></td><td>不成交</td><td>0</td></tr>
+<tr><td><tex>(1,0)</tex></td><td>消费者1的参与约束 <tex>m_1\le12</tex></td><td>12</td></tr>
+<tr><td><tex>(2,0)</tex></td><td>消费者1的参与约束 <tex>m_1\le19</tex></td><td>19</td></tr>
+<tr><td><tex>(1,1)</tex></td><td>同样数量支付必须相同，消费者2最多支付10</td><td>20</td></tr>
+<tr><td><tex>(2,2)</tex></td><td>同样数量支付必须相同，消费者2最多支付13</td><td>26</td></tr>
+<tr><td><tex>(2,1)</tex></td><td>低类型参与约束和高类型激励约束</td><td>27</td></tr></tbody></table></div>
+<p>最后一行详细计算为：</p>
+<div class="hw-equation"><tex>m_2\le V^2(1)=10,</tex></div>
+<div class="hw-equation"><tex>19-m_1\ge12-m_2
+\quad\Longrightarrow\quad m_1\le m_2+7.</tex></div>
+<p>因此</p>
+<div class="hw-equation"><tex>m_1+m_2\le2m_2+7\le27.</tex></div>
+<p>题给菜单达到这一上界，所以是全局最优菜单。</p>
+<p class="margin-note"><strong>无差异选择说明。</strong> 题给菜单让消费者1对两套餐无差异，消费者2对小套餐与不购买无差异。要取得利润恰好27，须采用题目指定的最优选择。若要求两人的选择都严格唯一，可用</p>
+<div class="hw-equation"><tex>\{(1,10-\varepsilon),(2,17-2\varepsilon)\},
+\qquad0&lt;\varepsilon&lt;1.</tex></div>
+<p>此时消费者1严格选大套餐，消费者2严格选小套餐，利润为 <tex>27-3\varepsilon</tex>，可任意接近27。不能把原菜单写成“两个消费者都会严格选择指定套餐”。</p>
+<p class="margin-note"><strong>易漏步骤：</strong> 第（1）问的7是单位价格；第（2）（3）问的13、17是套餐总价；验证27可实现之后，还要证明所有其他菜单利润不超过27。</p>

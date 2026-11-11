@@ -1,0 +1,62 @@
+<p>中文版第82页（PDF第91页）的偏好表为：</p>
+<div class="table-wrap"><table><thead><tr><th>人</th><th>从最喜欢到最不喜欢</th></tr></thead><tbody><tr><td>1</td><td><tex>B\succ_1 C\succ_1 D\succ_1 A</tex></td></tr>
+<tr><td>2</td><td><tex>B\succ_2 D\succ_2 A\succ_2 C</tex></td></tr>
+<tr><td>3</td><td><tex>A\succ_3 B\succ_3 C\succ_3 D</tex></td></tr>
+<tr><td>4</td><td><tex>B\succ_4 C\succ_4 A\succ_4 D</tex></td></tr></tbody></table></div>
+<p>以下将配置记为 <tex>(a(1),a(2),a(3),a(4))</tex>，四个位置始终对应人1、2、3、4，不能随权力顺序变动。</p>
+<h3>（1）一共有多少种房屋配置</h3>
+<p><strong>解。</strong> 四间不同房屋一一分给四个不同的人，故有</p>
+<div class="hw-equation"><tex>\boxed{4!=24}</tex></div>
+<p>种可行配置。这里按教材“最终配置”的定义，要求一人一房、一房一人；允许多个人占同一房屋的普通映射不是可行配置。</p>
+<h3>（2）按全部24种权力排序计算均衡</h3>
+<p><strong>解。</strong> 固定任意权力全序，按从强到弱执行序贯独裁：每个人从尚未分配的房屋中选最喜欢的一间。这产生该权力顺序下的唯一丛林均衡。</p>
+<p>例如 <tex>2\triangleright1\triangleright4\triangleright3</tex> 时：</p>
+<p>1. 人2先选 <tex>B</tex>；</p>
+<p>2. 人1从 <tex>A,C,D</tex> 中选 <tex>C</tex>；</p>
+<p>3. 人4从 <tex>A,D</tex> 中选 <tex>A</tex>；</p>
+<p>4. 人3获得 <tex>D</tex>。</p>
+<p>按人1、2、3、4的固定顺序记录，均衡为 <tex>(C,B,D,A)</tex>。</p>
+<p>全部排序如下：</p>
+<div class="table-wrap"><table><thead><tr><th>编号</th><th>权力从强到弱</th><th>均衡 <tex>(a(1),a(2),a(3),a(4))</tex></th></tr></thead><tbody><tr><td>1</td><td><tex>1\triangleright2\triangleright3\triangleright4</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>2</td><td><tex>1\triangleright2\triangleright4\triangleright3</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>3</td><td><tex>1\triangleright3\triangleright2\triangleright4</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>4</td><td><tex>1\triangleright3\triangleright4\triangleright2</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>5</td><td><tex>1\triangleright4\triangleright2\triangleright3</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>6</td><td><tex>1\triangleright4\triangleright3\triangleright2</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>7</td><td><tex>2\triangleright1\triangleright3\triangleright4</tex></td><td><tex>(C,B,A,D)</tex></td></tr>
+<tr><td>8</td><td><tex>2\triangleright1\triangleright4\triangleright3</tex></td><td><tex>(C,B,D,A)</tex></td></tr>
+<tr><td>9</td><td><tex>2\triangleright3\triangleright1\triangleright4</tex></td><td><tex>(C,B,A,D)</tex></td></tr>
+<tr><td>10</td><td><tex>2\triangleright3\triangleright4\triangleright1</tex></td><td><tex>(D,B,A,C)</tex></td></tr>
+<tr><td>11</td><td><tex>2\triangleright4\triangleright1\triangleright3</tex></td><td><tex>(D,B,A,C)</tex></td></tr>
+<tr><td>12</td><td><tex>2\triangleright4\triangleright3\triangleright1</tex></td><td><tex>(D,B,A,C)</tex></td></tr>
+<tr><td>13</td><td><tex>3\triangleright1\triangleright2\triangleright4</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>14</td><td><tex>3\triangleright1\triangleright4\triangleright2</tex></td><td><tex>(B,D,A,C)</tex></td></tr>
+<tr><td>15</td><td><tex>3\triangleright2\triangleright1\triangleright4</tex></td><td><tex>(C,B,A,D)</tex></td></tr>
+<tr><td>16</td><td><tex>3\triangleright2\triangleright4\triangleright1</tex></td><td><tex>(D,B,A,C)</tex></td></tr>
+<tr><td>17</td><td><tex>3\triangleright4\triangleright1\triangleright2</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>18</td><td><tex>3\triangleright4\triangleright2\triangleright1</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>19</td><td><tex>4\triangleright1\triangleright2\triangleright3</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>20</td><td><tex>4\triangleright1\triangleright3\triangleright2</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>21</td><td><tex>4\triangleright2\triangleright1\triangleright3</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>22</td><td><tex>4\triangleright2\triangleright3\triangleright1</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>23</td><td><tex>4\triangleright3\triangleright1\triangleright2</tex></td><td><tex>(C,D,A,B)</tex></td></tr>
+<tr><td>24</td><td><tex>4\triangleright3\triangleright2\triangleright1</tex></td><td><tex>(C,D,A,B)</tex></td></tr></tbody></table></div>
+<p>去重后仅有5种：</p>
+<div class="table-wrap"><table><thead><tr><th>不同的均衡配置</th><th>对应权力排序数</th></tr></thead><tbody><tr><td><tex>(B,D,A,C)</tex></td><td>8</td></tr>
+<tr><td><tex>(C,B,A,D)</tex></td><td>3</td></tr>
+<tr><td><tex>(C,B,D,A)</tex></td><td>1</td></tr>
+<tr><td><tex>(D,B,A,C)</tex></td><td>4</td></tr>
+<tr><td><tex>(C,D,A,B)</tex></td><td>8</td></tr>
+<tr><td>合计</td><td>24</td></tr></tbody></table></div>
+<h3>（3）为什么帕累托稳定配置恰好也是5种</h3>
+<p><strong>解。</strong> 需同时使用两个方向：</p>
+<p>1. 任何丛林均衡都是帕累托稳定的，所以列出的5种配置全部稳定。</p>
+<p>2. 任何帕累托稳定配置都能由某个权力全序的序贯独裁实现。24种权力全序已经全部枚举，因此不存在遗漏在表外的稳定配置。</p>
+<p>第二个方向的理由是：稳定配置中至少有一人已经得到最喜欢的房屋，否则“每个人指向自己最喜欢房屋的持有者”的有限有向图中存在环，沿环换房使环上所有人严格变好，违反稳定性。把该人放在权力顺序第一位，再删去他与其房屋；剩余配置仍稳定，否则剩余人之间的改进也会改进原配置。递归即可构造整个权力顺序。</p>
+<p>所以</p>
+<div class="hw-equation"><tex>\boxed{
+\text{可行房屋配置有24种；权力全序有24种；}
+\quad\text{不同均衡配置有5种；Pareto稳定配置恰好5种。}
+}</tex></div>
+<p>另外19种配置都不是帕累托稳定配置。</p>
+<p class="margin-note"><strong>易漏步骤：</strong> 不能把24种权力排序当作24种不同均衡；同一配置会由不同排序实现。也不能仅凭“均衡都稳定”就断言只有5种稳定配置，还必须用“每个稳定配置都能由某种权力顺序实现”排除遗漏。</p>
