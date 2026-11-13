@@ -1,28 +1,28 @@
   <div class="manuscript">
     <h3>列出两种状态的财富</h3>
-    <div class="answer-line" id="proof-states" tabindex="-1"><div>设 <tex>0&lt;p&lt;1</tex>，<tex>D&gt;0</tex>、<tex>\lambda&gt;0</tex>，可选保费 <tex>x\ge0</tex>，全保可行。记平安、出险时的净财富分别为
+    <div class="answer-line" id="proof-states" tabindex="-1"><div>设 <tex>0&lt;p&lt;1</tex>，<tex>D&gt;0</tex>、<tex>\lambda&gt;0</tex>，可选保费 <tex>x\ge0</tex>（且假定全保保费可行）。不论是否出险都须先交保费 <tex>x</tex>，故平安、出险时的净财富分别为
       <div class="equations"><tex>W_0=w-x,</tex><tex>W_1=w-D-x+\lambda x.</tex></div></div>
-      <p class="aside">保费两种状态都要交，损失和赔款只记在出险那一栏。<a href="#check-states">核对两笔余额 ↗</a></p></div>
-    <div class="answer-line"><div>设 <tex>v</tex> 为财富的效用函数，投保的期望效用为
-      <div class="equations"><tex>U(x)=(1-p)v(W_0)+pv(W_1).</tex></div></div><p class="aside">先算每种结果的效用，再按概率加权。风险厌恶对应凹函数。</p></div>
-    <h3>（a）公平价下，全保最优</h3>
-    <div class="answer-line" id="proof-fair" tabindex="-1"><div>由 <tex>p\lambda=1</tex>，对任意可行的 <tex>x</tex>，都有
-      <div class="equations"><tex>E[W]=(1-p)W_0+pW_1</tex><tex>=w-pD+(p\lambda-1)x=w-pD.</tex></div></div><p class="aside">每多交 1 元，就多得 1 元期望赔款，所以各种保费对应同一均值。<a href="#check-fair">核对共同均值 ↗</a></p></div>
-    <div class="answer-line"><div>由 <tex>v</tex> 的凹性和詹森不等式，
-      <div class="equations"><tex>U(x)=E[v(W)]\le v(E[W])</tex><tex>=v(w-pD).</tex></div></div><p class="aside">右端与保费无关。找到能达到这个上界的保费，就证明了最优性。</p></div>
-    <div class="answer-line"><div>取全保保费 <tex>x_F=\frac{D}{\lambda}=pD</tex>，则
-      <div class="equations"><tex>W_0=W_1=w-pD.</tex></div>故 <tex>U(x_F)=v(w-pD)</tex>，全保最优。若 <tex>v</tex> 严格凹，则此解唯一。</div><p class="aside">赔款等于损失时，两种财富重合。严格凹时，任何不同的两种财富都会使上一步取严格不等号。</p></div>
-    <h3>（b）有加价时，最优保额低于损失</h3>
-    <div class="answer-line"><div>设 <tex>p\lambda&lt;1</tex>。在严格风险厌恶下，<tex>v</tex> 严格凹。取可微的财富效用，且全保时 <tex>v'(W_F)&gt;0</tex>，其中
-      <div class="equations"><tex>x_F=\frac{D}{\lambda},\qquad W_F=w-x_F.</tex></div></div><p class="aside">全保使两种财富相等。可微和正边际效用是下面判断严格方向用到的条件。</p></div>
-    <div class="answer-line"><div>对保费求导，由链式法则得
-      <div class="equations"><tex>U'(x)=-(1-p)v'(W_0)</tex><tex>\hphantom{U'(x)}{}+p(\lambda-1)v'(W_1).</tex></div></div><p class="aside">多交 1 元，平安时少 1 元，出险时多领 <tex>\lambda</tex> 元、也多交 1 元，净增 <tex>\lambda-1</tex> 元。</p></div>
-    <div class="answer-line" id="proof-slope" tabindex="-1"><div>在 <tex>x_F</tex> 处代入 <tex>W_0=W_1=W_F</tex>，得
-      <div class="equations"><tex>U'(x_F)=(p\lambda-1)v'(W_F)&lt;0.</tex></div>因此，对充分小的 <tex>\varepsilon&gt;0</tex>，有 <tex>U(x_F-\varepsilon)&gt;U(x_F)</tex>。</div><p class="aside">斜率是沿着增加保费的方向算的。反向少交一点，效用就会上升。<a href="#check-slope">核对全保点的斜率 ↗</a></p></div>
-    <div class="answer-line"><div>两种财富都是 <tex>x</tex> 的仿射函数，故 <tex>U</tex> 凹。对一切可行的 <tex>x&gt;x_F</tex>，切线上界给出
+      <p class="aside">保费在两种状态都要扣一次，所以出险余额是本金减损失、再减保费、最后加赔款。<a href="#check-states">核对两笔余额 ↗</a></p></div>
+    <div class="answer-line"><div>设偏好由伯努利效用函数 <tex>v</tex> 表示，则选择保费 <tex>x</tex> 的期望效用为
+      <div class="equations"><tex>U(x)=(1-p)v(W_0)+pv(W_1).</tex></div></div><p class="aside">先算两种状态各自财富的效用，再按概率加权；风险厌恶对应 <tex>v</tex> 为凹函数。</p></div>
+    <h3>（a）公平价下，全保是一个最优解</h3>
+    <div class="answer-line" id="proof-fair" tabindex="-1"><div>由期望利润为零得 <tex>p\lambda=1</tex>。对任意可行的保费 <tex>x</tex>，期望财富为
+      <div class="equations"><tex>E[W]=(1-p)W_0+pW_1</tex><tex>=w-pD+(p\lambda-1)x=w-pD.</tex></div></div><p class="aside">因为每多交 1 元保费，期望赔款正好增加 <tex>p\lambda=1</tex> 元，所以均值与保费 <tex>x</tex> 无关。<a href="#check-fair">核对共同均值 ↗</a></p></div>
+    <div class="answer-line"><div>风险厌恶蕴含 <tex>v</tex> 为凹函数，由詹森不等式（Jensen's inequality）得
+      <div class="equations"><tex>U(x)=E[v(W)]\le v(E[W])</tex><tex>=v(w-pD).</tex></div></div><p class="aside">不等式右边是不随 <tex>x</tex> 变化的常数上界：谁能取到它，谁就是最优。</p></div>
+    <div class="answer-line"><div>取全额保险保费 <tex>x_F=\frac{D}{\lambda}=pD</tex>，则赔款 <tex>\lambda x_F=D</tex>，两状态财富相等：
+      <div class="equations"><tex>W_0=W_1=w-pD.</tex></div>故 <tex>U(x_F)=v(w-pD)</tex> 达到上述上界，全保最优。若 <tex>v</tex> 严格凹（严格风险厌恶），由詹森严格不等式知唯一最优。</div><p class="aside">教材第（a）问只给“风险厌恶”故全保为最优解之一；加严格凹性后其他使 <tex>W_0\neq W_1</tex> 的保费严格更差，唯一性才成立。</p></div>
+    <h3>（b）有加价时，最优保额严格低于损失</h3>
+    <div class="answer-line"><div>设 <tex>p\lambda&lt;1</tex>。严格风险厌恶要求 <tex>v</tex> 严格凹；同时补充可微且全保财富处边际效用为正 <tex>v'(W_F)&gt;0</tex>，其中全保点记为
+      <div class="equations"><tex>x_F=\frac{D}{\lambda},\qquad W_F=w-x_F.</tex></div></div><p class="aside">只有“全保点两边财富相同”还不够，还需知道钱多一点更让人开心（<tex>v'&gt;0</tex>），下面才好判断导数正负。</p></div>
+    <div class="answer-line"><div>按链式法则对保费 <tex>x</tex> 求导，得
+      <div class="equations"><tex>U'(x)=-(1-p)v'(W_0)</tex><tex>\hphantom{U'(x)}{}+p(\lambda-1)v'(W_1).</tex></div></div><p class="aside">多交 1 元保费：平安时净少 1 元；出险时多领 <tex>\lambda</tex> 元但也多交 1 元，故净变化是 <tex>\lambda-1</tex>。</p></div>
+    <div class="answer-line" id="proof-slope" tabindex="-1"><div>在全保点 <tex>x_F</tex> 处 <tex>W_0=W_1=W_F</tex>，两个边际效用相等可提取公因式：
+      <div class="equations"><tex>U'(x_F)=(p\lambda-1)v'(W_F)&lt;0.</tex></div>故对充分小的 <tex>\varepsilon&gt;0</tex>，有 <tex>U(x_F-\varepsilon)&gt;U(x_F)</tex>，说明全保不是最优。</div><p class="aside">因 <tex>p\lambda-1&lt;0</tex> 且 <tex>v'(W_F)&gt;0</tex>，导数严格为负，说明少买一点点效用就严格上升。<a href="#check-slope">核对全保点的斜率 ↗</a></p></div>
+    <div class="answer-line"><div>由于 <tex>W_0,W_1</tex> 均为 <tex>x</tex> 的仿射函数且 <tex>v</tex> 凹，合成函数 <tex>U(x)</tex> 在可行区间上为凹函数。对任意可行 <tex>x&gt;x_F</tex>，凹函数切线上界给出
       <div class="equations"><tex>U(x)\le U(x_F)+U'(x_F)(x-x_F)</tex><tex>&lt;U(x_F).</tex></div>
-      故任何最优解满足 <tex>0\le x^*&lt;x_F</tex>，即 <strong><tex>\lambda x^*&lt;D</tex></strong>。</div><p class="aside">前一行排除全保，这一行排除超额保险。最优保费可以为零。</p></div>
+      结合前一步排除 <tex>x_F</tex> 本身，任何最优保费必满足 <tex>0\le x^*&lt;x_F</tex>，即 <strong><tex>\lambda x^*&lt;D</tex></strong>。</div><p class="aside">注意凹函数上界把所有超额投保 <tex>x&gt;x_F</tex> 一次性排除，且角点零保险 <tex>x^*=0</tex> 也是允许的。</p></div>
   </div>
-  <details class="condition"><summary>第二问为什么要写明效用条件？</summary>
-  <p>原题写明严格风险厌恶。若只要求严格凹，可取 <tex>v(z)=-z^2</tex>。令 <tex>w=10</tex>、<tex>D=2</tex>、<tex>p=1/5</tex>、<tex>\lambda=4</tex>，则 <tex>p\lambda=4/5&lt;1</tex>。代入得 <tex>U'(x)=(32-26x)/5</tex>，最优保费为 <tex>16/13</tex>，赔款为 <tex>64/13&gt;2</tex>。这个例子中，增加财富会降低效用。</p>
+  <details class="condition"><summary>第二问为什么必须补充“效用随财富递增（v' > 0）”？</summary>
+  <p>教材对风险厌恶的定义只要求优选期望值而非随机彩票（对应凹效用 <tex>v</tex>），不一定强制财富越多越好。若取严格凹但递减的 <tex>v(z)=-z^2</tex>（<tex>z&gt;0</tex>），令 <tex>w=10</tex>、<tex>D=2</tex>、<tex>p=\frac{1}{5}</tex>、<tex>\lambda=4</tex>（<tex>p\lambda=\frac{4}{5}&lt;1</tex>），求导得 <tex>U'(x)=\frac{32-26x}{5}</tex>，最优解反而落在 <tex>x^*=\frac{16}{13}</tex>，赔款 <tex>\lambda x^*=\frac{64}{13}&gt;2</tex>（超额保险）。因此必须明确财富效用递增，该结论才成立。</p>
   <a href="lesson-3-5.html?case=p9&amp;phase=0">查看原题效用曲线和反例 ↗</a></details>

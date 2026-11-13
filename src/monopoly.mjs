@@ -160,12 +160,12 @@ export function menuTeachingM(z,step=0){
  const quantities=[z.qstar,z.qstar,z.qstar*.55,z.qstar,z.qstar],markups=[.12,0,0,0,0];
  const lerp=a=>a[i]+(a[Math.min(i+1,4)]-a[i])*t,q=lerp(quantities),ps=z.prices(q),ml=ps.ml,mh=ps.mh+lerp(markups),outcome=menuOutcomeM(z,q,ml,mh,'seller');
  const titles=['大桶豆浆太贵，顾客会怎么选','降价到爱喝豆浆的人愿意买大桶','缩小小桶，少让出一些好处','回到本例的分离菜单','老太太还要比较另外两种卖法'];
- const text=[
-  `老太太卖两桶豆浆：小桶${num(q)}升、${num(ml)}元；大桶1升、${num(mh)}元。爱喝豆浆的顾客也会选小桶：大桶太贵，老太太可没法强迫他买大桶。`,
-  `老太太把大桶降到${num(mh)}元。爱喝豆浆的顾客觉得大小桶一样划算；另一位顾客觉得买小桶和不买一样。这里假设他们无差异时选让老太太收入更高的方案。`,
-  `老太太把小桶缩到${num(q)}升。爱喝豆浆的顾客若改买小桶，能得到的好处降到${num(outcome.rent)}元；但另一位顾客的桶也变小了，老太太能收的钱会受影响。`,
-  `把小桶调回${num(q)}升，本例两桶套餐的收入是${num(z.separate)}元。爱喝豆浆的顾客仍留下${num(outcome.rent)}元好处，这就是这里的信息租金。`,
-  `老太太还得比较：只卖给爱喝豆浆的人，收入${num(z.high)}元；只卖一种桶给两人，收入${num(z.pool)}元；两桶分开卖，收入${num(z.separate)}元。本例第三种最好，换一组顾客就不一定了。`
+  const text=[
+  `老太太卖两桶豆浆：小桶 ${num(q)} 升收 ${num(ml)} 元（低类型估值 V_L(${num(q)})=${num(ml)} 元），大桶 1 升收 ${num(mh)} 元。爱喝豆浆的顾客 1 对大桶估值 ${num(z.VH(1))} 元、对小桶估值 ${num(z.VH(q))} 元：买小桶可净剩 ${num(z.VH(q)-ml)} 元，买大桶却只剩 ${num(z.VH(1)-mh)} 元，于是改买小桶。`,
+  `大桶降到 ${num(mh)}=${num(z.VH(1))}−${num(z.VH(q)-ml)} 元。此时爱喝豆浆的顾客买大桶净剩 ${num(z.VH(1)-mh)} 元，与买小桶完全相同；低类型买小桶净得 ${num(z.VL(q)-ml)} 元、不买也是 0。按“无差异选让阿姨收入较高项”的约定，两人各选一档。`,
+  `把小桶缩到 ${num(q)} 升、价压到 V_L(${num(q)})=${num(ml)} 元。爱喝豆浆的顾客改买小桶只能多剩 ${num(outcome.rent)} 元，大桶可涨到 ${num(mh)} 元；但低类型本身肯为小桶出的钱也同时减少了，需要在 V_H(1)+2V_L(q)−V_H(q) 里权衡。`,
+  `调回最赚钱的小桶 q*=${num(q)} 升（收 V_L=${num(ml)} 元）和大桶 1 升（收 ${num(mh)} 元），总收入达到 V_H(1)+2V_L(q*)−V_H(q*)=${num(z.separate)} 元；高类型拿走的信息租金为 V_H(q*)−V_L(q*)=${num(outcome.rent)} 元。`,
+  `求出分离候选还不算完，必须与另外两种单档做法比总收入：只卖给爱喝豆浆的人收 V_H(1)=${num(z.high)} 元；同一桶两人都买收 2V_L(1)=${num(z.pool)} 元；两桶分卖收 ${num(z.separate)} 元。本例分卖最高，但换参数可能倒过来。`
  ];
  const changing=t>1e-9;
  return {phase,q,ml,mh,outcome,title:changing?'老太太正在调整豆浆菜单':titles[i],narration:changing?`小桶${num(q)}升、${num(ml)}元，大桶${num(mh)}元。两位顾客会把大小桶和不买都比较一遍，图上的结果随当前菜单重算。`:text[i]};

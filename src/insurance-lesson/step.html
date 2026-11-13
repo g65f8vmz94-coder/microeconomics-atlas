@@ -16,14 +16,14 @@
         <article class="account safe"><h3><i aria-hidden="true"></i>平安无事</h3>
           <div class="balance"><strong data-field="safe">{{safe}}</strong> 元</div>
           <div class="bar" aria-hidden="true"><i data-bar="safe" style="width:{{safePercent}}%"></i></div>
-          <p class="cashline"><span>交保费后</span><b data-field="safe">{{safe}}</b></p>
+          <p class="cashline"><span>本金 100 − 保费</span><b data-field="safe">{{safe}}</b></p>
           <p class="cashline"><span>保险赔款</span><b>0</b></p>
           <p class="delta" data-field="safeDelta">{{safeDelta}}</p>
         </article>
         <article class="account accident"><h3><i aria-hidden="true"></i>手机摔坏</h3>
           <div class="balance"><strong data-field="accident">{{accident}}</strong> 元</div>
           <div class="bar" aria-hidden="true"><i data-bar="own" style="width:{{ownPercent}}%"></i><i class="payout" data-bar="payout" style="width:{{payoutPercent}}%"></i></div>
-          <p class="cashline"><span>付修理费后</span><b data-field="ownAfterLoss">{{ownAfterLoss}}</b></p>
+          <p class="cashline"><span>扣修理费与保费后</span><b data-field="ownAfterLoss">{{ownAfterLoss}}</b></p>
           <p class="cashline"><span>保险赔款</span><b data-field="payout">{{payout}}</b></p>
           <p class="delta" data-field="accidentDelta">{{accidentDelta}}</p>
         </article>
