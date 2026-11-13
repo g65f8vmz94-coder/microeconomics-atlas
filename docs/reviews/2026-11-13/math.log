@@ -1,0 +1,7 @@
+{
+  passed: true,
+  checks: 10243,
+  semanticFixtures: 540,
+  selfContained: 829,
+  uniqueScripts: 895
+}

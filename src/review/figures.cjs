@@ -15,7 +15,7 @@ function deviation(){return frame(line(270,55,140,135,red)+line(270,55,390,135)+
 // Each item is traced to a figure actually used by the primary textbook.
 const plates={
  '3.5':{number:'3.2',page:40,draw:risk,caption:'凹性让确定均值的效用不低于彩票的期望效用。图中弦与加权点补示命题 3.3 的证明：$v(E(p))\\ge\\sum_z p(z)v(z)$。'},
- '5.1':{number:'5.1',page:58,draw:budget,caption:'横、纵截距分别是 $w/p_1$、$w/p_2$；边界斜率是 $-p_1/p_2$。阴影连同边界组成预算集。'},
+ '5.1':{number:'5.1',page:58,draw:budget,caption:'横、纵截距分别是 $\\frac{w}{p_1}$、$\\frac{w}{p_2}$；边界斜率是 $-\\frac{p_1}{p_2}$。阴影连同边界组成预算集。'},
  '7.2':{number:'7.2',page:93,draw:monopoly,caption:'在图示单交点情形，$MR=MC$ 定出 $y^*$，再到需求线上读价格；$P=MC$ 定出 $y_c$。两产量之间需求线与边际成本线夹住的面积是无谓损失。'},
  '10.9':{number:'10.4(a)',page:152,draw:edgeworth,caption:'同一个点按两个相反的原点读出双方消费。预算线通过初始禀赋 $e$；共同切点 $a^*$ 同时满足双方最优与资源相容。此图用于说明光滑内点情形，均衡的定义仍是预算最优与市场出清。'},
  '16.3':{number:'16.4',page:261,draw:deviation,caption:'固定其他人的策略。若把多次偏离压缩到最后一个需改变的历史后仍能提高收益，就产生一次有利偏离；这与单次偏离性质矛盾。收益符号按原书使用 $u^i,w^i,v^i$。'}
