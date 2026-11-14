@@ -1,0 +1,4 @@
+PASS {"width":1440,"input":"keyboard"}
+PASS {"width":390,"input":"touch"}
+PASS {"width":320,"input":"touch","reducedMotion":"reduce"}
+PASS {"width":320,"input":"touch","javaScriptEnabled":false}

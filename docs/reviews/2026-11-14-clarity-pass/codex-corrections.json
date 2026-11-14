@@ -1,0 +1,124 @@
+[
+  {
+    "file": "src/guided/ch03.cjs",
+    "before": "同一混合权重 $h>\\\\frac{1}{2}$",
+    "after": "同一混合权重 $\\\\frac{1}{2}<h<1$"
+  },
+  {
+    "file": "src/guided/ch04.cjs",
+    "before": "正方框的上边",
+    "after": "正是方框的上边"
+  },
+  {
+    "file": "src/guided/ch04.cjs",
+    "before": "若两项都不减少且至少同增则最大值不降或严格增大，因此偏好单调。",
+    "after": "若两项都不减少，最大值就不会下降；若两项都严格增加，最大值也严格增加，因此满足本书的单调性定义。"
+  },
+  {
+    "file": "src/guided/ch07.cjs",
+    "before": "两类顾客随机站在摊前",
+    "after": "摊前有两位顾客"
+  },
+  {
+    "file": "src/guided/ch07.cjs",
+    "before": "让两人合计总收入最高",
+    "after": "让阿姨从两人处收取的总收入最高"
+  },
+  {
+    "file": "src/guided/ch07.cjs",
+    "before": "（注意这是他省下的心理估值余地，不是收到现金）",
+    "after": "（他觉得豆浆值多少钱，减去实际付的钱，就是这里的净好处）"
+  },
+  {
+    "file": "src/guided/ch07.cjs",
+    "before": "再看高类型（顾客 1）买小杯能得多少净好处：",
+    "after": "\n\n再看高类型（顾客 1）买小杯能得多少净好处："
+  },
+  {
+    "file": "src/guided/ch07.cjs",
+    "before": "为了让顾客 1 留在满杯档而不降档去买小杯",
+    "after": "\n\n为了让顾客 1 留在满杯档而不降档去买小杯"
+  },
+  {
+    "file": "src/guided/ch07.cjs",
+    "before": "这样小杯收 $1.5$ 元、大杯收 $3$ 元",
+    "after": "\n\n这样小杯收 $1.5$ 元、大杯收 $3$ 元"
+  },
+  {
+    "file": "src/guided/ch08.cjs",
+    "before": "而被甲和乙依次拿走 A 后、原先靠后拿 C 的丁，这次连 C 都被第三顺位的甲挑走",
+    "after": "而原先最后拿 C 的丁，这次看到乙已拿走 A，第三顺位的甲又拿走 C"
+  },
+  {
+    "file": "src/guided/ch10.cjs",
+    "before": "按米 0.5 元、豆 1 元算甲的三步：",
+    "after": "\n\n按米 0.5 元、豆 1 元算甲的三步："
+  },
+  {
+    "file": "src/guided/ch10.cjs",
+    "before": "乙按同样三步：",
+    "after": "\n\n乙按同样三步："
+  },
+  {
+    "file": "src/guided/ch10.cjs",
+    "before": "最后加总米的订单：",
+    "after": "\n\n最后加总米的订单："
+  },
+  {
+    "file": "src/guided/style.css",
+    "before": ".condition-tables { display:flex;",
+    "after": ".guided-scene-why { white-space:pre-line; }\n.condition-tables { display:flex;"
+  },
+  {
+    "file": "src/guided/ch11.mjs",
+    "before": "若核心内压根无人交易，则没有任何未持票者既有高于某持票者的估值又拿得出足够现金按卖方估值付款，此时将票价选在“具备购买力的最高未持票估值”与“最低持票估值”之间即可支撑无交易均衡",
+    "after": "若核心内无人交易，在本节买者初始现金至少等于自身估值的条件下，最高未持票估值不超过最低持票估值：否则，这两人可在两种估值之间选一个价格交易并同时严格改善。取这两个估值之间的任一价格，未持票者愿意不买，持票者愿意不卖，就能支撑无交易均衡"
+  },
+  {
+    "file": "src/guided/ch15.mjs",
+    "before": "谁的报数离全体平均数的 $\\frac{2}{3}$ 最近就得奖 $1$（并列最近都中奖）",
+    "after": "先在 $1$ 到 $100$ 的全部整数中找出离全体平均数的 $\\frac{2}{3}$ 最近的整数，报中它才得奖 $1$（两个整数并列最近时，报中任一个都中奖；若无人报中，就无人获奖）"
+  },
+  {
+    "file": "src/guided/ch17.mjs",
+    "before": "恰在 $v_i+x_j\\\\ge 0$ 时选建、在 $v_i+x_j<0$ 时选不建",
+    "after": "恰在 $v_i+x_j>0$ 时选建、在 $v_i+x_j\\\\le 0$ 时选不建（等于零时两种决定对本人同样好）"
+  },
+  {
+    "file": "src/guided/ch17.mjs",
+    "before": "若写净得 $(v_i-c)+t_i$，工程款已在括号内扣完，不再重复扣除",
+    "after": "统一写净得 $\\\\alpha(v_i-c)+t_i$，工程款随开工指示 $\\\\alpha$ 只扣一次"
+  },
+  {
+    "file": "src/guided/ch19.mjs",
+    "before": "主解答（a）采用教材正式等式对全体成员均成立，由此唯一确定逐层法。作为补充辨析（b）：",
+    "after": "前面按原题（b）的正式等式作答：等式约束全体成员，由此确定逐层法。下面单列一条题意补注，不另编小问："
+  },
+  {
+    "file": "src/guided/ch19.mjs",
+    "before": "['b｜等式对谁成立'",
+    "after": "['b｜补注：弱读条件为何不唯一'"
+  },
+  {
+    "file": "src/review/formal-1-7.json",
+    "change": "Targeted mathematical boundary and proof corrections"
+  },
+  {
+    "file": "src/review/formal-8-14.json",
+    "change": "Targeted mathematical boundary and proof corrections"
+  },
+  {
+    "file": "src/review/formal-15-20.json",
+    "change": "Targeted mathematical boundary and proof corrections"
+  },
+  {
+    "file": "docs/reviews/2026-11-14-clarity-pass/CODEX_REVIEW_HANDOFF.md",
+    "before": "来自递增边际效用假设",
+    "after": "来自该财富处边际效用为正的假设"
+  },
+  {
+    "file": "src/review/formal-1-7.json",
+    "change": "Section 6.5: restore actual student-discipline/layoff comparison; remove unsupported occupational sample and longitudinal necessity claim",
+    "source": "Osborne-Rubinstein 2020.12.21(h), printed 85 / PDF 104"
+  }
+]

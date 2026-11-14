@@ -70,9 +70,13 @@ function renderUnit(meta, unit, chapter, siblings) {
     const oldTitle = i ? `<span id="given-${i + 1}-title"></span>` : '';
     return `<li${alias}>${oldTitle}${inline(point)}</li>`;
   }).join('');
+  const extraTables = (unit.givenTables || []).map(t =>
+    `<table class="condition-table"><caption>${inline(t.caption)}</caption><thead><tr>${t.headers.map(h => `<th scope="col">${inline(h)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r => `<tr>${r.map((c, idx) => idx === 0 ? `<th scope="row">${inline(c)}</th>` : `<td>${inline(c)}</td>`).join('')}</tr>`).join('')}</tbody></table>`
+  ).join('');
+  const givenTables = extraTables ? `<div class="condition-tables">${extraTables}</div>` : '';
   const card = `<aside class="condition-card" aria-labelledby="given-heading" tabindex="-1">
 <header class="condition-head"><h2 id="given-heading">${givenTitle}</h2><button type="button" class="condition-size" aria-controls="condition-text" aria-expanded="false" hidden>展开全题</button></header>
-<div class="condition-text" id="condition-text" tabindex="0" role="region" aria-labelledby="given-heading"><ul>${conditions}</ul></div></aside>`;
+<div class="condition-text" id="condition-text" tabindex="0" role="region" aria-labelledby="given-heading"><ul>${conditions}</ul>${givenTables}</div></aside>`;
   const steps = [{id: 'given-start', kind: 'given', phase: '读题', title: givenTitle}];
   for (const [i, part] of (unit.preparation || []).entries()) {
     const ledger = part.lines.map(([label, tex]) => `<div><dt>${inline(label)}</dt><dd>${formula(tex)}</dd></div>`).join('');

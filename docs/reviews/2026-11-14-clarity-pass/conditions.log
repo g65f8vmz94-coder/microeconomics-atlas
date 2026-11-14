@@ -1,0 +1,16 @@
+PASS 240 condition lists match authored content once
+PASS desktop section 10.2 order calculations, history and deep links
+PASS desktop exercise 10.2 answer, persistent card and transfer
+PASS mobile section 10.2 order calculations, history and deep links
+PASS mobile exercise 10.2 answer, persistent card and transfer
+PASS long mobile question: expand, collapse, scroll to last condition
+PASS desktop paper width and undistorted text
+PASS rapid navigation; reduced motion = false
+PASS rapid navigation; reduced motion = true
+PASS download standalone pages
+PASS offline section journey; JS = false
+PASS offline exercise and transfer; JS = false
+PASS offline long question; JS = false
+PASS offline section journey; JS = true
+PASS offline exercise and transfer; JS = true
+PASS offline long question; JS = true

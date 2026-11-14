@@ -1,0 +1,34 @@
+[
+  {
+    "script": "test-guided.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "test-guided-flow.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "test-formal-review.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "test-review-library.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "test-explanation-review.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "test-math.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "validate-pack.cjs",
+    "exitCode": 0
+  },
+  {
+    "script": "test-offline-unpack.cjs",
+    "exitCode": 0
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "test": "test-classic-conditions-browser.cjs",
+    "exitCode": 0
+  },
+  {
+    "test": "test-textbook-entry-browser.cjs",
+    "exitCode": 0
+  },
+  {
+    "test": "src/insurance-lesson/test-flow.cjs",
+    "exitCode": 0
+  }
+]

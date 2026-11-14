@@ -266,6 +266,13 @@
 .condition-text li { padding-inline-start:.18em; font-size:clamp(1rem,1.2vw,1.13rem); line-height:1.75; }
 .condition-text li+li { margin-top:.3em; }
 .condition-text li::marker { color:#9b693e; font-size:.75em; }
+.guided-scene-why { white-space:pre-line; }
+.condition-tables { display:flex; flex-wrap:wrap; gap:10px 14px; margin:10px 0 4px; }
+.condition-table { border-collapse:collapse; font-size:.86rem; background:#fbf9f1; border:1px solid #d4ceb8; max-width:100%; }
+.condition-table caption { text-align:left; font-weight:700; font-size:.82rem; color:#6b4b32; margin-bottom:4px; }
+.condition-table th,.condition-table td { padding:3px 6px; border:1px solid #dfd9c5; text-align:center; }
+.condition-table thead th { background:#ece7d4; font-weight:600; color:#4b4333; }
+.condition-table tbody th { background:#f3efe0; font-weight:700; color:#243d32; white-space:nowrap; }
 .guided-step.guided-given { padding:0 clamp(16px,3.3vw,36px) clamp(16px,2.4vw,25px); border-top:0; }
 .guided-given .guided-controls { margin-top:0; padding-top:14px; border-top:0; }
 .guided-given .guided-progress {font-weight:600}
@@ -281,6 +288,9 @@
   & .condition-head h2 { color:#725138; font:700 .98rem/1.4 var(--sans); }
   & .condition-text { overflow:auto; max-height:calc(100vh - 6rem); max-height:calc(100dvh - 6rem); scrollbar-width:thin; }
   & .condition-text li {font-size:.93rem;line-height:1.55}
+  & .condition-tables { gap:8px; margin:8px 0 2px; }
+  & .condition-table { font-size:.8rem; width:100%; }
+  & .condition-table th,& .condition-table td { padding:2px 4px; }
   @media (min-width:800px) {
     display:grid; grid-template-columns:minmax(0,1fr) clamp(13rem,24%,17rem); gap:clamp(14px,2vw,28px);
     & .condition-card { grid-column:2;grid-row:1; }

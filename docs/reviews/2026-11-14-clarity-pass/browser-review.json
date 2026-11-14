@@ -1,0 +1,341 @@
+{
+  "states": 33,
+  "results": [
+    {
+      "route": "learn-s7-4.html#scene-2",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s10-2.html#scene-1",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s18-2.html#given",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 2,
+      "rows": 8,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s18-2.html#scene-2",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 2,
+      "rows": 8,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-p19-3.html#answer",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-5.html",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-16.html",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-17.html",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-20.html",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "insurance-3-9.html",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "lesson-10-6.html?case=strategic106",
+      "width": 1440,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s7-4.html#scene-2",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s10-2.html#scene-1",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s18-2.html#given",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 2,
+      "rows": 8,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s18-2.html#scene-2",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 2,
+      "rows": 8,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-p19-3.html#answer",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-5.html",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-16.html",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-17.html",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-20.html",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "insurance-3-9.html",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "lesson-10-6.html?case=strategic106",
+      "width": 390,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s7-4.html#scene-2",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s10-2.html#scene-1",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s18-2.html#given",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 2,
+      "rows": 8,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-s18-2.html#scene-2",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 2,
+      "rows": 8,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "learn-p19-3.html#answer",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-5.html",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-16.html",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-17.html",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "review-20.html",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "insurance-3-9.html",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    },
+    {
+      "route": "lesson-10-6.html?case=strategic106",
+      "width": 320,
+      "overflow": 0,
+      "mathErrors": 0,
+      "tables": 0,
+      "rows": 0,
+      "errors": [],
+      "reducedMotion": true
+    }
+  ],
+  "keyboardMatchingTableWidths": [
+    1440,
+    390,
+    320
+  ],
+  "screenshots": "/tmp/micro-clarity-screenshots"
+}

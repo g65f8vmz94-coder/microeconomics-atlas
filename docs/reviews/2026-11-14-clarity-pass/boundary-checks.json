@@ -1,0 +1,7 @@
+{
+  "guessAllCanLose": true,
+  "guessOnlyNearestIntegerWins": true,
+  "vcgTruthWeakAtTie": true,
+  "vcgDeviationComparisons": 125,
+  "matchingTableRows": 8
+}
