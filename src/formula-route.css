@@ -85,3 +85,44 @@
 
 .formal-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}.formal-layout>div{min-width:0}.formal-layout .formal-symbols{font-size:.9rem}.formal-layout .formal-symbols dl>div{grid-template-columns:minmax(65px,1fr) minmax(0,2.4fr);gap:10px}.formal-layout .formal-symbols dt{font-size:.98rem}.claim-notation>summary{font-size:.9rem}
 @media(max-width:760px){.formal-layout{grid-template-columns:minmax(0,1fr);gap:0}.formal-layout .formal-symbols dl>div{grid-template-columns:minmax(70px,1fr) minmax(0,3fr)}}
+
+/* UX05-UX08/UX11: actionable sprint tracker, search, crosslinks & formula-scoped symbols */
+.study-resume-banner{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin:14px 0;padding:10px 14px;background:#ebf2e8;border:1px solid #bdd0bc;border-left:4px solid #174a3e;border-radius:5px;font-size:.93rem}
+.resume-tag{font-size:.75rem;font-weight:700;padding:2px 7px;border-radius:99px;background:#174a3e;color:#fff}
+.sprint-toolbar{padding:14px 0 18px;border-bottom:1px solid #b7bead;display:grid;gap:12px}
+.sprint-progress-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 16px;padding:10px 14px;background:#f4f0e1;border:1px solid #d2cbb3;border-radius:5px;font-size:.92rem}
+.sprint-next-link{font-weight:650;color:#185b4d}
+.sprint-filter-row{display:flex;flex-wrap:wrap;gap:8px}
+.sprint-filter-row button,.sprint-check{min-height:36px;padding:4px 12px;font-size:.84rem;border:1px solid #96a494;background:#faf8f0;color:#1c453a;border-radius:99px;cursor:pointer}
+.sprint-filter-row button[aria-pressed="true"],.sprint-check[aria-pressed="true"]{background:#174a3e;border-color:#174a3e;color:#fff;font-weight:650}
+.sprint-item-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.sprint-tasks{padding-left:1.4em;margin:14px 0;display:grid;gap:12px}
+.sprint-tasks li{padding:0 0 10px;border-bottom:1px solid #dad8c9}
+.sprint-tasks a{font-weight:600;overflow-wrap:anywhere}
+.sprint-tasks button{display:block;margin-top:6px;min-height:36px;padding:5px 12px;border:1px solid #8b9f91;background:#fffdf7;color:#174a3e;border-radius:4px;cursor:pointer}
+.sprint-tasks button[aria-pressed="true"]{background:#174a3e;color:#fff}
+.sprint-tasks p,.sprint-plan-note{font-size:.88rem;line-height:1.6;color:#47584b}
+.sprint-next-chapter{display:inline-block;margin:4px 0 14px}
+.sprint-item.is-sprint-done{background:#f4f8f2;padding-inline:10px;border-radius:4px}
+.sprint-search .search-box{display:grid;gap:6px}
+.sprint-search label{font-size:.9rem;font-weight:650;color:#394c42}
+.sprint-search input[type="search"]{width:100%;max-width:34rem;min-height:42px;padding:8px 12px;border:1px solid #9ea695;border-radius:5px;font:inherit;background:#fffdf7}
+.atlas-result-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.atlas-result-item{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;padding:7px 10px;background:#fffdf7;border:1px solid #d5d0be;border-radius:4px;font-size:.92rem}
+.atlas-result-kind{font-size:.74rem;font-weight:700;padding:1px 7px;border-radius:99px;background:#e4ede0;color:#174a3e;flex:none}
+.atlas-result-alt{margin-inline-start:auto;font-size:.82rem;color:#7a4e2f}
+.study-backup{font-size:.88rem;color:#4a5a4e}
+.study-backup summary{cursor:pointer;min-height:36px;display:inline-flex;align-items:center}
+.study-backup-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:8px}
+.study-backup-actions button{min-height:36px;padding:4px 12px;font-size:.83rem;border:1px solid #9da995;background:#fffdf7;color:#1c453a;border-radius:4px;cursor:pointer}
+.review-top-links,.formal-crosslinks{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+.review-action-row{margin:10px 0 4px}
+.equation-aids{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:6px 14px;margin-top:8px;padding-top:6px;border-top:1px dotted #c6d0be}
+.formula-symbols{font-size:.88rem;color:#2c483d}
+.formula-symbols summary{cursor:pointer;min-height:32px;display:inline-flex;align-items:center;font-weight:600;color:#1d5142}
+.formula-symbols dl{margin:6px 0 0;border-top:1px solid #cbd3c4}
+.formula-symbols dl>div{display:grid;grid-template-columns:minmax(56px,auto) minmax(0,1fr);gap:8px;padding:5px 2px;border-bottom:1px solid #dde3d7}
+.formula-symbols dt{font-weight:600}
+.formula-symbols dd{margin:0}
+.premise-back{font-size:.82rem!important;color:#754a2c!important;text-decoration:underline;text-underline-offset:.2em;min-height:28px;display:inline-flex;align-items:center}
+.review h4 .premise-back{margin-inline-start:10px;font-weight:500;letter-spacing:0}

@@ -1,0 +1,51 @@
+[
+  {
+    "command": [
+      "node",
+      "test-guided-conditions-browser.cjs",
+      "--require-browser"
+    ],
+    "exitCode": 0,
+    "seconds": 17.46
+  },
+  {
+    "command": [
+      "node",
+      "test-classic-conditions-browser.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 1.59
+  },
+  {
+    "command": [
+      "node",
+      "test-textbook-entry-browser.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 16.45
+  },
+  {
+    "command": [
+      "node",
+      "src/insurance-lesson/test-flow.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 8.19
+  },
+  {
+    "command": [
+      "node",
+      "test-experience-ux-browser.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 41.61
+  },
+  {
+    "command": [
+      "node",
+      "test-experience-fixes-browser.cjs"
+    ],
+    "exitCode": 0,
+    "seconds": 8.68
+  }
+]

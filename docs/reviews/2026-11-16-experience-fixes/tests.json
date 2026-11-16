@@ -1,0 +1,52 @@
+[
+  {
+    "test": "test-guided.cjs",
+    "exitCode": 0,
+    "seconds": 0.45
+  },
+  {
+    "test": "test-guided-flow.cjs",
+    "exitCode": 0,
+    "seconds": 0.5
+  },
+  {
+    "test": "test-formal-review.cjs",
+    "exitCode": 0,
+    "seconds": 0.21
+  },
+  {
+    "test": "test-review-library.cjs",
+    "exitCode": 0,
+    "seconds": 0.21
+  },
+  {
+    "test": "test-explanation-review.cjs",
+    "exitCode": 0,
+    "seconds": 0.17
+  },
+  {
+    "test": "test-clarity-boundaries.mjs",
+    "exitCode": 0,
+    "seconds": 0.05
+  },
+  {
+    "test": "test-math.cjs",
+    "exitCode": 0,
+    "seconds": 6.59
+  },
+  {
+    "test": "validate-pack.cjs",
+    "exitCode": 0,
+    "seconds": 1.31
+  },
+  {
+    "test": "test-offline-unpack.cjs",
+    "exitCode": 0,
+    "seconds": 0.96
+  },
+  {
+    "test": "test-experience-fixes.cjs",
+    "exitCode": 0,
+    "seconds": 0.13
+  }
+]

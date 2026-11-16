@@ -88,6 +88,53 @@ units['s7.4'].portions = {
     [1, largePrice]
   ])
 };
+units['s7.4'].hideGrid = true;
+units['s7.4'].practiceDiagnostics = {
+  hint: T`分别算出顾客 1 买半杯的净好处 $V_1(0.5)-1.5$ 和买涨价后满杯的净好处 $V_1(1)-3.2$，再与“不买=0”比大小。`,
+  wrongReasons: [
+    '',
+    '大杯涨到 3.2 元后，买满杯只剩 4−3.2=0.8 元净好处；算一算他改买半杯（1.5 元）还能净赚多少？',
+    '顾客 1 买半杯小杯可净赚 2.5−1.5=1 元 > 0，绝不会放着 1 元不赚而选“干脆不买”。'
+  ]
+};
+units['s7.4'].screening = [0, 0.5, 1].map((q, i) => {
+  const [, [smallQ, smallPrice, largePrice, total]] = units['s7.4'].frames[i];
+  if (q === 0) return {
+    smallQ, smallPrice, largePrice, total,
+    cust2: {val: vl(1), pay: largePrice, net: vl(1) - largePrice, buys: '不买 (净 0)'},
+    cust1: {altVal: 0, altPay: 0, altNet: 0, val: vh(1), pay: largePrice, net: vh(1) - largePrice, buys: '买满杯 (4元)'}
+  };
+  if (q === 1) return {
+    smallQ, smallPrice, largePrice, total,
+    cust2: {val: vl(1), pay: smallPrice, net: vl(1) - smallPrice, buys: '买满杯 (2元)'},
+    cust1: {altVal: vh(1), altPay: smallPrice, altNet: vh(1) - smallPrice, val: vh(1), pay: largePrice, net: vh(1) - largePrice, buys: '买满杯 (2元)'}
+  };
+  return {
+    smallQ, smallPrice, largePrice, total,
+    cust2: {val: vl(q), pay: smallPrice, net: round(vl(q) - smallPrice), buys: '买小杯'},
+    cust1: {altVal: vh(q), altPay: smallPrice, altNet: round(vh(q) - smallPrice), val: vh(1), pay: largePrice, net: round(vh(1) - largePrice), buys: '留大杯 (3元)'}
+  };
+});
+units['s7.4'].frameNotes = [
+  {
+    task: '如果还没有小杯（q=0），阿姨只定一种满杯价格最高收多少？',
+    summary: '满杯定 4 元时，顾客 2 净好处为负会离开，只有顾客 1 买，共收 4 元；定 2 元两人都买也只收 4 元。',
+    citeLabel: '顾客 1 满杯值 $4$ 元；顾客 2 满杯值 $2$ 元；打平按价目表成交',
+    citeItems: [0, 1]
+  },
+  {
+    task: '添了半杯（q=0.5）后，小杯和大杯怎样标价才能既区分两人又多赚钱？',
+    summary: '半杯按顾客 2 底线标 1.5 元；顾客 1 买半杯也能净赚 1 元，所以大杯最多标 4−1=3 元，两杯共收 4.5 元。',
+    citeLabel: '顾客 1：$V_1(0.5)=2.5,\\ V_1(1)=4$；顾客 2：$V_2(0.5)=1.5$；打平留大杯',
+    citeItems: [0, 1]
+  },
+  {
+    task: '如果把小杯一路加满成 q=1，为什么高价的满杯再也卖不出去？',
+    summary: '两杯份量一样时顾客只挑便宜那档，想让低需求也买就只能都标 2 元，总收入跌回 4 元。',
+    citeLabel: '顾客 1 满杯值 $4$ 元；顾客 2 满杯值 $2$ 元；同量必同价',
+    citeItems: [0, 1]
+  }
+];
 
 function resale(w) {
   const one=10-w, two=2*(8-w);

@@ -198,3 +198,14 @@ html[data-motion=reduced]{scroll-behavior:auto!important}html[data-motion=reduce
 .atlas-ui .exercise-chapter{margin:0;border-bottom:1px solid var(--line)}
 .atlas-ui .exercise-chapter>summary{padding:15px 0;font-size:18px;font-weight:600;cursor:pointer}
 .atlas-ui .exercise-chapter>summary small{color:var(--muted);font-weight:400;white-space:nowrap}
+
+.study-resume-banner{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin:12px 0;padding:10px 14px;background:#eef3ea;border:1px solid #bfd0bd;border-left:4px solid var(--green);border-radius:6px;font-size:.93rem}
+.resume-tag{font-size:.75rem;font-weight:700;padding:2px 7px;border-radius:99px;background:var(--green);color:#fff}
+.resume-link{font-weight:650;color:var(--green);text-decoration:underline;text-underline-offset:.2em}
+.unified-search-box{margin:12px 0 18px;padding:12px 14px;background:#f7f5eb;border:1px solid #d4ceb9;border-radius:6px}
+.unified-search-title{margin:0 0 8px;font-size:.95rem;color:#523c26}
+.atlas-result-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:6px}
+.atlas-result-item{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 10px;padding:7px 9px;background:#fffdf7;border:1px solid #dfd9c7;border-radius:4px;font-size:.92rem}
+.atlas-result-kind{font-size:.74rem;font-weight:700;padding:1px 7px;border-radius:99px;background:#e6ede2;color:#1b4f41;flex:none}
+.atlas-result-main{font-weight:600;color:#143b30}
+.atlas-result-alt{margin-inline-start:auto;font-size:.82rem;color:#73492c}

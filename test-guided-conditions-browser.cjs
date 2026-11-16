@@ -213,11 +213,12 @@ async function sectionJourney(page, url, mobile, folder, js) {
 }
 
 async function homeworkJourney(page, url, unit, mobile, folder, js) {
-  // An unread paper link in an enhanced page must open the first deduction.
+  // UX02: direct #answer links must open the full answer sheet right away.
   if (js) {
     await page.goto(url + '#answer');
-    await at(page, 'proof-1');
-    assert.equal(await page.locator('#answer').isVisible(), false);
+    await at(page, 'answer');
+    assert.equal(await page.locator('#answer').isVisible(), true);
+    assert.equal(await page.locator('#answer .guided-answer-row').count(), unit.proof.length);
   }
   await page.goto(url + '#solution');
   await at(page, 'proof-1');

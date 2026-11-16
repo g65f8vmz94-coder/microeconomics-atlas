@@ -37,25 +37,69 @@ function givenPoints(text) {
   return {points, references};
 }
 
+const MAX_FRAGMENT_CHARS = 185;
+
 function proofRows(unit) {
   let part = '';
-  return unit.proof.map(([title, tex, why, frame], i) => {
+  return unit.proof.map(([title, tex, why, frame, customFragments], i) => {
     const marker = /^(?:[（(]([a-z])[)）]\s*|([a-z])\s*[｜|]\s*)/i.exec(title);
     if (marker) part = (marker[1] || marker[2]).toLowerCase();
     const method = marker ? title.slice(marker[0].length) : title;
     const label = part ? '（' + part + '）' : '';
     const id = 'proof-' + (i + 1);
-    // Keep a short argument together. Longer authored rows can include several
-    // deductions or cases, each with its own next/back stop.
-    const fragments = [];
-    for (const point of sentencePoints(why)) {
-      const last = fragments.length - 1;
-      if (last >= 0 && (fragments[last] + point).length <= 54) fragments[last] += point;
-      else fragments.push(point);
+    let fragments = [];
+    if (Array.isArray(customFragments) && customFragments.length && customFragments.join('') === why) {
+      fragments = customFragments.slice();
+    } else {
+      for (const point of sentencePoints(why)) {
+        const last = fragments.length - 1;
+        if (last >= 0 && (fragments[last] + point).length <= MAX_FRAGMENT_CHARS) fragments[last] += point;
+        else fragments.push(point);
+      }
     }
-    return {id, label, method, tex, why, frame, fragments, note: unit.proofNotes?.[i]};
+    const meta = unit.proofMeta?.[i] || {};
+    const legacy = [];
+    for (const point of sentencePoints(why)) {
+      const last = legacy.length - 1;
+      if (last >= 0 && (legacy[last] + point).length <= 54) legacy[last] += point;
+      else legacy.push(point);
+    }
+    let offset = 0;
+    const starts = fragments.map(text => { const start = offset; offset += text.length; return start; });
+    offset = 0;
+    const legacyAnchors = legacy.map((text, index) => {
+      const start = offset; offset += text.length;
+      const fragment = starts.findLastIndex(position => position <= start);
+      return {id: index ? id + '-' + (index + 1) : id, text, fragment};
+    });
+    return {id, label, method, tex, why, frame, fragments, legacyAnchors, note: unit.proofNotes?.[i], ...meta};
   });
 }
+
+function previewProse(text, limit = 128) {
+  const source = String(text || '').trim();
+  const paragraphs = source.split(/\n{2,}/);
+  if (paragraphs.length > 1) {
+    const head = paragraphs[0].trim();
+    const tail = paragraphs.slice(1).join('\n\n').trim();
+    if (head.length <= 165) return {summary: head, detail: tail};
+  }
+  const points = sentencePoints(source);
+  if (source.length <= limit || points.length <= 1) return {summary: source, detail: ''};
+  let summary = '';
+  let cut = 0;
+  for (let i = 0; i < points.length - 1; i++) {
+    if (!summary || (summary + points[i]).length <= limit) {
+      summary += points[i];
+      cut = i + 1;
+    } else break;
+  }
+  const detail = points.slice(cut).join('').trim();
+  return detail ? {summary, detail} : {summary: source, detail: ''};
+}
+
+// A lexical similarity is not evidence for a premise. Use authored references.
+function matchGivenItems() { return []; }
 
 const sceneId = index => index ? 'scene-' + (index + 1) : 'scene';
 const formula = tex => tex ? '<div class="guided-equation">' + equation(tex) + '</div>' : '';
@@ -84,7 +128,7 @@ function answerSheet(meta, unit, rows, {idPrefix = '', lessonURL = ''} = {}) {
     // The formula and the full argument belong on the paper, including a
     // prose-only counterexample or boundary case. The margin names the method.
     const note = typeof row.note === 'string' && row.note.trim() ? row.note : unit.frames[row.frame][2];
-    const sceneLink = lessonURL ? `<a href="${escape(lessonURL)}#${sceneId(row.frame)}">回看这一步的图解 ↗</a>` : compareLink(row, id);
+    const sceneLink = lessonURL ? `<a href="${escape(lessonURL)}#${sceneId(row.frame)}">回看这一步的图解 ↗</a>` : `${compareLink(row, id)}<a class="proof-action answer-to-proof" href="#${row.id}">回到本步推理 ↗</a>`;
     const part = row.label && row.label !== rows[i-1]?.label ? '<span class="guided-answer-part">' + row.label + '</span>' : '';
     return `<article class="guided-answer-row" id="${id}" tabindex="-1"><div class="guided-answer-text" aria-label="答卷正文"><h3>${part}${heading(row.method)}</h3>${formula(row.tex)}<p>${inline(row.why)}</p>${answerTable(meta, unit, i)}</div><aside class="guided-answer-note" aria-label="思路旁注"><strong>思路</strong><p>${inline(note)}</p>${sceneLink}</aside></article>`;
   }).join('');
@@ -92,10 +136,10 @@ function answerSheet(meta, unit, rows, {idPrefix = '', lessonURL = ''} = {}) {
 
 function transferForm(unit) {
   const [question, choices, correct, reason] = unit.practice;
-  return `<form class="transfer-form" id="transfer"><fieldset><legend>${inline(question)}</legend><div class="transfer-options">${choices.map((choice, i) => `<label><input type="radio" name="choice" value="${i}"><span>${inline(choice)}</span></label>`).join('')}</div></fieldset><div class="practice-actions"><button type="submit" class="primary" hidden>核对我的判断</button></div><p class="feedback" id="feedback" role="status"></p><details id="worked"><summary id="reveal">看做法</summary><strong>${inline(choices[correct])}</strong><p>${inline(reason)}</p></details></form>`;
+  return `<form class="transfer-form" id="transfer"><fieldset><legend>${inline(question)}</legend><div class="transfer-options">${choices.map((choice, i) => `<label><input type="radio" name="choice" value="${i}"><span>${inline(choice)}</span></label>`).join('')}</div></fieldset><div class="practice-actions"><button type="submit" class="primary" hidden>核对我的判断</button><button type="button" class="hint-btn" id="hint-btn" hidden>只看提示（先不看答案）</button></div><p class="feedback" id="feedback" role="status"></p><p class="practice-hint" id="practice-hint" hidden></p><details id="worked"><summary id="reveal">看做法</summary><strong>${inline(choices[correct])}</strong><p>${inline(reason)}</p></details></form>`;
 }
 
-function stepMarkup(steps, step, i) {
+function stepMarkup(steps, step, i, {hasPaper = false} = {}) {
   const prev = steps[i - 1], next = steps[i + 1];
   // In the script-free copy, the only forward link to the paper follows the
   // final deduction. A direct visit to practice also has a route to reasoning.
@@ -103,14 +147,22 @@ function stepMarkup(steps, step, i) {
   const previous = prev ? `<a data-direction="previous" href="#${previousId}">${prev.id === 'answer' ? '回顾推理' : '← 上一步'}</a>` : '';
   const nextLabel = next?.id === 'answer' ? '展开完整手写答卷' : next?.id === 'practice' ? '换道题试试' : '下一步';
   const forward = next ? `<a class="primary" data-direction="next" href="#${next.id}">${nextLabel} →</a>` : '<a href="#given">从头复习 ↑</a>';
+  const directAnswer = hasPaper && step.kind !== 'answer' ? '<a class="direct-answer-link" href="#answer">完整答卷与旁注 →</a>' : '';
+  const citeAttrs = [
+    step.citeLabel ? ` data-cite-label="${escape(step.citeLabel)}"` : '',
+    step.citeItems?.length ? ` data-cite-items="${escape(step.citeItems.join(','))}"` : '',
+    step.citeRows?.length ? ` data-cite-rows="${escape(step.citeRows.join(','))}"` : ''
+  ].join('');
   if (step.kind === 'given') {
-    return `<section class="guided-step guided-given" id="given-start" aria-labelledby="given-heading"><nav class="guided-controls" aria-label="本页步骤"><a class="primary" data-direction="next" href="#${next.id}">${next.kind === 'account' ? '先算一笔账' : '开始看图'} →</a><span class="guided-progress">第 1 / ${steps.length} 步</span></nav></section>`;
+    return `<section class="guided-step guided-given" id="given-start" aria-labelledby="given-heading"${citeAttrs}><nav class="guided-controls" aria-label="本页步骤"><a class="primary" data-direction="next" href="#${next.id}">${next.kind === 'account' ? '先算一笔账' : '开始看图'} →</a>${directAnswer}<span class="guided-progress">第 1 / ${steps.length} 步</span></nav></section>`;
   }
   const titleId = {given: 'given-heading', scene: 'scene-title', practice: 'practice-heading'}[step.id] || step.id + '-title';
-  return `<section class="guided-step guided-${step.kind}" id="${step.id}" tabindex="-1" aria-labelledby="${titleId}">
-<p class="guided-progress step-kicker">第 ${i + 1} / ${steps.length} 步 · ${escape(step.phase)}</p>
+  const pct = Math.round(((i + 1) / steps.length) * 100);
+  const taskLine = step.task ? `<p class="step-task"><span class="task-pill">本步要回答</span><span>${inline(step.task)}</span></p>` : '';
+  return `<section class="guided-step guided-${step.kind}" id="${step.id}" tabindex="-1" aria-labelledby="${titleId}"${citeAttrs}>
+<div class="guided-progress step-kicker"><span>第 ${i + 1} / ${steps.length} 步 · ${escape(step.phase)}</span><span class="step-meter" aria-hidden="true"><i style="width:${pct}%"></i></span></div>
 <h2 class="guided-step-title" id="${titleId}">${heading(step.title)}</h2>
-<div class="guided-step-body">${step.body}</div><nav class="guided-controls player-actions" aria-label="本页步骤">${previous}${forward}</nav></section>`;
+${taskLine}<div class="guided-step-body">${step.body}</div><nav class="guided-controls player-actions" aria-label="本页步骤">${previous}${forward}${directAnswer}</nav></section>`;
 }
 
 // Native fragment navigation works before enhancement, with JS disabled and
@@ -122,4 +174,4 @@ const fragmentStyle = `<style>
 .guided-flow:not([data-interactive]) > .guided-step:is(:target,:has(:target)){display:block}
 </style>`;
 
-module.exports = {givenPoints, proofRows, sceneId, formula, compareLink, answerSheet, transferForm, stepMarkup, fragmentStyle};
+module.exports = {givenPoints, proofRows, previewProse, matchGivenItems, sceneId, formula, compareLink, answerSheet, transferForm, stepMarkup, fragmentStyle};

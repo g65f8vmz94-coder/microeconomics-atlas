@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {inline,escape} = require('../guided/format.cjs');
 const {givenPoints, proofRows, answerSheet, formula} = require('../guided/unit-flow.cjs');
-const {urlFor} = require('../guided/catalog.cjs');
+const {urlFor, chapterURL: guidedChapterURL} = require('../guided/catalog.cjs');
 const {manuscript, renderMath} = require('../insurance-lesson/build.cjs');
 const {formulaRoute} = require('../formula-route.cjs');
 const {sectionNotes,claimNotes,reviewControls} = require('./formal-render.cjs');
@@ -28,17 +28,18 @@ function question(meta,unit) {
   const insurance=meta.key==='p3.9';
   const given=insurance?'有事故和无事故两种状态。给定初始财富、损失、事故概率和赔付倍率，选保费。分别在公平价与保险有加价时判断应否全保。':givenPoints(unit.given).points.map(inline).join('');
   const rows=insurance?manuscript().replaceAll('href="#check-',`href="${url}#check-`):answerSheet(meta,unit,proofRows(unit),{lessonURL:url,idPrefix:meta.key+'-'});
-  return `<details class="review-problem" id="p${meta.id}"><summary><small>习题 ${meta.id}</small><strong>题干、解答与批注</strong></summary><div class="review-inside"><div class="given-box"><b>题目条件</b><p>${given}</p><small>英文本第 ${meta.page} 页 · 本站参考解答</small></div>${rows}<a href="${url}">从头看这道题的图解 →</a></div></details>`;
+  const answerAnchor = insurance ? '#solution' : '#answer';
+  return `<details class="review-problem" id="p${meta.id}"><summary><small>习题 ${meta.id}</small><strong>题干、解答与批注</strong></summary><div class="review-inside"><div class="given-box"><b>题目条件</b><p>${given}</p><small>英文本第 ${meta.page} 页 · 本站参考解答</small></div>${rows}<div class="formal-crosslinks"><a href="${url}">从头看这道题的图解 →</a><a href="${url}${answerAnchor}">打开完整交互答卷 ↗</a><a href="${url}#practice">做迁移练习 →</a></div></div></details>`;
 }
 function chapterPage(ch,content,claims) {
   const sections = ch.sections.map((meta,i)=>sectionNotes(meta,i===0)).join('');
   const records=claims.filter(x=>x.chapter===ch.number);
   const statements=records.map(claimNotes).join('');
   const hasHomework=assignments.some(([n])=>n===ch.number);
-  return `<main class="sprint review" id="main"><header><a href="formula-4h.html#chapters">← 四小时通道 · 全书目录</a><p class="folio">第 ${ch.number} 章</p><h1>${escape(ch.title)}</h1><p>本章 ${ch.sections.length} 节 · ${records.length} 条命题与引理 · ${ch.problems.length} 道章末习题。先读条件，再核对符号和推导。</p><nav class="section-tabs"><a href="#principles">小节 ${ch.sections.length}</a><a href="#claims">命题与引理 ${records.length}</a><a href="#problems">章末题 ${ch.problems.length}</a>${hasHomework?'<a href="#assigned">课堂作业</a>':''}</nav></header>
+  return `<main class="sprint review" id="main"><header><div class="review-top-links"><a href="formula-4h.html#chapters">← 四小时通道 · 全书目录</a><a href="${guidedChapterURL(ch.number)}">生活理解版 · 第 ${ch.number} 章 ↗</a></div><p class="folio">第 ${ch.number} 章</p><h1>${escape(ch.title)}</h1><p>本章 ${ch.sections.length} 节 · ${records.length} 条命题与引理 · ${ch.problems.length} 道章末习题。先读条件，再核对符号和推导。</p><div class="review-action-row"><button type="button" id="review-chapter-toggle" class="sprint-check" data-sprint-chapter="${ch.number}" hidden aria-pressed="false">标记第 ${ch.number} 章已过完</button></div><nav class="section-tabs"><a href="#principles">小节 ${ch.sections.length}</a><a href="#claims">命题与引理 ${records.length}</a><a href="#problems">章末题 ${ch.problems.length}</a>${hasHomework?'<a href="#assigned">课堂作业</a>':''}</nav></header>
 ${reviewControls(ch)}<section id="principles"><h2>定义、公式与推导</h2>${sections}</section><section id="claims"><h2>命题与引理</h2>${statements}</section>
 ${hasHomework?`<section id="assigned"><h2>课堂作业</h2><p>第三次作业 · 更正后的题目与加问</p>${workList(ch.number)}</section>`:''}
-<section id="problems"><h2>章末习题与批注</h2><p>点题号看整份答卷。批注解释每一步为什么这样写。</p>${ch.number===3?'<p><small>英文本本章题号从 5 跳至 7，沿用原书编号。</small></p>':''}${ch.problems.map(m=>question(m,content[m.key])).join('')}</section><footer><a href="formula-4h.html#chapters">← 换一章复习</a></footer></main>`;
+<section id="problems"><h2>章末习题与批注</h2><p>点题号看整份答卷。批注解释每一步为什么这样写。</p>${ch.number===3?'<p><small>英文本本章题号从 5 跳至 7，沿用原书编号。</small></p>':''}${ch.problems.map(m=>question(m,content[m.key])).join('')}</section><footer><a href="formula-4h.html#chapters">← 换一章复习</a>　<a href="${guidedChapterURL(ch.number)}">转到第 ${ch.number} 章生活理解版 ↗</a></footer></main>`;
 }
 function buildReview({chapters,content,items,page,out}) {
   const claims=readClaims(items);

@@ -46,7 +46,8 @@ for(const f of ['lesson-film.js','frontend.js','home-demo.js','amicro-motion.js'
  const routed16=routed.replace("from './extensive-exercises.mjs'","from './extensive-exercises.mjs?v="+version('extensive-exercises.mjs')+"'").replace("from './extensive-exercises-ui.js'","from './extensive-exercises-ui.js?v="+version('extensive-exercises-ui.js')+"'");const routed5=routed16.replace("from './consumer-exercises.mjs'","from './consumer-exercises.mjs?v="+version('consumer-exercises.mjs')+"'").replace("from './consumer-exercises-ui.js'","from './consumer-exercises-ui.js?v="+version('consumer-exercises-ui.js')+"'");const routed10=routed5.replace("from './exchange-exercises.mjs'","from './exchange-exercises.mjs?v="+version('exchange-exercises.mjs')+"'").replace("from './exchange-exercises-ui.js'","from './exchange-exercises-ui.js?v="+version('exchange-exercises-ui.js')+"'");write(out+'/assets/'+f,routed10.replace(/from (['\"])\.\/([^'\"]+\.(?:mjs|js))(?:\?v=[^'\"]*)?\1/g,(_,q,target)=>'from '+q+'./'+target+'?v='+version(target)+q));
 }
 write(out+'/assets/core.js',core);
-for (const file of ['cover.css','cover.js','book-startup.css','book-startup.js','book-editions.css','formula-route.css']) write(out+'/assets/'+file,read(src+'/'+file));
+for (const file of ['cover.css','cover.js','book-startup.css','book-startup.js','book-editions.css','formula-route.css','study-state.js','study-assistant.js']) write(out+'/assets/'+file,read(src+'/'+file));
+const assistantScripts=`<script defer src="assets/study-state.js?v=${version('study-state.js')}"></script><script defer src="assets/search-index.js?v=${releaseId.slice(0,12)}"></script><script defer src="assets/study-assistant.js?v=${version('study-assistant.js')}"></script>`;
 const routeMotion=require('./src/route-motion.cjs');
 // Hosted pages share these files; offline guides embed the same CSS and script.
 const routeVersion=version('route-motion.cjs');
@@ -127,7 +128,7 @@ const filmPrimer = `<style>html[data-reel-primed]::before{content:"";position:fi
 }catch{}})()</script>`;
 const startupHead = `${filmPrimer}<link rel="stylesheet" href="assets/book-startup.css?v=${version('book-startup.css')}"><script defer src="assets/book-startup.js?v=${version('book-startup.js')}"></script>`;
 const readingLinks = `<nav id="books" class="reading-sources" aria-label="课本目录"><a class="book-link" data-edition="en" href="book-en.html">英文原著目录</a> · <a class="book-link" data-edition="zh" href="book-zh.html">中文译本目录</a> · <a id="market-entry" href="market.html">单独打开市场封面</a></nav>`;
-const catalogPage=head('课程目录')+mast+`<main id="main"><h1>课程目录</h1>${readingLinks}<div class="coverage-note">选择小节，从一个情境开始。每章目录也可以按原书题号进入习题。</div><div class="catalog-layout" id="catalog"><nav class="book-rail" aria-label="章节导航"><h2>全书章节</h2>${chapters.map((t,i)=>`<a href="#chapter-${i+1}" class="chapter-link">${String(i+1).padStart(2,'0')}　${t}</a>`).join('')}</nav><div><div class="catalog-tools"><input id="search" type="search" placeholder="搜索知识点、章节或英文名称" aria-label="搜索全书小节"><select id="filter" aria-label="筛选小节"><option value="all">全部小节</option><option value="ready">已有动画示例</option><option value="practice">我已自行练习</option></select></div><p class="small" id="found" aria-live="polite"></p>${inventory.chapters.map((c,i)=>`<section class="chapter" id="chapter-${i+1}"><div class="section-heading"><h2>${String(i+1).padStart(2,'0')} / ${chapters[i]}</h2>${c.chapter<=guidedChapters?`<a href="${guideChapter(c.chapter)}">本章小节与习题 ↗</a>`:`<span>第${c.pdfPage-19}页起</span>`}</div><div class="chapter-rows">${all.filter(s=>s.chapter===c.chapter).map(s=>`<${s.engine?'a':'div'} ${s.engine?`href="${s.chapter<=guidedChapters?guideURL('s'+s.id):'lesson-'+s.id.replace('.','-')+'.html'}"`:''} class="lesson-row ${s.engine?'':'pending'}" data-id="${s.id}" data-ready="${s.engine?'yes':'no'}" data-search="${esc((s.id+' '+s.title+' '+s.english+' '+s.chapterTitle+' '+(s.question||'')+' '+(s.scenarios||[]).map(c=>c.label).join(' ')).toLowerCase())}"><span class="num">${s.id}</span><div><h3>${s.title}</h3><p>${esc(s.question||s.english)}</p></div><span class="status">${s.engine?'逐步学 ↗':'待补齐'}</span></${s.engine?'a':'div'}>`).join('')}</div></section>`).join('')}</div></div>${front.homeIntro({art,count:all.length,problems:problemCount})}</main>`+end(`<script type="module" src="assets/home-demo.js?v=${version('home-demo.js')}"></script>`);
+const catalogPage=head('课程目录')+mast+`<main id="main"><h1>课程目录</h1>${readingLinks}<div id="study-resume" class="study-resume-banner" hidden></div><div class="coverage-note">选择小节，从一个情境开始。每章目录也可以按原书题号进入习题。</div><div class="catalog-layout" id="catalog"><nav class="book-rail" aria-label="章节导航"><h2>全书章节</h2>${chapters.map((t,i)=>`<a href="#chapter-${i+1}" class="chapter-link">${String(i+1).padStart(2,'0')}　${t}</a>`).join('')}</nav><div><div class="catalog-tools"><input id="search" type="search" placeholder="搜索知识点、章节、命题或英文名称（如 17.1、WARP）" aria-label="搜索全书小节"><select id="filter" aria-label="筛选小节"><option value="all">全部小节</option><option value="ready">已有动画示例</option><option value="practice">我已自行练习</option></select></div><p class="small" id="found" aria-live="polite"></p>${inventory.chapters.map((c,i)=>`<section class="chapter" id="chapter-${i+1}"><div class="section-heading"><h2>${String(i+1).padStart(2,'0')} / ${chapters[i]}</h2>${c.chapter<=guidedChapters?`<a href="${guideChapter(c.chapter)}">本章小节与习题 ↗</a>`:`<span>第${c.pdfPage-19}页起</span>`}</div><div class="chapter-rows">${all.filter(s=>s.chapter===c.chapter).map(s=>`<${s.engine?'a':'div'} ${s.engine?`href="${s.chapter<=guidedChapters?guideURL('s'+s.id):'lesson-'+s.id.replace('.','-')+'.html'}"`:''} class="lesson-row ${s.engine?'':'pending'}" data-id="${s.id}" data-ready="${s.engine?'yes':'no'}" data-search="${esc((s.id+' '+s.title+' '+s.english+' '+s.chapterTitle+' '+(s.question||'')+' '+(s.scenarios||[]).map(c=>c.label).join(' ')).toLowerCase())}"><span class="num">${s.id}</span><div><h3>${s.title}</h3><p>${esc(s.question||s.english)}</p></div><span class="status">${s.engine?'逐步学 ↗':'待补齐'}</span></${s.engine?'a':'div'}>`).join('')}</div></section>`).join('')}</div></div>${front.homeIntro({art,count:all.length,problems:problemCount})}</main>`+end(`${assistantScripts}<script type="module" src="assets/home-demo.js?v=${version('home-demo.js')}"></script>`);
 write(out+'/catalog.html',catalogPage);
 function coverPage(withFilm) {
   const legacyHash = '<script>if (/^#(?:books|catalog|market-entry|chapter-[0-9]+)$/.test(location.hash)) location.replace("catalog.html"+location.search+location.hash)</script>';
@@ -191,11 +192,12 @@ ${s.id==='19.2'?['social-properties-content.mjs','social-properties-story.mjs','
 ${s.id==='19.3'?['social-characterization-content.mjs','social-characterization-story.mjs','social-characterization-ui.js'].map(f=>read(src+'/'+f).replace(/^import.*$/gm,'').replace(/export /g,'')).join(String.fromCharCode(10)):''}
 ${read(src+'/'+engineFile).replace(/^import[^\n]+\n/gm,'')}</script>`;
  else standaloneScript+=`<script>${core}\nlaunch(${coreMeta});</script>`;
+ standaloneScript=standaloneScript.replace(/^\s*\/\/(?! Source:).*$\n?/gm,'').replace(/\n[ \t]+/g,'\n').replace(/\n{2,}/g,'\n');
  // Standalone files need no fetch, imports, server, or network. Navigation remains optional.
  const nativeStandaloneMath=true;
  let independent=head(s.title,true,s.id,nativeStandaloneMath)+`<script type="text/plain" id="amicro-license">${amicroLicense}</script><header class="mast"><span class="brand">μ 中微 · 独立实验</span><span>离线可用</span></header>`+standaloneBody+end(standaloneScript,true,nativeStandaloneMath);
  const origin='https://microeconomics-atlas-mingze.synb636.chatgpt.site/';
- independent=independent.replace(/(href|value)="((?:index|about|exercises|learn-[sp]?[\d-]+|lesson-[\d-]+)\.html[^" ]*)"/g,(_,a,url)=>`${a}="${origin}${url}"`).replace(/href="downloads\//g,`href="${origin}downloads/`);
+ independent=independent.replace(/(href|value)="((?:index|about|catalog|exercises|formula-4h|review-[\w-]+|learn-[sp]?[\d-]+|lesson-[\d-]+)\.html[^" ]*)"/g,(_,a,url)=>`${a}="${origin}${url}"`).replace(/href="downloads\//g,`href="${origin}downloads/`);
  write(out+'/downloads/'+filename,independent);
 }
 for(const s of ready.filter(s=>[5,10,15,16,20].includes(s.chapter)))for(const c of (s.scenarios||[]).filter(c=>/^p(?:5\d+|10\d+|1[56]\d+|20\d+)[a-e]?$/.test(c.value))){const base=read(out+'/downloads/lesson-'+s.id.replace('.','-')+'.html');write(out+'/downloads/exercise-'+c.value+'.html',base.replace('<script type="module">','<script>window.EXERCISE_DEFAULT='+JSON.stringify(c.value)+';</script><script type="module">'))}
@@ -325,7 +327,7 @@ for(const [index,title] of chapters.entries()){
  }).join('');
  exerciseHTML+=`<details class="chapter exercise-chapter" id="exercises-${chapter}"><summary>第 ${chapter} 章 · ${esc(title)} <small>${problems.length} 道</small></summary><div class="chapter-rows">${rows}</div></details>`;
 }
-exerciseHTML+='</main>'+end('');write(out+'/exercises.html',exerciseHTML);write(out+'/exercise-inventory.json',JSON.stringify(exerciseInventory,null,2));
+exerciseHTML+='</main>'+end(assistantScripts);write(out+'/exercises.html',exerciseHTML);write(out+'/exercise-inventory.json',JSON.stringify(exerciseInventory,null,2));
 
 for(const v of require('./src/choice-intro-downloads.cjs'))write(out+'/downloads/ch2-intro-'+v.name+'.html',read(out+'/downloads/lesson-2-1.html').replace('<script type="module">','<script>window.CHOICE_INTRO_DEFAULT='+JSON.stringify(v.mode)+';window.CHOICE_INTRO_INITIAL='+JSON.stringify(v.initial)+';</script><script type="module">'));
 
@@ -339,11 +341,14 @@ for(const mode of ['attention','framing','mental'])write(out+'/downloads/ch2-evi
 
 for(const id of ['p1a','p1b','p1c','p1d','p1e','p2','p3qualified','p3none','p4qualified','p4none','p5a','p5b','p6','p7','p8'])write(out+'/downloads/ch2-exercise-'+id+'.html',read(out+'/downloads/lesson-2-6.html').replace('<script type="module">','<script>window.CHOICE_EXERCISE_DEFAULT='+JSON.stringify(id)+';</script><script type="module">'));
 
-require('./src/guided/build.cjs').buildGuides(out,coverage).then(({chapters,content})=>{
+require('./src/guided/build.cjs').buildGuides(out,coverage).then(({chapters,content,searchIndex})=>{
+ const searchJson=JSON.stringify(searchIndex);
+ write(out+'/search-index.json',searchJson);
+ write(out+'/assets/search-index.js','window.ATLAS_SEARCH_INDEX='+searchJson.replace(/</g,'\\u003c')+';');
  const plates=require('./src/book-plates.cjs').bookPlates(chapters,content);
  const entrance=coverPage(true).replace('</body>',()=>filmMarkup(artForFilm,plates)+'</body>');
  write(out+'/index.html',entrance);
  write(out+'/market.html',entrance);
- const page=(file,title,main)=>write(path.join(out,file),head(title).replace('</head>',sprintCss+'</head>')+mast+main+end(''));
+ const page=(file,title,main)=>write(path.join(out,file),head(title).replace('</head>',sprintCss+'</head>')+mast+main+end(assistantScripts));
  require('./src/review/build.cjs').buildReview({chapters,content,items:coverage.items,page,out});
 }).catch(err=>{console.error(err);process.exitCode=1;});

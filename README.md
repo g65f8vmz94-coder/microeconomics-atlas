@@ -4,7 +4,7 @@
 
 网站目前按 20 章、90 节组织。这里公开的是可维护的生成源码。教材 PDF、课堂 PPT、个人 Obsidian 笔记、部署账号配置和构建后的大体积页面包均未收入仓库。
 
-全书有 90 个小节和 151 道章末题。从目录选择一个问题，每次翻到下一步，只读一个条件、看一次变化或做一步推理。章末习题推到最后，会展开整份可照写的答案，每行旁边都有解题思路，点击还能回看相应画面。[打开全书随题图解](https://microeconomics-atlas-mingze.synb636.chatgpt.site/learn)
+全书有 90 个小节和 151 道章末题。从目录选择一个问题，题目条件集中展示，并在后续步骤中保留；每次翻到下一步，看一次变化或做一步推理。章末习题可直接打开整份答案，每行旁边都有解题思路，点击还能回看相应画面。[打开全书随题图解](https://microeconomics-atlas-mingze.synb636.chatgpt.site/learn)
 
 ## 市场入口
 
@@ -56,7 +56,7 @@ npm run validate
 
 ## 4h 速通讲义
 
-速通正文独立维护，主线只使用 Osborne–Rubinstein《Models in Microeconomic Theory》2020.12.21 (h) 版。覆盖全部90节、76个编号命题、6个引理。当前整理287条核心公式；每节列出适用条件、符号解释与推导顺序，每个命题列出前提、结论和证明思路。原书省略的证明、本站补充推导及条件校勘在相应条目注明。240分钟是复习时间安排，完整讲义与题解可按需查阅。
+速通正文独立维护，主线只使用 Osborne–Rubinstein《Models in Microeconomic Theory》2020.12.21 (h) 版。覆盖全部90节、76个编号命题、6个引理。当前整理288条核心公式；每节列出适用条件、符号解释与推导顺序，每个命题列出前提、结论和证明思路。原书省略的证明、本站补充推导及条件校勘在相应条目注明。240分钟是复习时间安排，完整讲义与题解可按需查阅。
 
 - `src/review/formal-*.json`：三组正文数据，是速通理论内容的维护入口。
 - `src/review/formal-render.cjs`：讲义结构、符号表和章节内导航。
@@ -65,3 +65,7 @@ npm run validate
 - `src/formula-route.cjs`、`src/formula-route.css`：240分钟安排和响应式版面。
 
 速通正文不使用生活类比；原题的条件和既有解答仍按题号展开。生活理解版保留独立入口。运行 `node test-formal-review.cjs` 核对原书清单、数学排版、推导字段和240分钟安排；`node test-review-library.cjs` 检查题目与答案未丢失。
+
+## 协作分工
+
+Gemini / Antigravity 只提供文字表达改写稿；Codex 负责源码集成、程序、页面设计、数学边界复核、测试与发布。具体交付格式和权限见 [协作规范](docs/COLLABORATION.md)。
