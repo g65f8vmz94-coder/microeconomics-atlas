@@ -5,6 +5,7 @@ const routeMotionHead=require('../route-motion.cjs').head();
 const {escape,inline,heading}=require('./format.cjs');
 const {previewProse, matchGivenItems}=require('./unit-flow.cjs');
 const {axisPlot,relationDiagram,amountsIn,miniScale,cups,tickets,payoffTable,holdingBoard,screeningFigure,exchangeFigure,matchingFigure}=require('./figure.cjs');
+const {coalitionFigure}=require('./coalition.cjs');
 const {catalog,urlFor,chapterURL,loadChapters}=require('./catalog.cjs');
 const read=p=>fs.readFileSync(path.join(__dirname,p),'utf8');
 const minCss=require('../compact-css.cjs');
@@ -28,6 +29,7 @@ function frameData(unit, given = [], citations = {}) {
   function figureAt(i) {
     let figure = '';
     if (unit.screening) figure = screeningFigure(unit.screening, i);
+    else if (unit.coalition) figure = coalitionFigure(unit.coalition, i);
     else if (unit.exchange) figure = exchangeFigure(unit.exchange, i);
     else if (unit.matchingTrace) figure = matchingFigure(unit.matchingTrace, i);
     else if (unit.payoff) figure = payoffTable({...unit.payoff, frames: [unit.payoff.frames[i]]}).replace('class="selected"', 'class="selected" aria-current="true"');

@@ -21,7 +21,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch01.cjs": "5269acf94e5356914cdb861e5ef470541d7ad13bf35226dd40380df9ab807d85",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -533,6 +533,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "1.2": {
@@ -556,7 +560,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch01.cjs": "5269acf94e5356914cdb861e5ef470541d7ad13bf35226dd40380df9ab807d85",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -1068,6 +1072,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "1.3": {
@@ -1091,7 +1099,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch01.cjs": "5269acf94e5356914cdb861e5ef470541d7ad13bf35226dd40380df9ab807d85",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -1603,6 +1611,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "1.4": {
@@ -1629,7 +1641,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "relations.mjs": "3c4976f7c2450db7ce68058ff6c8f7af9956b22da59afa0d35fcf501c44821ff",
         "guided/ch01.cjs": "5269acf94e5356914cdb861e5ef470541d7ad13bf35226dd40380df9ab807d85",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -2127,6 +2139,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "2.1": {
@@ -2166,7 +2182,7 @@
         "choice-exercises-ui.js": "43dfb4b42ef933af5d8651c1ff138c493349bc59056577d698102678c418cbe1",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch02.cjs": "68174b66fe5e322c98971da94e053b9ecca55aac3c57da92ae1cade8e743c312",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -2676,6 +2692,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "2.2": {
@@ -2715,7 +2735,7 @@
         "choice-exercises-ui.js": "43dfb4b42ef933af5d8651c1ff138c493349bc59056577d698102678c418cbe1",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch02.cjs": "68174b66fe5e322c98971da94e053b9ecca55aac3c57da92ae1cade8e743c312",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -3225,6 +3245,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "2.3": {
@@ -3264,7 +3288,7 @@
         "choice-exercises-ui.js": "43dfb4b42ef933af5d8651c1ff138c493349bc59056577d698102678c418cbe1",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch02.cjs": "68174b66fe5e322c98971da94e053b9ecca55aac3c57da92ae1cade8e743c312",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -3763,6 +3787,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "2.4": {
@@ -3804,7 +3832,7 @@
         "choice-exercises-ui.js": "43dfb4b42ef933af5d8651c1ff138c493349bc59056577d698102678c418cbe1",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch02.cjs": "68174b66fe5e322c98971da94e053b9ecca55aac3c57da92ae1cade8e743c312",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -4322,6 +4350,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "2.5": {
@@ -4363,7 +4395,7 @@
         "choice-exercises-ui.js": "43dfb4b42ef933af5d8651c1ff138c493349bc59056577d698102678c418cbe1",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch02.cjs": "68174b66fe5e322c98971da94e053b9ecca55aac3c57da92ae1cade8e743c312",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -4881,6 +4913,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "2.6": {
@@ -4923,7 +4959,7 @@
         "choice-exercises-ui.js": "43dfb4b42ef933af5d8651c1ff138c493349bc59056577d698102678c418cbe1",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch02.cjs": "68174b66fe5e322c98971da94e053b9ecca55aac3c57da92ae1cade8e743c312",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -5434,6 +5470,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "3.1": {
@@ -5458,7 +5498,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch03.cjs": "2aa0d3eaf7aac2e2480c8c7e570a901681f43d3958f54f49eeff69325278f810",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -5939,6 +5979,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "3.2": {
@@ -5968,7 +6012,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch03.cjs": "2aa0d3eaf7aac2e2480c8c7e570a901681f43d3958f54f49eeff69325278f810",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -6434,6 +6478,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "3.3": {
@@ -6464,7 +6512,7 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch03.cjs": "2aa0d3eaf7aac2e2480c8c7e570a901681f43d3958f54f49eeff69325278f810",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -6919,6 +6967,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "3.4": {
@@ -7023,7 +7075,7 @@
         "allais-story-ui.js": "a6c47508635d6eb83b8e7104c727f6320c542517bcaae715bcef97f278a0a447",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch03.cjs": "2aa0d3eaf7aac2e2480c8c7e570a901681f43d3958f54f49eeff69325278f810",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -7480,6 +7532,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "3.5": {
@@ -7628,7 +7684,7 @@
         "insurance-lesson/page.html": "379edcc84560886314cdd4d1d004bf595194b6778d78346746a1de4012c97c36",
         "insurance-lesson/player.js": "f74938115fcdac00b9470a2443b8a0ef233419860d2614186809c67f078eada4",
         "guided/ch03.cjs": "2aa0d3eaf7aac2e2480c8c7e570a901681f43d3958f54f49eeff69325278f810",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -8089,6 +8145,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "4.1": {
@@ -8153,7 +8213,7 @@
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch04.cjs": "88e918e92e8fc3d69f221f1bad8571bf56f478c0871b53ffec55e5eac1ebbc83",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -8574,6 +8634,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "4.2": {
@@ -8653,7 +8717,7 @@
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch04.cjs": "88e918e92e8fc3d69f221f1bad8571bf56f478c0871b53ffec55e5eac1ebbc83",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -9074,6 +9138,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "4.3": {
@@ -9132,7 +9200,7 @@
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch04.cjs": "88e918e92e8fc3d69f221f1bad8571bf56f478c0871b53ffec55e5eac1ebbc83",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -9553,6 +9621,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "4.4": {
@@ -9617,7 +9689,7 @@
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch04.cjs": "88e918e92e8fc3d69f221f1bad8571bf56f478c0871b53ffec55e5eac1ebbc83",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -10038,6 +10110,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "4.5": {
@@ -10114,7 +10190,7 @@
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch04.cjs": "88e918e92e8fc3d69f221f1bad8571bf56f478c0871b53ffec55e5eac1ebbc83",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -10535,6 +10611,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "4.6": {
@@ -10641,7 +10721,7 @@
         "math-format.js": "c9343414fd8c64a43022b34d01638bfb8557377cd8cce1b2bc080a94c938f4ab",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch04.cjs": "88e918e92e8fc3d69f221f1bad8571bf56f478c0871b53ffec55e5eac1ebbc83",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -11062,6 +11142,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "5.1": {
@@ -11123,7 +11207,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch05.cjs": "e25c35a236d745ca20374bfadb0723b72cb1cd8fa4140a73b4fc0ee06b6c0e2d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -11486,6 +11570,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "5.2": {
@@ -11553,7 +11641,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch05.cjs": "e25c35a236d745ca20374bfadb0723b72cb1cd8fa4140a73b4fc0ee06b6c0e2d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -11916,6 +12004,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "5.3": {
@@ -11986,7 +12078,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch05.cjs": "e25c35a236d745ca20374bfadb0723b72cb1cd8fa4140a73b4fc0ee06b6c0e2d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -12349,6 +12441,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "5.4": {
@@ -12416,7 +12512,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch05.cjs": "e25c35a236d745ca20374bfadb0723b72cb1cd8fa4140a73b4fc0ee06b6c0e2d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -12779,6 +12875,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "5.5": {
@@ -12867,7 +12967,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch05.cjs": "e25c35a236d745ca20374bfadb0723b72cb1cd8fa4140a73b4fc0ee06b6c0e2d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -13230,6 +13330,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "5.6": {
@@ -13309,7 +13413,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch05.cjs": "e25c35a236d745ca20374bfadb0723b72cb1cd8fa4140a73b4fc0ee06b6c0e2d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -13672,6 +13776,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "6.1": {
@@ -13744,7 +13852,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch06.cjs": "ec91e8de93d86eb10b504d009be2892a6b632a0caf11a0f67d957bd953097505",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -14108,6 +14216,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "6.2": {
@@ -14174,7 +14286,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch06.cjs": "ec91e8de93d86eb10b504d009be2892a6b632a0caf11a0f67d957bd953097505",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -14542,6 +14654,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "6.3": {
@@ -14628,7 +14744,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch06.cjs": "ec91e8de93d86eb10b504d009be2892a6b632a0caf11a0f67d957bd953097505",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -14988,6 +15104,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "6.4": {
@@ -15075,7 +15195,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch06.cjs": "ec91e8de93d86eb10b504d009be2892a6b632a0caf11a0f67d957bd953097505",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -15435,6 +15555,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "6.5": {
@@ -15502,7 +15626,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch06.cjs": "ec91e8de93d86eb10b504d009be2892a6b632a0caf11a0f67d957bd953097505",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -15877,6 +16001,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "13.3": {
@@ -15909,7 +16037,7 @@
         "fish-market-story.mjs": "4c0bb157522964fd67fc91466ab26ad954ff53c8cddd281e0c69f812fa12c70a",
         "fish-market-ui.js": "e73df590171ccbb1659a745dfac3b4c0a75b9b8ba36385954f06f4e370732347",
         "guided/ch13.mjs": "7a8ff8a5c39c0bcf650ce536740dbe7411c62abb33ee5b5f46c9032eb6c46840",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -16302,6 +16430,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "13.2": {
@@ -16337,7 +16469,7 @@
         "car-market-story.mjs": "0081a8a844102b0b44a27be151849cb209703f6df6694fe27fe86e5f527be66c",
         "car-market-ui.js": "ad103b2304cd02422cb417da58af4f760b828c6099e3616039b9e69b15d7e70b",
         "guided/ch13.mjs": "7a8ff8a5c39c0bcf650ce536740dbe7411c62abb33ee5b5f46c9032eb6c46840",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -16710,6 +16842,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "7.1": {
@@ -16773,7 +16909,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch07.cjs": "971445e1a6510d5c73b91e572cdeda3af6b984a0290562bd32109f72266aa3a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -17149,6 +17285,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "7.2": {
@@ -17267,7 +17407,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch07.cjs": "971445e1a6510d5c73b91e572cdeda3af6b984a0290562bd32109f72266aa3a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -17623,6 +17763,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "7.3": {
@@ -17692,7 +17836,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch07.cjs": "971445e1a6510d5c73b91e572cdeda3af6b984a0290562bd32109f72266aa3a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -18043,6 +18187,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "7.4": {
@@ -18127,7 +18275,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch07.cjs": "971445e1a6510d5c73b91e572cdeda3af6b984a0290562bd32109f72266aa3a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -18468,6 +18616,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "8.1": {
@@ -18542,7 +18694,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch08.cjs": "a468d0567958694d76bb9cd26a24bccfede2d47cb72a40995aead48c79a67d0b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -18818,6 +18970,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "8.2": {
@@ -18901,7 +19057,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch08.cjs": "a468d0567958694d76bb9cd26a24bccfede2d47cb72a40995aead48c79a67d0b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -19172,6 +19328,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "8.3": {
@@ -19246,7 +19406,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch08.cjs": "a468d0567958694d76bb9cd26a24bccfede2d47cb72a40995aead48c79a67d0b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -19512,6 +19672,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "8.4": {
@@ -19574,7 +19738,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch08.cjs": "a468d0567958694d76bb9cd26a24bccfede2d47cb72a40995aead48c79a67d0b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -19833,6 +19997,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "8.5": {
@@ -19913,7 +20081,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch08.cjs": "a468d0567958694d76bb9cd26a24bccfede2d47cb72a40995aead48c79a67d0b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -20172,6 +20340,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "8.6": {
@@ -20249,7 +20421,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch08.cjs": "a468d0567958694d76bb9cd26a24bccfede2d47cb72a40995aead48c79a67d0b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -20504,6 +20676,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "9.1": {
@@ -20644,7 +20820,7 @@
         "market-exercises-ui.js": "fd5368a3f247bc0895d6ab9c9950718fab8c039bf5ff42e10254342c14149846",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch09.cjs": "d10275411499533e1b562843d15b803a86b60425e1124ff136363849d3eadb89",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -20904,6 +21080,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "9.2": {
@@ -21011,7 +21191,7 @@
         "market-exercises-ui.js": "fd5368a3f247bc0895d6ab9c9950718fab8c039bf5ff42e10254342c14149846",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch09.cjs": "d10275411499533e1b562843d15b803a86b60425e1124ff136363849d3eadb89",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -21267,6 +21447,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "9.3": {
@@ -21356,7 +21540,7 @@
         "market-exercises-ui.js": "fd5368a3f247bc0895d6ab9c9950718fab8c039bf5ff42e10254342c14149846",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch09.cjs": "d10275411499533e1b562843d15b803a86b60425e1124ff136363849d3eadb89",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -21608,6 +21792,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "9.4": {
@@ -21703,7 +21891,7 @@
         "market-exercises-ui.js": "fd5368a3f247bc0895d6ab9c9950718fab8c039bf5ff42e10254342c14149846",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "guided/ch09.cjs": "d10275411499533e1b562843d15b803a86b60425e1124ff136363849d3eadb89",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -21927,6 +22115,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.1": {
@@ -22036,8 +22228,8 @@
         "exchange-model-content.mjs": "07c991915a5299c4cb1bd4b5edff139cf5f5232bafd9755ba8fa0be252afa132",
         "exchange-model-ui.js": "ef8d5457a863a873bba031a836104637d45e47e27e296f4999877ba7c7d961df",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -22221,6 +22413,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.2": {
@@ -22349,8 +22545,8 @@
         "exchange-equilibrium-content.mjs": "83c6db2ac522e965a5a4e32e80927f13d5e5aec0db6c28ae90d0711ab4cb94bc",
         "exchange-equilibrium-ui.js": "a358916cc10d0108218cbe3aa710ce86ac7945cb067e6417af7a19a7858c60b0",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -22527,6 +22723,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.3": {
@@ -22660,8 +22860,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -22839,6 +23039,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.4": {
@@ -22954,8 +23158,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -23109,6 +23313,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.5": {
@@ -23285,8 +23493,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -23429,6 +23637,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.6": {
@@ -23598,8 +23810,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -23629,7 +23841,8 @@
         "review/scoped-symbols.cjs": "e80532f3eb7ebd9f648bc35db5841967137307e0d53667bca7c98c6262e75101",
         "review/sprint-tasks.cjs": "9931da034cb52383e539f1c3d0bbda885c53d1cc32184641f4e2696d8ffe44fe",
         "formula-route.cjs": "cc9aab4e6b2da2bb1164cb701c4ba51c644d00e2778e1f66f858e7ab082029c7",
-        "formula-route.css": "ae5fcaa6431a768c3bc25fbeeeff07c963ec1d2e7a1b2dcbcc57418eb92fae9a"
+        "formula-route.css": "ae5fcaa6431a768c3bc25fbeeeff07c963ec1d2e7a1b2dcbcc57418eb92fae9a",
+        "guided/coalition.cjs": "e6a1a840d694bc135f7da142854cab6c54752e94f544cdf72fa39cee8f259364"
       },
       "verifiedAt": "2026-11-03T10:12:41Z",
       "release98Revalidation": {
@@ -23743,6 +23956,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.7": {
@@ -23896,8 +24113,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -24040,6 +24257,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.8": {
@@ -24176,8 +24397,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -24321,6 +24542,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "10.9": {
@@ -24463,8 +24688,8 @@
         "frontend.js": "97cfe8b7a531f6048b610b24be7905a25b0484ec7c3c8857cb0b8ee0c4d0bebf",
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
-        "guided/ch10.cjs": "4a06f9faeb477e92f58dc3801211e69535c5ec8391ce37692f693fa99a87eca2",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/ch10.cjs": "ef29c97872272c2d3dda4ef71b634767357b7c00d208ef26047e415d00e67533",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -24607,6 +24832,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "11.1": {
@@ -24776,7 +25005,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch11.mjs": "7437fc2aacae1b1b14239fe673cd45930c759060793840dbc10f81f50fe97977",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -24913,6 +25142,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "11.2": {
@@ -25083,7 +25316,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch11.mjs": "7437fc2aacae1b1b14239fe673cd45930c759060793840dbc10f81f50fe97977",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -25220,6 +25453,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "12.1": {
@@ -25387,7 +25624,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch12.mjs": "7d15cddfcb94816b0cc70e1714a88a96276ac41b025a6f3b3c9ac990d1b706a4",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -25524,6 +25761,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "12.2": {
@@ -25644,7 +25885,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch12.mjs": "7d15cddfcb94816b0cc70e1714a88a96276ac41b025a6f3b3c9ac990d1b706a4",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -25781,6 +26022,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "13.1": {
@@ -25936,7 +26181,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch13.mjs": "7a8ff8a5c39c0bcf650ce536740dbe7411c62abb33ee5b5f46c9032eb6c46840",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -26071,6 +26316,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "14.1": {
@@ -26097,7 +26346,7 @@
         "site.css": "9ec4c03ad6b71601ebed950605f224dc3710e2b9f9daeb99d9a00ffb49f3557a",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch14.mjs": "414fec5308c79fe5e99a9212bb8fb6b29fbcf4851ba54d57bb2dabbe8d4c6977",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -26243,6 +26492,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "14.2": {
@@ -26382,7 +26635,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch14.mjs": "414fec5308c79fe5e99a9212bb8fb6b29fbcf4851ba54d57bb2dabbe8d4c6977",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -26519,6 +26772,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.1": {
@@ -26598,7 +26855,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -26735,6 +26992,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.2": {
@@ -26857,7 +27118,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -26994,6 +27255,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.3": {
@@ -27092,7 +27357,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -27229,6 +27494,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.4": {
@@ -27322,7 +27591,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -27459,6 +27728,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.5": {
@@ -27557,7 +27830,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -27694,6 +27967,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.6": {
@@ -27786,7 +28063,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -27923,6 +28200,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.7": {
@@ -28051,7 +28332,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -28188,6 +28469,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "15.8": {
@@ -28285,7 +28570,7 @@
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch15.mjs": "191f1a927d5f441ae511c6150f313e4d81d57d2001a52b2361b72bf4722d4778",
         "strategic-exercises.mjs": "aa9a1367e942dd1e0dae319fed2dee9217e87c8b0761495ebd7f55be39c88b7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -28422,6 +28707,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "16.1": {
@@ -28566,7 +28855,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch16.mjs": "353fd4ff16e5c2de2b5ec8c20eb613416a6930f29bfd69d4a1fb8beb3f45c5a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -28703,6 +28992,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "16.2": {
@@ -28785,7 +29078,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch16.mjs": "353fd4ff16e5c2de2b5ec8c20eb613416a6930f29bfd69d4a1fb8beb3f45c5a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -28922,6 +29215,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "16.3": {
@@ -29016,7 +29313,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch16.mjs": "353fd4ff16e5c2de2b5ec8c20eb613416a6930f29bfd69d4a1fb8beb3f45c5a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -29153,6 +29450,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "16.4": {
@@ -29267,7 +29568,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch16.mjs": "353fd4ff16e5c2de2b5ec8c20eb613416a6930f29bfd69d4a1fb8beb3f45c5a8",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -29404,6 +29705,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "17.1": {
@@ -29476,7 +29781,7 @@
         "standalone-style.cjs": "56bd8df5f3dc64e0f9769aa41b32bd668b07da5690d84df442072d9645b321d6",
         "../build.cjs": "2c3418f0c68ca3267585501bbc5d0e5896db913a1f41dfc2c66465266b4605bf",
         "guided/ch17.mjs": "053808499466022a166f257aa4139df0d41c0817211bfe3db5076c62639d8f7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -29611,6 +29916,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "17.2": {
@@ -29677,7 +29986,7 @@
         "truthful-report-story.mjs": "b704522e6fcf4abf5c850f8051aa18914d65a1802f3639d93084d4d0fa19b060",
         "truthful-report-ui.js": "34d9598ab35575b9da9fe22505b381d6f9c835b762f8434772cb3b31907d6a1b",
         "guided/ch17.mjs": "053808499466022a166f257aa4139df0d41c0817211bfe3db5076c62639d8f7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -29812,6 +30121,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "17.3": {
@@ -29932,7 +30245,7 @@
         "vcg-story.mjs": "1f70945f4d1168a3258cc0bd808a620e3bcb11c1741eb413a4a8f572201ae628",
         "vcg-story-ui.js": "cd0f61d3e509e7cefd11984a76db6179e676df39a93d385d352fd1bbaa931e5d",
         "guided/ch17.mjs": "053808499466022a166f257aa4139df0d41c0817211bfe3db5076c62639d8f7d",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -30067,6 +30380,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "18.1": {
@@ -30152,7 +30469,7 @@
         "matching-foundations-story.mjs": "992629cf1d61ef75a6b14b20efcb2cb05d787157d55f0ac0190be3b453e134ee",
         "matching-foundations-ui.js": "3a573e48e2c7514ac188e9bf64580fc07ce59074de34b2945e0e95e8f2fccbf0",
         "guided/ch18.mjs": "a872a679e1e885fdbee7f3366d63c4c99d518e00aaf7d66d442f3c1cb6ed212b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -30288,6 +30605,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "18.2": {
@@ -30355,7 +30676,7 @@
         "matching-algorithm-story.mjs": "023a586a969ffad05b395ce94b22109aff0730638fa826bc95a4df0f7d2d3e2e",
         "matching-algorithm-ui.js": "3cb161f5d7fc70d6aa976bebba4f1ef00eb0ef8f6128e489e5e4e4e7ebea2448",
         "guided/ch18.mjs": "a872a679e1e885fdbee7f3366d63c4c99d518e00aaf7d66d442f3c1cb6ed212b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -30491,6 +30812,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "18.3": {
@@ -30618,7 +30943,7 @@
         "matching-stability-story.mjs": "bf4a843367b18c346965900e7d8343aab589239a1e60f6f59a4d430cc4e87c3b",
         "matching-stability-ui.js": "b6131027b163b2b6eb3e9e55079e902e8023c72e24f54cc0109294b4e52c22eb",
         "guided/ch18.mjs": "a872a679e1e885fdbee7f3366d63c4c99d518e00aaf7d66d442f3c1cb6ed212b",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -30738,6 +31063,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "19.1": {
@@ -30844,7 +31173,7 @@
         "social-foundations-story.mjs": "fbde18ae3bd955d78f0b4680d1aa7ae4cd05d9d460553747290a7d000b6f31ff",
         "social-foundations-ui.js": "4e8d1be83724d1b865b3cdc5ba57ef1acab13d71c4dd11647962a0e0b79cec62",
         "guided/ch19.mjs": "02d98843f493bfe8960da1c530d68a51a7c305c68b560081f040cbdc5c2c4c53",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -30956,6 +31285,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "19.2": {
@@ -31048,7 +31381,7 @@
         "social-properties-story.mjs": "9963410486a687f01574b0128e3aebef5239788c95679234f509617e060b5515",
         "social-properties-ui.js": "47e301dfe5fb5742a8a39e6cfb736c7126dc7c2b0e168f610ef5725872e80131",
         "guided/ch19.mjs": "02d98843f493bfe8960da1c530d68a51a7c305c68b560081f040cbdc5c2c4c53",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -31149,6 +31482,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "19.3": {
@@ -31269,7 +31606,7 @@
         "social-characterization-story.mjs": "b96940b6597aa89d511c6b32ec417b1d26f20a1c1e27d2019a213a2e6923a097",
         "social-characterization-ui.js": "b91a60ed9b9b59cda25d99224b366c66fe80b7d1b69918dba77b6017e006000a",
         "guided/ch19.mjs": "02d98843f493bfe8960da1c530d68a51a7c305c68b560081f040cbdc5c2c4c53",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -31370,6 +31707,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "20.1": {
@@ -31463,7 +31804,7 @@
         "aggregation-properties-content.mjs": "79eefee60f65b8b3b8c358ab2dc21d96bf05b44a6d2234392e3b8ebbb044e99d",
         "aggregation-properties-story.mjs": "5cfc9e67dbc71f4549bdbd3f76e50b3776e498927364f8eee84fa7fe79e8a8f6",
         "guided/ch20.mjs": "96ee75de0866d57950d1642127c5ced87c2fbfdd3be2d090580097eb009c8c31",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -31564,6 +31905,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "20.2": {
@@ -31682,7 +32027,7 @@
         "aggregation-properties-content.mjs": "79eefee60f65b8b3b8c358ab2dc21d96bf05b44a6d2234392e3b8ebbb044e99d",
         "aggregation-properties-story.mjs": "5cfc9e67dbc71f4549bdbd3f76e50b3776e498927364f8eee84fa7fe79e8a8f6",
         "guided/ch20.mjs": "96ee75de0866d57950d1642127c5ced87c2fbfdd3be2d090580097eb009c8c31",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -31783,6 +32128,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "20.3": {
@@ -31946,7 +32295,7 @@
         "aggregation-methods-content.mjs": "df76a66b52135f58982b83de0b70da10d4980aaf049ca771316f9befa59277be",
         "aggregation-methods-story.mjs": "e6c67ed290fc95b29646f3f9cd35351e0a8d2502b0b18ad84a725cf2a61fada9",
         "guided/ch20.mjs": "96ee75de0866d57950d1642127c5ced87c2fbfdd3be2d090580097eb009c8c31",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -32045,6 +32394,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "20.4": {
@@ -32144,7 +32497,7 @@
         "aggregation-properties-content.mjs": "79eefee60f65b8b3b8c358ab2dc21d96bf05b44a6d2234392e3b8ebbb044e99d",
         "aggregation-properties-story.mjs": "5cfc9e67dbc71f4549bdbd3f76e50b3776e498927364f8eee84fa7fe79e8a8f6",
         "guided/ch20.mjs": "96ee75de0866d57950d1642127c5ced87c2fbfdd3be2d090580097eb009c8c31",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -32243,6 +32596,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     },
     "20.5": {
@@ -32351,7 +32708,7 @@
         "aggregation-properties-content.mjs": "79eefee60f65b8b3b8c358ab2dc21d96bf05b44a6d2234392e3b8ebbb044e99d",
         "aggregation-properties-story.mjs": "5cfc9e67dbc71f4549bdbd3f76e50b3776e498927364f8eee84fa7fe79e8a8f6",
         "guided/ch20.mjs": "96ee75de0866d57950d1642127c5ced87c2fbfdd3be2d090580097eb009c8c31",
-        "guided/build.cjs": "7201c5a223983903f63ef5b67349b5a54adf236ce167e2f83736c13b50829eab",
+        "guided/build.cjs": "13fd9f8e7d5ff76ee39d4e170144a95f31f7447446dd45dddc0f4e1131330813",
         "guided/catalog.cjs": "4a0fdbeeaa3327427f5e91d92aad061549ababc8c33685b31a289f049a35d613",
         "guided/figure.cjs": "df69ce0c59027571088016ae553397e796d3e4fbee69a6580807e87347d28c19",
         "guided/format.cjs": "c30f8c6094707cf96b408598c06e105d92684c112a948255ea21cebbface7460",
@@ -32449,6 +32806,10 @@
         "scope": "UX01–UX11 reviewed; R01–R09 fixed; 3120 core-field comparisons unchanged; no new whole-book source audit",
         "evidence": "docs/reviews/2026-11-16-experience-fixes/REVIEW.md",
         "studentMastery": "not asserted"
+      },
+      "coalitionRevalidation20261117": {
+        "scope": "Incremental 10.6 teaching ledger and optional rendering branch; original textbook audit retained; no student mastery claim",
+        "report": "docs/reviews/2026-11-17-coalition-teaching/REVIEW.md"
       }
     }
   }
