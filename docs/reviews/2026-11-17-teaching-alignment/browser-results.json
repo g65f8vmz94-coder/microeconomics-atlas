@@ -1,0 +1,38 @@
+{
+  "base": "http://127.0.0.1:51616",
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "firstScenes": 270,
+  "expandedSteps": 30,
+  "screenshots": [
+    "1440-s1.1.png",
+    "1440-s4.5.png",
+    "1440-s10.6.png",
+    "1440-s12.1.png",
+    "1440-s13.3.png",
+    "1440-s16.4.png",
+    "1440-s20.4.png",
+    "390-s1.1.png",
+    "390-s4.5.png",
+    "390-s10.6.png",
+    "390-s12.1.png",
+    "390-s13.3.png",
+    "390-s16.4.png",
+    "390-s20.4.png",
+    "320-s1.1.png",
+    "320-s4.5.png",
+    "320-s10.6.png",
+    "320-s12.1.png",
+    "320-s13.3.png",
+    "320-s16.4.png",
+    "320-s20.4.png"
+  ],
+  "pageErrors": [],
+  "keyboard": true,
+  "reducedMotion": true,
+  "offline": true,
+  "passed": true
+}

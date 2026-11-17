@@ -6,6 +6,7 @@ const {escape,inline,heading}=require('./format.cjs');
 const {previewProse, matchGivenItems}=require('./unit-flow.cjs');
 const {axisPlot,relationDiagram,amountsIn,miniScale,cups,tickets,payoffTable,holdingBoard,screeningFigure,exchangeFigure,matchingFigure}=require('./figure.cjs');
 const {coalitionFigure}=require('./coalition.cjs');
+const teachingNotes=require('./teaching-notes.cjs');
 const {catalog,urlFor,chapterURL,loadChapters}=require('./catalog.cjs');
 const read=p=>fs.readFileSync(path.join(__dirname,p),'utf8');
 const minCss=require('../compact-css.cjs');
@@ -23,7 +24,7 @@ const json=v=>JSON.stringify(v).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u20
 const extLink=(href,label)=>`<a data-site href="${escape(href)}">${escape(label)}</a>`;
 const rowNumber=n=>String(n).padStart(2,'0');
 
-function frameData(unit, given = [], citations = {}) {
+function frameData(unit, given = [], citations = {}, teaching = {}) {
   const scales = unit.columns.map((label, i) => amountsIn(label, unit.frames, i));
   const scaleNote = scales.some(Boolean) ? '<p class="scale-note">短条用本栏固定刻度，可与上一步比较。</p>' : '';
   function figureAt(i) {
@@ -53,12 +54,13 @@ function frameData(unit, given = [], citations = {}) {
     }).join('');
     const note = unit.frameNotes?.[i] || {};
     const auto = previewProse(why);
-    const summary = note.summary || auto.summary;
+    const summary = teaching.steps?.[i] || note.summary || auto.summary;
     const detail = note.detail !== undefined ? note.detail : (note.summary ? (why.trim() === note.summary.trim() ? '' : why) : auto.detail);
     const citeItems = note.citeItems || citations[i] || [];
     return {
       action, why: inline(why), summary, detail,
-      task: note.task || '',
+      task: note.task || teaching.question || '',
+      taskLabel: note.task ? '本步要回答' : '本节要弄明白',
       citeLabel: note.citeLabel || '',
       citeItems,
       citeRows: note.citeRows || [],
@@ -88,7 +90,8 @@ function renderUnit(meta, unit, chapter, siblings) {
   const rows = proofRows(unit);
   const {points: given, references} = givenPoints(unit.given);
   const citations = require('./condition-citations.cjs')[meta.key] || {};
-  const frames = frameData(unit, given, citations.frames);
+  const teaching=teachingNotes[meta.key] || {};
+  const frames = frameData(unit, given, citations.frames, teaching);
   const givenTitle = homework ? '题目条件' : '情境与条件';
   const conditions = given.map((point, i) => {
     // Old links to an individual condition still land on the full question.
@@ -121,8 +124,8 @@ function renderUnit(meta, unit, chapter, siblings) {
     const backLinks = `<div class="scene-links">${i===0 && unit.preparation?.length ? '<a class="scene-back ledger-link" href="#account-1">回看两张订单怎么算 →</a>' : ''}<a class="scene-back" data-return href="#${target}">查看对应${homework ? '推理' : '结论'} →</a></div>`;
     steps.push({
       id: sceneId(i), kind: 'scene', phase: '图景 ' + (i + 1) + ' / ' + frames.length, title: frame.action,
-      task: frame.task, citeLabel: frame.citeLabel, citeItems: frame.citeItems, citeRows: frame.citeRows,
-      body: `<p class="guided-scene-why"${i === 0 ? ' id="scene-why"' : ''}>${inline(frame.summary)}</p>${citeInline}${visualBox}${detailBox}${backLinks}`
+      task: frame.task, taskLabel: frame.taskLabel, citeLabel: frame.citeLabel, citeItems: frame.citeItems, citeRows: frame.citeRows,
+      body: (i===0 && teaching.read ? `<p class="guided-reading-key"><strong>读图先看：</strong>${inline(teaching.read)}</p>` : '') + `<p class="guided-scene-why"${i === 0 ? ' id="scene-why"' : ''}>${inline(frame.summary)}</p>${citeInline}${visualBox}${detailBox}${backLinks}`
     });
   });
   rows.forEach((row, i) => {

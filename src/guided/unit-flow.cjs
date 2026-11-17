@@ -158,7 +158,7 @@ function stepMarkup(steps, step, i, {hasPaper = false} = {}) {
   }
   const titleId = {given: 'given-heading', scene: 'scene-title', practice: 'practice-heading'}[step.id] || step.id + '-title';
   const pct = Math.round(((i + 1) / steps.length) * 100);
-  const taskLine = step.task ? `<p class="step-task"><span class="task-pill">本步要回答</span><span>${inline(step.task)}</span></p>` : '';
+  const taskLine = step.task ? `<p class="step-task"><span class="task-pill">${escape(step.taskLabel || '本步要回答')}</span><span>${inline(step.task)}</span></p>` : '';
   return `<section class="guided-step guided-${step.kind}" id="${step.id}" tabindex="-1" aria-labelledby="${titleId}"${citeAttrs}>
 <div class="guided-progress step-kicker"><span>第 ${i + 1} / ${steps.length} 步 · ${escape(step.phase)}</span><span class="step-meter" aria-hidden="true"><i style="width:${pct}%"></i></span></div>
 <h2 class="guided-step-title" id="${titleId}">${heading(step.title)}</h2>
