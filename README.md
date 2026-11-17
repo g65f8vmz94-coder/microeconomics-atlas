@@ -33,6 +33,21 @@ npm run validate
 
 `test-*.mjs` 是各知识点的纯模型回归脚本，可按需运行。原开发过程中的本机浏览器截图和报告未公开；这些脚本与报告中的本机绝对路径不属于可复用源码。
 
+## 低体积发布包
+
+常规 `npm run build` 仍生成完整静态网站和独立 HTML。网络上传较慢时，可把相同的页面封装成无依赖的 Worker：
+
+```sh
+npm run build
+npm run build:hosting
+npm run test:hosting
+node hosting/preview.cjs hosting-dist 8800
+```
+
+`hosting-dist/server/index.js` 只存一份重复的脚本、样式与页面片段；收到请求后按原顺序解压并流式返回。每个文件的字节内容、下载地址和查询参数保持一致，下载的 HTML 仍可独立离线使用。构建及测试逐文件对比完整静态输出；不是省略章节或把下载页替换成跳转页。解压缓存仅保存最多4 MiB的压缩块，不在启动时展开整站。
+
+`hosting/build.cjs`、`hosting/worker.mjs` 是发布封装的可维护源码，`hosting/test.cjs` 校验每个响应及直达链接、HEAD、缓存和错误路径。平台运行能力参考 [Cloudflare Web 标准](https://developers.cloudflare.com/workers/runtime-apis/web-standards/)。用 Sites 发布时保留原项目 ID，将部署用的 `dist/` 指向这份 Worker 构建，移除部署清单中的 `static` 配置；原静态 `dist/` 应另存用于离线归档。站点权限、模型源码和教学内容无需更改。
+
 ## 源码结构
 
 - `src/`：经济模型、课程叙事、可视化、导航、样式和随站分发的第三方资源。

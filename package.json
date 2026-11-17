@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "node build.cjs",
+    "build:hosting": "node hosting/build.cjs",
+    "test:hosting": "node hosting/test.cjs",
     "test:math": "node test-math.cjs",
     "validate": "node validate-pack.cjs",
     "preview": "python3 preview.py"

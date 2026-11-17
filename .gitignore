@@ -1,4 +1,5 @@
 dist/
+hosting-dist/
 qa/*
 !qa/.gitkeep
 node_modules/
